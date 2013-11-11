@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rake'
+
 group :development do
-  gem 'awesome_print', :require => 'ap'
   gem 'guard-rspec'
   gem 'guard-yard'
   gem 'pry'
