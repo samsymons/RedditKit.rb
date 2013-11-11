@@ -8,6 +8,7 @@ module RedditKit
 
     class << self
 
+      # Return RedditKit.rb's version number as a string.
       def to_s
         [MAJOR, MINOR, PATCH].join('.')
       end
