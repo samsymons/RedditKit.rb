@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
+gem 'coveralls', require: false
 
 group :development do
   gem 'guard-rspec'
