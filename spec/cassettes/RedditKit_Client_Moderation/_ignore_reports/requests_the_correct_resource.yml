@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.reddit.com/api/ignore_reports
+    body:
+      encoding: US-ASCII
+      string: id=t3_1n002d&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 22:21:40 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:39 GMT
+recorded_with: VCR 2.6.0

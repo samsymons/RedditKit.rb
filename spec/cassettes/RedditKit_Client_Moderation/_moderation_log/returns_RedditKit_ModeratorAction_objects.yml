@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/RedditKitTesting/about/log.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:21:36 GMT
+      Content-Length:
+      - '8126'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"lh315k2hi0cd3009c88b563d7ae978d0ad5c68418b9e585a75\",
+        \"children\": [{\"kind\": \"modaction\", \"data\": {\"description\": null,
+        \"mod_id36\": \"c3szt\", \"created_utc\": 1384122091.0, \"subreddit\": \"RedditKitTesting\",
+        \"sr_id36\": \"2ylc5\", \"details\": \"Page fake-page edited\", \"action\":
+        \"wikirevise\", \"target_fullname\": null, \"id\": \"ModAction_73585fea-4a56-11e3-b37a-12313b0cbc7a\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113407.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"remove\", \"action\":
+        \"marknsfw\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_3b746718-4a42-11e3-a4cd-12313b0ae6f4\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113403.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\":
+        \"marknsfw\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_391bca10-4a42-11e3-93d6-12313b074434\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113393.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair\",
+        \"action\": \"editflair\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_33102544-4a42-11e3-b3d8-12313d188143\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113393.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"clear flair templates\",
+        \"action\": \"editflair\", \"target_fullname\": null, \"id\": \"ModAction_32d01c2e-4a42-11e3-a8e8-12313b0ae6f4\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113391.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"edit by csv\",
+        \"action\": \"editflair\", \"target_fullname\": null, \"id\": \"ModAction_32167c56-4a42-11e3-8c22-12313b04ceaf\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113391.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair\",
+        \"action\": \"editflair\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_31cf7734-4a42-11e3-bc0f-12313d18f999\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113391.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"delete flair\",
+        \"action\": \"editflair\", \"target_fullname\": \"t2_614hc\", \"id\": \"ModAction_3187a9c2-4a42-11e3-84c9-12313b06ec01\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1384113389.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair
+        templates\", \"action\": \"editflair\", \"target_fullname\": null, \"id\":
+        \"ModAction_30ae981c-4a42-11e3-a7cf-12313d21c4ee\", \"mod\": \"<REDDIT_USERNAME>\"}},
+        {\"kind\": \"modaction\", \"data\": {\"description\": null, \"mod_id36\":
+        \"c3szt\", \"created_utc\": 1383425103.0, \"subreddit\": \"RedditKitTesting\",
+        \"sr_id36\": \"2ylc5\", \"details\": \"remove\", \"action\": \"marknsfw\",
+        \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_a614b616-43ff-11e3-b94a-12313d188143\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1383425101.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\":
+        \"marknsfw\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_a4e8db28-43ff-11e3-8a85-12313b06ec01\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382370348.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair\",
+        \"action\": \"editflair\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_db6e7974-3a67-11e3-9c19-12313b0111fc\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382370347.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair
+        templates\", \"action\": \"editflair\", \"target_fullname\": null, \"id\":
+        \"ModAction_daccab6c-3a67-11e3-b5af-12313d188143\", \"mod\": \"<REDDIT_USERNAME>\"}},
+        {\"kind\": \"modaction\", \"data\": {\"description\": null, \"mod_id36\":
+        \"c3szt\", \"created_utc\": 1382370347.0, \"subreddit\": \"RedditKitTesting\",
+        \"sr_id36\": \"2ylc5\", \"details\": \"delete flair\", \"action\": \"editflair\",
+        \"target_fullname\": \"t2_614hc\", \"id\": \"ModAction_da59b4d6-3a67-11e3-9442-12313b0111fc\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382370345.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"clear flair templates\",
+        \"action\": \"editflair\", \"target_fullname\": null, \"id\": \"ModAction_d9ac40f8-3a67-11e3-b2fb-12313d184137\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382370345.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair\",
+        \"action\": \"editflair\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_d962795a-3a67-11e3-a0f1-12313b0ae6f4\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382370344.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"edit by csv\",
+        \"action\": \"editflair\", \"target_fullname\": null, \"id\": \"ModAction_d8d845c8-3a67-11e3-aee4-12313d21c4ee\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382336501.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\":
+        \"marknsfw\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_0c931342-3a19-11e3-b9b4-12313b079641\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382336496.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"remove\", \"action\":
+        \"marknsfw\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_09d49504-3a19-11e3-9cfe-12313d18f999\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382336486.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\":
+        \"sticky\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_04090e48-3a19-11e3-b0ea-12313b074434\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382336485.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\":
+        \"ignorereports\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_03573f06-3a19-11e3-9626-12313b0111fc\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382336460.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"Page fake-page
+        edited\", \"action\": \"wikirevise\", \"target_fullname\": null, \"id\": \"ModAction_f4924542-3a18-11e3-8065-12313b0cbc7a\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1382051881.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"add/edit flair
+        templates\", \"action\": \"editflair\", \"target_fullname\": null, \"id\":
+        \"ModAction_5e444eca-3782-11e3-ac14-12313b0111fc\", \"mod\": \"<REDDIT_USERNAME>\"}},
+        {\"kind\": \"modaction\", \"data\": {\"description\": null, \"mod_id36\":
+        \"c3szt\", \"created_utc\": 1381941003.0, \"subreddit\": \"RedditKitTesting\",
+        \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\": \"unignorereports\",
+        \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_35b23524-3680-11e3-9024-12313d21c4ee\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}, {\"kind\": \"modaction\", \"data\": {\"description\":
+        null, \"mod_id36\": \"c3szt\", \"created_utc\": 1381940949.0, \"subreddit\":
+        \"RedditKitTesting\", \"sr_id36\": \"2ylc5\", \"details\": \"\", \"action\":
+        \"ignorereports\", \"target_fullname\": \"t3_1n002d\", \"id\": \"ModAction_15904024-3680-11e3-91a6-12313d184137\",
+        \"mod\": \"<REDDIT_USERNAME>\"}}], \"after\": \"ModAction_15904024-3680-11e3-91a6-12313d184137\",
+        \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:35 GMT
+recorded_with: VCR 2.6.0

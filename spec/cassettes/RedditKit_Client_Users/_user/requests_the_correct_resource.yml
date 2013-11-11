@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/api/me.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '362'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 22:21:09 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"t2\", \"data\": {\"has_mail\": false, \"name\": \"<REDDIT_USERNAME>\",
+        \"is_friend\": false, \"created\": 1371758712.0, \"modhash\": \"5gmpxk3ziy4c544a3404c2d40fac6f5aeef9b3217cedd4006c\",
+        \"created_utc\": 1371755112.0, \"link_karma\": 1, \"comment_karma\": 0, \"over_18\":
+        true, \"is_gold\": false, \"is_mod\": true, \"has_verified_email\": null,
+        \"id\": \"c3szt\", \"has_mod_mail\": true}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:08 GMT
+recorded_with: VCR 2.6.0

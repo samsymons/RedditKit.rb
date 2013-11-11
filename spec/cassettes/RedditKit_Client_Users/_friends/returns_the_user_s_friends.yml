@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ssl.reddit.com/prefs/friends.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 10 Nov 2013 22:21:08 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '184'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Server:
+      - "'; DROP TABLE servertypes; --"
+    body:
+      encoding: UTF-8
+      string: "[{\"kind\": \"UserList\", \"data\": {\"children\": [{\"name\": \"amberlynns\",
+        \"id\": \"t2_b80lr\"}, {\"name\": \"SomeFakeUsername\", \"id\": \"t2_7lafr\"}]}},
+        {\"kind\": \"UserList\", \"data\": {\"children\": []}}]"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:06 GMT
+recorded_with: VCR 2.6.0

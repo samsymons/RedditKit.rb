@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.reddit.com/api/vote
+    body:
+      encoding: US-ASCII
+      string: id=t3_1n002d&dir=-1&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 22:21:15 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:14 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/api/info.json?id=t3_1n002d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:21:16 GMT
+      Content-Length:
+      - '1429'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"envs147xu629ac85f41b3eb57cd2481ac99c71b6bac670a9db\",
+        \"children\": [{\"kind\": \"t3\", \"data\": {\"domain\": \"self.RedditKitTesting\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"RedditKitTesting\",
+        \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Here&amp;#39;s
+        a test self post. This will never be deleted and can be used to test voting/saving/hiding.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Here's a test self post. This will never be
+        deleted and can be used to test voting/saving/hiding.\", \"likes\": false,
+        \"secure_media\": null, \"link_flair_text\": \"Test flair\", \"id\": \"1n002d\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"samsymons\", \"media\": null, \"score\": 1, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": true, \"thumbnail\": \"self\", \"subreddit_id\": \"t5_2ylc5\",
+        \"edited\": 1382729104.0, \"link_flair_css_class\": \"testclass\", \"author_flair_css_class\":
+        \"csvclass\", \"downs\": 1, \"saved\": true, \"is_self\": true, \"permalink\":
+        \"/r/RedditKitTesting/comments/1n002d/test_self_post/\", \"name\": \"t3_1n002d\",
+        \"created\": 1379988320.0, \"url\": \"http://www.reddit.com/r/RedditKitTesting/comments/1n002d/test_self_post/\",
+        \"author_flair_text\": \"Test CSV\", \"title\": \"Test self post\", \"created_utc\":
+        1379984720.0, \"ups\": 2, \"num_comments\": 3, \"visited\": false, \"num_reports\":
+        0, \"distinguished\": null}}], \"after\": null, \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:15 GMT
+recorded_with: VCR 2.6.0

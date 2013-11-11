@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ssl.reddit.com/api/login
+    body:
+      encoding: US-ASCII
+      string: user=<REDDIT_USERNAME>&passwd=<REDDIT_USERNAME>Password&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 10 Nov 2013 19:35:59 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '182'
+      Set-Cookie:
+      - reddit_session=20332937%2C2013-11-10T11%3A35%3A59%2C2077074c26ccd8ec123c996b77eeb7afb6090af9;
+        Domain=reddit.com; Path=/; HttpOnly
+      Server:
+      - "'; DROP TABLE servertypes; --"
+    body:
+      encoding: UTF-8
+      string: "{\"json\": {\"errors\": [], \"data\": {\"modhash\": \"36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959\",
+        \"cookie\": \"20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9\"}}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:57 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/user/<REDDIT_USERNAME>/about.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '362'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 19:35:59 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"t2\", \"data\": {\"has_mail\": false, \"name\": \"<REDDIT_USERNAME>\",
+        \"is_friend\": false, \"created\": 1371758712.0, \"modhash\": \"isl606b3ws10e5f6e12f2df66cab5f29ad65ffcfd72ffe67de\",
+        \"created_utc\": 1371755112.0, \"link_karma\": 1, \"comment_karma\": 0, \"over_18\":
+        true, \"is_gold\": false, \"is_mod\": true, \"has_verified_email\": null,
+        \"id\": \"c3szt\", \"has_mod_mail\": true}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:58 GMT
+recorded_with: VCR 2.6.0

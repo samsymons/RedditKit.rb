@@ -1,0 +1,510 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/reddits/new.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:38:23 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z20r\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"LiterallyAnyoneCanMod\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"Anyone can mod - Literally!\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z20r\", \"created\": 1384151559.0, \"url\": \"/r/LiterallyAnyoneCanMod/\",
+        \"created_utc\": 1384122759.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z20q\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"PowerMetalSubreddit\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"power metal\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z20q\", \"created\": 1384151555.0, \"url\": \"/r/PowerMetalSubreddit/\",
+        \"created_utc\": 1384122755.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"restricted\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z20p\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"infiniteflight\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"Infinite Flight: Best mobile flying sim\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"\", \"submit_link_label\": \"Create a new flight plan (post link)\", \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 1, \"submit_text_label\": \"Talk to ATC (text post)\",
+        \"name\": \"t5_2z20p\", \"created\": 1384151545.0, \"url\": \"/r/infiniteflight/\",
+        \"created_utc\": 1384122745.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"The subreddit for fans of the Infinite Flight
+        flying simulator.\", \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\",
+        \"submission_type\": \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\",
+        \"data\": {\"submit_text_html\": null, \"user_is_banned\": null, \"id\": \"2z20o\",
+        \"submit_text\": \"\", \"spam_selfposts\": \"high\", \"display_name\": \"dueren\",
+        \"header_img\": null, \"description_html\": null, \"title\": \"Ein Subreddit
+        f\\u00fcr D\\u00fcren und Umgebung\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"high\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z20o\", \"created\": 1384151374.0, \"url\": \"/r/dueren/\",
+        \"created_utc\": 1384122574.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Please submit only relevant posts.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": null, \"id\": \"2z20l\", \"submit_text\":
+        \"Please submit only relevant posts.\", \"spam_selfposts\": \"high\", \"display_name\":
+        \"Fredcraft\", \"header_img\": null, \"description_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Fredcraft&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Fredcraft\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"Fredcraft\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z20l\", \"created\": 1384151003.0, \"url\": \"/r/Fredcraft/\",
+        \"created_utc\": 1384122203.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"A subreddit for my Minecraft server!\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Please no NSFW links or pictures.
+        Please don&amp;#39;t put the punch line in the title if posting a funny picture.
+        All posts should be somewhat related to Chipper875 or Yellowmonkeymrbank1.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": null, \"id\": \"2z20k\", \"submit_text\":
+        \"Please no NSFW links or pictures. Please don't put the punch line in the
+        title if posting a funny picture. All posts should be somewhat related to
+        Chipper875 or Yellowmonkeymrbank1.\", \"spam_selfposts\": \"high\", \"display_name\":
+        \"Chipper875\", \"header_img\": null, \"description_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Welcome to the Chipper875 hangout
+        place for cool people!&lt;/p&gt;\\n\\n&lt;p&gt;Here are YouTube stuffs that
+        you may want to go to:\\n&lt;a href=\\\"http://www.youtube.com/user/yellowmonkeymrbank1\\\"&gt;YellowMonkeyMrBank1&lt;/a&gt;\\n&lt;a
+        href=\\\"http://www.youtube.com/user/chipper875\\\"&gt;Chipper875&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"The subreddit for stuff that relates to Chipper875
+        or Yellowmonkeymrbank \", \"over18\": false, \"user_is_moderator\": null,
+        \"header_title\": null, \"description\": \"Welcome to the Chipper875 hangout
+        place for cool people!\\n\\nHere are YouTube stuffs that you may want to go
+        to:\\n[YellowMonkeyMrBank1](http://www.youtube.com/user/yellowmonkeymrbank1)\\n[Chipper875](http://www.youtube.com/user/chipper875)\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z20k\", \"created\": 1384150935.0,
+        \"url\": \"/r/Chipper875/\", \"created_utc\": 1384122135.0, \"user_is_contributor\":
+        null, \"public_traffic\": true, \"public_description\": \"This subreddit is
+        for Yellowmonkeymrbank in the case that he decides to disable YouTube comments.\",
+        \"comment_score_hide_mins\": 10, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Im Mrnanofear,
+        that teenager that does those things on youtube, called videos! but google+
+        have recently screwed youtube up, so i have resorted to using this subreddit
+        for my comment section!\\nthanks nanonerds!&lt;/p&gt;\\n\\n&lt;p&gt;My Channel:
+        &lt;a href=\\\"http://www.youtube.com/user/mrnanofear\\\"&gt;http://www.youtube.com/user/mrnanofear&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": null, \"id\": \"2z20j\", \"submit_text\":
+        \"Im Mrnanofear, that teenager that does those things on youtube, called videos!
+        but google+ have recently screwed youtube up, so i have resorted to using
+        this subreddit for my comment section!\\nthanks nanonerds!\\n\\nMy Channel:
+        http://www.youtube.com/user/mrnanofear\", \"spam_selfposts\": \"low\", \"display_name\":
+        \"MrNanoFear\", \"header_img\": null, \"description_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Welcome NanoNerds, You are either
+        here from one of my videos or have clicked here on Reddit! i hope you check
+        out my youtube channel if you haven&amp;#39;t already; &lt;a href=\\\"http://www.youtube.com/user/mrnanofear\\\"&gt;http://www.youtube.com/user/mrnanofear&lt;/a&gt;\\nthanks
+        for Reading!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"title\": \"MrNanoFear\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"Welcome NanoNerds, You are either here from one of my videos or have clicked
+        here on Reddit! i hope you check out my youtube channel if you haven't already;
+        http://www.youtube.com/user/mrnanofear\\nthanks for Reading!\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"high\", \"spam_links\":
+        \"all\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z20j\", \"created\": 1384150680.0, \"url\": \"/r/MrNanoFear/\",
+        \"created_utc\": 1384121880.0, \"user_is_contributor\": null, \"public_traffic\":
+        true, \"public_description\": \"MrNanoFear's Comment Section. Google + is
+        Awful. so i resorted to Reddit!\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"self\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;-Be Appropriate\\n-Minecraft Related Posts only\\n-No
+        Insulting Others\\n-No Personal Information\\n-No Self Promotion&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": null, \"id\": \"2z20i\", \"submit_text\":
+        \"-Be Appropriate\\n-Minecraft Related Posts only\\n-No Insulting Others\\n-No
+        Personal Information\\n-No Self Promotion\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"Asajz\", \"header_img\": null, \"description_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Rules:&lt;br/&gt;\\n*Be
+        Appropriate&lt;br/&gt;\\n*Minecraft Related Posts only&lt;br/&gt;\\n*No Insulting
+        Others&lt;br/&gt;\\n*No Personal Information.... EVER!!&lt;br/&gt;\\n*No Self
+        Promotion (Unless Requested by Moderator)&lt;/p&gt;\\n\\n&lt;p&gt;Links:\\n&lt;a
+        href=\\\"http://youtube.com/Asajz\\\"&gt;YouTube&lt;/a&gt;&lt;br/&gt;\\n&lt;a
+        href=\\\"http://reddit.com/r/Asajz\\\"&gt;Reddit&lt;/a&gt;&lt;br/&gt;\\n&lt;a
+        href=\\\"http://twitter.com/Asajz\\\"&gt;Twitter&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Asajz\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": \"Asajz's personal Subreddit for YouTube\", \"description\":
+        \"Rules:  \\n*Be Appropriate  \\n*Minecraft Related Posts only  \\n*No Insulting
+        Others  \\n*No Personal Information.... EVER!!  \\n*No Self Promotion (Unless
+        Requested by Moderator)\\n\\n  \\n  \\nLinks:\\n[YouTube](http://youtube.com/Asajz)
+        \ \\n[Reddit](http://reddit.com/r/Asajz)  \\n[Twitter](http://twitter.com/Asajz)\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z20i\", \"created\": 1384150646.0,
+        \"url\": \"/r/Asajz/\", \"created_utc\": 1384121846.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"The subreddit for
+        Asajz's Minecraft Downloadable Content and YouTube Videos.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z20g\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"readblog\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"Blogs\", \"over18\": false, \"user_is_moderator\": null,
+        \"header_title\": null, \"description\": \"\", \"submit_link_label\": null,
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"high\",
+        \"header_size\": null, \"subscribers\": 1, \"submit_text_label\": null, \"name\":
+        \"t5_2z20g\", \"created\": 1384150592.0, \"url\": \"/r/readblog/\", \"created_utc\":
+        1384121792.0, \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"post blog posts here. or don't.\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z20f\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"ProtoTest\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;CSS testing done
+        here so I don&amp;#39;t fuck up the subreddits I mod.&lt;/p&gt;\\n\\n&lt;p&gt;Want
+        me to help you out with your subreddit? Message me on reddit.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"CSS Testing\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"CSS testing done here so
+        I don't fuck up the subreddits I mod.\\n\\nWant me to help you out with your
+        subreddit? Message me on reddit.\", \"submit_link_label\": null, \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 1, \"submit_text_label\": null, \"name\": \"t5_2z20f\",
+        \"created\": 1384150524.0, \"url\": \"/r/ProtoTest/\", \"created_utc\": 1384121724.0,
+        \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"CSS testing done here so I don't fuck up the subreddits I mod.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;HEY YOU DON&amp;quot;T CLICK THAT
+        BUTTON&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"user_is_banned\":
+        null, \"id\": \"2z20d\", \"submit_text\": \"HEY YOU DON\\\"T CLICK THAT BUTTON\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"theasianpianist\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Ladiladida&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Subreddit for testing CSS/formatting\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"Ladiladida\", \"submit_link_label\": \"NON-SELF POST\", \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 1, \"submit_text_label\": \"SELF POST\", \"name\":
+        \"t5_2z20d\", \"created\": 1384150498.0, \"url\": \"/r/theasianpianist/\",
+        \"created_utc\": 1384121698.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"Yaddayadda\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Please no NSFW links or pictures.
+        Please don&amp;#39;t put the punch line in the title if posting a funny picture.
+        All posts should be somewhat related to Chipper875 or Yellowmonkeymrbank1.
+        &lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"user_is_banned\": null,
+        \"id\": \"2z20c\", \"submit_text\": \"Please no NSFW links or pictures. Please
+        don't put the punch line in the title if posting a funny picture. All posts
+        should be somewhat related to Chipper875 or Yellowmonkeymrbank1. \", \"spam_selfposts\":
+        \"high\", \"display_name\": \"Chipper885\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Welcome to the
+        Chipper875 hangout place for cool people!&lt;/p&gt;\\n\\n&lt;p&gt;Here are
+        YouTube stuffs that you may want to go to:\\n&lt;a href=\\\"http://www.youtube.com/user/yellowmonkeymrbank1\\\"&gt;YellowMonkeyMrBank1&lt;/a&gt;\\n&lt;a
+        href=\\\"http://www.youtube.com/user/chipper875\\\"&gt;Chipper875&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"The subreddit for stuff that relates to Chipper875
+        or Yellowmonkeymrbank \", \"over18\": false, \"user_is_moderator\": null,
+        \"header_title\": null, \"description\": \"Welcome to the Chipper875 hangout
+        place for cool people!\\n\\nHere are YouTube stuffs that you may want to go
+        to:\\n[YellowMonkeyMrBank1](http://www.youtube.com/user/yellowmonkeymrbank1)\\n[Chipper875](http://www.youtube.com/user/chipper875)\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z20c\", \"created\": 1384150334.0,
+        \"url\": \"/r/Chipper885/\", \"created_utc\": 1384121534.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"This subreddit
+        is for Yellowmonkeymrbank in the case that he decides to disable YouTube comments.\",
+        \"comment_score_hide_mins\": 10, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2z20b\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"minuteearth\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;minuteearth&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"minuteearth\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"minuteearth\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z20b\", \"created\": 1384150227.0, \"url\": \"/r/minuteearth/\",
+        \"created_utc\": 1384121427.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"minuteearth\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Please feel free to say and post
+        whatever you like as long as:&lt;/p&gt;\\n\\n&lt;p&gt;1: It&amp;#39;s relevant
+        to Rank94&lt;/p&gt;\\n\\n&lt;p&gt;2: Its not Hate (defined as inaccurate derogatory
+        slander without any proof)&lt;/p&gt;\\n\\n&lt;p&gt;3: It isnt any personal
+        Information&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"user_is_banned\":
+        null, \"id\": \"2z20a\", \"submit_text\": \"Please feel free to say and post
+        whatever you like as long as:\\n\\n1: It's relevant to Rank94\\n\\n2: Its
+        not Hate (defined as inaccurate derogatory slander without any proof)\\n\\n3:
+        It isnt any personal Information\", \"spam_selfposts\": \"high\", \"display_name\":
+        \"Rank94\", \"header_img\": null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;A podcast group that talks about the Video Games
+        Industry and the Culture surrounding it.&lt;/p&gt;\\n\\n&lt;p&gt;Please feel
+        free to say and post whatever you like as long as:&lt;/p&gt;\\n\\n&lt;p&gt;1:
+        It&amp;#39;s relevant to Rank94&lt;/p&gt;\\n\\n&lt;p&gt;2: Its not Hate (defined
+        as inaccurate derogatory slander without any proof)&lt;/p&gt;\\n\\n&lt;p&gt;3:
+        It isnt any personal Information&lt;/p&gt;\\n\\n&lt;p&gt;4: Do not downvote
+        if you disagree with someone, That&amp;#39;s not the point of Downvoting.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"The Rank94 Subreddit for Feedback and Such.\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"A podcast group that talks about the Video Games Industry and the Culture
+        surrounding it.\\n\\nPlease feel free to say and post whatever you like as
+        long as:\\n\\n1: It's relevant to Rank94\\n\\n2: Its not Hate (defined as
+        inaccurate derogatory slander without any proof)\\n\\n3: It isnt any personal
+        Information\\n\\n4: Do not downvote if you disagree with someone, That's not
+        the point of Downvoting.\\n\", \"submit_link_label\": null, \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 1, \"submit_text_label\": null, \"name\": \"t5_2z20a\",
+        \"created\": 1384150140.0, \"url\": \"/r/Rank94/\", \"created_utc\": 1384121340.0,
+        \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"A podcast group that talks about the Video Games Industry and the Culture
+        surrounding it.\", \"comment_score_hide_mins\": 30, \"subreddit_type\": \"public\",
+        \"submission_type\": \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\",
+        \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;FORBIDDEN
+        - explicit content (hate, discrimination, violence etc), shameless self-promotion
+        or any content which doesn&amp;#39;t contain any kind of offer to other web
+        owners about exchanging links, ads, posts and similar...&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": null, \"id\": \"2z209\", \"submit_text\":
+        \"FORBIDDEN - explicit content (hate, discrimination, violence etc), shameless
+        self-promotion or any content which doesn't contain any kind of offer to other
+        web owners about exchanging links, ads, posts and similar...\", \"spam_selfposts\":
+        \"low\", \"display_name\": \"exchangeweb\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;this is the place
+        where website / blog / etc owners can share their ideas and offers about exchanging
+        links, ads, posts and other goodies with each other.&lt;/p&gt;\\n\\n&lt;p&gt;You
+        can share a link or make a text post as long as your post is strictly an offer
+        to other web owners.&lt;/p&gt;\\n\\n&lt;p&gt;FORBIDDEN - explicit content
+        (hate, discrimination, violence etc), shameless self-promotion or any content
+        which doesn&amp;#39;t contain any kind of offer to other web owners about
+        exchanging links, ads, posts and similar...&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"exchangeweb\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"this is the place where website
+        / blog / etc owners can share their ideas and offers about exchanging links,
+        ads, posts and other goodies with each other.\\n\\nYou can share a link or
+        make a text post as long as your post is strictly an offer to other web owners.\\n\\nFORBIDDEN
+        - explicit content (hate, discrimination, violence etc), shameless self-promotion
+        or any content which doesn't contain any kind of offer to other web owners
+        about exchanging links, ads, posts and similar...\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"low\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z209\", \"created\": 1384149837.0, \"url\": \"/r/exchangeweb/\",
+        \"created_utc\": 1384121037.0, \"user_is_contributor\": null, \"public_traffic\":
+        true, \"public_description\": \"this is the place where website / blog / etc
+        owners can share their ideas and offers about exchanging links, ads, posts
+        and other goodies with each other\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z208\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"gnAchR\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;AAG&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Autoimmune Autonomic Ganglionopathy\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"AAG\", \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z208\", \"created\": 1384149773.0,
+        \"url\": \"/r/gnAchR/\", \"created_utc\": 1384120973.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"For those living
+        with or affected by autoimmune autonomic failure.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z207\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"Basically_Brett\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"Brett's Gaming Blog\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z207\", \"created\": 1384149724.0, \"url\": \"/r/Basically_Brett/\",
+        \"created_utc\": 1384120924.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"This is my blog all about gaming, I review
+        games so you don't have to! If you are interested in seeing more of me visit
+        my Youtube channel Basically Brett\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z206\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"hiphopsubreddit\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"put yo hands in the air like you just don't care\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"\", \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z206\", \"created\": 1384149688.0,
+        \"url\": \"/r/hiphopsubreddit/\", \"created_utc\": 1384120888.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"restricted\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z205\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"pocketgravel\", \"header_img\": \"http://e.thumbs.redditmedia.com/2g2VX4WLJ1tj5xZF.png\",
+        \"description_html\": null, \"title\": \"pocketgravel\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": null, \"description\": \"\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": [134, 90], \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z205\", \"created\": 1384149687.0,
+        \"url\": \"/r/pocketgravel/\", \"created_utc\": 1384120887.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"A subreddit dedicated
+        to the throwing of small rocks as self defense\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z204\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"CarSitting\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"news for cars, stuff that's car sitting\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"\", \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z204\", \"created\": 1384149651.0,
+        \"url\": \"/r/CarSitting/\", \"created_utc\": 1384120851.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z203\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"askredditchristmas\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"AskRedditChristmas\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z203\", \"created\": 1384149636.0, \"url\": \"/r/askredditchristmas/\",
+        \"created_utc\": 1384120836.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z202\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"minutephysics\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;minutephysics&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"minutephysics\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"minutephysics\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 1, \"submit_text_label\":
+        null, \"name\": \"t5_2z202\", \"created\": 1384149499.0, \"url\": \"/r/minutephysics/\",
+        \"created_utc\": 1384120699.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"minutephysics\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z201\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"makingacronyms\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;a href=\\\"/r/makingacronyms\\\"&gt;/r/makingacronyms&lt;/a&gt;
+        is a subreddit where someone posts a word or phrase, and others try to create
+        an acronym out of it. The game goes like this:&lt;/p&gt;\\n\\n&lt;ol&gt;\\n&lt;li&gt;&lt;p&gt;A
+        user posts a word or phrase.&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;Others
+        comment in the thread, trying to make an acronym from said word or phrases&amp;#39;s
+        letters. The acronym can be as funny or serious as you want.&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;You
+        are allowed to use occasional &amp;#39;of&amp;#39;s, &amp;#39;and&amp;#39;s,
+        &amp;#39;if&amp;#39;s, etc. in your acronym, but you can&amp;#39;t enter entire
+        words from letters that don&amp;#39;t exist; that would ruin the challenge.
+        If you do put in an such, put it in parentheses for sake of format.&lt;/p&gt;&lt;/li&gt;\\n&lt;/ol&gt;\\n\\n&lt;p&gt;Here&amp;#39;s
+        an example.&lt;/p&gt;\\n\\n&lt;p&gt;Title - &amp;quot;Reddit&amp;quot;&lt;/p&gt;\\n\\n&lt;p&gt;Possible
+        comments: &lt;/p&gt;\\n\\n&lt;p&gt;&amp;quot;Ready Example (of) doofuses deteriorating
+        information (and) technology&amp;quot; &lt;/p&gt;\\n\\n&lt;p&gt;&amp;quot;Really
+        Excellent Days Doing Important Things&amp;quot;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Making Acronyms - For When Abbreviation Counts\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"/r/makingacronyms is a subreddit where someone posts a word or phrase, and
+        others try to create an acronym out of it. The game goes like this:\\n\\n1.
+        A user posts a word or phrase.\\n\\n2. Others comment in the thread, trying
+        to make an acronym from said word or phrases's letters. The acronym can be
+        as funny or serious as you want.\\n\\n3. You are allowed to use occasional
+        'of's, 'and's, 'if's, etc. in your acronym, but you can't enter entire words
+        from letters that don't exist; that would ruin the challenge. If you do put
+        in an such, put it in parentheses for sake of format.\\n\\nHere's an example.\\n\\nTitle
+        - \\\"Reddit\\\"\\n\\nPossible comments: \\n\\n\\\"Ready Example (of) doofuses
+        deteriorating information (and) technology\\\" \\n\\n\\\"Really Excellent
+        Days Doing Important Things\\\"\\n \", \"submit_link_label\": null, \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 1, \"submit_text_label\": null, \"name\": \"t5_2z201\",
+        \"created\": 1384149325.0, \"url\": \"/r/makingacronyms/\", \"created_utc\":
+        1384120525.0, \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"/r/makingacronyms is a subreddit where someone posts a word or phrase, and
+        others try to create an acronym out of it.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"self\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2z200\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"AgeOfEmpires4\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"AoE\", \"over18\": false, \"user_is_moderator\": null,
+        \"header_title\": null, \"description\": \"\", \"submit_link_label\": null,
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"high\",
+        \"header_size\": null, \"subscribers\": 1, \"submit_text_label\": null, \"name\":
+        \"t5_2z200\", \"created\": 1384149125.0, \"url\": \"/r/AgeOfEmpires4/\", \"created_utc\":
+        1384120325.0, \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Please submit
+        links to the documents you want, one after the other. &lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": null, \"id\": \"2z1zz\", \"submit_text\":
+        \"Please submit links to the documents you want, one after the other. \",
+        \"spam_selfposts\": \"high\", \"display_name\": \"CourseHero\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hey
+        there if you are reading this you are looking at an example submission. The
+        first 10 people from different colleges (to prevent spamming) will be free.
+        Those 10 get 2 documents.&lt;/p&gt;\\n\\n&lt;p&gt;If you aren&amp;#39;t free,
+        put your reddit username within the paypal transaction. $1 donations per document.
+        I&amp;#39;ll try my best and fulfill all requests within 24 hours. If there
+        are issues, I&amp;#39;ll alert you ASAP and attempt to refund the donation
+        (minus paypal fees ~.30 cents).  &lt;/p&gt;\\n\\n&lt;p&gt;The paypal email
+        address is ******@gmail.com (this will be put in after testing the first 10
+        people).&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;# Submission Example&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Links:&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"http://www.coursehero.com/file/7159173/Homework-5-Solution/\\\"&gt;www.coursehero.com/file/7159173/Homework-5-Solution/&lt;/a&gt;\\n&lt;a
+        href=\\\"http://www.coursehero.com/file/7990250/hw-3-solutions/\\\"&gt;www.coursehero.com/file/7990250/hw-3-solutions/&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;#
+        END OF EXAMPLE&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;I can&amp;#39;t stand
+        course hero. It taunts you with documents owned by your university. Need help
+        as you can&amp;#39;t solve a problem? Well if you can&amp;#39;t find it through
+        google, course hero may have a copy of an old document which may save you
+        hours or days worth of work. I sucked it up and bought a years subscription,
+        and hope to make up the initial costs while helping other people. The life
+        of this subreddit past that is questionable. &lt;/p&gt;\\n\\n&lt;p&gt;The
+        legalities of this subreddit are similar to CourseHeros: Follow the guide
+        located at &lt;a href=\\\"http://www.coursehero.com/copyright.php\\\"&gt;this
+        link&lt;/a&gt; and send me a message with the information and infringing material
+        will be removed.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"title\":
+        \"Get Course Hero Documents for free or cheap!\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"Hey there if you are reading
+        this you are looking at an example submission. The first 10 people from different
+        colleges (to prevent spamming) will be free. Those 10 get 2 documents.\\n\\nIf
+        you aren't free, put your reddit username within the paypal transaction. $1
+        donations per document. I'll try my best and fulfill all requests within 24
+        hours. If there are issues, I'll alert you ASAP and attempt to refund the
+        donation (minus paypal fees ~.30 cents).  \\n\\nThe paypal email address is
+        ******@gmail.com (this will be put in after testing the first 10 people).\\n\\n\\n\\n\\n**#
+        Submission Example**\\n\\nLinks:\\n\\nwww.coursehero.com/file/7159173/Homework-5-Solution/\\nwww.coursehero.com/file/7990250/hw-3-solutions/\\n\\n\\n**#
+        END OF EXAMPLE**\\n\\nI can't stand course hero. It taunts you with documents
+        owned by your university. Need help as you can't solve a problem? Well if
+        you can't find it through google, course hero may have a copy of an old document
+        which may save you hours or days worth of work. I sucked it up and bought
+        a years subscription, and hope to make up the initial costs while helping
+        other people. The life of this subreddit past that is questionable. \\n\\n\\nThe
+        legalities of this subreddit are similar to CourseHeros: Follow the guide
+        located at [this link](http://www.coursehero.com/copyright.php) and send me
+        a message with the information and infringing material will be removed.\\n\\n\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        1, \"submit_text_label\": null, \"name\": \"t5_2z1zz\", \"created\": 1384149117.0,
+        \"url\": \"/r/CourseHero/\", \"created_utc\": 1384120317.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"First 10 people
+        get 2 documents free, after that it is a $1 dollar donation per document!
+        This will be adjusted as needed! \", \"comment_score_hide_mins\": 5, \"subreddit_type\":
+        \"public\", \"submission_type\": \"self\", \"user_is_subscriber\": null}}],
+        \"after\": \"t5_2z1zz\", \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:38:22 GMT
+recorded_with: VCR 2.6.0

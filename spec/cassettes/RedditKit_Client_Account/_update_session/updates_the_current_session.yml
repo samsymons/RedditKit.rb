@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ssl.reddit.com/api/login
+    body:
+      encoding: US-ASCII
+      string: user=<REDDIT_USERNAME>&passwd=<REDDIT_USERNAME>Password&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 10 Nov 2013 19:35:55 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '182'
+      Set-Cookie:
+      - reddit_session=20332937%2C2013-11-10T11%3A35%3A55%2C4c5fe7a5e8e8d62873fd5f067ad2f0ee8e00c2fe;
+        Domain=reddit.com; Path=/; HttpOnly
+      Server:
+      - "'; DROP TABLE servertypes; --"
+    body:
+      encoding: UTF-8
+      string: "{\"json\": {\"errors\": [], \"data\": {\"modhash\": \"x4gtsidi3a3c5289898b92554ce7bf2bffde2180d42c07a5a3\",
+        \"cookie\": \"20332937,2013-11-10T11:35:55,4c5fe7a5e8e8d62873fd5f067ad2f0ee8e00c2fe\"}}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:54 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/user/<REDDIT_USERNAME>/about.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:55,4c5fe7a5e8e8d62873fd5f067ad2f0ee8e00c2fe
+      X-Modhash:
+      - x4gtsidi3a3c5289898b92554ce7bf2bffde2180d42c07a5a3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '362'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 19:35:56 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"t2\", \"data\": {\"has_mail\": false, \"name\": \"<REDDIT_USERNAME>\",
+        \"is_friend\": false, \"created\": 1371758712.0, \"modhash\": \"f9um9py1qs2d2c3ef414c913a819f45fcd2f3bb430c41c7750\",
+        \"created_utc\": 1371755112.0, \"link_karma\": 1, \"comment_karma\": 0, \"over_18\":
+        true, \"is_gold\": false, \"is_mod\": true, \"has_verified_email\": null,
+        \"id\": \"c3szt\", \"has_mod_mail\": true}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:55 GMT
+- request:
+    method: post
+    uri: http://www.reddit.com/api/clear_sessions
+    body:
+      encoding: US-ASCII
+      string: dest=http%3A%2F%2Fwww.reddit.com%2F&curpass=<REDDIT_USERNAME>Password&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:55,4c5fe7a5e8e8d62873fd5f067ad2f0ee8e00c2fe
+      X-Modhash:
+      - x4gtsidi3a3c5289898b92554ce7bf2bffde2180d42c07a5a3
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '24'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - reddit_session=20332937%2C2013-11-10T11%3A35%3A57%2Ccd43c5e6310671a8729b4a76a13ef4f2f4a9263e;
+        Domain=reddit.com; Path=/; HttpOnly
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 19:35:57 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"json\": {\"errors\": []}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:56 GMT
+recorded_with: VCR 2.6.0

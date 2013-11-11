@@ -1,0 +1,844 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/search.json?limit&q=ruby&restrict_sr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:21:32 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"self.IAmA\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"IAmA\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Verification: &lt;a href=\\\"http://imgur.com/HL2X9\\\"&gt;http://imgur.com/HL2X9&lt;/a&gt;
+        &lt;/p&gt;\\n\\n&lt;p&gt;Twitter: &lt;a href=\\\"http://twitter.com/Ruby_Knox\\\"&gt;http://twitter.com/Ruby_Knox&lt;/a&gt;
+        &lt;/p&gt;\\n\\n&lt;p&gt;Sorry If I&amp;#39;ve missed anyone&amp;#39;s questions!
+        &lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"selftext\": \"Verification:
+        http://imgur.com/HL2X9 \\n\\nTwitter: http://twitter.com/Ruby_Knox \\n\\nSorry
+        If I've missed anyone's questions! \\n\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"sk79h\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"Ruby_Knox\", \"media\":
+        null, \"score\": 260, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"self\", \"subreddit_id\": \"t5_2qzb6\", \"edited\":
+        true, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        140, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/IAmA/comments/sk79h/iama_pornstar_camgirl_ruby_knox_ama/\",
+        \"name\": \"t3_sk79h\", \"created\": 1334954774.0, \"url\": \"http://www.reddit.com/r/IAmA/comments/sk79h/iama_pornstar_camgirl_ruby_knox_ama/\",
+        \"author_flair_text\": null, \"title\": \"IAmA pornstar / camgirl - Ruby Knox.
+        AMA\", \"created_utc\": 1334951174.0, \"ups\": 400, \"num_comments\": 687,
+        \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Hello &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;
+        &lt;/p&gt;\\n\\n&lt;p&gt;I am new to Ruby, however I&amp;#39;ve programmed
+        in C, C++, Java, and C# along with VB.NET, HTML, and minimal Python. &lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;ve
+        heard that Ruby is a bit different and has quite the steep learning curve.
+        So I ask you...&lt;/p&gt;\\n\\n&lt;p&gt;What is the one thing that you wish
+        you knew before starting to learn or really use Ruby?&lt;/p&gt;\\n\\n&lt;p&gt;I
+        also plan on using RoR if anyone has thoughts on that as well!&lt;/p&gt;\\n\\n&lt;p&gt;Any
+        comments are appreciated! Thanks Guys!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"Hello /r/ruby \\n\\nI am new to Ruby, however I've
+        programmed in C, C++, Java, and C# along with VB.NET, HTML, and minimal Python.
+        \\n\\nI've heard that Ruby is a bit different and has quite the steep learning
+        curve. So I ask you...\\n\\nWhat is the one thing that you wish you knew before
+        starting to learn or really use Ruby?\\n\\nI also plan on using RoR if anyone
+        has thoughts on that as well!\\n\\nAny comments are appreciated! Thanks Guys!\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"1j9wqw\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"ProductiveThings\", \"media\": null, \"score\": 55, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 7, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1j9wqw/what_is_one_thing_you_wish_you_knew_when_starting/\",
+        \"name\": \"t3_1j9wqw\", \"created\": 1375108691.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1j9wqw/what_is_one_thing_you_wish_you_knew_when_starting/\",
+        \"author_flair_text\": null, \"title\": \"What is one thing you wish you knew
+        when starting Ruby?\", \"created_utc\": 1375105091.0, \"ups\": 62, \"num_comments\":
+        73, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;...and thanks to everyone
+        in &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;, &lt;a href=\\\"/r/rails\\\"&gt;/r/rails&lt;/a&gt;
+        and &lt;a href=\\\"/r/programming\\\"&gt;/r/programming&lt;/a&gt; who helped
+        me gain not only the skills but the confidence to make the switch.  I&amp;#39;ve
+        been a lifelong marketer who always felt unfulfilled and spent nights/weekends/free
+        time learning Ruby, Rails, MySQL, PostgreSQL, jQuery, and more, finally culminating
+        in my first full-time development job.  Wish me luck!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"...and thanks to everyone in /r/ruby, /r/rails
+        and /r/programming who helped me gain not only the skills but the confidence
+        to make the switch.  I've been a lifelong marketer who always felt unfulfilled
+        and spent nights/weekends/free time learning Ruby, Rails, MySQL, PostgreSQL,
+        jQuery, and more, finally culminating in my first full-time development job.
+        \ Wish me luck!\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1i72ww\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"caadbury\", \"media\": null, \"score\":
+        83, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 22, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/ruby/comments/1i72ww/on_monday_i_start_a_new_career_as_a_web_developer/\",
+        \"name\": \"t3_1i72ww\", \"created\": 1373686161.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1i72ww/on_monday_i_start_a_new_career_as_a_web_developer/\",
+        \"author_flair_text\": null, \"title\": \"On Monday, I start a new career
+        as a web developer in Ruby on Rails\", \"created_utc\": 1373682561.0, \"ups\":
+        105, \"num_comments\": 49, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hello everyone,&lt;/p&gt;\\n\\n&lt;p&gt;This
+        is a little framework of mine that I&amp;#39;ve built out of a personal need
+        - basically, I wanted to write a desktop app using Ruby and I found it daunting
+        to say the least.&lt;/p&gt;\\n\\n&lt;p&gt;So, I&amp;#39;ve built Freightrain
+        to take care of all the stuff I really shouldn&amp;#39;t care about, like
+        loading interface definitions, cross-toolkit compatibility and the likes.&lt;/p&gt;\\n\\n&lt;p&gt;Now
+        I&amp;#39;ve been working on it for almost 2 years (on and off of course)
+        and, since I&amp;#39;ve just fixed it so it loads the newest glade specifications,
+        I thought that I could ask you guys for an evaluation.&lt;/p&gt;\\n\\n&lt;p&gt;There&amp;#39;s
+        a little readme on the github page and there are some examples in the /examples
+        folder.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://github.com/bolthar/freightrain\\\"&gt;Link
+        to the github page!&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;WHOA! Thanks for the
+        attention, I thought this was going to be ignored...&lt;/p&gt;\\n\\n&lt;p&gt;How
+        many of you would be interested in a step by step tutorial over the major
+        features? I will build that if there&amp;#39;s enough interest.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Hello everyone,\\n\\nThis is a little framework
+        of mine that I've built out of a personal need - basically, I wanted to write
+        a desktop app using Ruby and I found it daunting to say the least.\\n\\nSo,
+        I've built Freightrain to take care of all the stuff I really shouldn't care
+        about, like loading interface definitions, cross-toolkit compatibility and
+        the likes.\\n\\nNow I've been working on it for almost 2 years (on and off
+        of course) and, since I've just fixed it so it loads the newest glade specifications,
+        I thought that I could ask you guys for an evaluation.\\n\\nThere's a little
+        readme on the github page and there are some examples in the /examples folder.\\n\\n[Link
+        to the github page!](http://github.com/bolthar/freightrain)\\n\\nWHOA! Thanks
+        for the attention, I thought this was going to be ignored...\\n\\nHow many
+        of you would be interested in a step by step tutorial over the major features?
+        I will build that if there's enough interest.\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"sk4qq\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"bolthar\", \"media\":
+        null, \"score\": 162, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": true,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        13, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/sk4qq/freightrain_easy_ruby_desktop_development/\",
+        \"name\": \"t3_sk4qq\", \"created\": 1334952179.0, \"url\": \"http://www.reddit.com/r/ruby/comments/sk4qq/freightrain_easy_ruby_desktop_development/\",
+        \"author_flair_text\": null, \"title\": \"Freightrain - easy Ruby desktop
+        development\", \"created_utc\": 1334948579.0, \"ups\": 175, \"num_comments\":
+        32, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I&amp;#39;ve been trying
+        to figure this one out in past few days and I&amp;#39;m quite unable to come
+        up with reasonable answer.&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;We have GitHub,
+        most awesomest &lt;em&gt;social network&lt;/em&gt; on the internet.&lt;/li&gt;\\n&lt;li&gt;We
+        have RubyGems, centralized libraries for everything.&lt;/li&gt;\\n&lt;li&gt;We
+        have JRuby, for those who want to stick in the Java world or do some real
+        threading.&lt;/li&gt;\\n&lt;li&gt;We have Rails, possibly the best web framework
+        available (django people please don&amp;#39;t burry me alive)&lt;/li&gt;\\n&lt;li&gt;We
+        have RSpec and Cucumber, which make me cry when I have to work with JUnit.&lt;/li&gt;\\n&lt;li&gt;We
+        have great cloud hosting solutions like Heroku and Engine Yard.&lt;/li&gt;\\n&lt;li&gt;We
+        have huge number of screencasts and tutorials, especially those high quality
+        ones (Peepcode, Think Vitamin, Railscasts).&lt;/li&gt;\\n&lt;li&gt;Last but
+        not least, we have Ruby, language which is fun to work with, expressive ...
+        well you know.&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;The list could go on
+        and on, so I guess you get my point. &lt;/p&gt;\\n\\n&lt;p&gt;My question
+        is: &lt;strong&gt;What is missing? What do we need, but don&amp;#39;t (yet)
+        have?&lt;/strong&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"selftext\":
+        \"I've been trying to figure this one out in past few days and I'm quite unable
+        to come up with reasonable answer.\\n\\n* We have GitHub, most awesomest *social
+        network* on the internet.\\n* We have RubyGems, centralized libraries for
+        everything.\\n* We have JRuby, for those who want to stick in the Java world
+        or do some real threading.\\n* We have Rails, possibly the best web framework
+        available (django people please don't burry me alive)\\n* We have RSpec and
+        Cucumber, which make me cry when I have to work with JUnit.\\n* We have great
+        cloud hosting solutions like Heroku and Engine Yard.\\n* We have huge number
+        of screencasts and tutorials, especially those high quality ones (Peepcode,
+        Think Vitamin, Railscasts).\\n* Last but not least, we have Ruby, language
+        which is fun to work with, expressive ... well you know.\\n\\nThe list could
+        go on and on, so I guess you get my point. \\n\\nMy question is: **What is
+        missing? What do we need, but don't (yet) have?**\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"elygz\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"progfu\", \"media\":
+        null, \"score\": 39, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        8, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/elygz/what_is_the_biggest_current_problem_in_ruby/\",
+        \"name\": \"t3_elygz\", \"created\": 1292377299.0, \"url\": \"http://www.reddit.com/r/ruby/comments/elygz/what_is_the_biggest_current_problem_in_ruby/\",
+        \"author_flair_text\": null, \"title\": \"What is the biggest current problem
+        in Ruby community?\", \"created_utc\": 1292377299.0, \"ups\": 47, \"num_comments\":
+        134, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Whats the best way to set
+        up Ruby on Rails on OSx -- Newbie, and trying to figure out how to use Ruby
+        on rails on my macbook &lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"selftext\":
+        \"Whats the best way to set up Ruby on Rails on OSx -- Newbie, and trying
+        to figure out how to use Ruby on rails on my macbook \", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"zm1uu\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"sirisaac87\", \"media\":
+        null, \"score\": 27, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        6, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/zm1uu/setup_ruby_on_rails_on_osx/\",
+        \"name\": \"t3_zm1uu\", \"created\": 1347219823.0, \"url\": \"http://www.reddit.com/r/ruby/comments/zm1uu/setup_ruby_on_rails_on_osx/\",
+        \"author_flair_text\": null, \"title\": \"Setup Ruby on Rails on OSX -- \",
+        \"created_utc\": 1347216223.0, \"ups\": 33, \"num_comments\": 54, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;So jamesgolick was kind enough to make me moderator
+        of the community. I want to make a promise to you guys that I&amp;#39;ll do
+        my best to keep it clean.&lt;/p&gt;\\n\\n&lt;p&gt;If you have any requests
+        please let me know (like a valid link for the side navigation).&lt;/p&gt;\\n\\n&lt;p&gt;How
+        do you want to see r/ruby improved? - A contest, guides, removing spam, etc.
+        Let me know!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"selftext\":
+        \"So jamesgolick was kind enough to make me moderator of the community. I
+        want to make a promise to you guys that I'll do my best to keep it clean.\\n\\nIf
+        you have any requests please let me know (like a valid link for the side navigation).\\n\\nHow
+        do you want to see r/ruby improved? - A contest, guides, removing spam, etc.
+        Let me know!\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"g1pia\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"ViralInfection\", \"media\": null, \"score\": 35, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 6, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/g1pia/hello_rruby_im_your_new_moderator_how_would_you/\",
+        \"name\": \"t3_g1pia\", \"created\": 1299819313.0, \"url\": \"http://www.reddit.com/r/ruby/comments/g1pia/hello_rruby_im_your_new_moderator_how_would_you/\",
+        \"author_flair_text\": null, \"title\": \"Hello r/ruby. I'm your new moderator,
+        how would you improve r/ruby?\", \"created_utc\": 1299819313.0, \"ups\": 41,
+        \"num_comments\": 53, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;start with straight ruby
+        or go to rails?\\nI started with HTML/CSS/PHP/javascript with no frameworks
+        and am wondering if i would be better to start with straight ruby as well.
+        &lt;/p&gt;\\n\\n&lt;p&gt;Thanks all.!!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"start with straight ruby or go to rails?\\nI started
+        with HTML/CSS/PHP/javascript with no frameworks and am wondering if i would
+        be better to start with straight ruby as well. \\n\\nThanks all.!!\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"widgp\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"swiftpants\", \"media\": null, \"score\": 21, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\",
+        \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 3, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/widgp/newb_to_ruby_should_i/\",
+        \"name\": \"t3_widgp\", \"created\": 1342206260.0, \"url\": \"http://www.reddit.com/r/ruby/comments/widgp/newb_to_ruby_should_i/\",
+        \"author_flair_text\": null, \"title\": \"newb to ruby.. should I\", \"created_utc\":
+        1342202660.0, \"ups\": 24, \"num_comments\": 50, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"self.ruby\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\",
+        \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;They
+        only kept one guy on the API team and he&amp;#39;s been there from the beginning.
+        I&amp;#39;ve done a few rails projects but not enough to consider myself a
+        rails developer guru. Any jobs for guys with just ruby experience?&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"They only kept one guy on the API team and
+        he's been there from the beginning. I've done a few rails projects but not
+        enough to consider myself a rails developer guru. Any jobs for guys with just
+        ruby experience?\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1nylih\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Solnse\", \"media\": null, \"score\": 34,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 7, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/ruby/comments/1nylih/company_downsized_today_i_got_caught_in_the/\",
+        \"name\": \"t3_1nylih\", \"created\": 1381232867.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1nylih/company_downsized_today_i_got_caught_in_the/\",
+        \"author_flair_text\": null, \"title\": \"Company downsized today. I got caught
+        in the layoff spree. Where is the best place for a ruby dev to search for
+        a stable job?\", \"created_utc\": 1381204067.0, \"ups\": 41, \"num_comments\":
+        55, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I&amp;#39;m working my way
+        through Zed&amp;#39;s &lt;em&gt;Learn Ruby the Hard Way&lt;/em&gt; and just
+        completed my first week-long, make-your-own-game section.&lt;/p&gt;\\n\\n&lt;p&gt;Here
+        it is on github (also my first repo):\\n&lt;a href=\\\"https://github.com/demiankz/escapezeta.git\\\"&gt;https://github.com/demiankz/escapezeta.git&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;ve
+        used most of what I know about ruby to make this game: functions, global variables,
+        arrays, if/else, .include?, booleans, and a couple other random things. I
+        have a feeling that there are major flaws in my code (nested if/else and global
+        variables first among them, I&amp;#39;m sure).&lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;d
+        love to hear how an experienced rubyist would improve on my attempt.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"I'm working my way through Zed's *Learn Ruby
+        the Hard Way* and just completed my first week-long, make-your-own-game section.\\n\\nHere
+        it is on github (also my first repo):\\nhttps://github.com/demiankz/escapezeta.git\\n\\nI've
+        used most of what I know about ruby to make this game: functions, global variables,
+        arrays, if/else, .include?, booleans, and a couple other random things. I
+        have a feeling that there are major flaws in my code (nested if/else and global
+        variables first among them, I'm sure).\\n\\nI'd love to hear how an experienced
+        rubyist would improve on my attempt.\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1eqond\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"demiankz\", \"media\":
+        null, \"score\": 36, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        5, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1eqond/my_first_ruby_game_what_did_i_do_rightwrong/\",
+        \"name\": \"t3_1eqond\", \"created\": 1369109135.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1eqond/my_first_ruby_game_what_did_i_do_rightwrong/\",
+        \"author_flair_text\": null, \"title\": \"My first Ruby game. What did I do
+        right/wrong?\", \"created_utc\": 1369105535.0, \"ups\": 41, \"num_comments\":
+        55, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;This is a translation of
+        &lt;a href=\\\"http://www.nikkan.co.jp/news/nkx0220110919aaac.html\\\"&gt;an
+        article by \\u65e5\\u520a\\u5de5\\u696d\\u65b0\\u805e (nikkan)&lt;/a&gt; which
+        is a publication dedicated to industry news in Japan.&lt;/p&gt;\\n\\n&lt;p&gt;The
+        Japan based Ruby language is set to become an international standard in 2012
+        through the International Organization for Standardization (ISO). Ruby was
+        already standardized through Japanese Industrial Standards (JIS), and the
+        focus will now be directed towards its recognition in the global community
+        by becoming an official ISO standard. This would be the first time a programming
+        language of Japanese origin would become an ISO standard. The nation of Japan
+        hopes that this will increase its recognition in the primarily western dominated
+        software field.&lt;/p&gt;\\n\\n&lt;p&gt;Ruby was developed by fellow Yukihiro
+        Matsumoto at the National Applied Communication Laboratory (Matsue city).
+        Features such as the ability to architect high level applications with ease
+        has gained Ruby fast popularity around web development both inside and outside
+        the country.&lt;/p&gt;\\n\\n&lt;p&gt;The ISO standardization of Ruby is being
+        pushed by the Information-technology Promotion Agency (IPA). Domestically
+        Ruby became a JIS standard (JIS X3017) in March from a proposal by the Ruby
+        Standardization Study Working Group.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"This is a translation of [an article by \\u65e5\\u520a\\u5de5\\u696d\\u65b0\\u805e
+        (nikkan)](http://www.nikkan.co.jp/news/nkx0220110919aaac.html) which is a
+        publication dedicated to industry news in Japan.\\n\\n  The Japan based Ruby
+        language is set to become an international standard in 2012 through the International
+        Organization for Standardization (ISO). Ruby was already standardized through
+        Japanese Industrial Standards (JIS), and the focus will now be directed towards
+        its recognition in the global community by becoming an official ISO standard.
+        This would be the first time a programming language of Japanese origin would
+        become an ISO standard. The nation of Japan hopes that this will increase
+        its recognition in the primarily western dominated software field.\\n\\n  Ruby
+        was developed by fellow Yukihiro Matsumoto at the National Applied Communication
+        Laboratory (Matsue city). Features such as the ability to architect high level
+        applications with ease has gained Ruby fast popularity around web development
+        both inside and outside the country.\\n\\n  The ISO standardization of Ruby
+        is being pushed by the Information-technology Promotion Agency (IPA). Domestically
+        Ruby became a JIS standard (JIS X3017) in March from a proposal by the Ruby
+        Standardization Study Working Group.\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"kk5ln\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"cwgem\", \"media\":
+        null, \"score\": 59, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        5, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/kk5ln/ruby_to_be_the_first_japanese_made_programming/\",
+        \"name\": \"t3_kk5ln\", \"created\": 1316409512.0, \"url\": \"http://www.reddit.com/r/ruby/comments/kk5ln/ruby_to_be_the_first_japanese_made_programming/\",
+        \"author_flair_text\": null, \"title\": \"Ruby to be the first Japanese made
+        programming language to become an international standard sometime next year\",
+        \"created_utc\": 1316405912.0, \"ups\": 64, \"num_comments\": 10, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;I was going through github, and I came across
+        a simple tictactoe program. It surprised me how clever the programmer was
+        with blocks and yields and such. I wrote a tictactoe program myself months
+        ago when I was learning Ruby, and when I compare the two, my code is very
+        clunky and not at all as elegant as this programmer.   &lt;/p&gt;\\n\\n&lt;p&gt;And
+        now I realize that the best way to improve my skills is to read the code of
+        programmers who are much more advanced than I am.   &lt;/p&gt;\\n\\n&lt;p&gt;So
+        I ask, what are some of the best ruby code that you have ever seen?&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"I was going through github, and I came across
+        a simple tictactoe program. It surprised me how clever the programmer was
+        with blocks and yields and such. I wrote a tictactoe program myself months
+        ago when I was learning Ruby, and when I compare the two, my code is very
+        clunky and not at all as elegant as this programmer.   \\n   \\nAnd now I
+        realize that the best way to improve my skills is to read the code of programmers
+        who are much more advanced than I am.   \\n   \\nSo I ask, what are some of
+        the best ruby code that you have ever seen?\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1mwg7o\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"hopengrind\", \"media\":
+        null, \"score\": 54, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        10, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1mwg7o/what_are_some_of_the_best_ruby_programs_youve/\",
+        \"name\": \"t3_1mwg7o\", \"created\": 1379872130.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1mwg7o/what_are_some_of_the_best_ruby_programs_youve/\",
+        \"author_flair_text\": null, \"title\": \"What are some of the best ruby programs
+        you've ever seen?\", \"created_utc\": 1379868530.0, \"ups\": 64, \"num_comments\":
+        25, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;The languages are often
+        compared so I am hoping my knowledge of python will make learning ruby faster.
+        Maybe the best method is just to read a ruby book and learn from scratch,
+        I am not sure yet how similar they are. However if anyone has made the switch
+        and knows what a good starting point would be or if there are resrouces geared
+        toward switching I would apperciate the advice. Thanks.&lt;/p&gt;\\n\\n&lt;p&gt;Edit:
+        I will be using ruby as a scripting language. Mosly maintaing and updating
+        existing scripts that put together XML  files used for input for other applications
+        and things like file management and such. So if there are resrouces geared
+        towards scripting rather than building ruby applications that would be helpful.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"The languages are often compared so I am hoping
+        my knowledge of python will make learning ruby faster. Maybe the best method
+        is just to read a ruby book and learn from scratch, I am not sure yet how
+        similar they are. However if anyone has made the switch and knows what a good
+        starting point would be or if there are resrouces geared toward switching
+        I would apperciate the advice. Thanks.\\n\\nEdit: I will be using ruby as
+        a scripting language. Mosly maintaing and updating existing scripts that put
+        together XML  files used for input for other applications and things like
+        file management and such. So if there are resrouces geared towards scripting
+        rather than building ruby applications that would be helpful.\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"pgnbp\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"f4hy\", \"media\": null, \"score\": 15, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\",
+        \"edited\": true, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 6, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/pgnbp/i_am_a_python_programmer_who_needs_to_learn_ruby/\",
+        \"name\": \"t3_pgnbp\", \"created\": 1328729735.0, \"url\": \"http://www.reddit.com/r/ruby/comments/pgnbp/i_am_a_python_programmer_who_needs_to_learn_ruby/\",
+        \"author_flair_text\": null, \"title\": \"I am a python programmer who needs
+        to learn ruby. Any good resources or advice?\", \"created_utc\": 1328729735.0,
+        \"ups\": 21, \"num_comments\": 55, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Even I have just
+        only few experiences of Ruby, I just become aware of there &lt;em&gt;is&lt;/em&gt;
+        &lt;code&gt;for&lt;/code&gt; in Ruby (I saw that when I learned Ruby first).
+        \ Most of Ruby codes seem to use just &lt;code&gt;Enumerable#each&lt;/code&gt;
+        method instead of &lt;code&gt;for&lt;/code&gt; statement, but why?  Is there
+        any reason to prefer &lt;code&gt;Enumerable#each&lt;/code&gt; method over
+        &lt;code&gt;for&lt;/code&gt; statement?&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"Even I have just only few experiences of Ruby, I
+        just become aware of there *is* `for` in Ruby (I saw that when I learned Ruby
+        first).  Most of Ruby codes seem to use just `Enumerable#each` method instead
+        of `for` statement, but why?  Is there any reason to prefer `Enumerable#each`
+        method over `for` statement?\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"p1l8k\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"hongminhee\", \"media\": null, \"score\": 28, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 4, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/p1l8k/why_is_there_forstatement_in_ruby/\",
+        \"name\": \"t3_p1l8k\", \"created\": 1327833555.0, \"url\": \"http://www.reddit.com/r/ruby/comments/p1l8k/why_is_there_forstatement_in_ruby/\",
+        \"author_flair_text\": null, \"title\": \"Why is there for-statement in Ruby?\",
+        \"created_utc\": 1327833555.0, \"ups\": 32, \"num_comments\": 35, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;I&amp;#39;m learning ruby now and looking forward
+        to finding a job doing front end and app development.  Thanks!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"I'm learning ruby now and looking forward
+        to finding a job doing front end and app development.  Thanks!\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1kylfv\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"codemonkei\", \"media\": null, \"score\": 27, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\",
+        \"edited\": 1377394522.0, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 8, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1kylfv/what_are_some_good_projects_to_do_with_ruby_to/\",
+        \"name\": \"t3_1kylfv\", \"created\": 1377289503.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1kylfv/what_are_some_good_projects_to_do_with_ruby_to/\",
+        \"author_flair_text\": null, \"title\": \"What are some good projects to do
+        with Ruby to impress employers?\", \"created_utc\": 1377285903.0, \"ups\":
+        35, \"num_comments\": 42, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I can&amp;#39;t d/l XCode
+        due to my version of OSX. RVM install commands don&amp;#39;t seem to make
+        sense within my terminal. Do I need git? &lt;/p&gt;\\n\\n&lt;p&gt;I would
+        like to learn Ruby (then Rails) but so far I&amp;#39;m just frustrated. &lt;/p&gt;\\n\\n&lt;p&gt;Thank
+        you for any help you guys can offer.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"I can't d/l XCode due to my version of OSX. RVM
+        install commands don't seem to make sense within my terminal. Do I need git?
+        \\n\\nI would like to learn Ruby (then Rails) but so far I'm just frustrated.
+        \\n\\nThank you for any help you guys can offer.\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"rpwze\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"BeauBeauBeau\",
+        \"media\": null, \"score\": 18, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        3, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/rpwze/installing_ruby_wo_xcode_on_a_mac_or_why_is/\",
+        \"name\": \"t3_rpwze\", \"created\": 1333397680.0, \"url\": \"http://www.reddit.com/r/ruby/comments/rpwze/installing_ruby_wo_xcode_on_a_mac_or_why_is/\",
+        \"author_flair_text\": null, \"title\": \"Installing Ruby w/o XCode on a Mac:
+        or why is installing Ruby such a pain in the ass? [NOOB] \", \"created_utc\":
+        1333394080.0, \"ups\": 21, \"num_comments\": 53, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"self.ruby\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\",
+        \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I
+        fundamentally do not understand the perspective many Rubyists have. I am not
+        saying it anything is bad, I am saying &lt;em&gt;I do not understand&lt;/em&gt;.
+        I just have a different perspective. I don&amp;#39;t understand why pragmatic
+        people who don&amp;#39;t seem to be early adopters are leaving a good tool
+        for tools that should only appeal to early adopters.&lt;/p&gt;\\n\\n&lt;p&gt;Please,
+        let me explain my perspective. I have been working primarily with C++ the
+        past 15, during that time I have dabbled with Java, PHP, Lua, Perl, Pascal,
+        HTML/CSS, a couple kinds of assembly, C#/VB, others I wish I could forget
+        and of course plain old C. I keep going back to C++ because I have a strong
+        proficiency with it. I have the feeling I can make it do anything. I have
+        made it solve some interesting problems. There are other reasons too, but
+        this seems like enough to convey where I am coming from. I invested real time
+        and effort gaining that proficiency, so I will use C++ when practical an invest
+        more time learning something else when C++ is not practical.&lt;/p&gt;\\n\\n&lt;p&gt;I
+        see a ton of Rubyists talking about Elixir and Node.js as somekind of wholesale
+        replacement for Ruby. I understand that the two newer systems provide interesting
+        interactions with threading systems. That does not seem like a reason to dump
+        a whole language, a language with multiple independent healthy implementations
+        (jRuby, Rubunius, Maglev, etc...), particularly when some of them have fixed
+        threading performance. &lt;/p&gt;\\n\\n&lt;p&gt;Or maybe I am missing the
+        point, maybe this is just about jumping to some popular new toy now that us
+        old fogeys are onto Ruby? Of course not, all the people I read about in blogs
+        and watch in talks at the countless Ruby conferences seem like pragmatic people
+        interested in getting stuff done. Ruby seems like an excellent tool for getting
+        stuff done. It is extremely easy to express complex ideas quickly. It has
+        an excellent system for handling libraries. It has access to awesome performance
+        via its C-API. If C is not your thing, It is mature enough that it is getting
+        performance optimizations with every new release (of MRI/Yarv at least). These
+        people invested significant time and effort learning Ruby, will their pragmatism
+        just let them throw that away?&lt;/p&gt;\\n\\n&lt;p&gt;Perhaps my perspective
+        is wrong and no-one is leaving Ruby? But it seems every other conference talk
+        someone mentions Elixir while spitting Ruby&amp;#39;s name.&lt;/p&gt;\\n\\n&lt;p&gt;Perhaps,
+        There is something to Elixir/Node I have completely missed? I read their docs
+        and perused their libraries. They are missing features (and sometimes stability)
+        like tools only a few years old would.&lt;/p&gt;\\n\\n&lt;p&gt;Why leave Ruby?&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"I fundamentally do not understand the perspective
+        many Rubyists have. I am not saying it anything is bad, I am saying *I do
+        not understand*. I just have a different perspective. I don't understand why
+        pragmatic people who don't seem to be early adopters are leaving a good tool
+        for tools that should only appeal to early adopters.\\n\\nPlease, let me explain
+        my perspective. I have been working primarily with C++ the past 15, during
+        that time I have dabbled with Java, PHP, Lua, Perl, Pascal, HTML/CSS, a couple
+        kinds of assembly, C#/VB, others I wish I could forget and of course plain
+        old C. I keep going back to C++ because I have a strong proficiency with it.
+        I have the feeling I can make it do anything. I have made it solve some interesting
+        problems. There are other reasons too, but this seems like enough to convey
+        where I am coming from. I invested real time and effort gaining that proficiency,
+        so I will use C++ when practical an invest more time learning something else
+        when C++ is not practical.\\n\\nI see a ton of Rubyists talking about Elixir
+        and Node.js as somekind of wholesale replacement for Ruby. I understand that
+        the two newer systems provide interesting interactions with threading systems.
+        That does not seem like a reason to dump a whole language, a language with
+        multiple independent healthy implementations (jRuby, Rubunius, Maglev, etc...),
+        particularly when some of them have fixed threading performance. \\n\\nOr
+        maybe I am missing the point, maybe this is just about jumping to some popular
+        new toy now that us old fogeys are onto Ruby? Of course not, all the people
+        I read about in blogs and watch in talks at the countless Ruby conferences
+        seem like pragmatic people interested in getting stuff done. Ruby seems like
+        an excellent tool for getting stuff done. It is extremely easy to express
+        complex ideas quickly. It has an excellent system for handling libraries.
+        It has access to awesome performance via its C-API. If C is not your thing,
+        It is mature enough that it is getting performance optimizations with every
+        new release (of MRI/Yarv at least). These people invested significant time
+        and effort learning Ruby, will their pragmatism just let them throw that away?\\n\\nPerhaps
+        my perspective is wrong and no-one is leaving Ruby? But it seems every other
+        conference talk someone mentions Elixir while spitting Ruby's name.\\n\\nPerhaps,
+        There is something to Elixir/Node I have completely missed? I read their docs
+        and perused their libraries. They are missing features (and sometimes stability)
+        like tools only a few years old would.\\n\\nWhy leave Ruby?\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1o6srn\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"Sqeaky\", \"media\": null, \"score\": 41, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\",
+        \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 10, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1o6srn/why_elixir_why_nodejs_coming_from_c_ruby_seems/\",
+        \"name\": \"t3_1o6srn\", \"created\": 1381483029.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1o6srn/why_elixir_why_nodejs_coming_from_c_ruby_seems/\",
+        \"author_flair_text\": null, \"title\": \"Why Elixir? Why Node.js? Coming
+        from C++, Ruby seems like a fine language.\", \"created_utc\": 1381454229.0,
+        \"ups\": 51, \"num_comments\": 46, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I&amp;#39;m going
+        through the Ruby Koans right now as part of trying to learn Ruby. I just finished
+        the about_blocks koan and I really just don&amp;#39;t understand how the &lt;code&gt;yield&lt;/code&gt;
+        keyword works. Example code from the koan:&lt;/p&gt;\\n\\n&lt;pre&gt;&lt;code&gt;def
+        many_yields\\n  yield(:peanut)\\n  yield(:butter)\\n  yield(:and)\\n  yield(:jelly)\\nend\\n\\ndef
+        test_methods_can_call_yield_many_times\\n  result = []\\n  many_yields { |item|
+        result &amp;lt;&amp;lt; item }\\n  assert_equal [:peanut, :butter, :and, :jelly],
+        result\\nend\\n&lt;/code&gt;&lt;/pre&gt;\\n\\n&lt;p&gt;I can see that &lt;code&gt;result&lt;/code&gt;
+        is getting all four yielded values from &lt;code&gt;many_yields&lt;/code&gt;,
+        but I don&amp;#39;t really understand what&amp;#39;s going on. I especially
+        don&amp;#39;t understand the cases where yield is called without any values.
+        Can somebody explain this keyword to me?&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"I'm going through the Ruby Koans right now as part
+        of trying to learn Ruby. I just finished the about_blocks koan and I really
+        just don't understand how the `yield` keyword works. Example code from the
+        koan:\\n\\n    def many_yields\\n      yield(:peanut)\\n      yield(:butter)\\n
+        \     yield(:and)\\n      yield(:jelly)\\n    end\\n\\n    def test_methods_can_call_yield_many_times\\n
+        \     result = []\\n      many_yields { |item| result &lt;&lt; item }\\n      assert_equal
+        [:peanut, :butter, :and, :jelly], result\\n    end\\n\\nI can see that `result`
+        is getting all four yielded values from `many_yields`, but I don't really
+        understand what's going on. I especially don't understand the cases where
+        yield is called without any values. Can somebody explain this keyword to me?\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"kvjrw\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false,
+        \"author\": \"glenbolake\", \"media\": null, \"score\": 46, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 2, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/kvjrw/ruby_newbie_i_dont_understand_yield/\",
+        \"name\": \"t3_kvjrw\", \"created\": 1317324898.0, \"url\": \"http://www.reddit.com/r/ruby/comments/kvjrw/ruby_newbie_i_dont_understand_yield/\",
+        \"author_flair_text\": null, \"title\": \"Ruby newbie - I don't understand
+        yield\", \"created_utc\": 1317321298.0, \"ups\": 48, \"num_comments\": 36,
+        \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;I would really like to start a study group for
+        Ruby on Rails for this book &lt;a href=\\\"http://ruby.railstutorial.org/ruby-on-rails-tutorial-book\\\"&gt;http://ruby.railstutorial.org/ruby-on-rails-tutorial-book&lt;/a&gt;
+        (if you have better suggestions please let me know) I have just finished the
+        CodeCademy course for Ruby so I think I have a decent grasp on the Ruby language.
+        It would be nice if we could have a couple people who are experienced with
+        Rails help guide us through. I plan on hosting it on my website under the
+        Ruby on Rails subforum so  we can keep all our stuff uncluttered,  my website
+        is called milesftp.com(sorry for the odd name my friend had the domain registered
+        and so we decided to use it for now). If you guys are interested please let
+        me know and we will figure something&amp;#39;s out! Thanks. &lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"I would really like to start a study group
+        for Ruby on Rails for this book http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
+        (if you have better suggestions please let me know) I have just finished the
+        CodeCademy course for Ruby so I think I have a decent grasp on the Ruby language.
+        It would be nice if we could have a couple people who are experienced with
+        Rails help guide us through. I plan on hosting it on my website under the
+        Ruby on Rails subforum so  we can keep all our stuff uncluttered,  my website
+        is called milesftp.com(sorry for the odd name my friend had the domain registered
+        and so we decided to use it for now). If you guys are interested please let
+        me know and we will figure something's out! Thanks. \", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1n9e40\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"valorvision\",
+        \"media\": null, \"score\": 21, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        7, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1n9e40/creating_a_ruby_on_rails_study_group_please_let/\",
+        \"name\": \"t3_1n9e40\", \"created\": 1380331866.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1n9e40/creating_a_ruby_on_rails_study_group_please_let/\",
+        \"author_flair_text\": null, \"title\": \"Creating A Ruby on Rails Study Group,
+        please let me know if you're interested.\", \"created_utc\": 1380303066.0,
+        \"ups\": 28, \"num_comments\": 40, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.IAmA\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"IAmA\", \"selftext_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hi Reddit! &lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;m
+        Annie. I report on economic policy -- taxes, the economy, Treasury, the IMF,
+        etc. -- from the D.C. bureau of the New York Times.&lt;/p&gt;\\n\\n&lt;p&gt;Until
+        October, though, I was the Moneybox columnist for Slate. &lt;/p&gt;\\n\\n&lt;p&gt;My
+        last piece for Slate just went up. It&amp;#39;s a big story on how I started
+        to learn to program in Ruby, and about _why, a legend in the Ruby community
+        who disappeared two years ago. &lt;/p&gt;\\n\\n&lt;p&gt;You can read it here:
+        &lt;a href=\\\"http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.html\\\"&gt;http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.html&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;You
+        can read all my Times stuff here: &lt;a href=\\\"http://topics.nytimes.com/top/reference/timestopics/people/l/annie_lowrey/index.html?inline=nyt-per\\\"&gt;http://topics.nytimes.com/top/reference/timestopics/people/l/annie_lowrey/index.html?inline=nyt-per&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;And
+        all my Slate stuff here: &lt;a href=\\\"http://www.slate.com/authors.annie_lowrey.html\\\"&gt;http://www.slate.com/authors.annie_lowrey.html&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;And
+        you can follow me here: &lt;a href=\\\"https://twitter.com/#!/annielowrey\\\"&gt;https://twitter.com/#!/annielowrey&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Ask
+        me anything! &lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"selftext\":
+        \"Hi Reddit! \\n\\nI'm Annie. I report on economic policy -- taxes, the economy,
+        Treasury, the IMF, etc. -- from the D.C. bureau of the New York Times.\\n\\nUntil
+        October, though, I was the Moneybox columnist for Slate. \\n\\nMy last piece
+        for Slate just went up. It's a big story on how I started to learn to program
+        in Ruby, and about _why, a legend in the Ruby community who disappeared two
+        years ago. \\n\\nYou can read it here: http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.html\\n\\nYou
+        can read all my Times stuff here: http://topics.nytimes.com/top/reference/timestopics/people/l/annie_lowrey/index.html?inline=nyt-per\\n\\nAnd
+        all my Slate stuff here: http://www.slate.com/authors.annie_lowrey.html\\n\\nAnd
+        you can follow me here: https://twitter.com/#!/annielowrey\\n\\nAsk me anything!
+        \", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"qzkdt\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false,
+        \"author\": \"AnnieLowrey\", \"media\": null, \"score\": 141, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"self\", \"subreddit_id\":
+        \"t5_2qzb6\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 95, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/IAmA/comments/qzkdt/im_annie_lowrey_an_economic_policy_reporter_for/\",
+        \"name\": \"t3_qzkdt\", \"created\": 1331919796.0, \"url\": \"http://www.reddit.com/r/IAmA/comments/qzkdt/im_annie_lowrey_an_economic_policy_reporter_for/\",
+        \"author_flair_text\": null, \"title\": \"I'm Annie Lowrey, an economic policy
+        reporter for the New York Times and the author of the big Slate article on
+        Ruby and _why.\", \"created_utc\": 1331916196.0, \"ups\": 236, \"num_comments\":
+        213, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I am currently a high school
+        student involved in AP CS. I am extremely well with Java, c++, python. The
+        other day I tried this new language called ruby. I instantly fell in love
+        with it. So as I do with most languages that I find appealing I try to master
+        it. As of now I have taken multiple ruby courses online and read 2 or three
+        books about it. So yesterday I was writing my first semi hard application
+        in ruby. One of my fellow class mates turns to me and looks at my computer
+        screen with horror. I asked him what the problem was. He said, &amp;quot;Ew
+        why are you coding in ruby&amp;quot;. I replied and told him that I enjoy
+        this language very much. Other members in my class looked at me like I was
+        committing genocide by writing in  ruby, and from that point I was being chewed
+        out on why ruby is trash. I don&amp;#39;t understand why. I get it has its
+        design flaws, but what language doesn&amp;#39;t? I was wondering if something
+        like this has ever happened? In the sense where people think you&amp;#39;re
+        dumb for writing in ruby.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\",
+        \"selftext\": \"I am currently a high school student involved in AP CS. I
+        am extremely well with Java, c++, python. The other day I tried this new language
+        called ruby. I instantly fell in love with it. So as I do with most languages
+        that I find appealing I try to master it. As of now I have taken multiple
+        ruby courses online and read 2 or three books about it. So yesterday I was
+        writing my first semi hard application in ruby. One of my fellow class mates
+        turns to me and looks at my computer screen with horror. I asked him what
+        the problem was. He said, \\\"Ew why are you coding in ruby\\\". I replied
+        and told him that I enjoy this language very much. Other members in my class
+        looked at me like I was committing genocide by writing in  ruby, and from
+        that point I was being chewed out on why ruby is trash. I don't understand
+        why. I get it has its design flaws, but what language doesn't? I was wondering
+        if something like this has ever happened? In the sense where people think
+        you're dumb for writing in ruby.\", \"likes\": null, \"secure_media\": null,
+        \"link_flair_text\": null, \"id\": \"1oj5ur\", \"secure_media_embed\": {},
+        \"clicked\": false, \"stickied\": false, \"author\": \"cgrillo5\", \"media\":
+        null, \"score\": 13, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        17, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1oj5ur/what_is_wrong_with_ruby/\",
+        \"name\": \"t3_1oj5ur\", \"created\": 1381904040.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1oj5ur/what_is_wrong_with_ruby/\",
+        \"author_flair_text\": null, \"title\": \"What is wrong with ruby?\", \"created_utc\":
+        1381875240.0, \"ups\": 30, \"num_comments\": 50, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"self.ruby\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\",
+        \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Dynamic
+        getters and setters in Perl:&lt;/p&gt;\\n\\n&lt;pre&gt;&lt;code&gt;sub AUTOLOAD
+        {\\n  my @elements = qw(color age weight height);\\n\\n  our $AUTOLOAD;\\n
+        \ if ($AUTOLOAD =~ /::(\\\\w+)$/ and grep $1 eq $_, @elements) {\\n    my
+        $field = ucfirst $1;\\n    {\\n      no strict &amp;#39;refs&amp;#39;;\\n
+        \     *{$AUTOLOAD} = sub { $_[0]-&amp;gt;{$field} };\\n    }\\n    goto &amp;amp;{$AUTOLOAD};\\n
+        \ } elsif ($AUTOLOAD =~ /::set_(\\\\w+)$/ and grep $1 eq $_, @elements) {\\n
+        \   my $field = ucfirst $1;\\n    {\\n      no strict &amp;#39;refs&amp;#39;;\\n
+        \     *{$AUTOLOAD} = sub { $_[0]-&amp;gt;{$field} = $_[1] };\\n    }\\n    goto
+        &amp;amp;{$AUTOLOAD};\\n  } else {\\n    croak &amp;quot;$_[0] does not understand
+        this method\\\\n&amp;quot;;\\n  }\\n}\\n&lt;/code&gt;&lt;/pre&gt;\\n\\n&lt;p&gt;In
+        Ruby:&lt;/p&gt;\\n\\n&lt;pre&gt;&lt;code&gt;attr_accessor :color, :age, :weight,
+        :height\\n&lt;/code&gt;&lt;/pre&gt;\\n\\n&lt;p&gt;Yeah.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Dynamic getters and setters in Perl:\\n\\n
+        \   sub AUTOLOAD {\\n      my @elements = qw(color age weight height);\\n
+        \ \\n      our $AUTOLOAD;\\n      if ($AUTOLOAD =~ /::(\\\\w+)$/ and grep
+        $1 eq $_, @elements) {\\n        my $field = ucfirst $1;\\n        {\\n          no
+        strict 'refs';\\n          *{$AUTOLOAD} = sub { $_[0]-&gt;{$field} };\\n        }\\n
+        \       goto &amp;{$AUTOLOAD};\\n      } elsif ($AUTOLOAD =~ /::set_(\\\\w+)$/
+        and grep $1 eq $_, @elements) {\\n        my $field = ucfirst $1;\\n        {\\n
+        \         no strict 'refs';\\n          *{$AUTOLOAD} = sub { $_[0]-&gt;{$field}
+        = $_[1] };\\n        }\\n        goto &amp;{$AUTOLOAD};\\n      } else {\\n
+        \       croak \\\"$_[0] does not understand this method\\\\n\\\";\\n      }\\n
+        \   }\\n\\nIn Ruby:\\n\\n    attr_accessor :color, :age, :weight, :height\\n\\nYeah.\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"e4upb\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false,
+        \"author\": \"Perceptes\", \"media\": null, \"score\": 32, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": true, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 12, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/e4upb/learning_perl_is_making_me_appreciate_ruby_even/\",
+        \"name\": \"t3_e4upb\", \"created\": 1289518955.0, \"url\": \"http://www.reddit.com/r/ruby/comments/e4upb/learning_perl_is_making_me_appreciate_ruby_even/\",
+        \"author_flair_text\": null, \"title\": \"Learning Perl is making me appreciate
+        Ruby even more\", \"created_utc\": 1289518955.0, \"ups\": 44, \"num_comments\":
+        44, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hi there,&lt;/p&gt;\\n\\n&lt;p&gt;I
+        started learning Ruby a few months ago and I bought myself a Microsoft Kinect
+        Cam as an early X-Mas gift. Of course I&amp;#39;m using Linux (yes your OS-X
+        is fine too) and don&amp;#39;t even own an X-Box 360 ... so I started the
+        hacking.&lt;/p&gt;\\n\\n&lt;p&gt;After a short time of fiddling with C, I
+        remembered how much it tends to get on my nerves and how much I love Ruby,
+        so I thought &amp;quot;&lt;strong&gt;Why not write some Kinect stuff with
+        Ruby?!&lt;/strong&gt;&amp;quot;. After a bit of googling I found exactly no
+        other projects except&lt;/p&gt;\\n\\n&lt;p&gt;---- &lt;a href=\\\"http://openkinect.org/wiki/Ruby_Wrapper#Sample_Code\\\"&gt;this
+        one&lt;/a&gt; ----&lt;/p&gt;\\n\\n&lt;p&gt;which was empty and so I decided
+        to &lt;strong&gt;post my first code snippet there&lt;/strong&gt;.&lt;/p&gt;\\n\\n&lt;p&gt;Sadly
+        nobody reacted so I have to assume that this project is dead. But what about
+        you? &lt;em&gt;Anyone interested in bringing some of the Kinect functionality
+        to Ruby?&lt;/em&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;What &lt;del&gt;I&lt;/del&gt;
+        we managed to do:&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Control
+        the Kinects motor&lt;/li&gt;\\n&lt;li&gt;Control the Kinects LED&lt;/li&gt;\\n&lt;li&gt;Get
+        accelerometer data&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;What
+        is missing (tried but failed):&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Get
+        an image from the RGB cam&lt;/li&gt;\\n&lt;li&gt;Get an image from the depth
+        cam&lt;/li&gt;\\n&lt;li&gt;&lt;del&gt;Get accelerometer data&lt;/del&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt;
+        Started to develop a pure Ruby Kinect driver. Who wants to help?&lt;/p&gt;\\n\\n&lt;p&gt;PS:
+        I&amp;#39;m not interested in libfreenect wrappers, I want to create a pure
+        Ruby driver. (only with libusb i.e.)&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;EDIT:
+        I&amp;#39;ve put what I got so far on GitHub: &lt;a href=\\\"https://github.com/pachacamac/rinect\\\"&gt;see
+        here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\",
+        \"selftext\": \"Hi there,\\n\\nI started learning Ruby a few months ago and
+        I bought myself a Microsoft Kinect Cam as an early X-Mas gift. Of course I'm
+        using Linux (yes your OS-X is fine too) and don't even own an X-Box 360 ...
+        so I started the hacking.\\n\\nAfter a short time of fiddling with C, I remembered
+        how much it tends to get on my nerves and how much I love Ruby, so I thought
+        \\\"**Why not write some Kinect stuff with Ruby?!**\\\". After a bit of googling
+        I found exactly no other projects except\\n\\n---- [this one](http://openkinect.org/wiki/Ruby_Wrapper#Sample_Code)
+        ----\\n\\nwhich was empty and so I decided to **post my first code snippet
+        there**.\\n\\nSadly nobody reacted so I have to assume that this project is
+        dead. But what about you? *Anyone interested in bringing some of the Kinect
+        functionality to Ruby?*\\n\\n\\n**What ~~I~~ we managed to do:**\\n\\n * Control
+        the Kinects motor\\n * Control the Kinects LED\\n * Get accelerometer data\\n\\n**What
+        is missing (tried but failed):**\\n\\n * Get an image from the RGB cam\\n
+        * Get an image from the depth cam\\n * ~~Get accelerometer data~~\\n\\n\\n\\n**TL;DR:**
+        Started to develop a pure Ruby Kinect driver. Who wants to help?\\n\\nPS:
+        I'm not interested in libfreenect wrappers, I want to create a pure Ruby driver.
+        (only with libusb i.e.)\\n\\n\\n**EDIT: I've put what I got so far on GitHub:
+        [see here](https://github.com/pachacamac/rinect)**\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"euka7\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"nexe\", \"media\":
+        null, \"score\": 29, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": true,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        8, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/euka7/ruby_kinect_project/\",
+        \"name\": \"t3_euka7\", \"created\": 1293897993.0, \"url\": \"http://www.reddit.com/r/ruby/comments/euka7/ruby_kinect_project/\",
+        \"author_flair_text\": null, \"title\": \"Ruby Kinect Project\", \"created_utc\":
+        1293897993.0, \"ups\": 37, \"num_comments\": 36, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"self.ruby\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\",
+        \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hey
+        &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;,&lt;/p&gt;\\n\\n&lt;p&gt;Lately
+        Ive been getting my hands in a lot of languages to get a feel for them. Trying
+        out JS/WinJS, Ruby (+Some Rails), and Python.&lt;/p&gt;\\n\\n&lt;p&gt;Ive
+        worked with Python for a bit now, however I have never taken the time to learn
+        from the ground-up any language ( outside of HTML/CSS(+SASS) ). As such lately
+        Ive been doing some rather simple exploration of Ruby vs Python, jumping between
+        the two trying to get a feel for it. Both seem great, however I am leaning
+        toward Ruby currently, and wanted to see if anyone had some input.&lt;/p&gt;\\n\\n&lt;p&gt;A
+        few concerns I have with Ruby is that while there is a TON of Ruby intro material
+        (Learn Ruby the Hard Way, RubyMonk, and Pragmatic Guide), everything project
+        development wise and even gem wise is Rails centric. I understand Rails is
+        popular but even a simple Sinatra app, I cant find a Mailer Gem that doesn&amp;#39;t
+        require Rails. While on the Python end, I fell in love with Hyde but it like
+        many other projects I found for Python are completely dead development wise.&lt;/p&gt;\\n\\n&lt;p&gt;Any
+        links or input on what I should be looking at to make a good decision?&lt;/p&gt;\\n\\n&lt;p&gt;Note:
+        Apologies if this is asked a lot, or shouldnt be asked here. I tried a search
+        and most of the questions were a year old.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Hey /r/ruby,\\n\\nLately Ive been getting
+        my hands in a lot of languages to get a feel for them. Trying out JS/WinJS,
+        Ruby (+Some Rails), and Python.\\n\\nIve worked with Python for a bit now,
+        however I have never taken the time to learn from the ground-up any language
+        ( outside of HTML/CSS(+SASS) ). As such lately Ive been doing some rather
+        simple exploration of Ruby vs Python, jumping between the two trying to get
+        a feel for it. Both seem great, however I am leaning toward Ruby currently,
+        and wanted to see if anyone had some input.\\n\\nA few concerns I have with
+        Ruby is that while there is a TON of Ruby intro material (Learn Ruby the Hard
+        Way, RubyMonk, and Pragmatic Guide), everything project development wise and
+        even gem wise is Rails centric. I understand Rails is popular but even a simple
+        Sinatra app, I cant find a Mailer Gem that doesn't require Rails. While on
+        the Python end, I fell in love with Hyde but it like many other projects I
+        found for Python are completely dead development wise.\\n\\nAny links or input
+        on what I should be looking at to make a good decision?\\n\\nNote: Apologies
+        if this is asked a lot, or shouldnt be asked here. I tried a search and most
+        of the questions were a year old.\", \"likes\": null, \"secure_media\": null,
+        \"link_flair_text\": null, \"id\": \"zyzf7\", \"secure_media_embed\": {},
+        \"clicked\": false, \"stickied\": false, \"author\": \"RevisionZero\", \"media\":
+        null, \"score\": 7, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        2, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/zyzf7/looking_for_some_advice_should_i_focus_on/\",
+        \"name\": \"t3_zyzf7\", \"created\": 1347809223.0, \"url\": \"http://www.reddit.com/r/ruby/comments/zyzf7/looking_for_some_advice_should_i_focus_on/\",
+        \"author_flair_text\": null, \"title\": \"Looking for some advice: Should
+        I focus on learning  Python or Ruby? Input much appreciated.\", \"created_utc\":
+        1347805623.0, \"ups\": 9, \"num_comments\": 56, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"self.ruby\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"ruby\",
+        \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hey
+        everyone, do you guys mind sharing what are good open source projects for
+        Ruby beginners? &lt;/p&gt;\\n\\n&lt;p&gt;Thanks for the help in advance!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Hey everyone, do you guys mind sharing what
+        are good open source projects for Ruby beginners? \\n\\nThanks for the help
+        in advance!\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"18abdk\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"ghostwarfare\", \"media\": null, \"score\":
+        36, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 6, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/ruby/comments/18abdk/what_are_some_good_open_source_projects_for_ruby/\",
+        \"name\": \"t3_18abdk\", \"created\": 1360552623.0, \"url\": \"http://www.reddit.com/r/ruby/comments/18abdk/what_are_some_good_open_source_projects_for_ruby/\",
+        \"author_flair_text\": null, \"title\": \"What are some good open source projects
+        for Ruby beginners?\", \"created_utc\": 1360552623.0, \"ups\": 42, \"num_comments\":
+        22, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}],
+        \"after\": \"t3_18abdk\", \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:31 GMT
+recorded_with: VCR 2.6.0

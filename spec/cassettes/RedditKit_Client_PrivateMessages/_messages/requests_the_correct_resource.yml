@@ -1,0 +1,187 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/message/inbox.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:21:06 GMT
+      Content-Length:
+      - '10645'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"iklkxlqvpa2f4b8822c7297223f041fea20d2d52782a14f5d1\",
+        \"children\": [{\"kind\": \"t4\", \"data\": {\"body\": \"Reply\", \"was_comment\":
+        false, \"first_message\": 71518455, \"name\": \"t4_17th4w\", \"first_message_name\":
+        \"t4_16kvzr\", \"created\": 1383080987.0, \"dest\": \"<REDDIT_USERNAME>\",
+        \"author\": \"samsymons\", \"created_utc\": 1383077387.0, \"body_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Reply&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"subreddit\": null, \"parent_id\": \"t4_16kvzr\", \"context\":
+        \"\", \"replies\": \"\", \"new\": false, \"id\": \"17th4w\", \"subject\":
+        \"re: Test\"}}, {\"kind\": \"t1\", \"data\": {\"body\": \"Hello!\", \"link_title\":
+        \"Sticky post\", \"was_comment\": true, \"first_message\": null, \"name\":
+        \"t1_cccb4gz\", \"first_message_name\": null, \"created\": 1379716336.0, \"dest\":
+        \"<REDDIT_USERNAME>\", \"author\": \"samsymons\", \"created_utc\": 1379712736.0,
+        \"body_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hello!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"subreddit\": \"RedditKit\", \"parent_id\": \"t3_1mjtjl\",
+        \"likes\": null, \"context\": \"/r/RedditKit/comments/1mjtjl/sticky_post/cccb4gz?context=3\",
+        \"replies\": null, \"new\": false, \"id\": \"cccb4gz\", \"subject\": \"post
+        reply\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"you have been added as
+        an approved submitter to [/r/RedditKit: RedditKit](/r/RedditKit).\", \"was_comment\":
+        false, \"first_message\": null, \"name\": \"t4_14eh4f\", \"first_message_name\":
+        null, \"created\": 1379453676.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\":
+        \"samsymons\", \"created_utc\": 1379450076.0, \"body_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;you have been added as an approved
+        submitter to &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit: RedditKit&lt;/a&gt;.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"subreddit\": null, \"parent_id\": null, \"context\": \"\",
+        \"replies\": \"\", \"new\": false, \"id\": \"14eh4f\", \"subject\": \"you
+        are an approved submitter\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"you
+        have been added as an approved submitter to [/r/RedditKit: RedditKit](/r/RedditKit).\",
+        \"was_comment\": false, \"first_message\": null, \"name\": \"t4_14egqc\",
+        \"first_message_name\": null, \"created\": 1379453405.0, \"dest\": \"<REDDIT_USERNAME>\",
+        \"author\": \"samsymons\", \"created_utc\": 1379449805.0, \"body_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;you have been added as an
+        approved submitter to &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit: RedditKit&lt;/a&gt;.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"subreddit\": null, \"parent_id\": null, \"context\": \"\",
+        \"replies\": \"\", \"new\": false, \"id\": \"14egqc\", \"subject\": \"you
+        are an approved submitter\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"**gadzooks!
+        you are invited to become a moderator of [/r/RedditKit: RedditKit](/r/RedditKit)!**\\n\\n*to
+        accept*, visit the [moderators page for /r/RedditKit](/r/RedditKit/about/moderators)
+        and click \\\"accept\\\".\\n\\n*otherwise,* if you did not expect to receive
+        this, you can simply ignore this invitation or report it.\", \"was_comment\":
+        false, \"first_message\": null, \"name\": \"t4_14eg1g\", \"first_message_name\":
+        null, \"created\": 1379452945.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\":
+        \"samsymons\", \"created_utc\": 1379449345.0, \"body_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;gadzooks! you are
+        invited to become a moderator of &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit:
+        RedditKit&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;to accept&lt;/em&gt;,
+        visit the &lt;a href=\\\"/r/RedditKit/about/moderators\\\"&gt;moderators page
+        for /r/RedditKit&lt;/a&gt; and click &amp;quot;accept&amp;quot;.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;otherwise,&lt;/em&gt;
+        if you did not expect to receive this, you can simply ignore this invitation
+        or report it.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"subreddit\":
+        \"RedditKit\", \"parent_id\": null, \"context\": \"\", \"replies\": \"\",
+        \"new\": false, \"id\": \"14eg1g\", \"subject\": \"invitation to moderate
+        /r/RedditKit\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"**gadzooks! you
+        are invited to become a moderator of [/r/RedditKit: RedditKit](/r/RedditKit)!**\\n\\n*to
+        accept*, visit the [moderators page for /r/RedditKit](/r/RedditKit/about/moderators)
+        and click \\\"accept\\\".\\n\\n*otherwise,* if you did not expect to receive
+        this, you can simply ignore this invitation or report it.\", \"was_comment\":
+        false, \"first_message\": null, \"name\": \"t4_14efl9\", \"first_message_name\":
+        null, \"created\": 1379452603.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\":
+        \"samsymons\", \"created_utc\": 1379449003.0, \"body_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;gadzooks! you are
+        invited to become a moderator of &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit:
+        RedditKit&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;to accept&lt;/em&gt;,
+        visit the &lt;a href=\\\"/r/RedditKit/about/moderators\\\"&gt;moderators page
+        for /r/RedditKit&lt;/a&gt; and click &amp;quot;accept&amp;quot;.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;otherwise,&lt;/em&gt;
+        if you did not expect to receive this, you can simply ignore this invitation
+        or report it.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"subreddit\":
+        \"RedditKit\", \"parent_id\": null, \"context\": \"\", \"replies\": \"\",
+        \"new\": false, \"id\": \"14efl9\", \"subject\": \"invitation to moderate
+        /r/RedditKit\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"**gadzooks! you
+        are invited to become a moderator of [/r/RedditKit: RedditKit](/r/RedditKit)!**\\n\\n*to
+        accept*, visit the [moderators page for /r/RedditKit](/r/RedditKit/about/moderators)
+        and click \\\"accept\\\".\\n\\n*otherwise,* if you did not expect to receive
+        this, you can simply ignore this invitation or report it.\", \"was_comment\":
+        false, \"first_message\": null, \"name\": \"t4_14eeq3\", \"first_message_name\":
+        null, \"created\": 1379452024.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\":
+        \"samsymons\", \"created_utc\": 1379448424.0, \"body_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;gadzooks! you are
+        invited to become a moderator of &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit:
+        RedditKit&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;to accept&lt;/em&gt;,
+        visit the &lt;a href=\\\"/r/RedditKit/about/moderators\\\"&gt;moderators page
+        for /r/RedditKit&lt;/a&gt; and click &amp;quot;accept&amp;quot;.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;otherwise,&lt;/em&gt;
+        if you did not expect to receive this, you can simply ignore this invitation
+        or report it.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"subreddit\":
+        \"RedditKit\", \"parent_id\": null, \"context\": \"\", \"replies\": \"\",
+        \"new\": false, \"id\": \"14eeq3\", \"subject\": \"invitation to moderate
+        /r/RedditKit\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"**gadzooks! you
+        are invited to become a moderator of [/r/RedditKit: RedditKit](/r/RedditKit)!**\\n\\n*to
+        accept*, visit the [moderators page for /r/RedditKit](/r/RedditKit/about/moderators)
+        and click \\\"accept\\\".\\n\\n*otherwise,* if you did not expect to receive
+        this, you can simply ignore this invitation or report it.\", \"was_comment\":
+        false, \"first_message\": null, \"name\": \"t4_13jn6w\", \"first_message_name\":
+        null, \"created\": 1378494889.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\":
+        \"samsymons\", \"created_utc\": 1378491289.0, \"body_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;gadzooks! you are
+        invited to become a moderator of &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit:
+        RedditKit&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;to accept&lt;/em&gt;,
+        visit the &lt;a href=\\\"/r/RedditKit/about/moderators\\\"&gt;moderators page
+        for /r/RedditKit&lt;/a&gt; and click &amp;quot;accept&amp;quot;.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;em&gt;otherwise,&lt;/em&gt;
+        if you did not expect to receive this, you can simply ignore this invitation
+        or report it.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"subreddit\":
+        \"RedditKit\", \"parent_id\": null, \"context\": \"\", \"replies\": \"\",
+        \"new\": false, \"id\": \"13jn6w\", \"subject\": \"invitation to moderate
+        /r/RedditKit\"}}, {\"kind\": \"t1\", \"data\": {\"body\": \"Test comment to
+        distinguish\", \"link_title\": \"Practice post\", \"was_comment\": true, \"first_message\":
+        null, \"name\": \"t1_canujul\", \"first_message_name\": null, \"created\":
+        1371876849.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\": \"samsymons\",
+        \"created_utc\": 1371873249.0, \"body_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Test comment to distinguish&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"subreddit\": \"RedditKit\", \"parent_id\": \"t3_1gt4y3\",
+        \"likes\": null, \"context\": \"/r/RedditKit/comments/1gt4y3/practice_post/canujul?context=3\",
+        \"replies\": null, \"new\": false, \"id\": \"canujul\", \"subject\": \"post
+        reply\"}}, {\"kind\": \"t4\", \"data\": {\"body\": \"Hello\", \"was_comment\":
+        false, \"first_message\": null, \"name\": \"t4_xe2mc\", \"first_message_name\":
+        null, \"created\": 1371857657.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\":
+        \"samsymons\", \"created_utc\": 1371854057.0, \"body_html\": \"&lt;!-- SC_OFF
+        --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hello&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"subreddit\": null, \"parent_id\": null, \"context\": \"\",
+        \"replies\": \"\", \"new\": false, \"id\": \"xe2mc\", \"subject\": \"blah\"}},
+        {\"kind\": \"t4\", \"data\": {\"body\": \"Hello!\", \"was_comment\": false,
+        \"first_message\": null, \"name\": \"t4_xdyvf\", \"first_message_name\": null,
+        \"created\": 1371854895.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\": \"samsymons\",
+        \"created_utc\": 1371851295.0, \"body_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Hello!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"subreddit\": null, \"parent_id\": null, \"context\": \"\", \"replies\":
+        \"\", \"new\": false, \"id\": \"xdyvf\", \"subject\": \"test\"}}, {\"kind\":
+        \"t4\", \"data\": {\"body\": \"Test!\", \"was_comment\": false, \"first_message\":
+        55978742, \"name\": \"t4_xddeb\", \"first_message_name\": \"t4_xbth2\", \"created\":
+        1371839394.0, \"dest\": \"<REDDIT_USERNAME>\", \"author\": \"samsymons\",
+        \"created_utc\": 1371835794.0, \"body_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Test!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\",
+        \"subreddit\": null, \"parent_id\": \"t4_xbth2\", \"context\": \"\", \"replies\":
+        \"\", \"new\": false, \"id\": \"xddeb\", \"subject\": \"re: Test\"}}, {\"kind\":
+        \"t4\", \"data\": {\"body\": \"you have been added as an approved submitter
+        to [/r/RedditKit: RedditKit](/r/RedditKit).\", \"was_comment\": false, \"first_message\":
+        null, \"name\": \"t4_xarx0\", \"first_message_name\": null, \"created\": 1371758783.0,
+        \"dest\": \"<REDDIT_USERNAME>\", \"author\": \"samsymons\", \"created_utc\":
+        1371755183.0, \"body_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;you
+        have been added as an approved submitter to &lt;a href=\\\"/r/RedditKit\\\"&gt;/r/RedditKit:
+        RedditKit&lt;/a&gt;.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"subreddit\":
+        null, \"parent_id\": null, \"context\": \"\", \"replies\": \"\", \"new\":
+        false, \"id\": \"xarx0\", \"subject\": \"you are an approved submitter\"}}],
+        \"after\": null, \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:05 GMT
+recorded_with: VCR 2.6.0

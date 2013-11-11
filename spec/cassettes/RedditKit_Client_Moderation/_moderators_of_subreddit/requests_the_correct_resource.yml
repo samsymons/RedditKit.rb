@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/RedditKitTesting/about/moderators.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '188'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 22:21:39 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"UserList\", \"data\": {\"children\": [{\"mod_permissions\":
+        [\"all\"], \"name\": \"samsymons\", \"id\": \"t2_614hc\"}, {\"mod_permissions\":
+        [\"all\"], \"name\": \"<REDDIT_USERNAME>\", \"id\": \"t2_c3szt\"}]}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:38 GMT
+recorded_with: VCR 2.6.0

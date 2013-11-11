@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.reddit.com/api/new_captcha
+    body:
+      encoding: US-ASCII
+      string: api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '78'
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 19:54:33 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"json\": {\"errors\": [], \"data\": {\"iden\": \"br58vEANvXs2qsBPMZfL2K3vqb4AHaS5\"}}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:54:32 GMT
+recorded_with: VCR 2.6.0

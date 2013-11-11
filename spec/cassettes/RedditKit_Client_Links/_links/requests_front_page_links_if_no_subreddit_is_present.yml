@@ -1,0 +1,603 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/hot.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 19:56:45 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"pics\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb8qj\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"shishdem\", \"media\": null, \"score\":
+        4179, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://a.thumbs.redditmedia.com/Z6J7lct_CxHdEYzl.jpg\", \"subreddit_id\":
+        \"t5_2qh0u\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 8263, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/pics/comments/1qb8qj/ron_burgundy_and_daft_punk_doing_a_little/\", \"name\":
+        \"t3_1qb8qj\", \"created\": 1384129579.0, \"url\": \"http://i.imgur.com/9Scncsm.jpg\",
+        \"author_flair_text\": null, \"title\": \"Ron Burgundy and Daft Punk doing
+        a little sightseeing around town (Amsterdam)\", \"created_utc\": 1384100779.0,
+        \"distinguished\": null, \"num_comments\": 285, \"visited\": false, \"num_reports\":
+        null, \"ups\": 12442}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"i.imgur.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"aww\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qba80\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"bazinga624\", \"media\": null, \"score\":
+        3205, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://d.thumbs.redditmedia.com/Y4iTIstjmTWoWBJQ.jpg\", \"subreddit_id\":
+        \"t5_2qh1o\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 3408, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/aww/comments/1qba80/he_walked_into_the_room_and_told_on_himself_i/\",
+        \"name\": \"t3_1qba80\", \"created\": 1384130894.0, \"url\": \"http://i.imgur.com/LZJ1UIK.jpg\",
+        \"author_flair_text\": null, \"title\": \"He walked into the room and told
+        on himself. I have no idea what he did.\", \"created_utc\": 1384102094.0,
+        \"distinguished\": null, \"num_comments\": 207, \"visited\": false, \"num_reports\":
+        null, \"ups\": 6613}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"imgur.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"funny\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qbap1\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"oPHILcial\", \"media\": null, \"score\":
+        2784, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://d.thumbs.redditmedia.com/i1YHvPPPDk5PoiAW.jpg\", \"subreddit_id\":
+        \"t5_2qh33\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 2671, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/funny/comments/1qbap1/exiting_a_public_bathroom/\", \"name\": \"t3_1qbap1\",
+        \"created\": 1384131310.0, \"url\": \"http://imgur.com/068K8TX\", \"author_flair_text\":
+        null, \"title\": \"Exiting a public bathroom\", \"created_utc\": 1384102510.0,
+        \"distinguished\": null, \"num_comments\": 279, \"visited\": false, \"num_reports\":
+        null, \"ups\": 5455}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"articles.latimes.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"todayilearned\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1qb6fw\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"philippe10coutinho\",
+        \"media\": null, \"score\": 3267, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"http://d.thumbs.redditmedia.com/jQGMY9-u0EtJCzFo.jpg\",
+        \"subreddit_id\": \"t5_2qqjc\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 11307, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/todayilearned/comments/1qb6fw/til_that_target_had_to_issue_an_apology_to_its/\",
+        \"name\": \"t3_1qb6fw\", \"created\": 1384127381.0, \"url\": \"http://articles.latimes.com/2013/apr/05/business/la-fi-mo-target-manatee-20130405\",
+        \"author_flair_text\": null, \"title\": \"TIL That Target had to issue an
+        apology to its customers following outrage about the fact that a popular dress
+        was offered in a color \\\"Dark heather gray\\\" for normal sizes, but the
+        same color was titled \\\"Manatee gray\\\" for plus-sized dresses.\", \"created_utc\":
+        1384098581.0, \"distinguished\": null, \"num_comments\": 1139, \"visited\":
+        false, \"num_reports\": null, \"ups\": 14574}}, {\"kind\": \"t3\", \"data\":
+        {\"domain\": \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"WTF\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1qb45h\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"1Voice1Life\",
+        \"media\": null, \"score\": 3394, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh61\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        10727, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/WTF/comments/1qb45h/tiger_on_the_loose_xpost_from_ranimalsbeingjerks/\",
+        \"name\": \"t3_1qb45h\", \"created\": 1384124989.0, \"url\": \"http://i.imgur.com/5zmU6FV.gif\",
+        \"author_flair_text\": null, \"title\": \"Tiger on the loose [x-post from
+        /r/AnimalsBeingJerks]\", \"created_utc\": 1384096189.0, \"distinguished\":
+        null, \"num_comments\": 742, \"visited\": false, \"num_reports\": null, \"ups\":
+        14121}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"youtube.com\", \"banned_by\":
+        null, \"media_embed\": {\"content\": \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\"
+        src=\\\"http://www.youtube.com/embed/KaOC9danxNo?feature=oembed\\\" frameborder=\\\"0\\\"
+        allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600, \"scrolling\": false,
+        \"height\": 338}, \"subreddit\": \"Music\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": {\"type\": \"youtube.com\", \"oembed\":
+        {\"provider_url\": \"http://www.youtube.com/\", \"description\": \"A revised
+        version of David Bowie's Space Oddity, recorded by Commander Chris Hadfield
+        on board the International Space Station. (Note: This video cannot be reproduced
+        and is licensed for online music use only.) With thanks to Emm Gryner, Joe
+        Corcoran, Andrew Tidby and Evan Hadfield for all their hard work.\", \"title\":
+        \"Space Oddity\", \"url\": \"http://www.youtube.com/watch?v=KaOC9danxNo\",
+        \"type\": \"video\", \"author_name\": \"Chris Hadfield\", \"height\": 338,
+        \"width\": 600, \"html\": \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\"
+        src=\\\"https://www.youtube.com/embed/KaOC9danxNo?feature=oembed\\\" frameborder=\\\"0\\\"
+        allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\": 480, \"version\":
+        \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\": \"https://i.embed.ly/1/image?url=http%3A%2F%2Fi1.ytimg.com%2Fvi%2FKaOC9danxNo%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb\",
+        \"thumbnail_height\": 360, \"author_url\": \"http://www.youtube.com/channel/UCtGG8ucQgEJPeUPhJZ4M4jA\"}},
+        \"link_flair_text\": null, \"id\": \"1qb6ah\", \"secure_media_embed\": {\"content\":
+        \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\" src=\\\"https://www.youtube.com/embed/KaOC9danxNo?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600,
+        \"scrolling\": false, \"height\": 338}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"Spyrulfyre\", \"media\": {\"type\": \"youtube.com\",
+        \"oembed\": {\"provider_url\": \"http://www.youtube.com/\", \"description\":
+        \"A revised version of David Bowie's Space Oddity, recorded by Commander Chris
+        Hadfield on board the International Space Station. (Note: This video cannot
+        be reproduced and is licensed for online music use only.) With thanks to Emm
+        Gryner, Joe Corcoran, Andrew Tidby and Evan Hadfield for all their hard work.\",
+        \"title\": \"Space Oddity\", \"url\": \"http://www.youtube.com/watch?v=KaOC9danxNo\",
+        \"type\": \"video\", \"author_name\": \"Chris Hadfield\", \"height\": 338,
+        \"width\": 600, \"html\": \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\"
+        src=\\\"http://www.youtube.com/embed/KaOC9danxNo?feature=oembed\\\" frameborder=\\\"0\\\"
+        allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\": 480, \"version\":
+        \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\": \"http://i1.ytimg.com/vi/KaOC9danxNo/hqdefault.jpg\",
+        \"thumbnail_height\": 360, \"author_url\": \"http://www.youtube.com/channel/UCtGG8ucQgEJPeUPhJZ4M4jA\"}},
+        \"score\": 2925, \"approved_by\": null, \"over_18\": false, \"hidden\": false,
+        \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh1u\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 9280, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/Music/comments/1qb6ah/lady_gaga_has_announced_that_she_will_be_the/\",
+        \"name\": \"t3_1qb6ah\", \"created\": 1384098449.0, \"url\": \"http://www.youtube.com/watch?v=KaOC9danxNo&amp;noredirect=1\",
+        \"author_flair_text\": null, \"title\": \"Lady Gaga has announced that she
+        will be the first live performer in space. This video shows it's already been
+        done.\", \"created_utc\": 1384098449.0, \"distinguished\": null, \"num_comments\":
+        900, \"visited\": false, \"num_reports\": null, \"ups\": 12205}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"gaming\", \"selftext_html\": null, \"selftext\": \"\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"1qb3js\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"WeededDragon1\", \"media\": null, \"score\": 3388, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"http://e.thumbs.redditmedia.com/3akeMvrKgQ9hrCnR.jpg\",
+        \"subreddit_id\": \"t5_2qh03\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 12790, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/gaming/comments/1qb3js/that_awkward_moment_when_diablo_shows_up_to_your/\",
+        \"name\": \"t3_1qb3js\", \"created\": 1384124321.0, \"url\": \"http://i.imgur.com/oEOq068.jpg\",
+        \"author_flair_text\": null, \"title\": \"That awkward moment when Diablo
+        shows up to your religious protest\", \"created_utc\": 1384095521.0, \"distinguished\":
+        null, \"num_comments\": 674, \"visited\": false, \"num_reports\": null, \"ups\":
+        16178}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"AdviceAnimals\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb5ss\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"theoryyylol\", \"media\": null, \"score\":
+        2509, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://f.thumbs.redditmedia.com/TgZCqL5NNUk_kY0k.jpg\", \"subreddit_id\":
+        \"t5_2s7tt\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 3466, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/AdviceAnimals/comments/1qb5ss/im_pretty_sure_everyone_has_had_a_boss_like_this/\",
+        \"name\": \"t3_1qb5ss\", \"created\": 1384126772.0, \"url\": \"http://i.imgur.com/KinTmgh.jpg\",
+        \"author_flair_text\": null, \"title\": \"Im pretty sure everyone has had
+        a boss like this at some point... corporation or not!\", \"created_utc\":
+        1384097972.0, \"distinguished\": null, \"num_comments\": 403, \"visited\":
+        false, \"num_reports\": null, \"ups\": 5975}}, {\"kind\": \"t3\", \"data\":
+        {\"domain\": \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"gifs\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1qb1w2\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"wtfisdisreal\",
+        \"media\": null, \"score\": 2970, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qt55\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        10582, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/gifs/comments/1qb1w2/puppy/\",
+        \"name\": \"t3_1qb1w2\", \"created\": 1384122312.0, \"url\": \"http://i.imgur.com/mUcM09n.gif\",
+        \"author_flair_text\": null, \"title\": \"Puppy!\", \"created_utc\": 1384093512.0,
+        \"distinguished\": null, \"num_comments\": 126, \"visited\": false, \"num_reports\":
+        null, \"ups\": 13552}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"theguardian.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"worldnews\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb2hc\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"filosoful\", \"media\": null, \"score\":
+        2422, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh13\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 3388, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/worldnews/comments/1qb2hc/homosexuality_is_illegal_in_41_out_of_53/\",
+        \"name\": \"t3_1qb2hc\", \"created\": 1384123082.0, \"url\": \"http://www.theguardian.com/world/2013/nov/10/homosexuality-illegal-in-41-out-of-53-commonwealth-countries-report\",
+        \"author_flair_text\": null, \"title\": \"Homosexuality is illegal in 41 out
+        of 53 Commonwealth countries\", \"created_utc\": 1384094282.0, \"distinguished\":
+        null, \"num_comments\": 642, \"visited\": false, \"num_reports\": null, \"ups\":
+        5810}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"youtube.com\", \"banned_by\":
+        null, \"media_embed\": {\"content\": \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\"
+        src=\\\"http://www.youtube.com/embed/cMhF5p_BGTU?feature=oembed\\\" frameborder=\\\"0\\\"
+        allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600, \"scrolling\": false,
+        \"height\": 338}, \"subreddit\": \"videos\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": {\"type\": \"youtube.com\", \"oembed\":
+        {\"provider_url\": \"http://www.youtube.com/\", \"description\": \"10 months
+        of my life in 1 second shots\", \"title\": \"Bits of Life\", \"url\": \"http://www.youtube.com/watch?v=cMhF5p_BGTU\",
+        \"type\": \"video\", \"author_name\": \"Micha\\u0142 Miko\\u0142aj Wojtunik\",
+        \"height\": 338, \"width\": 600, \"html\": \"&lt;iframe width=\\\"600\\\"
+        height=\\\"338\\\" src=\\\"https://www.youtube.com/embed/cMhF5p_BGTU?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\":
+        480, \"version\": \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\":
+        \"https://i.embed.ly/1/image?url=http%3A%2F%2Fi1.ytimg.com%2Fvi%2FcMhF5p_BGTU%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb\",
+        \"thumbnail_height\": 360, \"author_url\": \"http://www.youtube.com/channel/UCruUCy7EQ1PD_9CX9PaJfvw\"}},
+        \"link_flair_text\": null, \"id\": \"1qazud\", \"secure_media_embed\": {\"content\":
+        \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\" src=\\\"https://www.youtube.com/embed/cMhF5p_BGTU?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600,
+        \"scrolling\": false, \"height\": 338}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"qrpkk\", \"media\": {\"type\": \"youtube.com\", \"oembed\":
+        {\"provider_url\": \"http://www.youtube.com/\", \"description\": \"10 months
+        of my life in 1 second shots\", \"title\": \"Bits of Life\", \"url\": \"http://www.youtube.com/watch?v=cMhF5p_BGTU\",
+        \"type\": \"video\", \"author_name\": \"Micha\\u0142 Miko\\u0142aj Wojtunik\",
+        \"height\": 338, \"width\": 600, \"html\": \"&lt;iframe width=\\\"600\\\"
+        height=\\\"338\\\" src=\\\"http://www.youtube.com/embed/cMhF5p_BGTU?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\":
+        480, \"version\": \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\":
+        \"http://i1.ytimg.com/vi/cMhF5p_BGTU/hqdefault.jpg\", \"thumbnail_height\":
+        360, \"author_url\": \"http://www.youtube.com/channel/UCruUCy7EQ1PD_9CX9PaJfvw\"}},
+        \"score\": 2460, \"approved_by\": null, \"over_18\": false, \"hidden\": false,
+        \"thumbnail\": \"http://a.thumbs.redditmedia.com/4gMqz6bgKAXQI-JH.jpg\", \"subreddit_id\":
+        \"t5_2qh1e\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 3665, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/videos/comments/1qazud/man_films_2_seconds_of_each_day_everyday_for_10/\",
+        \"name\": \"t3_1qazud\", \"created\": 1384119446.0, \"url\": \"http://www.youtube.com/watch?v=cMhF5p_BGTU\",
+        \"author_flair_text\": null, \"title\": \"Man films 2 seconds of each day,
+        everyday, for 10 months.\", \"created_utc\": 1384090646.0, \"distinguished\":
+        null, \"num_comments\": 604, \"visited\": false, \"num_reports\": null, \"ups\":
+        6125}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"EarthPorn\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb0xk\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"SKhan13\", \"media\": null, \"score\":
+        2183, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://d.thumbs.redditmedia.com/-dtMPFfSzIpX_BPu.jpg\", \"subreddit_id\":
+        \"t5_2sbq3\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 1005, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/EarthPorn/comments/1qb0xk/tam_c\\u1ed1cb\\u00edch_\\u0111\\u1ed9ng_vietnam_1920x1080_photo_by_olga/\",
+        \"name\": \"t3_1qb0xk\", \"created\": 1384121021.0, \"url\": \"http://i.imgur.com/GsGu8l2.jpg\",
+        \"author_flair_text\": null, \"title\": \"Tam C\\u1ed1c-B\\u00edch \\u0110\\u1ed9ng,
+        Vietnam [1920x1080] Photo by Olga Khoroshunova\", \"created_utc\": 1384092221.0,
+        \"distinguished\": null, \"num_comments\": 66, \"visited\": false, \"num_reports\":
+        null, \"ups\": 3188}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.AskReddit\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"AskReddit\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qavdp\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"coversation\", \"media\": null, \"score\":
+        2254, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh1i\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 3329, \"saved\": false,
+        \"is_self\": true, \"permalink\": \"/r/AskReddit/comments/1qavdp/what_is_a_rule_that_is_broken_so_often_that_it/\",
+        \"name\": \"t3_1qavdp\", \"created\": 1384111235.0, \"url\": \"http://www.reddit.com/r/AskReddit/comments/1qavdp/what_is_a_rule_that_is_broken_so_often_that_it/\",
+        \"author_flair_text\": null, \"title\": \"What is a rule that is broken so
+        often that it essentially doesn't exist?\", \"created_utc\": 1384082435.0,
+        \"distinguished\": null, \"num_comments\": 8434, \"visited\": false, \"num_reports\":
+        null, \"ups\": 5583}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"theguardian.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"news\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qawgs\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"gabemart\", \"media\": null, \"score\":
+        1800, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh3l\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 809, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/news/comments/1qawgs/typhoon_haiyan_kills_10000_in_philippines_live/\",
+        \"name\": \"t3_1qawgs\", \"created\": 1384113440.0, \"url\": \"http://www.theguardian.com/world/2013/nov/10/typhoon-haiyan-kills-10000-in-philippines-live-updates\",
+        \"author_flair_text\": null, \"title\": \"Typhoon Haiyan kills 10,000 in Philippines:
+        live updates\", \"created_utc\": 1384084640.0, \"distinguished\": null, \"num_comments\":
+        243, \"visited\": false, \"num_reports\": null, \"ups\": 2609}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"plosone.org\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"science\", \"selftext_html\": null, \"selftext\": \"\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": \"Social Sciences\",
+        \"id\": \"1qar49\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"8902080104093\", \"media\": null, \"score\": 3146, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_mouw\", \"edited\": false, \"link_flair_css_class\": \"soc\", \"author_flair_css_class\":
+        null, \"downs\": 11189, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/science/comments/1qar49/huh_is_the_universal_word_say_linguists_huh_is/\",
+        \"name\": \"t3_1qar49\", \"created\": 1384102047.0, \"url\": \"http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0078273\",
+        \"author_flair_text\": null, \"title\": \"\\\"Huh\\\" is the universal word,
+        say linguists. \\\"Huh\\\" is not innate (other primates don't say it), but
+        the circumstances of its use (needing to quickly and briefly prompt another
+        speaker to repeat herself) are universal, so languages that share no commonalities
+        still converged on this word.\", \"created_utc\": 1384073247.0, \"distinguished\":
+        null, \"num_comments\": 691, \"visited\": false, \"num_reports\": null, \"ups\":
+        14335}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"reddit.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"bestof\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        \"[getdisciplined]\", \"id\": \"1qau50\", \"secure_media_embed\": {}, \"clicked\":
+        false, \"stickied\": false, \"author\": \"wwwhizz\", \"media\": null, \"score\":
+        1780, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh3v\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1242, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/bestof/comments/1qau50/ryans01_gives_a_four_rule_plan_to_have_a_better/\",
+        \"name\": \"t3_1qau50\", \"created\": 1384108461.0, \"url\": \"http://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af?context=3\",
+        \"author_flair_text\": null, \"title\": \"ryans01 gives a four rule plan to
+        have a better and more productive life\", \"created_utc\": 1384079661.0, \"distinguished\":
+        null, \"num_comments\": 142, \"visited\": false, \"num_reports\": null, \"ups\":
+        3022}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"theguardian.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qapzb\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"8902080104093\", \"media\": null, \"score\":
+        2629, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 4171, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/technology/comments/1qapzb/teenagers_say_goodbye_to_facebook_and_hello_to/\",
+        \"name\": \"t3_1qapzb\", \"created\": 1384099913.0, \"url\": \"http://www.theguardian.com/technology/2013/nov/10/teenagers-messenger-apps-facebook-exodus\",
+        \"author_flair_text\": null, \"title\": \"Teenagers say goodbye to Facebook
+        and hello to messenger apps just as their mums and dads get the hang of social
+        networking\", \"created_utc\": 1384071113.0, \"distinguished\": null, \"num_comments\":
+        1324, \"visited\": false, \"num_reports\": null, \"ups\": 6800}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"imgur.com\", \"banned_by\": null, \"media_embed\":
+        {\"content\": \"&lt;iframe class=\\\"imgur-album\\\" width=\\\"550\\\" height=\\\"550\\\"
+        frameborder=\\\"0\\\" src=\\\"http://imgur.com/a/aTPNs/embed\\\"&gt;&lt;/iframe&gt;\",
+        \"width\": 550, \"scrolling\": false, \"height\": 550}, \"subreddit\": \"movies\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": \"\", \"id\": \"1qatss\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"throw10away\",
+        \"media\": {\"type\": \"imgur.com\", \"oembed\": {\"provider_url\": \"http://imgur.com\",
+        \"description\": \"Imgur is home to the web's most popular image content,
+        curated in real time by a dedicated community through commenting, voting and
+        sharing.\", \"title\": \"imgur: the simple image sharer\", \"type\": \"rich\",
+        \"thumbnail_width\": 1571, \"height\": 550, \"width\": 550, \"html\": \"&lt;iframe
+        class=\\\"imgur-album\\\" width=\\\"550\\\" height=\\\"550\\\" frameborder=\\\"0\\\"
+        src=\\\"http://imgur.com/a/aTPNs/embed\\\"&gt;&lt;/iframe&gt;\", \"version\":
+        \"1.0\", \"provider_name\": \"Imgur\", \"thumbnail_url\": \"http://i.imgur.com/LHD1hp1.jpg\",
+        \"thumbnail_height\": 1200}}, \"score\": 1739, \"approved_by\": null, \"over_18\":
+        true, \"hidden\": false, \"thumbnail\": \"nsfw\", \"subreddit_id\": \"t5_2qh3s\",
+        \"edited\": false, \"link_flair_css_class\": \"media\", \"author_flair_css_class\":
+        null, \"downs\": 1217, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/movies/comments/1qatss/movie_posters_inspired_by_salvador_dali/\", \"name\":
+        \"t3_1qatss\", \"created\": 1384107701.0, \"url\": \"http://imgur.com/a/aTPNs\",
+        \"author_flair_text\": null, \"title\": \"Movie posters inspired by Salvador
+        Dali\", \"created_utc\": 1384078901.0, \"distinguished\": null, \"num_comments\":
+        110, \"visited\": false, \"num_reports\": null, \"ups\": 2956}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"self.IAmA\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"IAmA\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Title says it all, I&amp;#39;m an american engineer
+        who was sent over to help with construction here in Sochi for the olympics.
+        Attached is a picture of my ID badge and a picture of the olympic cauldron
+        that is still being built &lt;a href=\\\"http://imgur.com/sV38sYE,v7lgDN6#0\\\"&gt;http://imgur.com/sV38sYE,v7lgDN6#0&lt;/a&gt;
+        \ only 89 days until the olympics and there is still a lot of construction.
+        Ask me anything about being an american in Russia or Sochi or the 2014 olympics.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Title says it all, I'm an american engineer
+        who was sent over to help with construction here in Sochi for the olympics.
+        Attached is a picture of my ID badge and a picture of the olympic cauldron
+        that is still being built http://imgur.com/sV38sYE,v7lgDN6#0  only 89 days
+        until the olympics and there is still a lot of construction. Ask me anything
+        about being an american in Russia or Sochi or the 2014 olympics.\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1qbh49\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"metarinka\", \"media\": null, \"score\": 325, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"self\", \"subreddit_id\": \"t5_2qzb6\",
+        \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 107, \"saved\": false, \"is_self\": true, \"permalink\":
+        \"/r/IAmA/comments/1qbh49/i_am_an_american_contractor_in_sochi_russia/\",
+        \"name\": \"t3_1qbh49\", \"created\": 1384136577.0, \"url\": \"http://www.reddit.com/r/IAmA/comments/1qbh49/i_am_an_american_contractor_in_sochi_russia/\",
+        \"author_flair_text\": null, \"title\": \"I am an American contractor in Sochi
+        Russia helping to build stadiums for the 2014 winter Olympics. AMAA\", \"created_utc\":
+        1384107777.0, \"distinguished\": null, \"num_comments\": 141, \"visited\":
+        false, \"num_reports\": null, \"ups\": 432}}, {\"kind\": \"t3\", \"data\":
+        {\"domain\": \"self.askscience\", \"banned_by\": null, \"media_embed\": {},
+        \"subreddit\": \"askscience\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;As space is a vacuum, but would inhale something,
+        or would nothing happen? I&amp;#39;ve been wondering this for years and just
+        found this subreddit.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"selftext\":
+        \"As space is a vacuum, but would inhale something, or would nothing happen?
+        I've been wondering this for years and just found this subreddit.\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": \"Biology\", \"id\": \"1qauf7\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"Ass-assin\", \"media\": null, \"score\": 785, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qm4e\",
+        \"edited\": false, \"link_flair_css_class\": \"bio\", \"author_flair_css_class\":
+        null, \"downs\": 456, \"saved\": false, \"is_self\": true, \"permalink\":
+        \"/r/askscience/comments/1qauf7/when_you_attempt_inhale_in_space_what_do_you/\",
+        \"name\": \"t3_1qauf7\", \"created\": 1384109065.0, \"url\": \"http://www.reddit.com/r/askscience/comments/1qauf7/when_you_attempt_inhale_in_space_what_do_you/\",
+        \"author_flair_text\": null, \"title\": \"When you (attempt) inhale in space,
+        what do you inhale, or is it just physical impossible to inhale?\", \"created_utc\":
+        1384080265.0, \"distinguished\": null, \"num_comments\": 229, \"visited\":
+        false, \"num_reports\": null, \"ups\": 1241}}, {\"kind\": \"t3\", \"data\":
+        {\"domain\": \"self.books\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"books\", \"selftext_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hi
+        Reddit!  &lt;a href=\\\"http://www.williamkowalski.com/blog.\\\"&gt;My name
+        is William Kowalski.&lt;/a&gt; I&amp;#39;ve been writing since I was a little
+        kid, and I&amp;#39;ve been publishing novels since 1998.  I started writing
+        my first novel, EDDIE&amp;#39;S BASTARD, at age 23 or 24, and sold it to HarperCollins
+        Publishers when I was 28.  It came out in 1999 and became an international
+        best-seller, with translations in over a dozen languages.  I&amp;#39;ve published
+        eight more books since then.  My tenth title will be out next year.&lt;/p&gt;\\n\\n&lt;p&gt;I
+        also write shorter books for adults with literacy challenges, or who are learning
+        to read English.  These are called Rapid Reads, and they&amp;#39;re put out
+        by Orca Books of Vancouver.  The goal of these books is to tell a story that
+        will engage an adult while using simple, straightforward language--a very
+        difficult task.  So, five of my published books are literary/mainstream fiction,
+        and five of them are Rapid Reads.  I&amp;#39;m also an adult educator, and
+        I often work with the very people for whom these Rapid Reads are intended.
+        \ Listening to grown men and women reading for the first time in their lives
+        from a book I wrote myself is a very powerful experience.  &lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;m
+        an American by birth.  I grew up in Erie, PA and have lived all over the country,
+        most recently in Brooklyn, NY.  I moved to Canada in 2000 after meeting the
+        woman who is now my wife.  We married in 2002 and moved to rural Nova Scotia.
+        \ We have two kids now.  Life is a lot quieter than it was when I was a twenty-something
+        bachelor living in New York City, but it feels much more full.  I&amp;#39;m
+        a lucky guy and I know it.&lt;/p&gt;\\n\\n&lt;p&gt;My writing career so far
+        has spanned two worlds.  It began during the dying days of the old world of
+        publishing, when advances were sky-high and no one was really talking much
+        about e-books or self-publishing yet.  Like many other midlist authors, I
+        now find myself in a strange and slightly scary new world, where the publishing
+        industry seems to be folding in on itself and no one quite knows what is going
+        to happen.  It&amp;#39;s a weird time to be a writer.  The old gods are dead.
+        \ I would say &amp;quot;Long live the new gods,&amp;quot; but I don&amp;#39;t
+        know who they are yet.&lt;/p&gt;\\n\\n&lt;p&gt;Feel free to ask me anything,
+        though I can&amp;#39;t promise to answer &lt;em&gt;everything&lt;/em&gt;.
+        \ I especially encourage questions from beginning writers who hope to find
+        their own success.  &lt;/p&gt;\\n\\n&lt;p&gt;Disclaimer:  I do not consider
+        myself an expert on either writing or publishing.  I can only share my experiences
+        in these areas, and you can take from them what you will.  The only thing
+        I&amp;#39;m really an expert on is being me, and there are some days when
+        even that seems beyond me.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;BIBLIOGRAPHY&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;p&gt;1999
+        \ EDDIE&amp;#39;S BASTARD  (HarperCollins)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2001
+        \ SOMEWHERE SOUTH OF HERE (HarperCollins)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2003
+        \ THE ADVENTURES OF FLASH JACKSON (HarperCollins)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2004
+        \ THE GOOD NEIGHBOR (HarperCollins)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2003-present
+        \ Kids.  Man, do they take up your time.  &lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2010
+        \ THE BARRIO KINGS, THE WAY IT WORKS (Orca/ Raven Rapid Reads)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2011
+        \ SOMETHING NOBLE (Orca/Raven Rapid Reads)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2012
+        \ JUST GONE  (Orca/Raven Rapid Reads)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2013
+        \ THE HUNDRED HEARTS (Canadian publication by Thomas Allen, now Dundurn--not
+        currently for sale in the US)&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;2014
+        \ THE INNOCENCE DEVICE  (Orca/Raven Rapid Reads)&lt;/p&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;FREE
+        E-BOOK OPPORTUNITY:&lt;/strong&gt;  The good folks at Orca/Raven have agreed
+        to give a free e-copy of one of my Rapid Reads books, JUST GONE, to the first
+        50 people who email &lt;a href=\\\"mailto:digital@orcabook.com\\\"&gt;digital@orcabook.com&lt;/a&gt;
+        and request it.  Technically these are &amp;quot;samples&amp;quot;, because
+        they will only live on your device for 30 days.  Since today is Sunday and
+        tomorrow is a holiday, I am unsure of just when these requests will be filled.
+        \ But don&amp;#39;t let that stop you from asking!&lt;/p&gt;\\n\\n&lt;p&gt;I
+        had hoped to organize a similar giveaway of THE HUNDRED HEARTS, my newest
+        work of literary fiction, but for reasons beyond my control that wasn&amp;#39;t
+        able to happen.  My apologies.&lt;/p&gt;\\n\\n&lt;p&gt;I hope to be here answering
+        questions for the next few hours.  Thanks to the mods of r/books for allowing
+        me to do this AMA, and thanks to you all for stopping by!&lt;/p&gt;\\n\\n&lt;p&gt;Bill&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Hi Reddit!  [My name is William Kowalski.](http://www.williamkowalski.com/blog.)
+        I've been writing since I was a little kid, and I've been publishing novels
+        since 1998.  I started writing my first novel, EDDIE'S BASTARD, at age 23
+        or 24, and sold it to HarperCollins Publishers when I was 28.  It came out
+        in 1999 and became an international best-seller, with translations in over
+        a dozen languages.  I've published eight more books since then.  My tenth
+        title will be out next year.\\n\\nI also write shorter books for adults with
+        literacy challenges, or who are learning to read English.  These are called
+        Rapid Reads, and they're put out by Orca Books of Vancouver.  The goal of
+        these books is to tell a story that will engage an adult while using simple,
+        straightforward language--a very difficult task.  So, five of my published
+        books are literary/mainstream fiction, and five of them are Rapid Reads.  I'm
+        also an adult educator, and I often work with the very people for whom these
+        Rapid Reads are intended.  Listening to grown men and women reading for the
+        first time in their lives from a book I wrote myself is a very powerful experience.
+        \ \\n\\nI'm an American by birth.  I grew up in Erie, PA and have lived all
+        over the country, most recently in Brooklyn, NY.  I moved to Canada in 2000
+        after meeting the woman who is now my wife.  We married in 2002 and moved
+        to rural Nova Scotia.  We have two kids now.  Life is a lot quieter than it
+        was when I was a twenty-something bachelor living in New York City, but it
+        feels much more full.  I'm a lucky guy and I know it.\\n\\nMy writing career
+        so far has spanned two worlds.  It began during the dying days of the old
+        world of publishing, when advances were sky-high and no one was really talking
+        much about e-books or self-publishing yet.  Like many other midlist authors,
+        I now find myself in a strange and slightly scary new world, where the publishing
+        industry seems to be folding in on itself and no one quite knows what is going
+        to happen.  It's a weird time to be a writer.  The old gods are dead.  I would
+        say \\\"Long live the new gods,\\\" but I don't know who they are yet.\\n\\nFeel
+        free to ask me anything, though I can't promise to answer *everything*.  I
+        especially encourage questions from beginning writers who hope to find their
+        own success.  \\n\\nDisclaimer:  I do not consider myself an expert on either
+        writing or publishing.  I can only share my experiences in these areas, and
+        you can take from them what you will.  The only thing I'm really an expert
+        on is being me, and there are some days when even that seems beyond me.\\n\\n**BIBLIOGRAPHY**\\n\\n*
+        \ 1999  EDDIE'S BASTARD  (HarperCollins)\\n\\n*  2001  SOMEWHERE SOUTH OF
+        HERE (HarperCollins)\\n\\n*  2003  THE ADVENTURES OF FLASH JACKSON (HarperCollins)\\n\\n*
+        \ 2004  THE GOOD NEIGHBOR (HarperCollins)\\n\\n*  2003-present  Kids.  Man,
+        do they take up your time.  \\n\\n*  2010  THE BARRIO KINGS, THE WAY IT WORKS
+        (Orca/ Raven Rapid Reads)\\n\\n*  2011  SOMETHING NOBLE (Orca/Raven Rapid
+        Reads)\\n\\n*  2012  JUST GONE  (Orca/Raven Rapid Reads)\\n\\n*  2013  THE
+        HUNDRED HEARTS (Canadian publication by Thomas Allen, now Dundurn--not currently
+        for sale in the US)\\n\\n*  2014  THE INNOCENCE DEVICE  (Orca/Raven Rapid
+        Reads)\\n\\n**FREE E-BOOK OPPORTUNITY:**  The good folks at Orca/Raven have
+        agreed to give a free e-copy of one of my Rapid Reads books, JUST GONE, to
+        the first 50 people who email digital@orcabook.com and request it.  Technically
+        these are \\\"samples\\\", because they will only live on your device for
+        30 days.  Since today is Sunday and tomorrow is a holiday, I am unsure of
+        just when these requests will be filled.  But don't let that stop you from
+        asking!\\n\\nI had hoped to organize a similar giveaway of THE HUNDRED HEARTS,
+        my newest work of literary fiction, but for reasons beyond my control that
+        wasn't able to happen.  My apologies.\\n\\nI hope to be here answering questions
+        for the next few hours.  Thanks to the mods of r/books for allowing me to
+        do this AMA, and thanks to you all for stopping by!\\n\\nBill\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1qb6tz\",
+        \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"William_Kowalski\", \"media\": null, \"score\": 278, \"approved_by\": null,
+        \"over_18\": false, \"hidden\": false, \"thumbnail\": \"self\", \"subreddit_id\":
+        \"t5_2qh4i\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 107, \"saved\": false, \"is_self\": true, \"permalink\":
+        \"/r/books/comments/1qb6tz/ive_been_a_professional_novelist_since_1998_i/\",
+        \"name\": \"t3_1qb6tz\", \"created\": 1384127749.0, \"url\": \"http://www.reddit.com/r/books/comments/1qb6tz/ive_been_a_professional_novelist_since_1998_i/\",
+        \"author_flair_text\": null, \"title\": \"I've been a professional novelist
+        since 1998. I love helping up-and-coming writers. My name is William Kowalski.
+        AMAA!\", \"created_utc\": 1384098949.0, \"distinguished\": null, \"num_comments\":
+        232, \"visited\": false, \"num_reports\": null, \"ups\": 385}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"self.explainlikeimfive\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"explainlikeimfive\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qbap6\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Do_not_dare_give_up\", \"media\": null,
+        \"score\": 211, \"approved_by\": null, \"over_18\": false, \"hidden\": false,
+        \"thumbnail\": \"\", \"subreddit_id\": \"t5_2sokd\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 74, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/explainlikeimfive/comments/1qbap6/eli5_vevo_what_is_it_what_does_it_do_and_why_does/\",
+        \"name\": \"t3_1qbap6\", \"created\": 1384131313.0, \"url\": \"http://www.reddit.com/r/explainlikeimfive/comments/1qbap6/eli5_vevo_what_is_it_what_does_it_do_and_why_does/\",
+        \"author_flair_text\": null, \"title\": \"ELI5: Vevo, what is it, what does
+        it do, and why does everyone seem to hate it?\", \"created_utc\": 1384102513.0,
+        \"distinguished\": null, \"num_comments\": 44, \"visited\": false, \"num_reports\":
+        null, \"ups\": 285}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"youtube.com\",
+        \"banned_by\": null, \"media_embed\": {\"content\": \"&lt;iframe width=\\\"600\\\"
+        height=\\\"450\\\" src=\\\"http://www.youtube.com/embed/LSxTcaDBPbs?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600,
+        \"scrolling\": false, \"height\": 450}, \"subreddit\": \"television\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": {\"oembed\":
+        {\"provider_url\": \"http://www.youtube.com/\", \"description\": \"Coming
+        2014. The classic anime available on Blu-ray and Digital for the first time
+        ever in the U.S. from FUNimation.\", \"title\": \"Cowboy Bebop - Coming Soon
+        - Trailer\", \"url\": \"http://www.youtube.com/watch?v=LSxTcaDBPbs\", \"author_name\":
+        \"FUNimation\", \"height\": 450, \"width\": 600, \"html\": \"&lt;iframe width=\\\"600\\\"
+        height=\\\"450\\\" src=\\\"https://www.youtube.com/embed/LSxTcaDBPbs?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\":
+        480, \"version\": \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\":
+        \"https://i.embed.ly/1/image?url=http%3A%2F%2Fi1.ytimg.com%2Fvi%2FLSxTcaDBPbs%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb\",
+        \"type\": \"video\", \"thumbnail_height\": 360, \"author_url\": \"http://www.youtube.com/user/FUNimation\"},
+        \"type\": \"youtube.com\"}, \"link_flair_text\": null, \"id\": \"1q9o0o\",
+        \"secure_media_embed\": {\"content\": \"&lt;iframe width=\\\"600\\\" height=\\\"450\\\"
+        src=\\\"https://www.youtube.com/embed/LSxTcaDBPbs?feature=oembed\\\" frameborder=\\\"0\\\"
+        allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600, \"scrolling\": false,
+        \"height\": 450}, \"clicked\": false, \"stickied\": false, \"author\": \"anothercowboy\",
+        \"media\": {\"oembed\": {\"provider_url\": \"http://www.youtube.com/\", \"description\":
+        \"Coming 2014. The classic anime available on Blu-ray and Digital for the
+        first time ever in the U.S. from FUNimation.\", \"title\": \"Cowboy Bebop
+        - Coming Soon - Trailer\", \"url\": \"http://www.youtube.com/watch?v=LSxTcaDBPbs\",
+        \"author_name\": \"FUNimation\", \"height\": 450, \"width\": 600, \"html\":
+        \"&lt;iframe width=\\\"600\\\" height=\\\"450\\\" src=\\\"http://www.youtube.com/embed/LSxTcaDBPbs?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\":
+        480, \"version\": \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\":
+        \"http://i1.ytimg.com/vi/LSxTcaDBPbs/hqdefault.jpg\", \"type\": \"video\",
+        \"thumbnail_height\": 360, \"author_url\": \"http://www.youtube.com/user/FUNimation\"},
+        \"type\": \"youtube.com\"}, \"score\": 1077, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"http://d.thumbs.redditmedia.com/5OCkE31yl2JKXp7c.jpg\",
+        \"subreddit_id\": \"t5_2qh6e\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 564, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/television/comments/1q9o0o/cowboy_bebop_bluray_us_release/\",
+        \"name\": \"t3_1q9o0o\", \"created\": 1384062204.0, \"url\": \"http://www.youtube.com/watch?v=LSxTcaDBPbs\",
+        \"author_flair_text\": null, \"title\": \"Cowboy Bebop Blu-Ray U.S. Release\",
+        \"created_utc\": 1384033404.0, \"distinguished\": null, \"num_comments\":
+        294, \"visited\": false, \"num_reports\": null, \"ups\": 1641}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"tech.uk.msn.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"technology\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1qba8s\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"ButtUglyPaolo\", \"media\": null, \"score\": 500, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 114, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/technology/comments/1qba8s/a_3d_printed_liver_has_been_created_that_can/\",
+        \"name\": \"t3_1qba8s\", \"created\": 1384130916.0, \"url\": \"http://tech.uk.msn.com/news/articles.aspx?cp-documentid=258282574\",
+        \"author_flair_text\": null, \"title\": \"A 3D printed liver has been created
+        that can survive for 40 days\", \"created_utc\": 1384102116.0, \"distinguished\":
+        null, \"num_comments\": 46, \"visited\": false, \"num_reports\": null, \"ups\":
+        614}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"imgur.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"AdviceAnimals\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb6lp\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Maestronaut\", \"media\": null, \"score\":
+        2161, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://c.thumbs.redditmedia.com/VKAenXTRhgwhlHJt.jpg\", \"subreddit_id\":
+        \"t5_2s7tt\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 2122, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/AdviceAnimals/comments/1qb6lp/seriously_why_am_i_here_then/\", \"name\":
+        \"t3_1qb6lp\", \"created\": 1384127529.0, \"url\": \"http://imgur.com/6MwdN2Q\",
+        \"author_flair_text\": null, \"title\": \"Seriously, why am I here then?\",
+        \"created_utc\": 1384098729.0, \"distinguished\": null, \"num_comments\":
+        175, \"visited\": false, \"num_reports\": null, \"ups\": 4283}}], \"after\":
+        \"t3_1qb6lp\", \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:56:45 GMT
+recorded_with: VCR 2.6.0

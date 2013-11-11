@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/api/info.json?url=github.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 19:56:43 GMT
+      Content-Length:
+      - '4582'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"github.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"rubytesting\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"110s4j\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"rubytesting\", \"media\": null, \"score\":
+        1, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2uorf\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/rubytesting/comments/110s4j/github/\", \"name\":
+        \"t3_110s4j\", \"created\": 1349487983.0, \"url\": \"http://github.com\",
+        \"author_flair_text\": null, \"title\": \"Github\", \"created_utc\": 1349484383.0,
+        \"ups\": 2, \"num_comments\": 0, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"github.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"anddev\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"zqfpg\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"brandonlnelson15\", \"media\": null, \"score\": 1, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2v0vo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 0, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/anddev/comments/zqfpg/github_\\u8def_social_coding/\",
+        \"name\": \"t3_zqfpg\", \"created\": 1347406958.0, \"url\": \"http://github.com\",
+        \"author_flair_text\": null, \"title\": \"GitHub \\u8def Social Coding\",
+        \"created_utc\": 1347403358.0, \"ups\": 1, \"num_comments\": 0, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"github.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"cocoabeans\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"t80gs\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"CocoaBeans\", \"media\": null, \"score\": 1, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2u1f6\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 0, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/cocoabeans/comments/t80gs/test_post_1/\",
+        \"name\": \"t3_t80gs\", \"created\": 1336198967.0, \"url\": \"http://www.github.com\",
+        \"author_flair_text\": null, \"title\": \"Test post 1\", \"created_utc\":
+        1336195367.0, \"ups\": 1, \"num_comments\": 0, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"github.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"git\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"efzk6\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"kmwhite\", \"media\":
+        null, \"score\": 3, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qhv1\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        2, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/git/comments/efzk6/using_coupon_code_winterwonder_for_a_free_month/\",
+        \"name\": \"t3_efzk6\", \"created\": 1291437148.0, \"url\": \"http://www.github.com\",
+        \"author_flair_text\": null, \"title\": \"Using coupon code winterwonder for
+        a free month of git micro\", \"created_utc\": 1291437148.0, \"ups\": 5, \"num_comments\":
+        0, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"github.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1jnj1s\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"thai510\", \"media\": null, \"score\": 0, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 13, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/1jnj1s/github_seems_to_be_down/\", \"name\": \"t3_1jnj1s\",
+        \"created\": 1375578223.0, \"url\": \"http://github.com\", \"author_flair_text\":
+        null, \"title\": \"Github seems to be down\", \"created_utc\": 1375574623.0,
+        \"ups\": 4, \"num_comments\": 3, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}], \"after\": null, \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:56:42 GMT
+recorded_with: VCR 2.6.0

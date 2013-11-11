@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Location:
+      - http://www.reddit.com/r/goldredditsays/
+      Content-Length:
+      - '261'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 10 Nov 2013 22:38:27 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        <html>
+         <head>
+          <title>302 Found</title>
+         </head>
+         <body>
+          <h1>302 Found</h1>
+          The resource was found at <a href="http://www.reddit.com/r/goldredditsays/">http://www.reddit.com/r/goldredditsays/</a>;
+        you should be redirected automatically.
+
+
+         </body>
+        </html>
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:38:25 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/r/goldredditsays/about.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:38:27 GMT
+      Content-Length:
+      - '9830'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2t72t\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"goldredditsays\", \"header_img\": \"http://f.thumbs.redditmedia.com/W0xItPrYVx2yAjWw.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;h3&gt;THE
+        SRS FEMPIRE&lt;/h3&gt;\\n\\n&lt;table&gt;&lt;thead&gt;\\n&lt;tr&gt;\\n&lt;th
+        align=\\\"left\\\"&gt;.&lt;/th&gt;\\n&lt;th align=\\\"left\\\"&gt;.&lt;/th&gt;\\n&lt;/tr&gt;\\n&lt;/thead&gt;&lt;tbody&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/ShitRedditSays\\\"&gt;ShitRedditSays&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSBeliefs\\\"&gt;SRSBeliefs&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSBooks\\\"&gt;SRSBooks&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSBusiness\\\"&gt;SRSBusiness&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSCinema\\\"&gt;SRSCinema&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSComics\\\"&gt;SRSComics&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSDisabilities\\\"&gt;SRSDisabilities&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSDiscussion\\\"&gt;SRSDiscussion&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSFeminism\\\"&gt;SRSFeminism&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSFoodies\\\"&gt;SRSFoodies&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSFunny\\\"&gt;SRSFunny&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSGaming\\\"&gt;SRSGaming&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSGreatestHits\\\"&gt;SRSGreatestHits&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSGSM\\\"&gt;SRSGSM&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSHappy\\\"&gt;SRSHappy&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSImages\\\"&gt;SRSImages&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSMailbag\\\"&gt;SRSMailbag&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSMen\\\"&gt;SRSMen&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSMeta\\\"&gt;SRSMeta&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSMusic\\\"&gt;SRSMusic&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSMythos\\\"&gt;SRSMythos&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSPoC\\\"&gt;SRSPoC&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSPonies\\\"&gt;SRSPonies&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSQuestions\\\"&gt;SRSQuestions&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSRedditDrama\\\"&gt;SRSRedditDrama&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSScience\\\"&gt;SRSScience&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSSex\\\"&gt;SRSSex&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSSkeptic\\\"&gt;SRSSkeptic&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSTechnology\\\"&gt;SRSTechnology&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSTelevision\\\"&gt;SRSTelevision&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSTransSupport\\\"&gt;SRSTransSupport&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSTrees\\\"&gt;SRSTrees&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSWomen\\\"&gt;SRSWomen&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SRSWorldProblems\\\"&gt;SRSWorldProblems&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/Daww\\\"&gt;Daww&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/GoldRedditSays\\\"&gt;GoldRedditSays&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SocialJustice101\\\"&gt;SocialJustice101&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"http://www.reddit.com/r/ShitRedditSays/wiki/directory\\\"&gt;Full
+        Directory&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;/tbody&gt;&lt;/table&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;h1&gt;Rules&lt;/h1&gt;\\n\\n&lt;h6&gt;&lt;a
+        href=\\\"#h6-red\\\"&gt;&lt;/a&gt;&lt;/h6&gt;\\n\\n&lt;blockquote&gt;\\n&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;
+        Posts that are bigoted, creepy, misogynistic, transphobic, unsettling, racist,
+        homophobic, or just reeking of unexamined, toxic privilege will probably result
+        in a ban.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Please include
+        the vote count in brackets along with a quote as the title of the gold you
+        are submitting. A brief summary for context or for complex posts is also acceptable.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;
+        Please link to an individual post and refrain from liking to an entire submission.
+        Please do not say &amp;quot;this whole thread,&amp;quot; and instead find
+        a good nugget of gold that you liked to link to from the comments.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt;
+        Please link only to upvoted posts. We want to see people agreeing with gold,
+        to show that there are decent people on Reddit, and upvotes are a great indicator
+        of that.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; Please do
+        not link to a comment by an SRSer, a cursory glance at someone&amp;#39;s posting
+        history to see if they post in any Fempire subreddits is all it should take
+        to determine this. Excellent posts by SRSers should go in [4] &lt;a href=\\\"/r/SRSGreatestHits\\\"&gt;/r/SRSGreatestHits&lt;/a&gt;.
+        Note that this includes no links to Fempire subreddits.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt;
+        Please do not link to threads you have some involvement in.&lt;/p&gt;\\n&lt;/blockquote&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/goldredditsays/comments/uvklw/goldredditsays_new_community_guidelines_are_here/\\\"&gt;There
+        is a discussion on these rules, and a more in-depth explanation here.&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"\\\"All the gold which is under or upon the earth
+        is not enough to give in exchange for virtue.\\\" -Plato\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": null, \"description\": \"###THE
+        SRS FEMPIRE\\n\\n. | .\\n:--|:--\\n[ShitRedditSays](/r/ShitRedditSays)|[SRSBeliefs](/r/SRSBeliefs)\\n[SRSBooks](/r/SRSBooks)|[SRSBusiness](/r/SRSBusiness)\\n[SRSCinema](/r/SRSCinema)|[SRSComics](/r/SRSComics)\\n[SRSDisabilities](/r/SRSDisabilities)|[SRSDiscussion](/r/SRSDiscussion)\\n[SRSFeminism](/r/SRSFeminism)|[SRSFoodies](/r/SRSFoodies)\\n[SRSFunny](/r/SRSFunny)|[SRSGaming](/r/SRSGaming)\\n[SRSGreatestHits](/r/SRSGreatestHits)|[SRSGSM](/r/SRSGSM)\\n[SRSHappy](/r/SRSHappy)|[SRSImages](/r/SRSImages)\\n[SRSMailbag](/r/SRSMailbag)|[SRSMen](/r/SRSMen)\\n[SRSMeta](/r/SRSMeta)|[SRSMusic](/r/SRSMusic)\\n[SRSMythos](/r/SRSMythos)|[SRSPoC](/r/SRSPoC)\\n[SRSPonies](/r/SRSPonies)|[SRSQuestions](/r/SRSQuestions)\\n[SRSRedditDrama](/r/SRSRedditDrama)|[SRSScience](/r/SRSScience)\\n[SRSSex](/r/SRSSex)|[SRSSkeptic](/r/SRSSkeptic)\\n[SRSTechnology](/r/SRSTechnology)|[SRSTelevision](/r/SRSTelevision)\\n[SRSTransSupport](/r/SRSTransSupport)|[SRSTrees](/r/SRSTrees)\\n[SRSWomen](/r/SRSWomen)|[SRSWorldProblems](/r/SRSWorldProblems)\\n[Daww](/r/Daww)|[GoldRedditSays](/r/GoldRedditSays)\\n[SocialJustice101](/r/SocialJustice101)|[Full
+        Directory](http://www.reddit.com/r/ShitRedditSays/wiki/directory)\\n\\n---\\n\\n#
+        Rules\\n\\n###### [](#h6-red)\\n\\n&gt;**1.** Posts that are bigoted, creepy,
+        misogynistic, transphobic, unsettling, racist, homophobic, or just reeking
+        of unexamined, toxic privilege will probably result in a ban.\\n\\n&gt;**2.**
+        Please include the vote count in brackets along with a quote as the title
+        of the gold you are submitting. A brief summary for context or for complex
+        posts is also acceptable.\\n\\n&gt;**3.** Please link to an individual post
+        and refrain from liking to an entire submission. Please do not say \\\"this
+        whole thread,\\\" and instead find a good nugget of gold that you liked to
+        link to from the comments.\\n\\n&gt;**4.** Please link only to upvoted posts.
+        We want to see people agreeing with gold, to show that there are decent people
+        on Reddit, and upvotes are a great indicator of that.\\n\\n\\n&gt;**5.** Please
+        do not link to a comment by an SRSer, a cursory glance at someone's posting
+        history to see if they post in any Fempire subreddits is all it should take
+        to determine this. Excellent posts by SRSers should go in [4] /r/SRSGreatestHits.
+        Note that this includes no links to Fempire subreddits.\\n\\n&gt;**6.** Please
+        do not link to threads you have some involvement in.\\n\\n---\\n\\n[There
+        is a discussion on these rules, and a more in-depth explanation here.](http://www.reddit.com/r/goldredditsays/comments/uvklw/goldredditsays_new_community_guidelines_are_here/)\",
+        \"submit_link_label\": null, \"accounts_active\": 14, \"spam_comments\": \"low\",
+        \"spam_links\": \"high\", \"header_size\": [121, 120], \"subscribers\": 6131,
+        \"submit_text_label\": null, \"name\": \"t5_2t72t\", \"created\": 1323352011.0,
+        \"url\": \"/r/goldredditsays/\", \"created_utc\": 1323348411.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"Welcome to GoldRedditSays!
+        GRS is the subreddit for gold miners to mine the comments posted on Reddit
+        and to find those really good comments that show goldlords on Reddit being
+        decent human beings.\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:38:26 GMT
+recorded_with: VCR 2.6.0

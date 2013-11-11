@@ -1,0 +1,375 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/programming/top.json?t=year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 19:56:45 GMT
+      Content-Length:
+      - '26222'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"bjk5.com\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"19rzi3\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"MY_POOP_HAS_HAIR\", \"media\": null, \"score\":
+        4007, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 2135, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/19rzi3/breaking_down_amazons_mega_dropdown/\",
+        \"name\": \"t3_19rzi3\", \"created\": 1362581677.0, \"url\": \"http://bjk5.com/post/44698559168/breaking-down-amazons-mega-dropdown\",
+        \"author_flair_text\": null, \"title\": \"Breaking down Amazon's mega dropdown\",
+        \"created_utc\": 1362581677.0, \"ups\": 6142, \"num_comments\": 223, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"7.asset.soup.io\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"17jwoi\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"dgryski\", \"media\": null, \"score\": 3470, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 2172, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/17jwoi/dialup_handshake_explained/\", \"name\":
+        \"t3_17jwoi\", \"created\": 1359534993.0, \"url\": \"http://7.asset.soup.io/asset/4049/7559_e892.jpeg\",
+        \"author_flair_text\": null, \"title\": \"Dialup handshake explained\", \"created_utc\":
+        1359534993.0, \"ups\": 5642, \"num_comments\": 425, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"codepen.io\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1ayxbr\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"willvarfar\", \"media\":
+        null, \"score\": 3220, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        1588, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1ayxbr/simulating_cloth/\",
+        \"name\": \"t3_1ayxbr\", \"created\": 1364218706.0, \"url\": \"http://codepen.io/stuffit/pen/KrAwx\",
+        \"author_flair_text\": null, \"title\": \"Simulating cloth\", \"created_utc\":
+        1364215106.0, \"ups\": 4808, \"num_comments\": 217, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"451unavailable.org\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1keu94\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"JayEnn\", \"media\":
+        null, \"score\": 2840, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        1631, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1keu94/campaign_for_a_new_http_error_code_451_blocked/\",
+        \"name\": \"t3_1keu94\", \"created\": 1376568334.0, \"url\": \"http://www.451unavailable.org/\",
+        \"author_flair_text\": null, \"title\": \"Campaign for a new HTTP Error code:
+        451 - Blocked for legal reasons\", \"created_utc\": 1376564734.0, \"ups\":
+        4471, \"num_comments\": 454, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"qr.ae\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1i1vlc\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"boinger\", \"media\": null, \"score\":
+        2686, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1250, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/1i1vlc/an_absolutely_brilliant_analogy_as_to_why/\",
+        \"name\": \"t3_1i1vlc\", \"created\": 1373511493.0, \"url\": \"http://qr.ae/IRb4Y\",
+        \"author_flair_text\": null, \"title\": \"An absolutely brilliant analogy
+        as to why software development task estimations are regularly off by a factor
+        of 2-3\", \"created_utc\": 1373507893.0, \"ups\": 3936, \"num_comments\":
+        655, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"gist.github.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1bku8g\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"sidcool1234\", \"media\": null, \"score\":
+        2650, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1328, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/1bku8g/this_is_the_code_comcast_is_injecting_into_its/\",
+        \"name\": \"t3_1bku8g\", \"created\": 1364985698.0, \"url\": \"https://gist.github.com/ryankearney/4146814\",
+        \"author_flair_text\": null, \"title\": \"This is the code Comcast is injecting
+        into its users web traffic\", \"created_utc\": 1364982098.0, \"ups\": 3978,
+        \"num_comments\": 955, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"19pamv\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"larholm\", \"media\": null, \"score\":
+        2624, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1238, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/19pamv/pe_101_a_windows_executable_walkthrough/\",
+        \"name\": \"t3_19pamv\", \"created\": 1362484174.0, \"url\": \"http://i.imgur.com/tnUca.jpg\",
+        \"author_flair_text\": null, \"title\": \"PE 101 - a windows executable walkthrough\",
+        \"created_utc\": 1362484174.0, \"ups\": 3862, \"num_comments\": 207, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"theonion.github.io\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1dzya4\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"melodic_underoos\", \"media\": null, \"score\": 2601,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1731, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/1dzya4/the_onion_releases_fartscrolljs/\",
+        \"name\": \"t3_1dzya4\", \"created\": 1368108428.0, \"url\": \"http://theonion.github.io/fartscroll.js/\",
+        \"author_flair_text\": null, \"title\": \"The Onion releases fartscroll.js\",
+        \"created_utc\": 1368104828.0, \"ups\": 4332, \"num_comments\": 418, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"stackoverflow.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"18t6mp\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"changelog\", \"media\": null, \"score\": 2433, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 1307, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/18t6mp/hello_im_a_compiler/\", \"name\": \"t3_18t6mp\",
+        \"created\": 1361265659.0, \"url\": \"http://stackoverflow.com/questions/2684364/why-arent-programs-written-in-assembly-more-often/2685541#2685541\",
+        \"author_flair_text\": null, \"title\": \"Hello. I'm a compiler.\", \"created_utc\":
+        1361265659.0, \"ups\": 3740, \"num_comments\": 716, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"16lp8k\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"fatpolak\", \"media\":
+        null, \"score\": 2419, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        1426, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/16lp8k/taking_over_programming_position_from_a_grad/\",
+        \"name\": \"t3_16lp8k\", \"created\": 1358227742.0, \"url\": \"http://imgur.com/lfrGd\",
+        \"author_flair_text\": null, \"title\": \"Taking over programming position
+        from a grad student going to IBM... found this code - Imgur\", \"created_utc\":
+        1358227742.0, \"ups\": 3845, \"num_comments\": 980, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"blog.zorinaq.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1e4b7x\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"cooljeanius\",
+        \"media\": null, \"score\": 2409, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        966, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1e4b7x/i_contribute_to_the_windows_kernel_we_are_slower/\",
+        \"name\": \"t3_1e4b7x\", \"created\": 1368261403.0, \"url\": \"http://blog.zorinaq.com/?e=74\",
+        \"author_flair_text\": null, \"title\": \"\\\"I Contribute to the Windows
+        Kernel. We Are Slower Than Other Operating Systems. Here Is Why.\\\" [xpost
+        from /r/technology]\", \"created_utc\": 1368257803.0, \"ups\": 3375, \"num_comments\":
+        961, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"youtube.com\", \"banned_by\":
+        null, \"media_embed\": {\"content\": \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\"
+        src=\\\"http://www.youtube.com/embed/D0EIZa5e9q4?feature=oembed\\\" frameborder=\\\"0\\\"
+        allowfullscreen&gt;&lt;/iframe&gt;\", \"width\": 600, \"scrolling\": false,
+        \"height\": 338}, \"subreddit\": \"programming\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"18p64x\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"ayline\", \"media\": {\"type\": \"youtube.com\",
+        \"oembed\": {\"provider_url\": \"http://www.youtube.com/\", \"description\":
+        \"Short and simple presentation about wat behavior in programming languages.\",
+        \"title\": \"wat.mov\", \"url\": \"http://www.youtube.com/watch?v=D0EIZa5e9q4\",
+        \"type\": \"video\", \"author_name\": \"Yann Bane\", \"height\": 338, \"width\":
+        600, \"html\": \"&lt;iframe width=\\\"600\\\" height=\\\"338\\\" src=\\\"http://www.youtube.com/embed/D0EIZa5e9q4?feature=oembed\\\"
+        frameborder=\\\"0\\\" allowfullscreen&gt;&lt;/iframe&gt;\", \"thumbnail_width\":
+        480, \"version\": \"1.0\", \"provider_name\": \"YouTube\", \"thumbnail_url\":
+        \"http://i1.ytimg.com/vi/D0EIZa5e9q4/hqdefault.jpg\", \"thumbnail_height\":
+        360, \"author_url\": \"http://www.youtube.com/user/yannbane\"}}, \"score\":
+        2376, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1289, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/18p64x/wat/\",
+        \"name\": \"t3_18p64x\", \"created\": 1361122824.0, \"url\": \"http://www.youtube.com/watch?v=D0EIZa5e9q4&amp;feature=player_detailpage\",
+        \"author_flair_text\": null, \"title\": \"Wat...\", \"created_utc\": 1361122824.0,
+        \"ups\": 3665, \"num_comments\": 396, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"jasonbock.net\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"16qbxn\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"scientologist2\",
+        \"media\": null, \"score\": 2295, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        1138, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/16qbxn/if_carpenters_were_hired_like_programmers/\",
+        \"name\": \"t3_16qbxn\", \"created\": 1358394622.0, \"url\": \"http://www.jasonbock.net/jb/Default.aspx?blog=entry.7c334037d1a9437d9fa6506e2f35eaac\",
+        \"author_flair_text\": null, \"title\": \"If Carpenters Were Hired Like Programmers\",
+        \"created_utc\": 1358394622.0, \"ups\": 3433, \"num_comments\": 996, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"gkoberger.github.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1aja28\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"gkoberger\", \"media\": null, \"score\": 2285, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 1008, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/1aja28/xkcdinspired_stacksort/\", \"name\": \"t3_1aja28\",
+        \"created\": 1363631920.0, \"url\": \"http://gkoberger.github.com/stacksort/\",
+        \"author_flair_text\": null, \"title\": \"XKCD-inspired StackSort\", \"created_utc\":
+        1363628320.0, \"ups\": 3293, \"num_comments\": 287, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"github.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1fxnx8\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"goshakkk\", \"media\":
+        null, \"score\": 2254, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        913, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1fxnx8/easily_add_a_nsa_backdoor_to_your_rails_app/\",
+        \"name\": \"t3_1fxnx8\", \"created\": 1370716260.0, \"url\": \"https://github.com/goshakkk/nsa_panel\",
+        \"author_flair_text\": null, \"title\": \"Easily add a NSA backdoor to your
+        Rails app.\", \"created_utc\": 1370712660.0, \"ups\": 3167, \"num_comments\":
+        219, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"deedy.quora.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1fpf44\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"darkmirage\", \"media\": null, \"score\":
+        2236, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 984, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/1fpf44/student_scraped_indias_unprotected_college/\",
+        \"name\": \"t3_1fpf44\", \"created\": 1370415424.0, \"url\": \"http://deedy.quora.com/Hacking-into-the-Indian-Education-System\",
+        \"author_flair_text\": null, \"title\": \"Student scraped India's unprotected
+        college entrance exam result and found evidence of grade tampering\", \"created_utc\":
+        1370411824.0, \"ups\": 3220, \"num_comments\": 826, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"qiao.github.io\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1cylmb\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"hazadess\", \"media\":
+        null, \"score\": 2204, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        599, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1cylmb/pathfinding_algorithm_visually_explained/\",
+        \"name\": \"t3_1cylmb\", \"created\": 1366753602.0, \"url\": \"http://qiao.github.io/PathFinding.js/visual/\",
+        \"author_flair_text\": null, \"title\": \"PathFinding algorithm, visually
+        explained\", \"created_utc\": 1366750002.0, \"ups\": 2803, \"num_comments\":
+        242, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"informationweek.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1jsiro\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"ungulate\", \"media\": null, \"score\":
+        2192, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1809, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/1jsiro/https_has_been_compromised_not_sure_why_this/\",
+        \"name\": \"t3_1jsiro\", \"created\": 1375767375.0, \"url\": \"http://www.informationweek.com/security/attacks/https-hackable-in-30-seconds-dhs-alert/240159435\",
+        \"author_flair_text\": null, \"title\": \"HTTPS has been compromised -- not
+        sure why this hasn't made the rounds on reddit yet\", \"created_utc\": 1375763775.0,
+        \"ups\": 4001, \"num_comments\": 383, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"datapointed.net\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"138q4q\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"swizec\", \"media\":
+        null, \"score\": 2143, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        536, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/138q4q/number_porn_animated_factorisation_diagrams/\",
+        \"name\": \"t3_138q4q\", \"created\": 1352992788.0, \"url\": \"http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/#\",
+        \"author_flair_text\": null, \"title\": \"Number Porn \\u2014 Animated Factorisation
+        Diagrams\", \"created_utc\": 1352992788.0, \"ups\": 2679, \"num_comments\":
+        205, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"smore.com\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1emllg\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"powercow\", \"media\": null, \"score\":
+        2096, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1015, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/programming/comments/1emllg/our_research_shows_that_people_love_two_things/\",
+        \"name\": \"t3_1emllg\", \"created\": 1368969829.0, \"url\": \"https://www.smore.com/clippy-js\",
+        \"author_flair_text\": null, \"title\": \"Our research shows that people love
+        two things: failed Microsoft technologies and obscure Javascript libraries.
+        Naturally, we decided to combine the two.\", \"created_utc\": 1368966229.0,
+        \"ups\": 3111, \"num_comments\": 228, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"quora.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1pk14s\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"muldoonx9\", \"media\":
+        null, \"score\": 2066, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        764, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1pk14s/dave_baggetts_answer_to_programming_interviews/\",
+        \"name\": \"t3_1pk14s\", \"created\": 1383186944.0, \"url\": \"http://www.quora.com/Programming-Interviews/Whats-the-hardest-bug-youve-debugged/answer/Dave-Baggett?srid=pxH3&amp;share=1\",
+        \"author_flair_text\": null, \"title\": \"Dave Baggett's answer to Programming
+        Interviews: What's the hardest bug you've debugged?\", \"created_utc\": 1383158144.0,
+        \"ups\": 2830, \"num_comments\": 653, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"aaronsw.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"16fykq\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"MechSkep\", \"media\":
+        null, \"score\": 2021, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        889, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/16fykq/if_i_get_hit_by_a_truck/\",
+        \"name\": \"t3_16fykq\", \"created\": 1358010942.0, \"url\": \"http://www.aaronsw.com/2002/continuity\",
+        \"author_flair_text\": null, \"title\": \"If I get hit by a truck...\", \"created_utc\":
+        1358010942.0, \"ups\": 2910, \"num_comments\": 334, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"blog.stackoverflow.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1mimft\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"albinovulcan\",
+        \"media\": null, \"score\": 1998, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        747, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1mimft/five_years_ago_stack_overflow_launched_then_a/\",
+        \"name\": \"t3_1mimft\", \"created\": 1379359873.0, \"url\": \"http://blog.stackoverflow.com/2013/09/five-years-ago-stack-overflow-launched-then-a-miracle-occurred/\",
+        \"author_flair_text\": null, \"title\": \"Five years ago, Stack Overflow launched.
+        Then, a miracle occurred.\", \"created_utc\": 1379356273.0, \"ups\": 2745,
+        \"num_comments\": 495, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"inventwithpython.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1cehon\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"drhull\", \"media\":
+        null, \"score\": 1928, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        634, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1cehon/my_new_book_hacking_secret_ciphers_with_python_is/\",
+        \"name\": \"t3_1cehon\", \"created\": 1366052290.0, \"url\": \"http://inventwithpython.com/hacking/\",
+        \"author_flair_text\": null, \"title\": \"My new book \\\"Hacking Secret Ciphers
+        with Python\\\" is done. 415 pages, 1700 lines of code, free to download.
+        100% of proceeds go to the EFF, Creative Commons, and Tor Project.\", \"created_utc\":
+        1366048690.0, \"ups\": 2562, \"num_comments\": 168, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"github.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1isd63\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"Troll_Random\",
+        \"media\": null, \"score\": 1911, \"approved_by\": null, \"over_18\": false,
+        \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\":
+        false, \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        962, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1isd63/want_to_learn_a_new_language_solve_these_100/\",
+        \"name\": \"t3_1isd63\", \"created\": 1374464789.0, \"url\": \"https://github.com/thekarangoel/Projects\",
+        \"author_flair_text\": null, \"title\": \"Want to learn a new language? Solve
+        these 100 projects, and you'll be the best damn coder. (x-post /r/learnpython)\",
+        \"created_utc\": 1374461189.0, \"ups\": 2873, \"num_comments\": 354, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}], \"after\": \"t3_1isd63\",
+        \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:56:44 GMT
+recorded_with: VCR 2.6.0

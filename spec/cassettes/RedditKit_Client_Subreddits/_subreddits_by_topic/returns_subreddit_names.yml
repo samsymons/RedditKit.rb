@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/api/subreddits_by_topic.json?query=ruby
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '357'
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 22:38:22 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[{\"name\": \"ruby\"}, {\"name\": \"programming\"}, {\"name\": \"pokemon\"},
+        {\"name\": \"Dota2Trade\"}, {\"name\": \"learnprogramming\"}, {\"name\": \"forhire\"},
+        {\"name\": \"leagueoflegends\"}, {\"name\": \"ACTrade\"}, {\"name\": \"rails\"},
+        {\"name\": \"Diablo\"}, {\"name\": \"webdev\"}, {\"name\": \"gameswap\"},
+        {\"name\": \"ja\"}, {\"name\": \"nuzlocke\"}, {\"name\": \"RWBY\"}, {\"name\":
+        \"cscareerquestions\"}]"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:38:21 GMT
+recorded_with: VCR 2.6.0

@@ -1,0 +1,186 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/programming/hot.json?limit=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 19:56:44 GMT
+      Content-Length:
+      - '11582'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"ruoyusun.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb2q2\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"insraq\", \"media\": null, \"score\": 114,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 51, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/programming/comments/1qb2q2/scala_is_not_java_glue/\",
+        \"name\": \"t3_1qb2q2\", \"created\": 1384123369.0, \"url\": \"http://ruoyusun.com/2013/11/10/scala-is-not-java-glue.html\",
+        \"author_flair_text\": null, \"title\": \"Scala is Not Java Glue\", \"created_utc\":
+        1384094569.0, \"ups\": 165, \"num_comments\": 55, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"programmableweb.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"programming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1qbabt\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"mycall\", \"media\":
+        null, \"score\": 37, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        7, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1qbabt/the_ultimate_web_api_directory_over_10k_large/\",
+        \"name\": \"t3_1qbabt\", \"created\": 1384130983.0, \"url\": \"http://www.programmableweb.com/apis/directory\",
+        \"author_flair_text\": null, \"title\": \"The Ultimate Web API Directory,
+        over 10k large.\", \"created_utc\": 1384102183.0, \"ups\": 44, \"num_comments\":
+        0, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"en.wikipedia.org\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb8er\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"sanity\", \"media\": null, \"score\": 36,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 18, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/programming/comments/1qb8er/in_addition_to_branch_prediction_and_caching_what/\",
+        \"name\": \"t3_1qb8er\", \"created\": 1384129238.0, \"url\": \"http://en.wikipedia.org/wiki/Branch_predictor\",
+        \"author_flair_text\": null, \"title\": \"In addition to branch prediction
+        and caching, what other aspects of modern computer architecture should programmers
+        be aware of when writing efficient code?\", \"created_utc\": 1384100438.0,
+        \"ups\": 54, \"num_comments\": 58, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"prog21.dadgum.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"programming\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1qa3v7\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"mwandee\", \"media\":
+        null, \"score\": 458, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        195, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1qa3v7/dont_fall_in_love_with_your_technology/\",
+        \"name\": \"t3_1qa3v7\", \"created\": 1384075861.0, \"url\": \"http://prog21.dadgum.com/128.html?classic\",
+        \"author_flair_text\": null, \"title\": \"Don't Fall in Love With Your Technology\",
+        \"created_utc\": 1384047061.0, \"ups\": 653, \"num_comments\": 215, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"joshuakemp.blogspot.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1qagi2\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"BotCoin\", \"media\": null, \"score\": 204, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 91, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/1qagi2/how_a_blacksmith_learned_to_code/\", \"name\":
+        \"t3_1qagi2\", \"created\": 1384087753.0, \"url\": \"http://joshuakemp.blogspot.com/2013/11/how-blacksmith-learned-to-code-and-9.html\",
+        \"author_flair_text\": null, \"title\": \"How a blacksmith learned to code\",
+        \"created_utc\": 1384058953.0, \"ups\": 295, \"num_comments\": 85, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"blog.hvidtfeldts.net\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1qbby0\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"sidcool1234\", \"media\": null, \"score\": 12, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 4, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1qbby0/the_mandelbulb/\",
+        \"name\": \"t3_1qbby0\", \"created\": 1384132350.0, \"url\": \"http://blog.hvidtfeldts.net/index.php/category/mandelbulb/\",
+        \"author_flair_text\": null, \"title\": \"The Mandelbulb\", \"created_utc\":
+        1384103550.0, \"ups\": 16, \"num_comments\": 1, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"speakerdeck.com\", \"banned_by\": null, \"media_embed\": {\"content\": \"&lt;iframe
+        allowfullscreen=\\\"true\\\" allowtransparency=\\\"true\\\" frameborder=\\\"0\\\"
+        height=\\\"704\\\" id=\\\"talk_frame_62623\\\" mozallowfullscreen=\\\"true\\\"
+        src=\\\"http://speakerdeck.com/player/ee88fcf0e4010130a0b1566329155b74\\\"
+        style=\\\"border:0; padding:0; margin:0; background:transparent;\\\" webkitallowfullscreen=\\\"true\\\"
+        width=\\\"600\\\"&gt;&lt;/iframe&gt;\", \"width\": 600, \"scrolling\": false,
+        \"height\": 704}, \"subreddit\": \"programming\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qapyd\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"mariuz\", \"media\": {\"oembed\": {\"provider_url\":
+        \"https://speakerdeck.com/\", \"description\": \"We all know that Python is
+        the best language there is, right? Well, we Pythonistas might know that, but
+        the world of Mobile development has passed Python by. Apple's iOS platform
+        and Google's Android platform have chosen Objective-C and Java respectively
+        as their preferred languages.\", \"title\": \"Android: The Land that Python
+        Forgot? (Christopher Neugebauer)\", \"thumbnail_width\": 210, \"height\":
+        704, \"width\": 600, \"html\": \"&lt;iframe allowfullscreen=\\\"true\\\" allowtransparency=\\\"true\\\"
+        frameborder=\\\"0\\\" height=\\\"704\\\" id=\\\"talk_frame_62623\\\" mozallowfullscreen=\\\"true\\\"
+        src=\\\"http://speakerdeck.com/player/ee88fcf0e4010130a0b1566329155b74\\\"
+        style=\\\"border:0; padding:0; margin:0; background:transparent;\\\" webkitallowfullscreen=\\\"true\\\"
+        width=\\\"600\\\"&gt;&lt;/iframe&gt;\", \"author_name\": \"PyCon Canada\",
+        \"version\": \"1.0\", \"provider_name\": \"Speaker Deck\", \"thumbnail_url\":
+        \"https://speakerd.s3.amazonaws.com/presentations/ee88fcf0e4010130a0b1566329155b74/thumb_slide_0.jpg\",
+        \"type\": \"rich\", \"thumbnail_height\": 157, \"author_url\": \"https://speakerdeck.com/pyconca\"},
+        \"type\": \"speakerdeck.com\"}, \"score\": 21, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2fwo\",
+        \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 18, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/1qapyd/android_the_land_that_python_forgot/\", \"name\":
+        \"t3_1qapyd\", \"created\": 1384099861.0, \"url\": \"https://speakerdeck.com/pyconca/android-the-land-that-python-forgot-christopher-neugebauer\",
+        \"author_flair_text\": null, \"title\": \"Android: The Land That Python Forgot\",
+        \"created_utc\": 1384071061.0, \"ups\": 39, \"num_comments\": 10, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"wired.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1q8p7h\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"mahamara\", \"media\": null, \"score\": 709, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 411, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/1q8p7h/like_a_good_scotch_developers_get_better_with_age/\",
+        \"name\": \"t3_1q8p7h\", \"created\": 1384026946.0, \"url\": \"http://www.wired.com/wiredenterprise/2013/04/developers-age/\",
+        \"author_flair_text\": null, \"title\": \"Like a Good Scotch, Developers Get
+        Better With Age\", \"created_utc\": 1383998146.0, \"ups\": 1120, \"num_comments\":
+        368, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"cs.brown.edu\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"programming\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1qb8nz\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"tel\", \"media\": null, \"score\": 3, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 4, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/programming/comments/1qb8nz/python_the_full_monty_a_tested_smallstep_semantics/\",
+        \"name\": \"t3_1qb8nz\", \"created\": 1384129509.0, \"url\": \"http://cs.brown.edu/~sk/Publications/Papers/Published/pmmwplck-python-full-monty/paper.pdf\",
+        \"author_flair_text\": null, \"title\": \"Python: The Full Monty (A Tested
+        Small-Step Semantics)\", \"created_utc\": 1384100709.0, \"ups\": 7, \"num_comments\":
+        0, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"mscharhag.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"programming\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1qasm7\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"michschar\", \"media\": null, \"score\": 10, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2fwo\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 10, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/programming/comments/1qasm7/groovys_magical_nullobject/\", \"name\":
+        \"t3_1qasm7\", \"created\": 1384105104.0, \"url\": \"http://www.mscharhag.com/2013/11/groovys-magical-nullobject.html\",
+        \"author_flair_text\": null, \"title\": \"Groovy's magical NullObject\", \"created_utc\":
+        1384076304.0, \"ups\": 20, \"num_comments\": 7, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}], \"after\": \"t3_1qasm7\", \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:56:43 GMT
+recorded_with: VCR 2.6.0

@@ -1,0 +1,415 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/subreddits/mine/.json?limit=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:38:26 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"bpcx22gq5w717cbf224936b9eedcba845e44f45cb56425c172\",
+        \"children\": [{\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        false, \"id\": \"2qh33\", \"submit_text\": \"\", \"spam_selfposts\": \"low\",
+        \"display_name\": \"funny\", \"header_img\": \"http://f.thumbs.redditmedia.com/CzqvfNUiQGzmMIOw.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;Welcome
+        to r/Funny:&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;You may only post if you
+        are funny. &lt;/p&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;h1&gt;Rules&lt;/h1&gt;\\n\\n&lt;p&gt;&lt;em&gt;hover
+        for details&lt;/em&gt;&lt;/p&gt;\\n\\n&lt;table&gt;&lt;thead&gt;\\n&lt;tr&gt;\\n&lt;th
+        align=\\\"left\\\"&gt;&lt;/th&gt;\\n&lt;th align=\\\"left\\\"&gt;&lt;/th&gt;\\n&lt;/tr&gt;\\n&lt;/thead&gt;&lt;tbody&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;1. No reactiongifs or HIFW posts&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;How I Feel When posts belong in &lt;a href=\\\"/r/HIFW\\\"&gt;/r/HIFW&lt;/a&gt;.
+        Reaction gifs belong in &lt;a href=\\\"/r/reactiongifs\\\"&gt;/r/reactiongifs&lt;/a&gt;.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;2. No posts with their sole purpose being to communicate
+        with another redditor.&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a href=\\\"http://www.reddit.com/lq3uv/\\\"&gt;Click
+        for an Example.&lt;/a&gt;. This includes asking for upvotes.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;3. No Posts for the specific point of it being your
+        reddit birthday.&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Cake day posts
+        are not allowed.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;4.
+        Posts which result in harassment of any individual, subreddit, or other entity
+        may be removed at the moderators&amp;#39; discretion.&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;Posts with titles such as &amp;quot;I got banned from
+        /r/___&amp;quot; or &amp;quot;This got removed from /r/___&amp;quot; are not
+        allowed.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;5.
+        No Politics&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Anything involving politics
+        or a political figure. Try &lt;a href=\\\"/r/politicalhumor\\\"&gt;/r/politicalhumor&lt;/a&gt;
+        instead.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;6.
+        No Pictures of just text&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Make a
+        self post instead. &lt;a href=\\\"http://i.imgur.com/2cPuY8C.jpg\\\"&gt;Example&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;7. No DAE posts&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Go
+        to &lt;a href=\\\"/r/doesanybodyelse\\\"&gt;/r/doesanybodyelse&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;8. No Links to tumblr&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Direct
+        links to images hosted on tumblr (ex. 24.media.tumblr.com/img.jpg) are allowed.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;9. No URL shorteners&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;No
+        link shorteners (or HugeURL) in either post links or comments. They will be
+        deleted regardless of intent.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;10. No gore or porn (including sexually graphic images).&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;Other NSFW content must be tagged as such&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;11. No personal information.&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;This
+        includes anything hosted on Facebook&amp;#39;s servers, as they can be traced
+        to the original account holder.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;12.  No memes, rage comics, demotivationals, eCards,
+        or standupshots&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Memes belong in
+        &lt;a href=\\\"/r/adviceanimals\\\"&gt;/r/adviceanimals&lt;/a&gt;, rage comics
+        go to &lt;a href=\\\"/r/fffffffuuuuuuuuuuuu\\\"&gt;/r/fffffffuuuuuuuuuuuu&lt;/a&gt;,
+        demotivationals go to &lt;a href=\\\"http://www.reddit.com/r/Demotivational\\\"&gt;/r/Demotivational&lt;/a&gt;,
+        submit eCards to &lt;a href=\\\"http://www.reddit.com/r/ecards\\\"&gt;/r/ecards&lt;/a&gt;,
+        and standupshots go to &lt;a href=\\\"/r/standupshots\\\"&gt;/r/standupshots&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;13. Do not rehost webcomics&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;Rehosted
+        webcomics will be removed. Please submit a link to the original comic&amp;#39;s
+        site and preferably an imgur link in the comments. Do not post a link to the
+        comic image, it must be linked to the page of the comic. &lt;a href=\\\"http://www.reddit.com/kqwwx/\\\"&gt;(*)&lt;/a&gt;
+        &lt;a href=\\\"http://www.reddit.com/kwmk3\\\"&gt;(*)&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;14. No SMS or Social Media Content (including Reddit)&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;This includes direct linking to reddit threads, reddit
+        comments, other subreddits, facebook profiles, twitter profiles, tweets, embedded
+        tweets, and screenshots of the above, including text messages, omegle, snapchat,
+        and others. This also includes any other sites that may be considered social
+        network sites. Please read the &lt;a href=\\\"http://www.reddit.com/1785g0\\\"&gt;announcement.&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;/tbody&gt;&lt;/table&gt;\\n\\n&lt;p&gt;Want
+        to see &lt;a href=\\\"/r/funny\\\"&gt;/r/funny&lt;/a&gt; with these posts?
+        &lt;a href=\\\"http://www.reddit.com/r/funny+facepalm+facebookwins+retorted+tumblr+twitter+texts+4chan+omegle+cleverbot+yahooanswers+screenshots+politicalhumor+demotivational+ecards+bestof+defaultgems+HIFW+MFW+reactiongifs+fffffffuuuuuuuuuuuu\\\"&gt;Click
+        here!&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;table&gt;&lt;thead&gt;\\n&lt;tr&gt;\\n&lt;th&gt;&lt;/th&gt;\\n&lt;th&gt;&lt;/th&gt;\\n&lt;/tr&gt;\\n&lt;/thead&gt;&lt;tbody&gt;\\n&lt;tr&gt;\\n&lt;td&gt;What
+        do I do if I see a post that breaks the rules?&lt;/td&gt;\\n&lt;td&gt;Click
+        on the report button, and &lt;a href=\\\"/message/compose?to=%23funny\\\"&gt;send
+        us a message&lt;/a&gt; with a link to the comments of the post.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td&gt;What
+        should I do if I don&amp;#39;t see my post in the new queue?&lt;/td&gt;\\n&lt;td&gt;If
+        your submission isn&amp;#39;t showing up, please don&amp;#39;t just delete
+        it as that makes the filter hate you! Instead please &lt;a href=\\\"/message/compose?to=%23funny\\\"&gt;send
+        us a message&lt;/a&gt; with a link to the post. We&amp;#39;ll unban it and
+        it should get better. Please allow 10 minutes for the post to appear before
+        messaging moderators&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;/tbody&gt;&lt;/table&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;Looking
+        for something else? Visit our friends!&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/humor\\\"&gt;humor&lt;/a&gt; for more in-depth
+        stuff&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/tumblr\\\"&gt;tumblr&lt;/a&gt;
+        - for tumblr screenshots&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/NSFWFunny\\\"&gt;NSFWFunny&lt;/a&gt;&lt;br/&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/jokes\\\"&gt;jokes&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/comics\\\"&gt;comics&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/punny\\\"&gt;punny&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/verypunny\\\"&gt;Very
+        Punny&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/lolcats\\\"&gt;lolcats&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/wheredidthesodago\\\"&gt;Wheredidthesodago?&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/lol\\\"&gt;lol&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/facepalm\\\"&gt;Facepalm&lt;/a&gt;
+        - Facebook fails&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/reactiongifs\\\"&gt;ReactionGifs&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/shittyaskscience\\\"&gt;ShittyAskScience&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/TrollingAnimals\\\"&gt;TrollingAnimals&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/ragenovels/\\\"&gt;Rage Novels&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/Demotivational\\\"&gt;Demotivational&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/screenshots\\\"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/texts\\\"&gt;Texts&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/nononono\\\"&gt;nononono&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/disagreeable\\\"&gt;Disagreeable&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/gifs\\\"&gt;gifs&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"/r/ExpectationVsReality/\\\"&gt;&amp;quot;how
+        I think I am vs. how I actually am&amp;quot;&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/tifu\\\"&gt;Today I F*cked Up&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/photoshopbattles\\\"&gt;Photoshop Battles&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/cleanjokes\\\"&gt;Clean Jokes&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/meanjokes\\\"&gt;Mean Jokes&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/funniestvideos\\\"&gt;FunniestVideos&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/funnycommercials\\\"&gt;Funny Commercials&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/captioned\\\"&gt;Captions&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/standupshots\\\"&gt;Standup Shots&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/AnimalsBeingJerks\\\"&gt;Animals Being Jerks&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/Unexpected\\\"&gt;Unexpected&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/makemeagif\\\"&gt;MakeMeAGIF&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/accidentalcomedy\\\"&gt;accidentalcomedy&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/misc/\\\"&gt;misc&lt;/a&gt; for anything else&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/r/redditdotcom\\\"&gt;RedditDotCom&lt;/a&gt; for anything else&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;&lt;em&gt;Posts
+        that specifically break Reddit&amp;#39;s rules will be removed&lt;/em&gt;&lt;/p&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;&lt;sup&gt;&lt;sup&gt;CSS&lt;/sup&gt;&lt;/sup&gt;
+        &lt;sup&gt;&lt;sup&gt;-&lt;/sup&gt;&lt;/sup&gt; &lt;sup&gt;&lt;sup&gt;BritishEnglishPolice,&lt;/sup&gt;&lt;/sup&gt;
+        &lt;sup&gt;&lt;sup&gt;Paradox,&lt;/sup&gt;&lt;/sup&gt; &lt;sup&gt;&lt;sup&gt;GuitarFreak,&lt;/sup&gt;&lt;/sup&gt;
+        &lt;sup&gt;&lt;sup&gt;Airmandan&lt;/sup&gt;&lt;/sup&gt; &lt;sup&gt;&lt;sup&gt;&amp;amp;&lt;/sup&gt;&lt;/sup&gt;
+        &lt;sup&gt;&lt;sup&gt;Co&lt;/sup&gt;&lt;/sup&gt; &lt;sup&gt;&lt;sup&gt;\\u00a92013&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"funny\", \"over18\": false, \"user_is_moderator\":
+        false, \"header_title\": \"Brought to you by Team Coco\\u2122\", \"description\":
+        \"**Welcome to r/Funny:**\\n\\nYou may only post if you are funny. \\n\\n-----\\n\\n#
+        Rules\\n*hover for details*\\n\\n|||\\n|:------|:---|\\n|1. No reactiongifs
+        or HIFW posts|How I Feel When posts belong in [/r/HIFW](/r/HIFW). Reaction
+        gifs belong in [/r/reactiongifs](/r/reactiongifs).|\\n|2. No posts with their
+        sole purpose being to communicate with another redditor.| [Click for an Example.](http://www.reddit.com/lq3uv/).
+        This includes asking for upvotes.|\\n|3. No Posts for the specific point of
+        it being your reddit birthday.|Cake day posts are not allowed.|\\n|4. Posts
+        which result in harassment of any individual, subreddit, or other entity may
+        be removed at the moderators' discretion.|Posts with titles such as \\\"I
+        got banned from \\\\/r/\\\\_\\\\_\\\\_\\\" or \\\"This got removed from \\\\/r/\\\\_\\\\_\\\\_\\\"
+        are not allowed.|\\n|5. No Politics|Anything involving politics or a political
+        figure. Try [/r/politicalhumor](/r/politicalhumor) instead.|\\n|6. No Pictures
+        of just text|Make a self post instead. [Example](http://i.imgur.com/2cPuY8C.jpg)|\\n|7.
+        No DAE posts|Go to [/r/doesanybodyelse](/r/doesanybodyelse)|\\n|8. No Links
+        to tumblr|Direct links to images hosted on tumblr (ex. 24.media.tumblr.com/img.jpg)
+        are allowed.|\\n|9. No URL shorteners|No link shorteners (or HugeURL) in either
+        post links or comments. They will be deleted regardless of intent.|\\n|10.
+        No gore or porn (including sexually graphic images).|Other NSFW content must
+        be tagged as such|\\n|11. No personal information.|This includes anything
+        hosted on Facebook's servers, as they can be traced to the original account
+        holder.|\\n|12.  No memes, rage comics, demotivationals, eCards, or standupshots|Memes
+        belong in [/r/adviceanimals](/r/adviceanimals), rage comics go to [/r/fffffffuuuuuuuuuuuu](/r/fffffffuuuuuuuuuuuu),
+        demotivationals go to [/r/Demotivational](http://www.reddit.com/r/Demotivational),
+        submit eCards to [/r/ecards](http://www.reddit.com/r/ecards), and standupshots
+        go to [/r/standupshots](/r/standupshots)\\n|13. Do not rehost webcomics|Rehosted
+        webcomics will be removed. Please submit a link to the original comic's site
+        and preferably an imgur link in the comments. Do not post a link to the comic
+        image, it must be linked to the page of the comic. [(*)](http://www.reddit.com/kqwwx/)
+        [(*)](http://www.reddit.com/kwmk3)|\\n|14. No SMS or Social Media Content
+        (including Reddit)|This includes direct linking to reddit threads, reddit
+        comments, other subreddits, facebook profiles, twitter profiles, tweets, embedded
+        tweets, and screenshots of the above, including text messages, omegle, snapchat,
+        and others. This also includes any other sites that may be considered social
+        network sites. Please read the [announcement.](http://www.reddit.com/1785g0)|\\n\\nWant
+        to see /r/funny with these posts? [Click here!](http://www.reddit.com/r/funny+facepalm+facebookwins+retorted+tumblr+twitter+texts+4chan+omegle+cleverbot+yahooanswers+screenshots+politicalhumor+demotivational+ecards+bestof+defaultgems+HIFW+MFW+reactiongifs+fffffffuuuuuuuuuuuu)\\n\\n------\\n\\n|||\\n|-|-|\\n|What
+        do I do if I see a post that breaks the rules?|Click on the report button,
+        and [send us a message](/message/compose?to=%23funny) with a link to the comments
+        of the post.|\\n|What should I do if I don't see my post in the new queue?|If
+        your submission isn't showing up, please don't just delete it as that makes
+        the filter hate you! Instead please [send us a message](/message/compose?to=%23funny)
+        with a link to the post. We'll unban it and it should get better. Please allow
+        10 minutes for the post to appear before messaging moderators|\\n\\n-----\\n\\nLooking
+        for something else? Visit our friends!\\n\\n+ [humor](http://www.reddit.com/r/humor)
+        for more in-depth stuff\\n+ [tumblr](/r/tumblr) - for tumblr screenshots\\n+
+        [NSFWFunny](/r/NSFWFunny)  \\n+ [jokes](/r/jokes)\\n+ [comics](/r/comics)\\n+
+        [punny](/r/punny)\\n+ [Very Punny](/r/verypunny)\\n+ [lolcats](/r/lolcats)\\n+
+        [Wheredidthesodago?](/r/wheredidthesodago)\\n+ [lol](/r/lol)\\n+ [Facepalm](/r/facepalm)
+        - Facebook fails\\n+ [ReactionGifs](/r/reactiongifs)\\n+ [ShittyAskScience](/r/shittyaskscience)\\n+
+        [TrollingAnimals](/r/TrollingAnimals)\\n+ [Rage Novels](/r/ragenovels/)\\n+
+        [Demotivational](http://www.reddit.com/r/Demotivational)\\n+ [Screenshots](/r/screenshots)\\n+
+        [Texts](/r/texts)\\n+ [nononono](/r/nononono)\\n+ [Disagreeable](/r/disagreeable)\\n+
+        [gifs](/r/gifs)\\n+ [\\\"how I think I am vs. how I actually am\\\"](/r/ExpectationVsReality/)\\n+
+        [Today I F*cked Up](http://www.reddit.com/r/tifu)\\n+ [Photoshop Battles](http://www.reddit.com/r/photoshopbattles)\\n+
+        [Clean Jokes](/r/cleanjokes)\\n+ [Mean Jokes](/r/meanjokes)\\n+ [FunniestVideos](/r/funniestvideos)\\n+
+        [Funny Commercials](/r/funnycommercials)\\n+ [Captions](/r/captioned)\\n+
+        [Standup Shots](/r/standupshots)\\n+ [Animals Being Jerks](/r/AnimalsBeingJerks)\\n+
+        [Unexpected](/r/Unexpected)\\n+ [MakeMeAGIF](/r/makemeagif)\\n+ [accidentalcomedy](/r/accidentalcomedy)\\n+
+        [misc](/r/misc/) for anything else\\n+ [RedditDotCom](/r/redditdotcom) for
+        anything else\\n\\n----\\n\\n*Posts that specifically break Reddit's rules
+        will be removed*\\n\\n----\\n^^CSS ^^- ^^BritishEnglishPolice, ^^Paradox,
+        ^^GuitarFreak, ^^Airmandan ^^&amp; ^^Co ^^\\u00a92013\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": [160, 64], \"subscribers\": 4704841, \"submit_text_label\":
+        null, \"name\": \"t5_2qh33\", \"created\": 1201246556.0, \"url\": \"/r/funny/\",
+        \"created_utc\": 1201242956.0, \"user_is_contributor\": false, \"public_traffic\":
+        true, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": true}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        false, \"id\": \"2r0ij\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"announcements\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;The most important
+        Items from blog.reddit.com will be posted here (mainly, functionality changes).
+        See also &lt;a href=\\\"http://reddit.com/r/blog\\\"&gt;/r/blog&lt;/a&gt;.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Official Reddit announcements\", \"over18\":
+        false, \"user_is_moderator\": false, \"header_title\": \"\", \"description\":
+        \"The most important Items from blog.reddit.com will be posted here (mainly,
+        functionality changes). See also [/r/blog](http://reddit.com/r/blog).\", \"submit_link_label\":
+        \"\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 4654245, \"submit_text_label\":
+        \"\", \"name\": \"t5_2r0ij\", \"created\": 1245259701.0, \"url\": \"/r/announcements/\",
+        \"created_utc\": 1245256101.0, \"user_is_contributor\": false, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"restricted\", \"submission_type\": \"any\", \"user_is_subscriber\": true}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": \"&lt;!-- SC_OFF --&gt;&lt;div
+        class=\\\"md\\\"&gt;&lt;p&gt;Got a cool halloween costume? Post it to &lt;a
+        href=\\\"/r/halloweencostume\\\"&gt;/r/halloweencostume&lt;/a&gt; !&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"user_is_banned\": false, \"id\": \"2qh0u\", \"submit_text\":
+        \"Got a cool halloween costume? Post it to /r/halloweencostume !\", \"spam_selfposts\":
+        \"high\", \"display_name\": \"pics\", \"header_img\": \"http://a.thumbs.redditmedia.com/CsJN7DRRk2BQ2eQB.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;A
+        place to share photographs and pictures. Feel free to post your own, but please
+        &lt;strong&gt;read the rules first&lt;/strong&gt; (see below), and note that
+        we are &lt;em&gt;not a catch-all&lt;/em&gt; for general images (of screenshots,
+        comics, etc.)&lt;/p&gt;\\n\\n&lt;h1&gt;Spoiler code&lt;/h1&gt;\\n\\n&lt;p&gt;Please
+        mark spoilers like this:&lt;br/&gt;\\n&lt;code&gt;[text here](/spoiler)&lt;/code&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Hover
+        over to &lt;a href=\\\"/spoiler\\\"&gt;read&lt;/a&gt;.&lt;/p&gt;\\n\\n&lt;h1&gt;Rules&lt;/h1&gt;\\n\\n&lt;ol&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;No
+        screenshots, or pictures with added or superimposed text.&lt;/strong&gt; &lt;em&gt;This
+        includes &lt;a href=\\\"http://en.wikipedia.org/wiki/Image_macro\\\"&gt;image
+        macros&lt;/a&gt;, comics, infographics and most diagrams. Text (e.g. a URL)
+        serving to credit the original author is exempt.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;No
+        nudity, porn or gore.&lt;/strong&gt; &lt;em&gt;Other NSFW content must be
+        tagged.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;No
+        personal information.&lt;/strong&gt; &lt;em&gt;This includes anything hosted
+        on Facebook&amp;#39;s servers, as they can be traced to the original account
+        holder. Stalking &amp;amp; harassment will not be tolerated.&lt;/em&gt; &lt;strong&gt;&lt;em&gt;No
+        missing-persons requests!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;No
+        post titles soliciting votes&lt;/strong&gt; &lt;em&gt;(e.g. &amp;quot;upvote
+        this&amp;quot;).&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;No
+        DAE, &amp;quot;[FIXED]&amp;quot; or &amp;quot;cake day&amp;quot; posts, nor
+        posts addressed to a specific redditor.&lt;/strong&gt; &lt;em&gt;&amp;quot;[FIXED]&amp;quot;
+        posts should be added as a comment to the original image.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;Submissions
+        must link directly to a specific image file or to a website with minimal ads.&lt;/strong&gt;
+        &lt;em&gt;We do not allow blog hosting of images (&amp;quot;blogspam&amp;quot;),
+        but links to albums on image hosting websites are okay. URL shorteners are
+        prohibited.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;strong&gt;No
+        animated images.&lt;/strong&gt; &lt;em&gt;Please submit them to &lt;a href=\\\"/r/gif\\\"&gt;/r/gif&lt;/a&gt;,
+        &lt;a href=\\\"/r/gifs\\\"&gt;/r/gifs&lt;/a&gt;, or &lt;a href=\\\"/r/reactiongifs\\\"&gt;/r/reactiongifs&lt;/a&gt;
+        instead.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;/ol&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;p&gt;If
+        your submission appears to be filtered but &lt;strong&gt;definitely&lt;/strong&gt;
+        meets the above rules, &lt;a href=\\\"/message/compose?to=%23pics\\\"&gt;please
+        send us a message&lt;/a&gt; with a link to the &lt;strong&gt;comments section&lt;/strong&gt;
+        of your post (not a direct link to the image). &lt;strong&gt;Don&amp;#39;t
+        delete it&lt;/strong&gt;  as that just makes the filter hate you! &lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;If
+        you come across any rule violations,  please report the submission or  &lt;a
+        href=\\\"http://www.reddit.com/message/compose?to=%23pics\\\"&gt;message the
+        mods&lt;/a&gt; and one of us will remove it!&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;Please
+        note: serial reposters may be filtered&lt;/p&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;Please
+        also try to come up with &lt;strong&gt;original post titles&lt;/strong&gt;.
+        Submissions that use certain clich\\u00e9s/memes will be automatically tagged
+        with a warning.&lt;/p&gt;\\n\\n&lt;h1&gt;Links&lt;/h1&gt;\\n\\n&lt;p&gt;If
+        your post doesn&amp;#39;t meet the above rules, consider submitting it on
+        one of these other subreddits:&lt;/p&gt;\\n\\n&lt;table&gt;&lt;thead&gt;\\n&lt;tr&gt;\\n&lt;th
+        align=\\\"left\\\"&gt;Comics&lt;/th&gt;\\n&lt;th align=\\\"left\\\"&gt;&amp;#0160;&lt;/th&gt;\\n&lt;/tr&gt;\\n&lt;/thead&gt;&lt;tbody&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/comics\\\"&gt;/r/comics&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/webcomics\\\"&gt;/r/webcomics&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/vertical\\\"&gt;/r/vertical&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/fffffffuuuuuuuuuuuu/\\\"&gt;/r/f7u12&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/ragenovels\\\"&gt;/r/ragenovels&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/AdviceAtheists\\\"&gt;/r/AdviceAtheists&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/comicbookart\\\"&gt;/r/comicbookart&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;strong&gt;Image
+        macros&lt;/strong&gt;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;strong&gt;Screenshots/text&lt;/strong&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/lolcats\\\"&gt;/r/lolcats&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/screenshots\\\"&gt;/r/screenshots&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/AdviceAnimals\\\"&gt;/r/AdviceAnimals&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/desktops\\\"&gt;/r/desktops&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/Demotivational\\\"&gt;/r/Demotivational&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/facepalm\\\"&gt;/r/facepalm&lt;/a&gt;
+        (Facebook)&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/reactiongifs\\\"&gt;/r/reactiongifs&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/DesktopDetective\\\"&gt;/r/DesktopDetective&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/memes\\\"&gt;/r/memes&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;strong&gt;Wallpaper&lt;/strong&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;strong&gt;Animals&lt;/strong&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/wallpaper\\\"&gt;/r/wallpaper&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/aww\\\"&gt;/r/aww&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/wallpapers\\\"&gt;/r/wallpapers&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/cats\\\"&gt;/r/cats&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"http://www.reddit.com/r/earthporn+villageporn+cityporn+spaceporn+waterporn+abandonedporn+animalporn+humanporn+botanicalporn+adrenalineporn+destructionporn+movieposterporn+albumartporn+machineporn+newsporn+geekporn+bookporn+mapporn+adporn+designporn+roomporn+militaryporn+historyporn+quotesporn+skyporn+fireporn+infrastructureporn+macroporn+instrumentporn+climbingporn+architectureporn+artporn+cemeteryporn+carporn+fractalporn+exposureporn+gunporn+culinaryporn+dessertporn+agricultureporn+boatporn+geologyporn+futureporn+winterporn+metalporn+microporn+streetartporn+autumnporn\\\"&gt;The
+        SFWPorn Network&lt;/a&gt;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/TrollingAnimals\\\"&gt;/r/TrollingAnimals&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&amp;#0160;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/deadpets\\\"&gt;/r/deadpets&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&amp;#0160;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/birdpics\\\"&gt;/r/birdpics&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&amp;#0160;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/foxes\\\"&gt;/r/foxes&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&amp;#0160;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/dogpictures\\\"&gt;/r/dogpictures&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;strong&gt;Photography&lt;/strong&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;strong&gt;Low-moderated pics&lt;/strong&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/photography\\\"&gt;/r/photography&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/AnythingGoesPics\\\"&gt;/r/AnythingGoesPics&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/photocritique\\\"&gt;/r/photocritique&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/images\\\"&gt;/r/images&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/HDR\\\"&gt;/r/HDR&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/misc\\\"&gt;/r/misc&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/windowshots\\\"&gt;/r/windowshots&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/redditdotcom\\\"&gt;/r/redditdotcom&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/PictureChallenge\\\"&gt;/r/PictureChallenge&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;strong&gt;GIFs/Misc.&lt;/strong&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;strong&gt;New reddits&lt;/strong&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/reactiongifs\\\"&gt;/r/reactiongifs&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/britpics\\\"&gt;/r/britpics&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/gifs\\\"&gt;/r/gifs&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"http://www.reddit.com/user/karmicviolence/m/imaginaryexpanded\\\"&gt;Imaginary
+        Network&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/dataisbeautiful\\\"&gt;/r/dataisbeautiful&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/thennnow\\\"&gt;/r/thennnow&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/picrequests\\\"&gt;/r/picrequests&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/SpecArt\\\"&gt;/r/SpecArt&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/doodles\\\"&gt;/r/doodles&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/IncredibleIndia\\\"&gt;/r/IncredibleIndia&lt;/a&gt;
+        .&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/NewAmericanCitizen\\\"&gt;/r/NewAmericanCitizen&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/timelinecovers\\\"&gt;/r/timelinecovers&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/ProgressPics\\\"&gt;/r/ProgressPics&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/MemesIRL\\\"&gt;/r/MemesIRL&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/ModeratorDuck/wiki/pics\\\"&gt;(&lt;em&gt;More&lt;/em&gt;)&lt;/a&gt;&lt;/td&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&lt;a href=\\\"/r/OldSchoolCool\\\"&gt;/r/OldSchoolCool&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&amp;#0160;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/photoshopbattles\\\"&gt;/r/photoshopbattles&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"left\\\"&gt;&amp;#0160;&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;&lt;a
+        href=\\\"/r/PastAndPresentPics\\\"&gt;/r/PastAndPresentPics&lt;/a&gt;&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;/tbody&gt;&lt;/table&gt;\\n\\n&lt;p&gt;Also
+        check out &lt;a href=\\\"http://irc.reddit.com\\\"&gt;http://irc.reddit.com&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"/r/Pics\", \"over18\": false, \"user_is_moderator\":
+        false, \"header_title\": \"Logo by corvuskorax\", \"description\": \"A place
+        to share photographs and pictures. Feel free to post your own, but please
+        **read the rules first** (see below), and note that we are *not a catch-all*
+        for general images (of screenshots, comics, etc.)\\n\\n#Spoiler code#\\n\\nPlease
+        mark spoilers like this:  \\n`[text here](/spoiler)`\\n\\nHover over to [read](/spoiler).\\n\\n#Rules#\\n\\n1.
+        **No screenshots, or pictures with added or superimposed text.** *This includes
+        [image macros](http://en.wikipedia.org/wiki/Image_macro), comics, infographics
+        and most diagrams. Text (e.g. a URL) serving to credit the original author
+        is exempt.*\\n\\n1. **No nudity, porn or gore.** *Other NSFW content must
+        be tagged.*\\n\\n1. **No personal information.** *This includes anything hosted
+        on Facebook's servers, as they can be traced to the original account holder.
+        Stalking &amp; harassment will not be tolerated.* ***No missing-persons requests!***\\n\\n1.
+        **No post titles soliciting votes** *(e.g. \\\"upvote this\\\").*\\n\\n1.
+        **No DAE, \\\"[FIXED]\\\" or \\\"cake day\\\" posts, nor posts addressed to
+        a specific redditor.** *\\\"[FIXED]\\\" posts should be added as a comment
+        to the original image.*\\n\\n1. **Submissions must link directly to a specific
+        image file or to a website with minimal ads.** *We do not allow blog hosting
+        of images (\\\"blogspam\\\"), but links to albums on image hosting websites
+        are okay. URL shorteners are prohibited.*\\n\\n1. **No animated images.**
+        *Please submit them to /r/gif, /r/gifs, or /r/reactiongifs instead.*\\n\\n*
+        If your submission appears to be filtered but **definitely** meets the above
+        rules, [please send us a message](/message/compose?to=%23pics) with a link
+        to the **comments section** of your post (not a direct link to the image).
+        **Don't delete it**  as that just makes the filter hate you! \\n\\n* If you
+        come across any rule violations,  please report the submission or  [message
+        the mods](http://www.reddit.com/message/compose?to=%23pics) and one of us
+        will remove it!\\n\\n* Please note: serial reposters may be filtered\\n\\nPlease
+        also try to come up with **original post titles**. Submissions that use certain
+        clich\\u00e9s/memes will be automatically tagged with a warning.\\n\\n#Links#\\nIf
+        your post doesn't meet the above rules, consider submitting it on one of these
+        other subreddits:\\n\\nComics | &amp;#0160;\\n:---|:---\\n/r/comics | /r/webcomics\\n/r/vertical
+        | [/r/f7u12](/r/fffffffuuuuuuuuuuuu/)\\n/r/ragenovels | /r/AdviceAtheists
+        \\n/r/comicbookart | \\n**Image macros**|**Screenshots/text**\\n/r/lolcats
+        | /r/screenshots\\n/r/AdviceAnimals | /r/desktops\\n/r/Demotivational | /r/facepalm
+        (Facebook)\\n/r/reactiongifs | /r/DesktopDetective\\n/r/memes | \\n**Wallpaper**|**Animals**\\n/r/wallpaper
+        | /r/aww\\n/r/wallpapers | /r/cats\\n[The SFWPorn Network](http://www.reddit.com/r/earthporn+villageporn+cityporn+spaceporn+waterporn+abandonedporn+animalporn+humanporn+botanicalporn+adrenalineporn+destructionporn+movieposterporn+albumartporn+machineporn+newsporn+geekporn+bookporn+mapporn+adporn+designporn+roomporn+militaryporn+historyporn+quotesporn+skyporn+fireporn+infrastructureporn+macroporn+instrumentporn+climbingporn+architectureporn+artporn+cemeteryporn+carporn+fractalporn+exposureporn+gunporn+culinaryporn+dessertporn+agricultureporn+boatporn+geologyporn+futureporn+winterporn+metalporn+microporn+streetartporn+autumnporn)
+        | /r/TrollingAnimals\\n&amp;#0160; | /r/deadpets\\n&amp;#0160; | /r/birdpics\\n&amp;#0160;
+        | /r/foxes\\n&amp;#0160; | /r/dogpictures\\n**Photography**|**Low-moderated
+        pics**\\n/r/photography | /r/AnythingGoesPics\\n/r/photocritique | /r/images\\n/r/HDR
+        | /r/misc\\n/r/windowshots | /r/redditdotcom\\n/r/PictureChallenge |\\n**GIFs/Misc.**|**New
+        reddits**\\n/r/reactiongifs |  /r/britpics \\n/r/gifs | [Imaginary Network](http://www.reddit.com/user/karmicviolence/m/imaginaryexpanded)\\n/r/dataisbeautiful
+        |  /r/thennnow\\n/r/picrequests | /r/SpecArt\\n/r/doodles |  /r/IncredibleIndia
+        .\\n/r/NewAmericanCitizen |  /r/timelinecovers\\n/r/ProgressPics |  /r/MemesIRL
+        \\n[(*More*)](/r/ModeratorDuck/wiki/pics) |  /r/OldSchoolCool\\n&amp;#0160;
+        | /r/photoshopbattles\\n&amp;#0160; | /r/PastAndPresentPics\\n\\nAlso check
+        out http://irc.reddit.com\\n \", \"submit_link_label\": null, \"accounts_active\":
+        null, \"spam_comments\": \"high\", \"spam_links\": \"high\", \"header_size\":
+        [160, 64], \"subscribers\": 4620979, \"submit_text_label\": null, \"name\":
+        \"t5_2qh0u\", \"created\": 1201221069.0, \"url\": \"/r/pics/\", \"created_utc\":
+        1201221069.0, \"user_is_contributor\": false, \"public_traffic\": false, \"public_description\":
+        \"A place to share interesting photographs and pictures.\", \"comment_score_hide_mins\":
+        60, \"subreddit_type\": \"public\", \"submission_type\": \"link\", \"user_is_subscriber\":
+        true}}], \"after\": \"rb_3uay8e\", \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:38:25 GMT
+recorded_with: VCR 2.6.0

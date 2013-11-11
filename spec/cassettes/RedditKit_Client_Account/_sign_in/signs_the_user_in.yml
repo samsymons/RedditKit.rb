@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ssl.reddit.com/api/login
+    body:
+      encoding: US-ASCII
+      string: user=<REDDIT_USERNAME>&passwd=<REDDIT_USERNAME>Password&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 10 Nov 2013 19:36:01 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '182'
+      Set-Cookie:
+      - reddit_session=20332937%2C2013-11-10T11%3A36%3A01%2C3a94801911c4cba77d627c03ef1728c0b9452267;
+        Domain=reddit.com; Path=/; HttpOnly
+      Server:
+      - "'; DROP TABLE servertypes; --"
+    body:
+      encoding: UTF-8
+      string: "{\"json\": {\"errors\": [], \"data\": {\"modhash\": \"4a8hmswyon7999c6fc14c9b9882324382339cfb661896efda8\",
+        \"cookie\": \"20332937,2013-11-10T11:36:01,3a94801911c4cba77d627c03ef1728c0b9452267\"}}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:59 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/user/<REDDIT_USERNAME>/about.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:36:01,3a94801911c4cba77d627c03ef1728c0b9452267
+      X-Modhash:
+      - 4a8hmswyon7999c6fc14c9b9882324382339cfb661896efda8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '362'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 19:36:01 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"t2\", \"data\": {\"has_mail\": false, \"name\": \"<REDDIT_USERNAME>\",
+        \"is_friend\": false, \"created\": 1371758712.0, \"modhash\": \"qnb8yblbase93a673767165f25ce13096d6d0acc3deed51118\",
+        \"created_utc\": 1371755112.0, \"link_karma\": 1, \"comment_karma\": 0, \"over_18\":
+        true, \"is_gold\": false, \"is_mod\": true, \"has_verified_email\": null,
+        \"id\": \"c3szt\", \"has_mod_mail\": true}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:35:59 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/api/me.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:36:01,3a94801911c4cba77d627c03ef1728c0b9452267
+      X-Modhash:
+      - 4a8hmswyon7999c6fc14c9b9882324382339cfb661896efda8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '362'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 19:36:01 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"t2\", \"data\": {\"has_mail\": false, \"name\": \"<REDDIT_USERNAME>\",
+        \"is_friend\": false, \"created\": 1371758712.0, \"modhash\": \"3ctrgpd6g5dd6a9bbd57786bcd7eadc9848307bdd9234f141e\",
+        \"created_utc\": 1371755112.0, \"link_karma\": 1, \"comment_karma\": 0, \"over_18\":
+        true, \"is_gold\": false, \"is_mod\": true, \"has_verified_email\": null,
+        \"id\": \"c3szt\", \"has_mod_mail\": true}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 19:36:00 GMT
+recorded_with: VCR 2.6.0

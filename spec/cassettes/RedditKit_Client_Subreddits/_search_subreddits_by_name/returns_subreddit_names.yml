@@ -1,0 +1,875 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/subreddits/search.json?q=ruby
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:38:23 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2qh21\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"ruby\", \"header_img\": \"http://thumbs.reddit.com/t5_2qh21.png?v=d4ae33f6d04df1caf7a3b126aabe9ae5\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;A
+        reddit for discussion and news about ruby programming&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Ruby-on-Rails
+        posts are encouraged to be posted in the &lt;a href=\\\"http://reddit.com/r/rails\\\"&gt;r/rails&lt;/a&gt;
+        subreddit&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Learning Ruby?&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://tryruby.org/\\\"&gt;Try Ruby&lt;/a&gt; in your browser&lt;/li&gt;\\n&lt;li&gt;Syntax,
+        structure, and some common functions and libraries try &lt;a href=\\\"http://rubykoans.com/\\\"&gt;RubyKoans&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://hackety.com/\\\"&gt;Hackety Hack&lt;/a&gt; a shoes app for
+        playing around with ruby&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://rvm.io/\\\"&gt;Ruby Version Manager (RVM)&lt;/a&gt; easily
+        install, manage and work with multiple ruby environments from interpreters
+        to sets of gems&lt;/li&gt;\\n&lt;li&gt;Manages an application&amp;#39;s dependencies
+        &lt;a href=\\\"http://gembundler.com\\\"&gt;Bundler&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;Looking
+        for new gems? &lt;a href=\\\"http://ruby-toolbox.com/\\\"&gt;ruby-toolbox&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Got
+        Docs?&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://apidock.com/\\\"&gt;APIdock&lt;/a&gt;
+        rich and usable interface for searching, perusing and improving the documentation&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://rdoc.info/gems\\\"&gt;rdoc&lt;/a&gt; YARD Documentation Server&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://ruby-doc.org/\\\"&gt;Ruby Doc&lt;/a&gt; complete and accurate
+        documentation for the Ruby programming language&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://www.relishapp.com/\\\"&gt;RelishApp&lt;/a&gt; Browsable Cucumber
+        Features&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Books&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.amazon.com/gp/product/1933988657/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1933988657\\\"&gt;Well
+        Grounded Rubyist&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.amazon.com/gp/product/0321584104/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321584104\\\"&gt;Eloquent
+        Ruby&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.amazon.com/gp/product/1934356476/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1934356476\\\"&gt;Metaprogramming
+        Ruby&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.amazon.com/gp/product/1934356379/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1934356379\\\"&gt;The
+        Rspec Book&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.amazon.com/gp/product/1934356085/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1934356085\\\"&gt;Programming
+        Ruby 1.9: The Pragmatic Programmers\\u2019 Guide&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.amazon.com/gp/product/0596516177/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0596516177\\\"&gt;The
+        Ruby Programming Language&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Community&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Signup
+        for &lt;a href=\\\"http://github.com/signup/free\\\"&gt;GitHub&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;Signup
+        for &lt;a href=\\\"http://rubygems.org/sign_up\\\"&gt;RubyGems&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Screencasts
+        (Rails)&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://rubyonrails.org/screencasts/rails3\\\"&gt;Rails
+        Screencasts&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://railscasts.com/\\\"&gt;RailsCasts&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://railsforzombies.org/\\\"&gt;Rails For Zombies!&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"reddit for rubyists\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"**A reddit for discussion
+        and news about ruby programming**\\n\\nRuby-on-Rails posts are encouraged
+        to be posted in the [r/rails](http://reddit.com/r/rails) subreddit\\n\\n**Learning
+        Ruby?**\\n\\n* [Try Ruby](http://tryruby.org/) in your browser\\n* Syntax,
+        structure, and some common functions and libraries try [RubyKoans](http://rubykoans.com/)\\n*
+        [Hackety Hack](http://hackety.com/) a shoes app for playing around with ruby\\n\\n**Tools**\\n\\n*
+        [Ruby Version Manager (RVM)](https://rvm.io/) easily install, manage and work
+        with multiple ruby environments from interpreters to sets of gems\\n* Manages
+        an application's dependencies [Bundler](http://gembundler.com)\\n* Looking
+        for new gems? [ruby-toolbox](http://ruby-toolbox.com/)\\n\\n**Got Docs?**\\n\\n*
+        [APIdock](http://apidock.com/) rich and usable interface for searching, perusing
+        and improving the documentation\\n* [rdoc](http://rdoc.info/gems) YARD Documentation
+        Server\\n* [Ruby Doc](http://ruby-doc.org/) complete and accurate documentation
+        for the Ruby programming language\\n* [RelishApp](https://www.relishapp.com/)
+        Browsable Cucumber Features\\n\\n\\n**Books**\\n\\n* [Well Grounded Rubyist](http://www.amazon.com/gp/product/1933988657/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1933988657)\\n*
+        [Eloquent Ruby](http://www.amazon.com/gp/product/0321584104/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321584104)\\n*
+        [Metaprogramming Ruby](http://www.amazon.com/gp/product/1934356476/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1934356476)\\n*
+        [The Rspec Book](http://www.amazon.com/gp/product/1934356379/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1934356379)\\n*
+        [Programming Ruby 1.9: The Pragmatic Programmers\\u2019 Guide](http://www.amazon.com/gp/product/1934356085/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1934356085)\\n*
+        [The Ruby Programming Language](http://www.amazon.com/gp/product/0596516177/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596516177)\\n\\n**Community**\\n\\n*
+        Signup for [GitHub](http://github.com/signup/free)\\n* Signup for [RubyGems](http://rubygems.org/sign_up)\\n\\n**Screencasts
+        (Rails)**\\n\\n * [Rails Screencasts](http://rubyonrails.org/screencasts/rails3)\\n
+        * [RailsCasts](http://railscasts.com/)\\n * [Rails For Zombies!](http://railsforzombies.org/)\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"low\", \"header_size\": null, \"subscribers\":
+        19119, \"submit_text_label\": null, \"name\": \"t5_2qh21\", \"created\": 1201241221.0,
+        \"url\": \"/r/ruby/\", \"created_utc\": 1201237621.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2qhjn\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"rails\", \"header_img\": \"http://thumbs.reddit.com/t5_2qhjn.png?v=f5bd2d9336b0cb11d2bba31573c2cac0\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;A
+        subreddit for discussion and news about Ruby on Rails development&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Posts
+        about the Ruby programming language are encouraged to be posted in the &lt;a
+        href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt; subreddit.&lt;/p&gt;\\n\\n&lt;p&gt;Please
+        &lt;a href=\\\"http://www.reddit.com/message/compose?to=%2Fr%2Frails\\\"&gt;message
+        the mods&lt;/a&gt; if you would like to suggest changes to the sidebar.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Learning
+        Ruby?&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://tryruby.org/\\\"&gt;TryRuby&lt;/a&gt;
+        in your browser&lt;/li&gt;\\n&lt;li&gt;Try &lt;a href=\\\"http://rubykoans.com/\\\"&gt;RubyKoans&lt;/a&gt;
+        to learn more about syntax, structure, and common functions and libraries&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://hackety.com/\\\"&gt;Hackety Hack&lt;/a&gt; is a shoes app
+        for playing around with ruby&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Learning
+        Rails?&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://ruby.railstutorial.org/ruby-on-rails-tutorial-book\\\"&gt;Learn
+        Web Development with Rails (Tutorial Book)&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://railsforzombies.org/\\\"&gt;Rails for Zombies&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://learn.thoughtbot.com/rails\\\"&gt;Thoughtbot - Learn Rails&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.codelearn.org\\\"&gt;Codelearn Rails Tutorials&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://railscasts.com/\\\"&gt;RailsCasts&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://rubyonrails.org/screencasts/rails3\\\"&gt;Ruby on Rails Screencasts&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://guides.rubyonrails.org/getting_started.html\\\"&gt;Ruby on
+        Rails Guides&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://rvm.io/\\\"&gt;Ruby Version Manager (RVM)&lt;/a&gt;: easily
+        install, manage and work with multiple ruby environments from interpreters
+        to sets of gems&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://gembundler.com/\\\"&gt;Bundler&lt;/a&gt;:
+        Manages an application&amp;#39;s dependencies&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://ruby-toolbox.com/\\\"&gt;ruby-toolbox&lt;/a&gt;: Find and
+        compare gems&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Docs&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://apidock.com/\\\"&gt;APIdock&lt;/a&gt;: Rich and usable interface
+        for searching, perusing and improving the documentation&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://railsapi.com\\\"&gt;Rails API&lt;/a&gt;: Searchable docs built
+        with the sdoc gem.&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://rdoc.info/gems\\\"&gt;rdoc&lt;/a&gt;:
+        YARD Documentation Server&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://ruby-doc.org/\\\"&gt;Ruby
+        Doc&lt;/a&gt;: Complete and accurate documentation for the Ruby programming
+        language&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"https://www.relishapp.com/\\\"&gt;RelishApp&lt;/a&gt;
+        Browsable Cucumber Features&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Community&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Signup
+        for &lt;a href=\\\"http://github.com/signup/free\\\"&gt;Github&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;Signup
+        for &lt;a href=\\\"http://rubygems.org/sign_up\\\"&gt;rubygems&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Rails
+        jobs&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Looking for work, or need to hire
+        Rails developers?&lt;/p&gt;\\n\\n&lt;p&gt;Try &lt;a href=\\\"/r/railsjobs\\\"&gt;/r/railsjobs&lt;/a&gt;,
+        &lt;a href=\\\"/r/forhire\\\"&gt;/r/forhire&lt;/a&gt;, or the following job
+        sites:&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://jobs.37signals.com/\\\"&gt;jobs.37signals.com&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://jobs.github.com/\\\"&gt;jobs.github.com&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://careers.stackoverflow.com/jobs/tag/ruby-on-rails\\\"&gt;careers.stackoverflow.com&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://cooperpress.com/jobs\\\"&gt;Ruby Weekly Newsletter&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.rubyinside.com/post-a-job\\\"&gt;Ruby Inside&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.rorjobs.com/\\\"&gt;rorjobs.com&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://jobs.rubynow.com/\\\"&gt;jobs.rubynow.com&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://toprubyjobs.com/\\\"&gt;toprubyjobs.com&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;About
+        the &lt;a href=\\\"/r/rails\\\"&gt;/r/rails&lt;/a&gt; moderators:&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/u/brendanlim\\\"&gt;/u/brendanlim&lt;/a&gt; - Co-founder of &lt;a
+        href=\\\"http://kicksend.com/\\\"&gt;Kicksend&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/u/brentmc79\\\"&gt;/u/brentmc79&lt;/a&gt; - Works on the &lt;a href=\\\"http://twitter.com/safety\\\"&gt;Trust
+        &amp;amp; Safety&lt;/a&gt; team at &lt;a href=\\\"http://twitter.com/\\\"&gt;Twitter&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/u/adambair\\\"&gt;/u/adambair&lt;/a&gt; - CTO of &lt;a href=\\\"http://www.openbay.com\\\"&gt;openbay&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"/u/ndbroadbent\\\"&gt;/u/ndbroadbent&lt;/a&gt; - Rails engineer at
+        &lt;a href=\\\"https://zenpayroll.com/careers#position-ruby-on-rails-engineer\\\"&gt;ZenPayroll&lt;/a&gt;
+        (&lt;a href=\\\"https://zenpayroll.com/careers#position-ruby-on-rails-engineer\\\"&gt;We&amp;#39;re
+        hiring!&lt;/a&gt;)&lt;/li&gt;\\n&lt;/ul&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\",
+        \"title\": \"Reddit for Rails hackers\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"**A subreddit for discussion
+        and news about Ruby on Rails development**\\n\\nPosts about the Ruby programming
+        language are encouraged to be posted in the /r/ruby subreddit.\\n\\nPlease
+        [message the mods](http://www.reddit.com/message/compose?to=%2Fr%2Frails)
+        if you would like to suggest changes to the sidebar.\\n\\n**Learning Ruby?**\\n\\n*
+        [TryRuby](http://tryruby.org/) in your browser\\n* Try [RubyKoans](http://rubykoans.com/)
+        to learn more about syntax, structure, and common functions and libraries\\n*
+        [Hackety Hack](http://hackety.com/) is a shoes app for playing around with
+        ruby\\n\\n**Learning Rails?**\\n\\n* [Learn Web Development with Rails (Tutorial
+        Book)](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)\\n* [Rails
+        for Zombies](http://railsforzombies.org/)\\n* [Thoughtbot - Learn Rails](https://learn.thoughtbot.com/rails)\\n*
+        [Codelearn Rails Tutorials](http://www.codelearn.org)\\n* [RailsCasts](http://railscasts.com/)\\n*
+        [Ruby on Rails Screencasts](http://rubyonrails.org/screencasts/rails3)\\n*
+        [Ruby on Rails Guides](http://guides.rubyonrails.org/getting_started.html)\\n\\n**Tools**\\n\\n*
+        [Ruby Version Manager (RVM)](https://rvm.io/): easily install, manage and
+        work with multiple ruby environments from interpreters to sets of gems\\n*
+        [Bundler](http://gembundler.com/): Manages an application's dependencies\\n*
+        [ruby-toolbox](http://ruby-toolbox.com/): Find and compare gems\\n\\n**Docs**\\n\\n*
+        [APIdock](http://apidock.com/): Rich and usable interface for searching, perusing
+        and improving the documentation\\n* [Rails API](http://railsapi.com): Searchable
+        docs built with the sdoc gem.\\n* [rdoc](http://rdoc.info/gems): YARD Documentation
+        Server\\n* [Ruby Doc](http://ruby-doc.org/): Complete and accurate documentation
+        for the Ruby programming language\\n* [RelishApp](https://www.relishapp.com/)
+        Browsable Cucumber Features\\n\\n**Community**\\n\\n* Signup for [Github](http://github.com/signup/free)\\n*
+        Signup for [rubygems](http://rubygems.org/sign_up)\\n\\n**Rails jobs**\\n\\nLooking
+        for work, or need to hire Rails developers?\\n\\nTry /r/railsjobs, /r/forhire,
+        or the following job sites:\\n\\n* [jobs.37signals.com](http://jobs.37signals.com/)\\n*
+        [jobs.github.com](https://jobs.github.com/)\\n* [careers.stackoverflow.com](http://careers.stackoverflow.com/jobs/tag/ruby-on-rails)\\n*
+        [Ruby Weekly Newsletter](https://cooperpress.com/jobs)\\n* [Ruby Inside](http://www.rubyinside.com/post-a-job)\\n*
+        [rorjobs.com](http://www.rorjobs.com/)\\n* [jobs.rubynow.com](http://jobs.rubynow.com/)\\n*
+        [toprubyjobs.com](http://toprubyjobs.com/)\\n\\n**About the /r/rails moderators:**\\n\\n*
+        /u/brendanlim - Co-founder of [Kicksend](http://kicksend.com/)\\n* /u/brentmc79
+        - Works on the [Trust &amp; Safety](http://twitter.com/safety) team at [Twitter](http://twitter.com/)\\n*
+        /u/adambair - CTO of [openbay](http://www.openbay.com)\\n* /u/ndbroadbent
+        - Rails engineer at [ZenPayroll](https://zenpayroll.com/careers#position-ruby-on-rails-engineer)
+        ([We're hiring!](https://zenpayroll.com/careers#position-ruby-on-rails-engineer))\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        7942, \"submit_text_label\": null, \"name\": \"t5_2qhjn\", \"created\": 1205874858.0,
+        \"url\": \"/r/rails/\", \"created_utc\": 1205871258.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"A subreddit for
+        discussion and news about Ruby on Rails development\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2rbfx\", \"submit_text\": \"\", \"spam_selfposts\": \"low\",
+        \"display_name\": \"rockhounds\", \"header_img\": \"http://c.thumbs.redditmedia.com/TVAr1x4uzPP-dZmJ.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;A
+        public subReddit for the discussion of rockhounding, rock collecting, crystals
+        and mineralogy, geology, lapidary arts and rocks in general. Topics include
+        outings and trips, polishing, tumbling, cabochons, slabs and specimens. Feel
+        free to ask a question or post a picture.&lt;/p&gt;\\n\\n&lt;p&gt;No metaphysical
+        bullshit posts. Period.&lt;/p&gt;\\n\\n&lt;p&gt;If you&amp;#39;re posting
+        an ID request, please take clear, well-lit, up-close shots that will allow
+        for proper identification. Also provide any additional information that may
+        be pertinent such as where it was found, hardness, results of a streak test,
+        weight, etc.&lt;/p&gt;\\n\\n&lt;p&gt;If you post photos that you didn&amp;#39;t
+        take yourself, please credit the original photographer even if it means spending
+        a couple of minutes on &lt;a href=\\\"http://www.google.com/imghp\\\"&gt;Google
+        Images&lt;/a&gt; finding the original source.&lt;/p&gt;\\n\\n&lt;p&gt;Found
+        a cool rock and you need help IDing it? No need. It&amp;#39;s most definitely
+        &lt;a href=\\\"http://blog.al.com/goforth/Iron-slag-Bibb-County-Glades-Alabama.jpg\\\"&gt;slag&lt;/a&gt;.
+        /thread.  &lt;/p&gt;\\n\\n&lt;p&gt;Related Reddits: &lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/geologycareers\\\"&gt;/r/geologycareers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/geology\\\"&gt;/r/geology&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/whatsthisrock\\\"&gt;/r/whatsthisrock&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/prospecting\\\"&gt;/r/prospecting&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/mining\\\"&gt;/r/mining&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/jewelry\\\"&gt;/r/jewelry&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/jewelers\\\"&gt;/r/jewelers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/fossilid\\\"&gt;/r/fossilid&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/rockhoundexchange\\\"&gt;/r/RockhoundExchange&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;p&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/askscience\\\"&gt;/r/askscience&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;If
+        you want to learn more about rock tumbling, check here at the &lt;a href=\\\"http://andy321.proboards.com/index.cgi?\\\"&gt;Rock
+        Tumbling Hobby Forums.&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Created: Long ago.
+        Sputtered into life on 2-8-11. :D&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\",
+        \"title\": \"reddit.com/r/rockhounds: Rockhounding, rock collecting, mineralogy,
+        lapidary arts and more\", \"over18\": false, \"user_is_moderator\": null,
+        \"header_title\": \"Keep on rockin', Reddit\", \"description\": \"A public
+        subReddit for the discussion of rockhounding, rock collecting, crystals and
+        mineralogy, geology, lapidary arts and rocks in general. Topics include outings
+        and trips, polishing, tumbling, cabochons, slabs and specimens. Feel free
+        to ask a question or post a picture.\\n\\nNo metaphysical bullshit posts.
+        Period.\\n\\nIf you're posting an ID request, please take clear, well-lit,
+        up-close shots that will allow for proper identification. Also provide any
+        additional information that may be pertinent such as where it was found, hardness,
+        results of a streak test, weight, etc.\\n\\nIf you post photos that you didn't
+        take yourself, please credit the original photographer even if it means spending
+        a couple of minutes on [Google Images](http://www.google.com/imghp) finding
+        the original source.\\n\\nFound a cool rock and you need help IDing it? No
+        need. It's most definitely [slag](http://blog.al.com/goforth/Iron-slag-Bibb-County-Glades-Alabama.jpg).
+        /thread.  \\n\\nRelated Reddits: \\n\\n* [/r/geologycareers](http://www.reddit.com/r/geologycareers)\\n\\n*
+        [/r/geology](http://www.reddit.com/r/geology)\\n\\n* [/r/whatsthisrock](http://www.reddit.com/r/whatsthisrock)\\n\\n*
+        [/r/prospecting](http://www.reddit.com/r/prospecting)\\n\\n* [/r/mining](http://www.reddit.com/r/mining)\\n\\n*
+        [/r/jewelry](http://www.reddit.com/r/jewelry)\\n\\n* [/r/jewelers](http://www.reddit.com/r/jewelers)\\n\\n*
+        [/r/fossilid](http://www.reddit.com/r/fossilid)\\n\\n* [/r/RockhoundExchange](http://www.reddit.com/r/rockhoundexchange)\\n\\n*
+        [/r/askscience](http://www.reddit.com/r/askscience)\\n\\nIf you want to learn
+        more about rock tumbling, check here at the [Rock Tumbling Hobby Forums.](http://andy321.proboards.com/index.cgi?)\\n\\nCreated:
+        Long ago. Sputtered into life on 2-8-11. :D\", \"submit_link_label\": null,
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"low\",
+        \"header_size\": [502, 102], \"subscribers\": 5021, \"submit_text_label\":
+        null, \"name\": \"t5_2rbfx\", \"created\": 1257041284.0, \"url\": \"/r/rockhounds/\",
+        \"created_utc\": 1257037684.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"This is the Reddit place to go when rocks
+        are in your head -\\n\\nbe they agate, ruby, aquamarine or even a thunderegg
+        bed.\\n\\nPost pics and ask some questions if you want to pick our minds -\\n\\nor
+        display for all to see with pics your best and brightest finds!\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2xj66\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"squirreltactics\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"When you absolutely have to know if it's Jack Ruby's hat\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"\", \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        14, \"submit_text_label\": null, \"name\": \"t5_2xj66\", \"created\": 1371002736.0,
+        \"url\": \"/r/squirreltactics/\", \"created_utc\": 1370999136.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"All things tactically
+        squirrel.  Also, squirrely tactics.  \", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2sdpq\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"LearnRubyonRails\", \"header_img\": \"http://thumbs.reddit.com/t5_2sdpq.png?v=b85ad9a34c2ac221cb7dbc0c5f0fab95\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;A
+        reddit to start your Ruby on Rails path&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Before
+        RoR remember to start with &lt;a href=\\\"http://www.reddit.com/r/learnruby\\\"&gt;Ruby&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Open
+        positions for moderators!&lt;/strong&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"title\": \"Learn Ruby on Rails\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"**A reddit to start your
+        Ruby on Rails path**\\n\\n* Before RoR remember to start with [Ruby](http://www.reddit.com/r/learnruby)\\n\\n**Open
+        positions for moderators!**\", \"submit_link_label\": \"\", \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 286, \"submit_text_label\": \"\", \"name\": \"t5_2sdpq\",
+        \"created\": 1300508154.0, \"url\": \"/r/LearnRubyonRails/\", \"created_utc\":
+        1300504554.0, \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2qi04\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"low\", \"display_name\": \"rubyonrails\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;A
+        subreddit for discussion and news about Ruby on Rails development&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;Also
+        check out; &lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://www.reddit.com/r/learnrubyonrails\\\"&gt;http://www.reddit.com/r/learnrubyonrails&lt;/a&gt;\\n&lt;a
+        href=\\\"http://www.reddit.com/r/rails\\\"&gt;http://www.reddit.com/r/rails&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Ruby on Rails\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"**A subreddit for discussion
+        and news about Ruby on Rails development**\\n\\n----\\n  \\nAlso check out;
+        \\n  \\nhttp://www.reddit.com/r/learnrubyonrails\\nhttp://www.reddit.com/r/rails\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        2669, \"submit_text_label\": null, \"name\": \"t5_2qi04\", \"created\": 1211182038.0,
+        \"url\": \"/r/rubyonrails/\", \"created_utc\": 1211178438.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"Everything RoR!
+        \ \\n  \\nRuby on Rails, often simply Rails, is an open source web application
+        framework which runs on the Ruby programming language.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2w525\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"TheAldmeriDominion\", \"header_img\": \"http://b.thumbs.redditmedia.com/dUAmFTJCYIGwVEAa.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;Commands
+        from Queen Ayrenn:&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;I have no hatred
+        for the races of Man, but they are young. Like all children, they are driven
+        by emotion. They lack the wisdom that comes with age. I would sooner place
+        an Altmer infant on the Ruby Throne than surrender Tamriel to their capricious
+        whims.&lt;/p&gt;\\n\\n&lt;p&gt;The Altmer, the Bosmer, and the Khajiit share
+        the common traits of intelligence, patience and reason. We do not seek riches
+        or plunder. Domination is not our goal nor is the acclamation of power for
+        its own sake.&lt;/p&gt;\\n\\n&lt;p&gt;Today we make our stand. Today we take
+        back the Ruby Throne, which is ours by ancient right and the blessing of the
+        Divines.&lt;/p&gt;\\n\\n&lt;p&gt;Stand with us.&lt;/p&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Other
+        Subreddits:&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.reddit.com/r/elderscrollsonline/\\\"&gt;r/elderscrollsonline&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/thedaggerfallcovenant\\\"&gt;r/TheDaggerfallCovenant&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/TheEbonheartPact/\\\"&gt;r/TheEbonheartPact&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/elderscrolls\\\"&gt;r/elderscrolls&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/Skyrim\\\"&gt;r/skyrim&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/oblivion\\\"&gt;r/oblivion&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/morrowind\\\"&gt;r/morrowind&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/teslore\\\"&gt;r/teslore&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/Khajiits\\\"&gt;r/Khajiits&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Elder Scrolls Online: Aldmeri Dominion faction\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": \"For Queen
+        Ayrenn we FIGHT!\", \"description\": \"**Commands from Queen Ayrenn:**\\n\\nI
+        have no hatred for the races of Man, but they are young. Like all children,
+        they are driven by emotion. They lack the wisdom that comes with age. I would
+        sooner place an Altmer infant on the Ruby Throne than surrender Tamriel to
+        their capricious whims.\\n\\nThe Altmer, the Bosmer, and the Khajiit share
+        the common traits of intelligence, patience and reason. We do not seek riches
+        or plunder. Domination is not our goal nor is the acclamation of power for
+        its own sake.\\n\\nToday we make our stand. Today we take back the Ruby Throne,
+        which is ours by ancient right and the blessing of the Divines.\\n\\nStand
+        with us.\\n\\n-------------------------------------------------------------------\\n**Other
+        Subreddits:**\\n\\n* [r/elderscrollsonline](http://www.reddit.com/r/elderscrollsonline/)\\n*
+        [r/TheDaggerfallCovenant](http://www.reddit.com/r/thedaggerfallcovenant)\\n*
+        [r/TheEbonheartPact](http://www.reddit.com/r/TheEbonheartPact/)\\n* [r/elderscrolls](http://www.reddit.com/r/elderscrolls)\\n*
+        [r/skyrim](http://www.reddit.com/r/Skyrim)\\n* [r/oblivion](http://www.reddit.com/r/oblivion)\\n*
+        [r/morrowind](http://www.reddit.com/r/morrowind)\\n* [r/teslore](http://www.reddit.com/r/teslore)\\n*
+        [r/Khajiits](http://www.reddit.com/r/Khajiits)\", \"submit_link_label\": \"\",
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"high\",
+        \"header_size\": [785, 170], \"subscribers\": 160, \"submit_text_label\":
+        \"\", \"name\": \"t5_2w525\", \"created\": 1358992422.0, \"url\": \"/r/TheAldmeriDominion/\",
+        \"created_utc\": 1358988822.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"Here we join together as the Aldmeri Dominion
+        to quest, raid, and repel the enemy factions. We shall restore order to Tamriel
+        and therefore take back the ruby throne for our own. The land we founded has
+        been tainted by the races of Man, but no longer will we stand for their insolence.
+        We will display our dominance to all who oppose the Queen! \", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2qjwh\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"enterprise\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;A community where
+        crappy programmers can talk about crappy code without fear of being exposed
+        to new programming paradigms and concepts. Bring along your XML configuration
+        files, open classes, interpreters, reference-counting, and crappy code. Leave
+        your brain at the door.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"title\":
+        \"Mediocre programmers unite! Python, Ruby, Java FTW!\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": \"\", \"description\": \"A
+        community where crappy programmers can talk about crappy code without fear
+        of being exposed to new programming paradigms and concepts. Bring along your
+        XML configuration files, open classes, interpreters, reference-counting, and
+        crappy code. Leave your brain at the door.\", \"submit_link_label\": \"\",
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"high\",
+        \"header_size\": null, \"subscribers\": 308, \"submit_text_label\": \"\",
+        \"name\": \"t5_2qjwh\", \"created\": 1215678521.0, \"url\": \"/r/enterprise/\",
+        \"created_utc\": 1215674921.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2xtuf\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"remakehoenn\", \"header_img\": null, \"description_html\":
+        null, \"title\": \"Talk and discussion about Pokemon generation 3 remakes!\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"\", \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        61, \"submit_text_label\": null, \"name\": \"t5_2xtuf\", \"created\": 1373491650.0,
+        \"url\": \"/r/remakehoenn/\", \"created_utc\": 1373488050.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"This subreddit
+        is a place to discuss and to bring together everyone who started and grew
+        up playing either Ruby, Sapphire, or Emerald versions! It is also a way to
+        possibly get GameFreak to make these either a Ruby and Sapphire remake, an
+        Emerald remake, or to simply just bring back the Hoenn region to 3DS.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2umhd\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"osxterminal\", \"header_img\": \"http://c.thumbs.redditmedia.com/4NCUM1GyO94YHY98.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Everyone
+        is welcome to post their ideas, requests and questions.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;The
+        spam filter seems to be very hateful to nearly everyone.  I end up having
+        to approve most posts.  If your post doesn&amp;#39;t show up right away, that&amp;#39;s
+        probably why &amp;amp; I promise to check the filter daily --danielcole&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;While
+        we would like to keep things terminal-based, don&amp;#39;t think that limits
+        the discussion here strictly to bash.  Anything that involves scripting the
+        Apple environment is welcome - that certainly includes AppleScript &amp;amp;
+        large parts of ruby/python/perl.&lt;/p&gt;\\n\\n&lt;p&gt;We hope that you
+        feel free to share the scripts that you use on a daily basis so that others
+        can discover new ways of controlling their computers.  We also now have a
+        fairly large pool of people that can be a resource for questions on how particular
+        commands operate.&lt;/p&gt;\\n\\n&lt;p&gt;Mods kripley1 &amp;amp; myself have
+        written up a few introductory posts: &amp;quot;&lt;a href=\\\"http://www.reddit.com/r/osxterminal/comments/xqlbo/getting_started_with_os_x_terminal/\\\"&gt;Getting
+        Started With Terminal&lt;/a&gt;\\n&amp;quot; and a &lt;a href=\\\"http://www.reddit.com/r/osxterminal/comments/y1xkm/ssh_scp_and_passwordless_ssh_logins_all_with/\\\"&gt;primer
+        on SSH&lt;/a&gt;.&lt;/p&gt;\\n\\n&lt;p&gt;When the Gods of Reddit deem the
+        time ripe and proper we will have a wiki that consolidates much of the tip
+        and tricks that are posted here so that we can have a coherent knowledge base.&lt;/p&gt;\\n\\n&lt;p&gt;---
+        Links ---&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/index.html\\\"&gt;OSX
+        Online Man Pages&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://www.reddit.com/r/osxterminal/comments/xqlbo/getting_started_with_os_x_terminal/\\\"&gt;Getting
+        Started With Terminal&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://www.reddit.com/r/osxterminal/comments/y1xkm/ssh_scp_and_passwordless_ssh_logins_all_with/\\\"&gt;Primer
+        on SSH &amp;amp; SCP&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;--- More Links! ---&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"/r/GeekTool\\\"&gt;/r/GeekTool&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"/r/Apple\\\"&gt;/r/Apple&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"/r/Commandline\\\"&gt;/r/Commandline&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"/r/HueLights\\\"&gt;/r/HueLights&lt;/a&gt; (new!)&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Tips for using terminal.app in OS X\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"Everyone is welcome to post their ideas, requests and questions.\\n\\n**The
+        spam filter seems to be very hateful to nearly everyone.  I end up having
+        to approve most posts.  If your post doesn't show up right away, that's probably
+        why &amp; I promise to check the filter daily --danielcole**\\n\\nWhile we
+        would like to keep things terminal-based, don't think that limits the discussion
+        here strictly to bash.  Anything that involves scripting the Apple environment
+        is welcome - that certainly includes AppleScript &amp; large parts of ruby/python/perl.\\n\\nWe
+        hope that you feel free to share the scripts that you use on a daily basis
+        so that others can discover new ways of controlling their computers.  We also
+        now have a fairly large pool of people that can be a resource for questions
+        on how particular commands operate.\\n\\nMods kripley1 &amp; myself have written
+        up a few introductory posts: \\\"[Getting Started With Terminal](http://www.reddit.com/r/osxterminal/comments/xqlbo/getting_started_with_os_x_terminal/)\\n\\\"
+        and a [primer on SSH](http://www.reddit.com/r/osxterminal/comments/y1xkm/ssh_scp_and_passwordless_ssh_logins_all_with/).\\n\\nWhen
+        the Gods of Reddit deem the time ripe and proper we will have a wiki that
+        consolidates much of the tip and tricks that are posted here so that we can
+        have a coherent knowledge base.\\n\\n--- Links ---\\n\\n[OSX Online Man Pages](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/index.html)\\n\\n[Getting
+        Started With Terminal](http://www.reddit.com/r/osxterminal/comments/xqlbo/getting_started_with_os_x_terminal/)\\n\\n[Primer
+        on SSH &amp; SCP](http://www.reddit.com/r/osxterminal/comments/y1xkm/ssh_scp_and_passwordless_ssh_logins_all_with/)\\n\\n---
+        More Links! ---\\n\\n/r/GeekTool\\n\\n/r/Apple\\n\\n/r/Commandline\\n\\n/r/HueLights
+        (new!)\", \"submit_link_label\": \"\", \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": [81, 72], \"subscribers\":
+        762, \"submit_text_label\": \"\", \"name\": \"t5_2umhd\", \"created\": 1343507352.0,
+        \"url\": \"/r/osxterminal/\", \"created_utc\": 1343503752.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"While we would
+        like to keep things terminal-based, don't think that limits the discussion
+        here strictly to bash.  Anything that involves scripting the Apple environment
+        is welcome - that certainly includes AppleScript &amp; large parts of ruby/python/perl.\\n\",
+        \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2sdpo\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"learnruby\", \"header_img\":
+        \"http://thumbs.reddit.com/t5_2sdpo.png?v=cd498861047b2e98996c2d64e80c0372\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;h2&gt;&lt;strong&gt;A
+        subreddit for learning Ruby&lt;/strong&gt;&lt;/h2&gt;\\n\\n&lt;hr/&gt;\\n\\n&lt;p&gt;Total
+        beginner and don&amp;#39;t know where to start?&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://pine.fm/LearnToProgram/?Chapter=00\\\"&gt;0.  Getting Started&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://ruby.learncodethehardway.org/book/\\\"&gt;LRtHW&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://mislav.uniqpath.com/poignant-guide/\\\"&gt;why&amp;#39;s (poignant)
+        guide&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;Quickly need an answer
+        to a specific question?&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a href=\\\"http://stackoverflow.com/\\\"&gt;http://stackoverflow.com/&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;Already
+        a Ruby hacker? &lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Try the &lt;a href=\\\"http://www.reddit.com/r/ruby\\\"&gt;Ruby
+        subreddit!&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;Want to learn
+        Ruby on Rails?&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;Try the &lt;a href=\\\"http://www.reddit.com/r/learnrubyonrails\\\"&gt;Learn
+        Ruby on Rails subreddit!&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;h2&gt;&lt;strong&gt;Open
+        positions for moderators!&lt;/strong&gt;&lt;/h2&gt;\\n\\n&lt;hr/&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Learn Ruby\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"**A subreddit for learning
+        Ruby**\\n---------\\n---------\\n\\nTotal beginner and don't know where to
+        start?\\n\\n* [0.  Getting Started](http://pine.fm/LearnToProgram/?Chapter=00)\\n*
+        [LRtHW](http://ruby.learncodethehardway.org/book/)\\n* [why's (poignant) guide](http://mislav.uniqpath.com/poignant-guide/)\\n\\nQuickly
+        need an answer to a specific question?\\n\\n* http://stackoverflow.com/\\n\\nAlready
+        a Ruby hacker? \\n\\n* Try the [Ruby subreddit!](http://www.reddit.com/r/ruby)\\n\\nWant
+        to learn Ruby on Rails?\\n\\n* Try the [Learn Ruby on Rails subreddit!](http://www.reddit.com/r/learnrubyonrails)\\n\\n**Open
+        positions for moderators!**\\n------\\n--------\", \"submit_link_label\":
+        \"\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 622, \"submit_text_label\":
+        \"\", \"name\": \"t5_2sdpo\", \"created\": 1300506813.0, \"url\": \"/r/learnruby/\",
+        \"created_utc\": 1300503213.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2v5lo\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"gamegenome\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;More info coming
+        soon.&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"title\": \"The Game
+        Genome Project\", \"over18\": false, \"user_is_moderator\": null, \"header_title\":
+        null, \"description\": \"More info coming soon.\", \"submit_link_label\":
+        \"\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 49, \"submit_text_label\":
+        \"\", \"name\": \"t5_2v5lo\", \"created\": 1348856938.0, \"url\": \"/r/gamegenome/\",
+        \"created_utc\": 1348853338.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"The Game Genome Project is a website that
+        will collect data about video games, allowing for that data to be accessed
+        by third party applications. The project will be used as a learning opportunity
+        for those who have never touched web development before with diary posts about
+        how each component works from HTML and CSS to Ruby on Rails and Batman.js\",
+        \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2y2th\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"ClubRuby\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Please
+        respect the mods at all times, We&amp;#39;re here to help you and the rest
+        of the subreddit, if you&amp;#39;re being harassed in anyway please report
+        it to us. Remember to put spoiler tags on anything that could potentially
+        spoil the show for your fellow members. Posts without the spoiler tag will
+        be immediately  removed and you&amp;#39;ll be asked to resubmit your post.
+        NSFW is allowed but is frowned upon, no reposting such content, if people
+        want to see it they&amp;#39;ll have to type in the [NSFW] tag that must be
+        put in each NSFW post into the search bar.&lt;br/&gt;\\nFor things non related
+        please check out the following subreddits\\n&lt;a href=\\\"/r/RWBY\\\"&gt;/r/RWBY&lt;/a&gt;
+        for all the generic content including everything from the show&lt;br/&gt;\\n&lt;a
+        href=\\\"/r/ClubYang\\\"&gt;/r/ClubYang&lt;/a&gt; for all the Yang-y goodness&lt;br/&gt;\\n&lt;a
+        href=\\\"/r/ClubWeiss\\\"&gt;/r/ClubWeiss&lt;/a&gt; to check out some dust,
+        and I guess the princess&lt;br/&gt;\\n&lt;a href=\\\"/r/ClubBlake\\\"&gt;/r/ClubBlake&lt;/a&gt;
+        for calm relaxing reading and the cat looking girl herself  &lt;/p&gt;\\n\\n&lt;p&gt;(Just
+        anything about said topic will do!)&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"title\": \"For all things Ruby from RWBY\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": null, \"description\": \"Please
+        respect the mods at all times, We're here to help you and the rest of the
+        subreddit, if you're being harassed in anyway please report it to us. Remember
+        to put spoiler tags on anything that could potentially spoil the show for
+        your fellow members. Posts without the spoiler tag will be immediately  removed
+        and you'll be asked to resubmit your post. NSFW is allowed but is frowned
+        upon, no reposting such content, if people want to see it they'll have to
+        type in the [NSFW] tag that must be put in each NSFW post into the search
+        bar.  \\nFor things non related please check out the following subreddits\\n/r/RWBY
+        for all the generic content including everything from the show  \\n/r/ClubYang
+        for all the Yang-y goodness  \\n/r/ClubWeiss to check out some dust, and I
+        guess the princess  \\n/r/ClubBlake for calm relaxing reading and the cat
+        looking girl herself  \\n\\n(Just anything about said topic will do!)\", \"submit_link_label\":
+        \"Submit Ruby\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 115, \"submit_text_label\":
+        \"Talk about Ruby\", \"name\": \"t5_2y2th\", \"created\": 1375462897.0, \"url\":
+        \"/r/ClubRuby/\", \"created_utc\": 1375459297.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"If Ruby is your
+        favorite character from RWBY by Roosterteeth then come here and take in the
+        all the goodness of Ruby here!\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2t7gl\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"lolruby\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;you may also enjoy
+        &lt;a href=\\\"/r/lolphp\\\"&gt;/r/lolphp&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Ruby stuff that will make you laugh... or cry...\",
+        \"over18\": false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"you may also enjoy /r/lolphp\", \"submit_link_label\": \"\", \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 28, \"submit_text_label\": \"\", \"name\": \"t5_2t7gl\",
+        \"created\": 1323571176.0, \"url\": \"/r/lolruby/\", \"created_utc\": 1323567576.0,
+        \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2xxgm\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"rubyapp\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Welcome
+        to the official subreddit for Ruby!&lt;/p&gt;\\n\\n&lt;p&gt;Links:&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"https://itunes.apple.com/us/app/ruby-for-reddit/id665682484?ls=1&amp;amp;mt=8\\\"&gt;App
+        Store&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://halfpeeled.com/ruby/\\\"&gt;Website&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a
+        href=\\\"http://twitter.com/getrubyapp\\\"&gt;Twitter&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Any
+        questions, comments, suggestions, etc. related to Ruby can be posted on this
+        subreddit. We&amp;#39;ll respond within 24 hours!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Ruby for Reddit - iOS App\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": \"Ruby for Reddit\", \"description\":
+        \"Welcome to the official subreddit for Ruby!\\n\\n\\nLinks:\\n\\n[App Store](https://itunes.apple.com/us/app/ruby-for-reddit/id665682484?ls=1&amp;mt=8)\\n\\n[Website](http://halfpeeled.com/ruby/)\\n\\n[Twitter](http://twitter.com/getrubyapp)\\n\\n\\nAny
+        questions, comments, suggestions, etc. related to Ruby can be posted on this
+        subreddit. We'll respond within 24 hours!\", \"submit_link_label\": null,
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"high\",
+        \"header_size\": null, \"subscribers\": 44, \"submit_text_label\": null, \"name\":
+        \"t5_2xxgm\", \"created\": 1374330589.0, \"url\": \"/r/rubyapp/\", \"created_utc\":
+        1374326989.0, \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"Ruby for Reddit is a lightweight Reddit client for both iPhone and iPad.\",
+        \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2vo0e\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"Learn_Rails\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Welcome
+        to &lt;a href=\\\"http://reddit.com/r/learn_rails\\\"&gt;r/learn_rails&lt;/a&gt;,
+        a subreddit dedicated to anybody who wants to study &lt;a href=\\\"http://rubyonrails.org/\\\"&gt;Ruby
+        on Rails&lt;/a&gt;. You can also reach this subreddit by visiting the domain
+        &lt;a href=\\\"http://learn-rails.org\\\"&gt;learn-rails.org&lt;/a&gt;.&lt;/p&gt;\\n\\n&lt;p&gt;Don&amp;#39;t
+        be afraid to ask questions! It is really important to check all your assumptions
+        so ask everything that&amp;#39;s on your mind, no matter how trivial the issue
+        seems to be. Our goal is to be as open and friendly to beginners as possible.
+        So please, help each other and keep the technical one-upmanship to a minimum!&lt;/p&gt;\\n\\n&lt;p&gt;There
+        will hardly be any moderation in this subreddit beyond cleaning up spam. There
+        are no arbitrary karma cutoffs to submit a link or contribute to the conversation
+        here. The same is true for our &lt;a href=\\\"http://www.reddit.com/r/Learn_Rails/wiki/index\\\"&gt;Learn
+        Ruby on Rails Wiki&lt;/a&gt;, which can be edited by anybody who is subscribed
+        to this fine subreddit.&lt;/p&gt;\\n\\n&lt;p&gt;All the best and happy coding!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Learn Ruby on Rails\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"Welcome to [r/learn_rails](http://reddit.com/r/learn_rails),
+        a subreddit dedicated to anybody who wants to study [Ruby on Rails](http://rubyonrails.org/).
+        You can also reach this subreddit by visiting the domain [learn-rails.org](http://learn-rails.org).\\n\\nDon't
+        be afraid to ask questions! It is really important to check all your assumptions
+        so ask everything that's on your mind, no matter how trivial the issue seems
+        to be. Our goal is to be as open and friendly to beginners as possible. So
+        please, help each other and keep the technical one-upmanship to a minimum!\\n\\nThere
+        will hardly be any moderation in this subreddit beyond cleaning up spam. There
+        are no arbitrary karma cutoffs to submit a link or contribute to the conversation
+        here. The same is true for our [Learn Ruby on Rails Wiki](http://www.reddit.com/r/Learn_Rails/wiki/index),
+        which can be edited by anybody who is subscribed to this fine subreddit.\\n\\nAll
+        the best and happy coding!\", \"submit_link_label\": \"\", \"accounts_active\":
+        null, \"spam_comments\": \"low\", \"spam_links\": \"high\", \"header_size\":
+        null, \"subscribers\": 244, \"submit_text_label\": \"\", \"name\": \"t5_2vo0e\",
+        \"created\": 1354147105.0, \"url\": \"/r/Learn_Rails/\", \"created_utc\":
+        1354147105.0, \"user_is_contributor\": null, \"public_traffic\": false, \"public_description\":
+        \"This subreddit is dedicated to anybody who wants to study Ruby on Rails.
+        You can reach this subreddit also by visiting the domain http://learn-rails.org.\",
+        \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2qh8z\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"rubybr\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Grupo
+        Reddit para agregar blogs e websites brasileiros sobre Ruby e Rails.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Ruby Brasil\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": \"\", \"description\": \"Grupo Reddit para agregar
+        blogs e websites brasileiros sobre Ruby e Rails.\", \"submit_link_label\":
+        \"\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 78, \"submit_text_label\":
+        \"\", \"name\": \"t5_2qh8z\", \"created\": 1201711370.0, \"url\": \"/r/rubybr/\",
+        \"created_utc\": 1201707770.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2xzul\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"rubygroupies\", \"header_img\": \"http://b.thumbs.redditmedia.com/MBO7vKCmX8-3IMZC.jpg\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;A
+        reddit for connecting with the Ruby community in Fresno, California&amp;#39;s
+        surrounding area.&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;We
+        like the Ruby programming language.&lt;br/&gt;&lt;/li&gt;\\n&lt;li&gt;We like
+        &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;.&lt;br/&gt;&lt;/li&gt;\\n&lt;li&gt;We
+        like getting together, talking about, and doing Ruby things.&lt;/li&gt;\\n&lt;li&gt;We
+        like making Ruby things, and do so at &lt;a href=\\\"http://rubygroupies.github.io\\\"&gt;http://rubygroupies.github.io&lt;/a&gt;
+        and &lt;a href=\\\"http://github.com/rubygroupies\\\"&gt;http://github.com/rubygroupies&lt;/a&gt;.&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;p&gt;Please
+        jump in if you do too!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"title\":
+        \"rubygroupies: a ruby group from california's central valley\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"**A reddit for connecting with the Ruby community in Fresno, California's
+        surrounding area.**\\n\\n* We like the Ruby programming language.  \\n* We
+        like /r/ruby.  \\n* We like getting together, talking about, and doing Ruby
+        things.\\n* We like making Ruby things, and do so at http://rubygroupies.github.io
+        and http://github.com/rubygroupies.\\n\\nPlease jump in if you do too!\",
+        \"submit_link_label\": null, \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": [353, 59], \"subscribers\":
+        3, \"submit_text_label\": null, \"name\": \"t5_2xzul\", \"created\": 1374814956.0,
+        \"url\": \"/r/rubygroupies/\", \"created_utc\": 1374811356.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"we like ruby.  we're
+        from the fresno, california area.\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2w6x8\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"maylooksgoodin3d\", \"header_img\": \"http://b.thumbs.redditmedia.com/GdZTresZybqcQjfs.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;_________________________________&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;This
+        sub is devoted entirely to the character &lt;strong&gt;May&lt;/strong&gt;,
+        from the 3rd gen in RUBY SAPPHIRE and EMERALD as well as &lt;strong&gt;May&lt;/strong&gt;
+        from the anime. &lt;strong&gt;Sapphire&lt;/strong&gt;, from Pokemon adventures
+        is also allowed. &lt;em&gt;THERE IS NOT LIMIT ON WHAT YOU CAN POST BUT IT
+        MUST BE RELATED TO THE ABOVE OR WILL BE REMOVED!!!&lt;/em&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Mark
+        all posts with NSFW if you think that it needs to be!&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;_________________________________&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;If
+        you want to see &lt;em&gt;a little less&lt;/em&gt; May: &lt;a href=\\\"/r/pokemon\\\"&gt;/r/pokemon&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;If
+        you want to see &lt;strong&gt;MORE&lt;/strong&gt; of May: &lt;a href=\\\"/r/pokeporn\\\"&gt;/r/pokeporn&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;May&lt;sup&gt;May&lt;sup&gt;May&lt;sup&gt;May&lt;sup&gt;May&lt;/sup&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"MAY MAY MAY MAY MAY MAY\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": \"DAE Think May is HAWT? No
+        really...\", \"description\": \"**_________________________________**\\n\\nThis
+        sub is devoted entirely to the character **May**, from the 3rd gen in RUBY
+        SAPPHIRE and EMERALD as well as **May** from the anime. **Sapphire**, from
+        Pokemon adventures is also allowed. *THERE IS NOT LIMIT ON WHAT YOU CAN POST
+        BUT IT MUST BE RELATED TO THE ABOVE OR WILL BE REMOVED!!!*\\n\\nMark all posts
+        with NSFW if you think that it needs to be!\\n\\n**_________________________________**\\n\\nIf
+        you want to see *a little less* May: /r/pokemon\\n\\nIf you want to see **MORE**
+        of May: /r/pokeporn\\n\\nMay^May^May^May^May\", \"submit_link_label\": null,
+        \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\": \"high\",
+        \"header_size\": [64, 64], \"subscribers\": 2, \"submit_text_label\": null,
+        \"name\": \"t5_2w6x8\", \"created\": 1359513753.0, \"url\": \"/r/maylooksgoodin3d/\",
+        \"created_utc\": 1359510153.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"This sub is devoted entirely to the character
+        **May**, from the 3rd gen in RUBY SAPPHIRE and EMERALD as well as **May**
+        from the anime. **Sapphire**, from Pokemon adventures is also here.\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2uh7v\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"weaverquest\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Anything that
+        is related to Ruby Quest, Nan Quest, Dive Quest, and all other projects by
+        Weaver goes here.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Mark NSFW fanart.&lt;/strong&gt;
+        That is all.&lt;/p&gt;\\n\\n&lt;p&gt;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&lt;/p&gt;\\n\\n&lt;p&gt;If
+        you&amp;#39;re lost and have no idea what in the fuck I&amp;#39;m talking
+        about, here are some handy links:&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://evilcorporation.com.br/rubyquest/\\\"&gt;Ruby
+        Quest Complete Archive&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://tgchan.org/wiki/NanQuest\\\"&gt;Nan
+        Quest Threads + Wiki Page&lt;/a&gt;&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"title\": \"Rubyquest, Nanquest, Divequest\", \"over18\": false,
+        \"user_is_moderator\": null, \"header_title\": \"it hurts\", \"description\":
+        \"Anything that is related to Ruby Quest, Nan Quest, Dive Quest, and all other
+        projects by Weaver goes here.\\n\\n**Mark NSFW fanart.** That is all.\\n\\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\n\\nIf
+        you're lost and have no idea what in the fuck I'm talking about, here are
+        some handy links:\\n\\n[Ruby Quest Complete Archive](http://evilcorporation.com.br/rubyquest/)\\n\\n[Nan
+        Quest Threads + Wiki Page](http://tgchan.org/wiki/NanQuest)\", \"submit_link_label\":
+        \"\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 13, \"submit_text_label\":
+        \"\", \"name\": \"t5_2uh7v\", \"created\": 1341902709.0, \"url\": \"/r/weaverquest/\",
+        \"created_utc\": 1341899109.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"The creator of Ruby Quest and Nan Quest has
+        accumulated a fandom that I'm certain will find this message at some point
+        in time. If you've never heard of any of what I'm talking about, we've got
+        some links for you.\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2tnqb\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"ronin_ruby\", \"header_img\": \"http://c.thumbs.redditmedia.com/QpuDtr8dXxX0txdz.png\",
+        \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;a
+        href=\\\"http://ronin-ruby.github.com/\\\"&gt;Ronin&lt;/a&gt; is a &lt;a href=\\\"http://www.ruby-lang.org/\\\"&gt;Ruby&lt;/a&gt;
+        platform for &lt;a href=\\\"http://www.exploit-db.com\\\"&gt;exploit development&lt;/a&gt;
+        and security research. Ronin allows for the rapid development and distribution
+        of code, &lt;a href=\\\"https://github.com/postmodern/postmodern/blob/master/scripts/exploits/http/oracle/dav_bypass.rb\\\"&gt;exploits&lt;/a&gt;
+        or &lt;a href=\\\"https://gist.github.com/1403961\\\"&gt;payloads&lt;/a&gt;
+        via &lt;a href=\\\"https://github.com/postmodern/postmodern\\\"&gt;Repositories&lt;/a&gt;.&lt;/p&gt;\\n\\n&lt;h1&gt;Install&lt;/h1&gt;\\n\\n&lt;p&gt;Ronin
+        is available via &lt;a href=\\\"http://rubygems.org/gems/ronin\\\"&gt;rubygems.org&lt;/a&gt;:&lt;/p&gt;\\n\\n&lt;pre&gt;&lt;code&gt;$
+        gem install ronin\\n&lt;/code&gt;&lt;/pre&gt;\\n\\n&lt;h1&gt;Featured&lt;/h1&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.reddit.com/r/ronin_ruby/comments/vtsb3/blog_roninsupport_050_ronin_150_roningen_120/\\\"&gt;ronin-support
+        0.5.0, ronin 1.5.0 and ronin-gen 1.2.0 released!&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;h1&gt;Links&lt;/h1&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://ronin-ruby.github.com/blog/\\\"&gt;Blog&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://twitter.com/ronin_ruby\\\"&gt;Twitter&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://ronin-ruby.github.com/irc/\\\" title=\\\"irc.freenode.net
+        #ronin\\\"&gt;IRC&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"https://groups.google.com/group/ronin-ruby\\\"&gt;Mailinglist&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://ronin-ruby.github.com/docs/\\\"&gt;Docs&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://github.com/ronin-ruby/\\\"&gt;GitHub&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;h1&gt;Ruby&lt;/h1&gt;\\n\\n&lt;h2&gt;Interactive&lt;/h2&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://tryruby.org/\\\" title=\\\"in your browser!\\\"&gt;TryRuby&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://rubykoans.com/\\\" title=\\\"learn by doing\\\"&gt;Ruby Kohans&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.youtube.com/user/MattStopaDev\\\" title=\\\"short videos
+        about Ruby\\\"&gt;Matt Stopa Dev&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;h2&gt;Resources&lt;/h2&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.ruby-doc.org/docs/ProgrammingRuby/\\\" title=\\\"free!\\\"&gt;Programming
+        Ruby&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.humblelittlerubybook.com/\\\"
+        title=\\\"free!\\\"&gt;Humble Little Ruby Book&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://www.amazon.com/gp/product/1934356085/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1934356085\\\"&gt;Programming
+        Ruby 1.9&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.amazon.com/gp/product/0321584104/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321584104\\\"&gt;Eloquent
+        Ruby&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a href=\\\"http://www.amazon.com/gp/product/1933988657/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;tag=redditrrubyco-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1933988657\\\"&gt;Well
+        Grounded Rubyist&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n\\n&lt;h2&gt;Tools&lt;/h2&gt;\\n\\n&lt;ul&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"https://rvm.beginrescueend.com/\\\"&gt;RVM&lt;/a&gt;&lt;/li&gt;\\n&lt;li&gt;&lt;a
+        href=\\\"http://gembundler.com/\\\"&gt;Bundler&lt;/a&gt;&lt;/li&gt;\\n&lt;/ul&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"News, links, questions and tips for using Ronin
+        or other Ruby hackery\", \"over18\": false, \"user_is_moderator\": null, \"header_title\":
+        null, \"description\": \"[Ronin](http://ronin-ruby.github.com/) is a [Ruby](http://www.ruby-lang.org/)
+        platform for [exploit development](http://www.exploit-db.com) and security
+        research. Ronin allows for the rapid development and distribution of code,
+        [exploits](https://github.com/postmodern/postmodern/blob/master/scripts/exploits/http/oracle/dav_bypass.rb)
+        or [payloads](https://gist.github.com/1403961) via [Repositories](https://github.com/postmodern/postmodern).\\n\\n#
+        Install\\n\\nRonin is available via [rubygems.org](http://rubygems.org/gems/ronin):\\n\\n
+        \   $ gem install ronin\\n\\n# Featured\\n\\n* [ronin-support 0.5.0, ronin
+        1.5.0 and ronin-gen 1.2.0 released!](http://www.reddit.com/r/ronin_ruby/comments/vtsb3/blog_roninsupport_050_ronin_150_roningen_120/)\\n\\n\\n#
+        Links\\n\\n* [Blog](http://ronin-ruby.github.com/blog/)\\n* [Twitter](https://twitter.com/ronin_ruby)\\n*
+        [IRC](http://ronin-ruby.github.com/irc/ \\\"irc.freenode.net #ronin\\\")\\n*
+        [Mailinglist](https://groups.google.com/group/ronin-ruby)\\n* [Docs](http://ronin-ruby.github.com/docs/)\\n*
+        [GitHub](https://github.com/ronin-ruby/)\\n\\n# Ruby\\n\\n## Interactive\\n\\n*
+        [TryRuby](http://tryruby.org/ \\\"in your browser!\\\")\\n* [Ruby Kohans](http://rubykoans.com/
+        \\\"learn by doing\\\")\\n* [Matt Stopa Dev](http://www.youtube.com/user/MattStopaDev
+        \\\"short videos about Ruby\\\")\\n\\n## Resources\\n\\n* [Programming Ruby](http://www.ruby-doc.org/docs/ProgrammingRuby/
+        \\\"free!\\\")\\n* [Humble Little Ruby Book](http://www.humblelittlerubybook.com/
+        \\\"free!\\\")\\n* [Programming Ruby 1.9](http://www.amazon.com/gp/product/1934356085/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1934356085)\\n*
+        [Eloquent Ruby](http://www.amazon.com/gp/product/0321584104/ref=as_li_tf_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321584104)\\n*
+        [Well Grounded Rubyist](http://www.amazon.com/gp/product/1933988657/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=redditrrubyco-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1933988657)\\n\\n##
+        Tools\\n\\n* [RVM](https://rvm.beginrescueend.com/)\\n* [Bundler](http://gembundler.com/)\",
+        \"submit_link_label\": \"\", \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": [196, 80], \"subscribers\":
+        56, \"submit_text_label\": \"\", \"name\": \"t5_2tnqb\", \"created\": 1330654922.0,
+        \"url\": \"/r/ronin_ruby/\", \"created_utc\": 1330651322.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"[Ronin](http://ronin-ruby.github.com/)
+        is a [Ruby](http://www.ruby-lang.org/) platform for [exploit development](http://www.exploit-db.com)
+        and security research. Ronin allows for the rapid development and distribution
+        of code, [exploits](https://github.com/postmodern/postmodern/blob/master/scripts/exploits/http/oracle/dav_bypass.rb)
+        or [payloads](https://gist.github.com/1403961) via [Repositories](https://github.com/postmodern/postmodern).\",
+        \"comment_score_hide_mins\": 0, \"subreddit_type\": \"public\", \"submission_type\":
+        \"any\", \"user_is_subscriber\": null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\":
+        null, \"user_is_banned\": null, \"id\": \"2vk3w\", \"submit_text\": \"\",
+        \"spam_selfposts\": \"high\", \"display_name\": \"railsjobs\", \"header_img\":
+        null, \"description_html\": \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;&lt;strong&gt;Are
+        you a developer who is looking for work?&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Submit
+        a post with a title containing [for hire]&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Are
+        you looking to hire a developer?&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;Submit
+        a post with a title containing [hiring]&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;The
+        following tags should be used by both parties:&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;table&gt;&lt;thead&gt;\\n&lt;tr&gt;\\n&lt;th
+        align=\\\"right\\\"&gt;Title Tag&lt;/th&gt;\\n&lt;th align=\\\"left\\\"&gt;Description&lt;/th&gt;\\n&lt;/tr&gt;\\n&lt;/thead&gt;&lt;tbody&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"right\\\"&gt;[contract]&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;You
+        are only interested in short-term contracts.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"right\\\"&gt;[fulltime]&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;You
+        only want to hire/become an employee.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;tr&gt;\\n&lt;td
+        align=\\\"right\\\"&gt;[remote]&lt;/td&gt;\\n&lt;td align=\\\"left\\\"&gt;You
+        are only interested in hiring/working remotely.&lt;/td&gt;\\n&lt;/tr&gt;\\n&lt;/tbody&gt;&lt;/table&gt;\\n\\n&lt;p&gt;(If
+        you are not interested in hiring/working remotely, please include your state
+        or country in the title.)&lt;/p&gt;\\n\\n&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;\\n\\n&lt;p&gt;A
+        developer looking for full-time work:&lt;/p&gt;\\n\\n&lt;blockquote&gt;\\n&lt;p&gt;[for
+        hire, fulltime] Rails developer in SF looking for a great startup&lt;/p&gt;\\n&lt;/blockquote&gt;\\n\\n&lt;p&gt;Looking
+        to hire either employees or contractors to work from anywhere:&lt;/p&gt;\\n\\n&lt;blockquote&gt;\\n&lt;p&gt;[hiring,
+        fulltime or contract, remote] Full-Stack Rails developer needed, can work
+        from home!&lt;/p&gt;\\n&lt;/blockquote&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\",
+        \"title\": \"Jobs for Ruby on Rails developers\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": null, \"description\": \"**Are you a developer who
+        is looking for work?**\\n\\nSubmit a post with a title containing [for hire]\\n\\n**Are
+        you looking to hire a developer?**\\n\\nSubmit a post with a title containing
+        [hiring]\\n\\n**The following tags should be used by both parties:**\\n\\n|
+        Title Tag   | Description    |\\n|-----------:|:------------|\\n| [contract]
+        | You are only interested in short-term contracts. |\\n| [fulltime]  | You
+        only want to hire/become an employee. |\\n| [remote] | You are only interested
+        in hiring/working remotely. |\\n\\n(If you are not interested in hiring/working
+        remotely, please include your state or country in the title.)\\n\\n**Examples**\\n\\nA
+        developer looking for full-time work:\\n\\n&gt; [for hire, fulltime] Rails
+        developer in SF looking for a great startup\\n\\nLooking to hire either employees
+        or contractors to work from anywhere:\\n\\n&gt; [hiring, fulltime or contract,
+        remote] Full-Stack Rails developer needed, can work from home!\", \"submit_link_label\":
+        null, \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 139, \"submit_text_label\":
+        null, \"name\": \"t5_2vk3w\", \"created\": 1352936850.0, \"url\": \"/r/railsjobs/\",
+        \"created_utc\": 1352933250.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"Post a listing if you're looking for work,
+        or are looking for a Rails developer. Feel free to post either text/self posts,
+        or links to a job listing on an external website. \", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2qhjc\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"ruby_rss\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;ruby stuffs&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"ruby stuffs\", \"over18\": false, \"user_is_moderator\":
+        null, \"header_title\": \"\", \"description\": \"ruby stuffs\", \"submit_link_label\":
+        \"\", \"accounts_active\": null, \"spam_comments\": \"low\", \"spam_links\":
+        \"high\", \"header_size\": null, \"subscribers\": 55, \"submit_text_label\":
+        \"\", \"name\": \"t5_2qhjc\", \"created\": 1205813702.0, \"url\": \"/r/ruby_rss/\",
+        \"created_utc\": 1205810102.0, \"user_is_contributor\": null, \"public_traffic\":
+        false, \"public_description\": \"\", \"comment_score_hide_mins\": 0, \"subreddit_type\":
+        \"public\", \"submission_type\": \"any\", \"user_is_subscriber\": null}},
+        {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2s7fs\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"ruby_proposals\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Propose a Ruby
+        project, discuss it, and implement it. If you think of something good, post
+        it here and some poor schmuck looking for something to do can make it.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"title\": \"Ruby Proposals :: Project Ideas\", \"over18\":
+        false, \"user_is_moderator\": null, \"header_title\": null, \"description\":
+        \"Propose a Ruby project, discuss it, and implement it. If you think of something
+        good, post it here and some poor schmuck looking for something to do can make
+        it.\", \"submit_link_label\": \"\", \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        33, \"submit_text_label\": \"\", \"name\": \"t5_2s7fs\", \"created\": 1291043868.0,
+        \"url\": \"/r/ruby_proposals/\", \"created_utc\": 1291040268.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}, {\"kind\": \"t5\", \"data\": {\"submit_text_html\": null, \"user_is_banned\":
+        null, \"id\": \"2qnuv\", \"submit_text\": \"\", \"spam_selfposts\": \"high\",
+        \"display_name\": \"rubyfeed\", \"header_img\": null, \"description_html\":
+        \"&lt;!-- SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;ruby programming
+        language feed&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON --&gt;\", \"title\": \"ruby
+        programming language feed\", \"over18\": false, \"user_is_moderator\": null,
+        \"header_title\": \"\", \"description\": \"ruby programming language feed\",
+        \"submit_link_label\": \"\", \"accounts_active\": null, \"spam_comments\":
+        \"low\", \"spam_links\": \"high\", \"header_size\": null, \"subscribers\":
+        60, \"submit_text_label\": \"\", \"name\": \"t5_2qnuv\", \"created\": 1225058060.0,
+        \"url\": \"/r/rubyfeed/\", \"created_utc\": 1225054460.0, \"user_is_contributor\":
+        null, \"public_traffic\": false, \"public_description\": \"\", \"comment_score_hide_mins\":
+        0, \"subreddit_type\": \"public\", \"submission_type\": \"any\", \"user_is_subscriber\":
+        null}}], \"after\": \"t5_2qnuv\", \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:38:21 GMT
+recorded_with: VCR 2.6.0

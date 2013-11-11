@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.reddit.com/api/vote
+    body:
+      encoding: US-ASCII
+      string: id=t1_cce66qf&dir=0&api_type=json
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Date:
+      - Sun, 10 Nov 2013 22:21:25 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:23 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/api/info.json?id=t1_cce66qf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:21:25 GMT
+      Content-Length:
+      - '853'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"lsm29q7cpt0b8c5e313ba1557171c7721835ef6e559b186288\",
+        \"children\": [{\"kind\": \"t1\", \"data\": {\"subreddit_id\": \"t5_2ylc5\",
+        \"banned_by\": null, \"subreddit\": \"RedditKitTesting\", \"likes\": null,
+        \"replies\": \"\", \"id\": \"cce66qf\", \"gilded\": 0, \"author\": \"samsymons\",
+        \"parent_id\": \"t3_1n002d\", \"approved_by\": null, \"body\": \"Here's a
+        test comment which will also never be deleted.\", \"edited\": false, \"author_flair_css_class\":
+        \"csvclass\", \"downs\": 0, \"body_html\": \"&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Here&amp;#39;s
+        a test comment which will also never be deleted.&lt;/p&gt;\\n&lt;/div&gt;\",
+        \"link_id\": \"t3_1n002d\", \"score_hidden\": false, \"name\": \"t1_cce66qf\",
+        \"created\": 1379988702.0, \"author_flair_text\": \"Test CSV\", \"created_utc\":
+        1379985102.0, \"ups\": 1, \"num_reports\": 0, \"distinguished\": null}}],
+        \"after\": null, \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:24 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/api/info.json?id=t1_cce66qf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Sun, 10 Nov 2013 22:21:25 GMT
+      Content-Length:
+      - '853'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"67kgpbz8cyc2c291ac23d464bdf16e5ccd2bc5e123c1a59be7\",
+        \"children\": [{\"kind\": \"t1\", \"data\": {\"subreddit_id\": \"t5_2ylc5\",
+        \"banned_by\": null, \"subreddit\": \"RedditKitTesting\", \"likes\": null,
+        \"replies\": \"\", \"id\": \"cce66qf\", \"gilded\": 0, \"author\": \"samsymons\",
+        \"parent_id\": \"t3_1n002d\", \"approved_by\": null, \"body\": \"Here's a
+        test comment which will also never be deleted.\", \"edited\": false, \"author_flair_css_class\":
+        \"csvclass\", \"downs\": 0, \"body_html\": \"&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Here&amp;#39;s
+        a test comment which will also never be deleted.&lt;/p&gt;\\n&lt;/div&gt;\",
+        \"link_id\": \"t3_1n002d\", \"score_hidden\": false, \"name\": \"t1_cce66qf\",
+        \"created\": 1379988702.0, \"author_flair_text\": \"Test CSV\", \"created_utc\":
+        1379985102.0, \"ups\": 1, \"num_reports\": 0, \"distinguished\": null}}],
+        \"after\": null, \"before\": null}}"
+    http_version: 
+  recorded_at: Sun, 10 Nov 2013 22:21:24 GMT
+recorded_with: VCR 2.6.0
