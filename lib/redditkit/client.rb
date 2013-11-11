@@ -106,15 +106,9 @@ module RedditKit
       request(:delete, path, params, connection)
     end
 
-    def request(method, path, parameters, request_connection)
+    def request(method, path, parameters = {}, request_connection)
       if signed_in?
-        request_parameters = parameters || {}
-
-        unless method == :get
-          raise RedditKit::NotAuthenticated unless signed_in?
-        end
-
-        request = authenticated_request_configuration(method, path, request_parameters)
+        request = authenticated_request_configuration(method, path, parameters)
         request_connection.send(method.to_sym, path, parameters, &request).env
       else
         request_connection.send(method.to_sym, path, parameters).env
