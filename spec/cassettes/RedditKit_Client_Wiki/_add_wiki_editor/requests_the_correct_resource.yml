@@ -5,7 +5,7 @@ http_interactions:
     uri: http://www.reddit.com/r/RedditKitTesting/api/wiki/alloweditor/add
     body:
       encoding: US-ASCII
-      string: page&username=samsymons
+      string: page=some+page&username=samsymons
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -35,12 +35,12 @@ http_interactions:
       Server:
       - "'; DROP TABLE servertypes; --"
       Date:
-      - Sun, 10 Nov 2013 22:21:29 GMT
+      - Mon, 11 Nov 2013 06:08:03 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: "{\"reason\": \"PAGE_NOT_FOUND\"}"
     http_version: 
-  recorded_at: Sun, 10 Nov 2013 22:21:28 GMT
-recorded_with: VCR 2.6.0
+  recorded_at: Mon, 11 Nov 2013 06:08:06 GMT
+recorded_with: VCR 2.7.0

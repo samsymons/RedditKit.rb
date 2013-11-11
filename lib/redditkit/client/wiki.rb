@@ -6,28 +6,20 @@ module RedditKit
 
       # Adds a user as an approved editor of a wiki page.
       #
-      # @option options [String, RedditKit::Subreddit] subreddit A subreddit's display name, or a RedditKit::Subreddit.
-      # @option options [String, RedditKit::User] user A user's full name, or a RedditKit::User.
-      # @option options [String] page The name of an existing wiki page.
-      def add_wiki_editor(options)
-        username = extract_string(options[:user], :username)
-        subreddit_name = extract_string(options[:subreddit], :display_name)
-        parameters = { :page => options[:page], :username => username }
-
-        post("r/#{subreddit_name}/api/wiki/alloweditor/add", parameters)
+      # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit.
+      # @param user [String, RedditKit::User] A user's full name, or a RedditKit::User.
+      # @param page [String] page The name of an existing wiki page.
+      def add_wiki_editor(subreddit, user, page)
+        toggle_wiki_editor(subreddit, user, page, 'add')
       end
 
       # Removes a user from being an approved editor of a wiki page.
       #
-      # @option options [String, RedditKit::Subreddit] subreddit A subreddit's display name, or a RedditKit::Subreddit.
-      # @option options [String, RedditKit::User] user A user's full name, or a RedditKit::User.
-      # @option options [String] page The name of an existing wiki page.
-      def remove_wiki_editor(options)
-        username = extract_string(options[:user], :username)
-        subreddit_name = extract_string(options[:subreddit], :display_name)
-        parameters = { :page => options[:page], :username => username }
-
-        post("r/#{subreddit_name}/api/wiki/alloweditor/del", parameters)
+      # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit.
+      # @param user [String, RedditKit::User] A user's full name, or a RedditKit::User.
+      # @param page [String] page The name of an existing wiki page.
+      def remove_wiki_editor(subreddit, user, page)
+        toggle_wiki_editor(subreddit, user, page, 'del')
       end
 
       # Edits a wiki page.
@@ -68,6 +60,22 @@ module RedditKit
         options.delete :subreddit
 
         post("r/#{subreddit_name}/api/wiki/revert", options)
+      end
+
+      private
+
+      # Adds or removes a user as an approved editor of a wiki page.
+      #
+      # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit.
+      # @param user [String, RedditKit::User] A user's full name, or a RedditKit::User.
+      # @param page [String] page The name of an existing wiki page.
+      # @param status [add, del] Whether to add or delete a user.
+      def toggle_wiki_editor(subreddit, user, page, status)
+        subreddit_name = extract_string(subreddit, :display_name)
+        username = extract_string(user, :username)
+        parameters = { :page => page, :username => username }
+
+        post("r/#{subreddit_name}/api/wiki/alloweditor/#{status}", parameters)
       end
 
     end

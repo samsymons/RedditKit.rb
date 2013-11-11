@@ -4,14 +4,14 @@ describe RedditKit::Client::Wiki, :vcr do
 
   describe "#add_wiki_editor" do
     it "requests the correct resource" do
-      authenticated_client.add_wiki_editor :user => 'samsymons', :subreddit => redditkit_subreddit
+      authenticated_client.add_wiki_editor redditkit_subreddit, 'samsymons', 'some page'
       expect(a_post("r/#{redditkit_subreddit}/api/wiki/alloweditor/add")).to have_been_made
     end
   end
 
   describe "#remove_wiki_editor" do
     it "requests the correct resource" do
-      authenticated_client.remove_wiki_editor :user => 'samsymons', :subreddit => redditkit_subreddit
+      authenticated_client.remove_wiki_editor redditkit_subreddit, 'samsymons', 'some page'
       expect(a_post("r/#{redditkit_subreddit}/api/wiki/alloweditor/del")).to have_been_made
     end
   end
