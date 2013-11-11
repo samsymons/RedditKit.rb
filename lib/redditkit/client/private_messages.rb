@@ -66,7 +66,7 @@ module RedditKit
       # @param user [String, RedditKit::User] A user's username, or a RedditKit::User. 
       def unblock(user)
         enemy_name = extract_string(user, :username)
-        unfriend_request :container => current_user.full_name, :name => enemy_name, :type => :enemy
+        friend_request 'unfriend', :container => current_user.full_name, :name => enemy_name, :type => :enemy
       end
 
     end

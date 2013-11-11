@@ -119,22 +119,17 @@ module RedditKit
          "/user/#{username}/m/#{multireddit_name}"
       end
 
-      def friend_request(options)
+      # Performs a friend or unfriend request.
+      #
+      # @param type [friend, unfriend] The type of request.
+      # @param options Any parameters to send with the request.
+      def friend_request(type, options)
         if options[:subreddit]
           options[:r] = options[:subreddit]
           options.delete :subreddit
         end
 
-        post('api/friend', options)
-      end
-
-      def unfriend_request(options)
-        if options[:subreddit]
-          options[:r] = options[:subreddit]
-          options.delete :subreddit
-        end
-
-        post('api/unfriend', options)
+        post("api/#{type}", options)
       end
 
     end

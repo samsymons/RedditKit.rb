@@ -68,7 +68,7 @@ module RedditKit
       # @param user [String, RedditKit::User] A user's username, or a RedditKit::User.
       def friend(user)
         friend_name = extract_string(user, :username)
-        friend_request :container => current_user.full_name, :name => friend_name, :type => :friend
+        friend_request 'friend', :container => current_user.full_name, :name => friend_name, :type => :friend
       end
 
       # Removes a user from the current user's friend list. 
@@ -76,7 +76,7 @@ module RedditKit
       # @param user [String, RedditKit::User] A user's ID, or a RedditKit::User. 
       def unfriend(user)
         friend_name = extract_string(user, :username)
-        unfriend_request :container => current_user.full_name, :name => friend_name, :type => :friend
+        friend_request 'unfriend', :container => current_user.full_name, :name => friend_name, :type => :friend
       end
 
       # Checks whether a specific username is available. 

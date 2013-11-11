@@ -12,11 +12,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] The subreddit's name, or a RedditKit::Subreddit.
       # @note If a subreddit's name is passed as the :subreddit option, a second HTTP request will be made to get the RedditKit::Subreddit object.
       def ban(user, subreddit)
-        username = extract_string(user, :username)
-        subreddit_object = subreddit
-        subreddit_object = subreddit(subreddit_object) if subreddit_object.is_a? String
-
-        friend_request :container => subreddit_object.full_name, :name => username, :subreddit => subreddit_object.name, :type => :banned
+        ban_or_unban_user true, user, subreddit
       end
 
       # Lift the ban on a user. This requires moderator privileges on the specified subreddit.
@@ -24,11 +20,7 @@ module RedditKit
       # @param user [String, RedditKit::User] The user's username, or a RedditKit::User.
       # @param subreddit [String, RedditKit::Subreddit] The subreddit's name, or a RedditKit::Subreddit.
       def unban(user, subreddit)
-        username = extract_string(user, :username)
-        subreddit_object = subreddit
-        subreddit_object = subreddit(subreddit_object) if subreddit_object.is_a? String
-
-        unfriend_request :container => subreddit_object.full_name, :name => username, :subreddit => subreddit_object.name, :type => :banned
+        ban_or_unban_user false, user, subreddit
       end
 
       # Approves an unmoderated link.
@@ -146,14 +138,6 @@ module RedditKit
         post('api/delete_sr_header', { :r => subreddit_name })
       end
 
-      # Configures a subreddit's settings.
-      #
-      # @option parameters [String] title The subreddit's title (this is the value that will in a browser's title bar, not the subreddit's name).
-      # @option parameters [String] description The subreddit's description.
-      # @option parameters [Boolean] over_18 Whether the subreddit requires visitors to be over 18.
-      def set_subreddit_settings(parameters)
-      end
-
       # Gets the moderation log for a subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit.
@@ -164,6 +148,19 @@ module RedditKit
       end
 
       private
+
+      # Lift the ban on a user. This requires moderator privileges on the specified subreddit.
+      #
+      # @param ban_or_unban [true, false] Whether to ban or unban the user.
+      # @param user [String, RedditKit::User] The user's username, or a RedditKit::User.
+      # @param subreddit [String, RedditKit::Subreddit] The subreddit's name, or a RedditKit::Subreddit.
+      def ban_or_unban_user(ban, user, subreddit)
+        username = extract_string(user, :username)
+        subreddit_object = (subreddit.is_a? String) ? subreddit(subreddit) : subreddit
+        friend_request_type = ban ? 'friend' : 'unfriend'
+
+        friend_request friend_request_type, :container => subreddit_object.full_name, :name => username, :subreddit => subreddit_object.name, :type => :banned
+      end
 
       # Gets members of a given type in a subreddit.
       #
