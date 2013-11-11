@@ -88,7 +88,7 @@ module RedditKit
       # Sets a post as sticky within its parent subreddit. This will replace the existing sticky post, if there is one.
       #
       # @param link [String, RedditKit::Link] The full name of a link, or a RedditKit::Link.
-      # @option options [Boolean] sticky Whether to mark the post as sticky or unsticky (true for sticky, false for unsticky). Defaults to true.
+      # @option options [Boolean] sticky Whether to mark the post as sticky or unsticky (true for sticky, false for unsticky).
       def set_sticky_post(link, options = {})
         full_name = extract_full_name link
         sticky = options[:sticky] ? 'True' : 'False'
