@@ -2,6 +2,14 @@
 
 RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written in Ruby.
 
+[![Build Status](https://travis-ci.org/samsymons/RedditKit.rb.png?branch=master)](https://travis-ci.org/samsymons/RedditKit.rb)[travis]
+[![Code Climate](https://codeclimate.com/github/samsymons/RedditKit.rb.png)](https://codeclimate.com/github/samsymons/RedditKit.rb)[climate]
+[![Coverage Status](https://coveralls.io/repos/samsymons/RedditKit.rb/badge.png?branch=master)](https://coveralls.io/r/samsymons/RedditKit.rb?branch=master)[coverage]
+
+[travis]: https://travis-ci.org/samsymons/RedditKit.rb
+[climate]: https://codeclimate.com/github/samsymons/RedditKit.rb
+[coverage]: https://coveralls.io/r/samsymons/RedditKit.rb
+
 ## Installation
 
 Add this to your Gemfile:
