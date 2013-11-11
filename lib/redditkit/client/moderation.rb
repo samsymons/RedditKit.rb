@@ -8,25 +8,27 @@ module RedditKit
 
       # Ban a user. This requires moderator privileges on the specified subreddit.
       #
-      # @option options [String, RedditKit::User] user The user's username, or a RedditKit::User.
-      # @option options [String, RedditKit::Subreddit] subreddit The subreddit's name, or a RedditKit::Subreddit.
+      # @param user [String, RedditKit::User] The user's username, or a RedditKit::User.
+      # @param subreddit [String, RedditKit::Subreddit] The subreddit's name, or a RedditKit::Subreddit.
       # @note If a subreddit's name is passed as the :subreddit option, a second HTTP request will be made to get the RedditKit::Subreddit object.
-      def ban(options)
-        subreddit_object = options[:subreddit]
+      def ban(user, subreddit)
+        username = extract_string(user, :username)
+        subreddit_object = subreddit
         subreddit_object = subreddit(subreddit_object) if subreddit_object.is_a? String
 
-        friend_request :container => subreddit_object.full_name, :name => options[:user], :subreddit => subreddit_object.name, :type => :banned
+        friend_request :container => subreddit_object.full_name, :name => username, :subreddit => subreddit_object.name, :type => :banned
       end
 
       # Lift the ban on a user. This requires moderator privileges on the specified subreddit.
       #
-      # @option options [String, RedditKit::User] user The user's username, or a RedditKit::User.
-      # @option options [RedditKit::Subreddit] subreddit The subreddit in which to ban the user.
-      def unban(options)
-        subreddit_object = options[:subreddit]
+      # @param user [String, RedditKit::User] The user's username, or a RedditKit::User.
+      # @param subreddit [String, RedditKit::Subreddit] The subreddit's name, or a RedditKit::Subreddit.
+      def unban(user, subreddit)
+        username = extract_string(user, :username)
+        subreddit_object = subreddit
         subreddit_object = subreddit(subreddit_object) if subreddit_object.is_a? String
 
-        unfriend_request :container => subreddit_object.full_name, :name => options[:user], :subreddit => subreddit_object.name, :type => :banned
+        unfriend_request :container => subreddit_object.full_name, :name => username, :subreddit => subreddit_object.name, :type => :banned
       end
 
       # Approves an unmoderated link.
@@ -77,23 +79,23 @@ module RedditKit
       # Sets a post as have its contest mode enabled or disabled.
       #
       # @param link [String, RedditKit::Link] The full name of a link, or a RedditKit::Link.
-      # @option options [Boolean] enabled Whether to enable contest mode for the link's comments.
-      def set_contest_mode(link, options = {})
+      # @param contest_mode [Boolean] Whether to enable contest mode for the link's comments. Defaults to true.
+      def set_contest_mode(link, contest_mode = true)
         full_name = extract_full_name link
-        enabled = options[:enabled] ? 'True' : 'False'
+        set_as_contest = contest_mode ? 'True' : 'False'
 
-        post('api/set_contest_mode', { :id => full_name, :state => enabled, :api_type => :json })
+        post('api/set_contest_mode', { :id => full_name, :state => set_as_contest, :api_type => :json })
       end
       
       # Sets a post as sticky within its parent subreddit. This will replace the existing sticky post, if there is one.
       #
       # @param link [String, RedditKit::Link] The full name of a link, or a RedditKit::Link.
-      # @option options [Boolean] sticky Whether to mark the post as sticky or unsticky (true for sticky, false for unsticky).
-      def set_sticky_post(link, options = {})
+      # @param sticky [Boolean] Whether to mark the post as sticky or unsticky. Defaults to true.
+      def set_sticky_post(link, sticky = true)
         full_name = extract_full_name link
-        sticky = options[:sticky] ? 'True' : 'False'
+        set_as_sticky = sticky ? 'True' : 'False'
 
-        post('api/set_subreddit_sticky', { :id => full_name, :state => sticky, :api_type => :json })
+        post('api/set_subreddit_sticky', { :id => full_name, :state => set_as_sticky, :api_type => :json })
       end
 
       # Get the moderators of a subreddit.
@@ -101,11 +103,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] The display name of a subreddit, or a RedditKit::Subreddit.
       # @return [Array<OpenStruct>]
       def moderators_of_subreddit(subreddit)
-        subreddit_name = extract_string(subreddit, :display_name)
-        response = get("r/#{subreddit_name}/about/moderators.json", nil)
-
-        moderators = response[:body][:data][:children]
-        moderators.collect { |moderator| OpenStruct.new(moderator) }
+        members_in_subreddit subreddit, 'moderators'
       end
 
       # Get the contributors to a subreddit.
@@ -113,11 +111,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] The display name of a subreddit, or a RedditKit::Subreddit.
       # @return [Array<OpenStruct>]
       def contributors_to_subreddit(subreddit)
-        subreddit_name = extract_string(subreddit, :display_name)
-        response = get("r/#{subreddit_name}/about/contributors.json", nil)
-
-        contributors = response[:body][:data][:children]
-        contributors.collect { |contributor| OpenStruct.new(contributor) }
+        members_in_subreddit subreddit, 'contributors'
       end
 
       # Accepts an invitation to become a moderator of a subreddit.
@@ -167,6 +161,20 @@ module RedditKit
       def moderation_log(subreddit)
         display_name = extract_string subreddit, :display_name
         objects_from_response(:get, "r/#{display_name}/about/log.json", nil)
+      end
+
+      private
+
+      # Gets members of a given type in a subreddit.
+      #
+      # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit.
+      # @param member_type [moderators, contributors] The type of members.
+      def members_in_subreddit(subreddit, member_type)
+        subreddit_name = extract_string(subreddit, :display_name)
+        response = get("r/#{subreddit_name}/about/#{member_type}.json", nil)
+
+        members = response[:body][:data][:children]
+        members.collect { |member| OpenStruct.new(member) }
       end
 
     end

@@ -4,7 +4,7 @@ describe RedditKit::Client::Moderation, :vcr do
 
   describe "#ban" do
     it "requests the correct resource" do
-      authenticated_client.ban :user => 'somefakeredditusername', :subreddit => redditkit_subreddit
+      authenticated_client.ban 'somefakeredditusername', redditkit_subreddit
       expect(a_post('api/friend')).to have_been_made
     end
   end
@@ -15,7 +15,7 @@ describe RedditKit::Client::Moderation, :vcr do
     end
 
     it "requests the correct resource" do
-      authenticated_client.unban :user => 'somefakeredditusername', :subreddit => redditkit_subreddit
+      authenticated_client.unban 'somefakeredditusername', redditkit_subreddit
       expect(a_post('api/unfriend')).to have_been_made
     end
   end
@@ -69,14 +69,14 @@ describe RedditKit::Client::Moderation, :vcr do
 
   describe "#set_contest_mode" do
     it "requests the correct resource" do
-      authenticated_client.set_contest_mode test_link_full_name, :enabled => false
+      authenticated_client.set_contest_mode test_link_full_name
       expect(a_post('api/set_contest_mode')).to have_been_made
     end
   end
 
   describe "#set_sticky_post" do
     it "requests the correct resource" do
-      authenticated_client.set_sticky_post test_link_full_name, :sticky => true
+      authenticated_client.set_sticky_post test_link_full_name
       expect(a_post('api/set_subreddit_sticky')).to have_been_made
     end
   end
