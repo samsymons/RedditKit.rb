@@ -4,7 +4,7 @@ RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written i
 
 [![Build Status](https://travis-ci.org/samsymons/RedditKit.rb.png?branch=master)][travis]
 [![Code Climate](https://codeclimate.com/github/samsymons/RedditKit.rb.png)][codeclimate]
-[![Coverage Status](https://coveralls.io/repos/samsymons/RedditKit.rb/badge.png?branch=master)][coverage]
+[![Coverage Status](https://coveralls.io/repos/samsymons/RedditKit.rb/badge.png?branch=master)][coveralls]
 
 [travis]: http://travis-ci.org/samsymons/RedditKit.rb
 [codeclimate]: https://codeclimate.com/github/samsymons/RedditKit.rb
