@@ -80,12 +80,7 @@ module RedditKit
       # @option options [Boolean] enabled Whether to enable contest mode for the link's comments.
       def set_contest_mode(link, options = {})
         full_name = extract_full_name link
-
-        # reddit doesn't accept straight boolean values for this method, hence the need to use strings.
-        enabled = 'True'
-        if options.has_key? :enabled
-          enabled = options[:enabled] ? 'True' : 'False'
-        end
+        enabled = options[:enabled] ? 'True' : 'False'
 
         post('api/set_contest_mode', { :id => full_name, :state => enabled, :api_type => :json })
       end
@@ -96,12 +91,7 @@ module RedditKit
       # @option options [Boolean] sticky Whether to mark the post as sticky or unsticky (true for sticky, false for unsticky). Defaults to true.
       def set_sticky_post(link, options = {})
         full_name = extract_full_name link
-
-        # reddit doesn't accept straight boolean values for this method, hence the need to use strings.
-        sticky = 'True'
-        if options.has_key? :sticky
-          sticky = options[:sticky] ? 'True' : 'False'
-        end
+        sticky = options[:sticky] ? 'True' : 'False'
 
         post('api/set_subreddit_sticky', { :id => full_name, :state => sticky, :api_type => :json })
       end
