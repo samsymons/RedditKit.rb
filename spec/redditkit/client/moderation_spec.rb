@@ -62,7 +62,7 @@ describe RedditKit::Client::Moderation, :vcr do
     end
 
     it "requests the correct resource" do
-      authenticated_client.distinguish :comment => '12345'
+      authenticated_client.distinguish '12345'
       expect(a_post('api/distinguish/yes')).to have_been_made
     end
   end

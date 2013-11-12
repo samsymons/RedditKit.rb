@@ -57,12 +57,11 @@ module RedditKit
 
       # Distinguishes a comment as being posted by a moderator or admin.
       #
-      # @option options [String, RedditKit::Comment] comment The full name of a comment, or a RedditKit::Comment.
-      # @option options [yes, no, admin, special] distinguish How to distinguish the comment. Defaults to yes.
+      # @param comment [String, RedditKit::Comment] The full name of a comment, or a RedditKit::Comment.
+      # @param how [yes, no, admin, special] How to distinguish the comment. Defaults to yes.
       # @note admin and special values may only be used if the current user has the right privileges.
-      def distinguish(options)
-        full_name = extract_full_name options[:comment]
-        how = options[:distinguish] || :yes
+      def distinguish(comment, how = 'yes')
+        full_name = extract_full_name comment
         parameters = { :id => full_name, :api_type => :json }
 
         post("api/distinguish/#{how}", parameters)
