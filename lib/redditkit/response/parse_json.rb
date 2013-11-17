@@ -13,7 +13,7 @@ module RedditKit
       #   an application/json header, we want to return the body itself if the
       #   JSON parsing fails, because the response is still likely useful.
       def parse(body)
-        MultiJson.load(body, :symbolize_names => true) unless body.nil?
+        MultiJson.load(body, :symbolize_keys => true) unless body.nil?
       rescue MultiJson::LoadError
         body
       end
