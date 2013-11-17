@@ -84,7 +84,7 @@ describe RedditKit::Client::Users, :vcr do
     end
 
     it "requests the correct resource" do
-      RedditKit.register 'username', 'password'
+      RedditKit.register 'username', 'password', 'fake_captcha_id', 'fake_captcha_answer'
       expect(a_post('api/register')).to have_been_made
     end
   end
