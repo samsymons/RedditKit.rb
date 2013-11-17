@@ -100,7 +100,7 @@ module RedditKit
       # @option options [String] captcha The user's response to the CAPTCHA challenge.
       # @option options [Boolean] remember Whether to keep the user's session cookie beyond the current session.
       def register(username, password, options = {})
-        parameters = { :user => username, :passwd => password, :passwd2 => password, :captcha => options[:captcha], :iden => options[:captcha_identifier] }
+        parameters = { :user => username, :passwd => password, :passwd2 => password, :email => options[:email], :captcha => options[:captcha], :iden => options[:captcha_identifier] }
         post('api/register', parameters)
       end
 
