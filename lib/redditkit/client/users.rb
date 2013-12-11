@@ -87,8 +87,6 @@ module RedditKit
       def username_available?(username)
         response = get('api/username_available.json', :user => username)
         available = response[:body]
-        
-        available == 'true'
       end
 
       # Registers a new reddit account. 
