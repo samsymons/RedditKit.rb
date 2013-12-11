@@ -1,6 +1,7 @@
 require 'redditkit/thing'
 require 'redditkit/creatable'
 require 'redditkit/votable'
+require 'htmlentities'
 
 module RedditKit
 
@@ -104,6 +105,17 @@ module RedditKit
     alias thumbnail_url thumbnail
     alias total_comments num_comments
     alias total_reports num_reports
+
+    def title
+      @escaped_title ||= HTMLEntities.new.decode(@attributes[:title])
+    end
+
+    # The link's URL. This will be a link to the post on reddit if the link is a self post.
+    #
+    # @note This is HTML decoded as reddit encodes their JSON, meaning links which have parameters will be returned incorrectly.
+    def url
+      @escaped_url ||= HTMLEntities.new.decode(@attributes[:url])
+    end
 
     # Determines whether a link is showing its score. reddit doesn't display scores for links less than two hours old.
     #
