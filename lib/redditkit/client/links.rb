@@ -75,14 +75,23 @@ module RedditKit
       # @option options [String] :text The text value for the post, as Markdown.
       # @option options [String] :captcha_identifier An identifier for a CAPTCHA, if the current user is required to fill one out.
       # @option options [String] :captcha_value The value for the CAPTCHA with the given identifier, as filled out by the user.
+      # @option options [Boolean] :save If true, the link will be implicitly saved after submission.
       def submit(title, subreddit, options = {})
         subreddit_name = extract_string subreddit, :display_name
-        parameters = { :title => title, :sr => subreddit_name, :iden => options[:captcha_identifier], :captcha => options[:captcha_value] }
+        parameters = {
+          :title => title,
+          :sr => subreddit_name,
+          :iden => options[:captcha_identifier],
+          :captcha => options[:captcha_value],
+          :save => options[:save]
+          }
         
         if options[:url]
           parameters[:url] = options[:url]
+          parameters[:kind] = 'link'
         else
           parameters[:text] = options[:text]
+          parameters[:kind] = 'self'
         end
 
         post('api/submit', parameters)
