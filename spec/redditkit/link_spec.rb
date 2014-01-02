@@ -22,15 +22,15 @@ describe RedditKit::Link do
   end
 
   it "does not show the score for new links" do
-    expect(@link.showing_link_score?).to be_false
+    expect(@link.showing_link_score?).to be false
   end
 
   it "shows the score for old links" do
-    expect(@old_link.showing_link_score?).to be_true
+    expect(@old_link.showing_link_score?).to be true
   end
 
   it "determines whether the link has an image extension" do
-    expect(@link.image_link?).to be_true
+    expect(@link.image_link?).to be true
   end
 
   it "returns the link's permalink" do

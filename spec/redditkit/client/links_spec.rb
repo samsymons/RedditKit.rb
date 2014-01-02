@@ -55,7 +55,7 @@ describe RedditKit::Client::Links, :vcr do
       links = RedditKit.links_with_domain "github.com"
       result = links.all? { |link| link.domain == 'github.com' }
 
-      expect(result).to be_true
+      expect(result).to be true
     end
   end
 

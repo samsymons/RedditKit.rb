@@ -6,14 +6,14 @@ describe RedditKit::Client::Account, :vcr do
     it "signs the user in" do
       client = RedditKit::Client.new redditkit_username, redditkit_password
 
-      expect(client.signed_in?).to be_true
+      expect(client.signed_in?).to be true
       expect(client.user).to_not be_nil
     end
   end
 
   describe "#signed_in?" do
     it "determines whether there is a user signed in" do
-      expect(authenticated_client.signed_in?).to be_true
+      expect(authenticated_client.signed_in?).to be true
     end
   end
 
@@ -22,7 +22,7 @@ describe RedditKit::Client::Account, :vcr do
       client = RedditKit::Client.new :username => redditkit_username, :password => redditkit_password
       client.sign_out
 
-      expect(client.signed_in?).to_not be_true
+      expect(client.signed_in?).to be false
     end
   end
 

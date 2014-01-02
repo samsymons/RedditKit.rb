@@ -11,7 +11,7 @@ describe RedditKit do
   end
 
   it "responds to methods on its client" do
-    expect(RedditKit.respond_to?(:username)).to be_true
+    expect(RedditKit.respond_to?(:username)).to be true
   end
 
   it "forwards methods to its client" do

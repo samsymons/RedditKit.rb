@@ -17,7 +17,7 @@ describe RedditKit::Multireddit do
     result = subreddits.all? { |subreddit| subreddit.is_a? String }
 
     expect(subreddits.length).to eq 3
-    expect(result).to be_true
+    expect(result).to be true
   end
 
   it "returns the username of the multireddit's owner" do

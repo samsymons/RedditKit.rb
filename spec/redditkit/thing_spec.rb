@@ -12,7 +12,7 @@ describe RedditKit::Thing do
 
   it "is equal to another thing with the same full name" do
     second_thing = RedditKit::Thing.new({ :kind => 't1', :data => { :id => '12345' } })
-    expect(@thing == second_thing).to be_true
+    expect(@thing == second_thing).to be true
   end
 
 end

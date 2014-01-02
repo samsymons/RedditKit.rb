@@ -33,19 +33,19 @@ describe RedditKit::Votable do
 
   describe "#upvoted?" do
     it "determines whether the object is upvoted" do
-      expect(@votable.upvoted?).to be_true
+      expect(@votable.upvoted?).to be true
     end
   end
 
   describe "#downvoted?" do
     it "determines whether the object is downvoted" do
-      expect(@votable.downvoted?).to_not be_true
+      expect(@votable.downvoted?).to be false
     end
   end
 
   describe "#voted?" do
     it "determines whether the object has been voted on" do
-      expect(@votable.voted?).to be_true
+      expect(@votable.voted?).to be true
     end
   end
 

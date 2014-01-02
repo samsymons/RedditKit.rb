@@ -67,14 +67,14 @@ describe RedditKit::Client::Users, :vcr do
       client = RedditKit::Client.new
       available = client.username_available? 'samsymons' 
 
-      expect(available).to_not be_true
+      expect(available).to be false
     end
 
     it "returns true for an available username" do
       client = RedditKit::Client.new
       available = client.username_available? 'available_user' 
 
-      expect(available).to be_true
+      expect(available).to be true
     end
   end
 

@@ -22,7 +22,7 @@ describe RedditKit::Base do
 
     context "predicate method" do
       it "can access predicate methods" do
-        expect(@thing.id?).to be_true
+        expect(@thing.id?).to be true
       end
     end
 

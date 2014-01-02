@@ -27,9 +27,9 @@ describe RedditKit::Client, :vcr do
   it "should tell us whether it is signed in", :authenticated do
     client = authenticated_client
 
-    expect(client.signed_in?).to be_true
+    expect(client.signed_in?).to be true
     client.sign_out
-    expect(client.signed_in?).to_not be_true
+    expect(client.signed_in?).to be false
   end
 
   it "should be able to sign out", :authenticated do

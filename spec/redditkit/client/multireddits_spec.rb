@@ -95,7 +95,7 @@ describe RedditKit::Client::Multireddits, :vcr do
       multireddits = authenticated_client.my_multireddits
       multireddit = multireddits.find { |multi| multi.name == multireddit_name }
 
-      expect(multireddit.subreddits.include? 'haskell').to be_true
+      expect(multireddit.subreddits.include? 'haskell').to be true
 
       authenticated_client.delete_multireddit multireddit_name
     end
@@ -136,7 +136,7 @@ describe RedditKit::Client::Multireddits, :vcr do
       authenticated_client.add_subreddit_to_multireddit 'addsubreddit', 'haskell'
       multireddit = authenticated_client.multireddit redditkit_username, 'addsubreddit'
 
-      expect(multireddit.subreddits.include? 'haskell').to be_true
+      expect(multireddit.subreddits.include? 'haskell').to be true
 
       authenticated_client.delete_multireddit 'addsubreddit'
     end
@@ -149,7 +149,7 @@ describe RedditKit::Client::Multireddits, :vcr do
       authenticated_client.remove_subreddit_from_multireddit 'removesubreddit', 'haskell'
       multireddit = authenticated_client.multireddit redditkit_username, 'removesubreddit'
 
-      expect(multireddit.subreddits.include? 'haskell').to be_false
+      expect(multireddit.subreddits.include? 'haskell').to be false
 
       authenticated_client.delete_multireddit 'removesubreddit'
     end
