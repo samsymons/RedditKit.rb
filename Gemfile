@@ -18,8 +18,8 @@ group :test do
 end
 
 platforms :rbx do
-  gem 'rubysl', '~> 2.0'
-  gem 'racc', '~> 1.4.10'
+  gem 'rubysl', '~> 2'
+  gem 'racc', '~> 1.4'
 end
 
 gemspec
