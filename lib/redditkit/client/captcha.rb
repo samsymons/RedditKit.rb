@@ -11,7 +11,7 @@ module RedditKit
         response = get('api/needs_captcha.json', nil)
         needs_captcha = response[:body]
 
-        needs_captcha == 'true'
+        needs_captcha.to_s == 'true'
       end
 
       # Returns a new CATPCHA identifier.
