@@ -10,7 +10,7 @@ module RedditKit
       # @option options [true, false] :restrict_to_subreddit Whether to search only in a specified subreddit. 
       # @option options [String, RedditKit::Subreddit] :subreddit The optional subreddit to search. 
       # @option options [1..100] limit The number of links to return.
-      # @option options [String] the order in which to return results which is one of (relevance, new, hot, top, comments)
+      # @option options [String] sort The sorting order for search results (relevance, new, hot, top, comments).
       # @option options [String] before Only return links before this full name. 
       # @option options [String] after Only return links after this full name.
       # @return [RedditKit::PaginatedResponse]
