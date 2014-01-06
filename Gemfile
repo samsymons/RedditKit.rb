@@ -13,8 +13,8 @@ end
 group :test do
   gem 'rspec'
   gem 'simplecov', :require => false
-  gem 'vcr', '~> 2.6.0'
-  gem 'webmock', '~> 1.12.0'
+  gem 'vcr', '>= 2.6.0'
+  gem 'webmock', '>= 1.12.0'
 end
 
 gemspec
