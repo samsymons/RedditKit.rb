@@ -17,4 +17,9 @@ group :test do
   gem 'webmock', '>= 1.12.0'
 end
 
+platforms :rbx do
+  gem 'rubysl', '~> 2'
+  gem 'racc', '~> 1.4'
+end
+
 gemspec

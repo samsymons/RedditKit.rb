@@ -1,13 +1,13 @@
 language: ruby
 rvm:
   - jruby-19mode
-  - rbx-19mode
   - 1.9.3
   - 2.0.0
   - 2.1.0
 matrix:
   allow_failures:
     - rvm: 2.1.0
+    - rvm: rbx
 env:
   global:
     - secure: "Ry6INhL05+XfREUEDBbe0hhui/ijy6BZh2Ez8AtCEudUE3pfm5iQla5Su3lYolUozStGFziwMxRsUHsO25gHH/f1NHjcosipYOmE2F61nktLIUMYDOJTG1rRWBa4NUqnDZr1xF/nt7vurJAjtigJ9nVjir1TRg5Cq+DSNkJvNhY="
