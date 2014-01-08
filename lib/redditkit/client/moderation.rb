@@ -150,7 +150,7 @@ module RedditKit
 
       # Lift the ban on a user. This requires moderator privileges on the specified subreddit.
       #
-      # @param ban_or_unban [true, false] Whether to ban or unban the user.
+      # @param ban [true, false] Whether to ban or unban the user.
       # @param user [String, RedditKit::User] The user's username, or a RedditKit::User.
       # @param subreddit [String, RedditKit::Subreddit] The subreddit's name, or a RedditKit::Subreddit.
       def ban_or_unban_user(ban, user, subreddit)
