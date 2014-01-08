@@ -127,4 +127,135 @@ http_interactions:
         \"after\": \"t3_sk4qq\", \"before\": null}}"
     http_version: 
   recorded_at: Sun, 10 Nov 2013 22:21:32 GMT
-recorded_with: VCR 2.6.0
+- request:
+    method: get
+    uri: http://www.reddit.com/r/ruby/search.json?after&before&count&limit=3&q=ruby&restrict_sr=true&sort&syntax&t
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Wed, 08 Jan 2014 06:49:52 GMT
+      Content-Length:
+      - '7430'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hello &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;
+        &lt;/p&gt;\\n\\n&lt;p&gt;I am new to Ruby, however I&amp;#39;ve programmed
+        in C, C++, Java, and C# along with VB.NET, HTML, and minimal Python. &lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;ve
+        heard that Ruby is a bit different and has quite the steep learning curve.
+        So I ask you...&lt;/p&gt;\\n\\n&lt;p&gt;What is the one thing that you wish
+        you knew before starting to learn or really use Ruby?&lt;/p&gt;\\n\\n&lt;p&gt;I
+        also plan on using RoR if anyone has thoughts on that as well!&lt;/p&gt;\\n\\n&lt;p&gt;Any
+        comments are appreciated! Thanks Guys!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"Hello /r/ruby \\n\\nI am new to Ruby, however I've
+        programmed in C, C++, Java, and C# along with VB.NET, HTML, and minimal Python.
+        \\n\\nI've heard that Ruby is a bit different and has quite the steep learning
+        curve. So I ask you...\\n\\nWhat is the one thing that you wish you knew before
+        starting to learn or really use Ruby?\\n\\nI also plan on using RoR if anyone
+        has thoughts on that as well!\\n\\nAny comments are appreciated! Thanks Guys!\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"1j9wqw\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"ProductiveThings\", \"media\": null, \"score\": 56, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 9, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1j9wqw/what_is_one_thing_you_wish_you_knew_when_starting/\",
+        \"name\": \"t3_1j9wqw\", \"created\": 1375108691.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1j9wqw/what_is_one_thing_you_wish_you_knew_when_starting/\",
+        \"author_flair_text\": null, \"title\": \"What is one thing you wish you knew
+        when starting Ruby?\", \"created_utc\": 1375105091.0, \"ups\": 65, \"num_comments\":
+        81, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;...and thanks to everyone
+        in &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;, &lt;a href=\\\"/r/rails\\\"&gt;/r/rails&lt;/a&gt;
+        and &lt;a href=\\\"/r/programming\\\"&gt;/r/programming&lt;/a&gt; who helped
+        me gain not only the skills but the confidence to make the switch.  I&amp;#39;ve
+        been a lifelong marketer who always felt unfulfilled and spent nights/weekends/free
+        time learning Ruby, Rails, MySQL, PostgreSQL, jQuery, and more, finally culminating
+        in my first full-time development job.  Wish me luck!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"...and thanks to everyone in /r/ruby, /r/rails
+        and /r/programming who helped me gain not only the skills but the confidence
+        to make the switch.  I've been a lifelong marketer who always felt unfulfilled
+        and spent nights/weekends/free time learning Ruby, Rails, MySQL, PostgreSQL,
+        jQuery, and more, finally culminating in my first full-time development job.
+        \ Wish me luck!\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1i72ww\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"caadbury\", \"media\": null, \"score\":
+        89, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 21, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/ruby/comments/1i72ww/on_monday_i_start_a_new_career_as_a_web_developer/\",
+        \"name\": \"t3_1i72ww\", \"created\": 1373686161.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1i72ww/on_monday_i_start_a_new_career_as_a_web_developer/\",
+        \"author_flair_text\": null, \"title\": \"On Monday, I start a new career
+        as a web developer in Ruby on Rails\", \"created_utc\": 1373682561.0, \"ups\":
+        110, \"num_comments\": 49, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hello everyone,&lt;/p&gt;\\n\\n&lt;p&gt;This
+        is a little framework of mine that I&amp;#39;ve built out of a personal need
+        - basically, I wanted to write a desktop app using Ruby and I found it daunting
+        to say the least.&lt;/p&gt;\\n\\n&lt;p&gt;So, I&amp;#39;ve built Freightrain
+        to take care of all the stuff I really shouldn&amp;#39;t care about, like
+        loading interface definitions, cross-toolkit compatibility and the likes.&lt;/p&gt;\\n\\n&lt;p&gt;Now
+        I&amp;#39;ve been working on it for almost 2 years (on and off of course)
+        and, since I&amp;#39;ve just fixed it so it loads the newest glade specifications,
+        I thought that I could ask you guys for an evaluation.&lt;/p&gt;\\n\\n&lt;p&gt;There&amp;#39;s
+        a little readme on the github page and there are some examples in the /examples
+        folder.&lt;/p&gt;\\n\\n&lt;p&gt;&lt;a href=\\\"http://github.com/bolthar/freightrain\\\"&gt;Link
+        to the github page!&lt;/a&gt;&lt;/p&gt;\\n\\n&lt;p&gt;WHOA! Thanks for the
+        attention, I thought this was going to be ignored...&lt;/p&gt;\\n\\n&lt;p&gt;How
+        many of you would be interested in a step by step tutorial over the major
+        features? I will build that if there&amp;#39;s enough interest.&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"Hello everyone,\\n\\nThis is a little framework
+        of mine that I've built out of a personal need - basically, I wanted to write
+        a desktop app using Ruby and I found it daunting to say the least.\\n\\nSo,
+        I've built Freightrain to take care of all the stuff I really shouldn't care
+        about, like loading interface definitions, cross-toolkit compatibility and
+        the likes.\\n\\nNow I've been working on it for almost 2 years (on and off
+        of course) and, since I've just fixed it so it loads the newest glade specifications,
+        I thought that I could ask you guys for an evaluation.\\n\\nThere's a little
+        readme on the github page and there are some examples in the /examples folder.\\n\\n[Link
+        to the github page!](http://github.com/bolthar/freightrain)\\n\\nWHOA! Thanks
+        for the attention, I thought this was going to be ignored...\\n\\nHow many
+        of you would be interested in a step by step tutorial over the major features?
+        I will build that if there's enough interest.\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"sk4qq\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"bolthar\", \"media\":
+        null, \"score\": 164, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": true,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        11, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/sk4qq/freightrain_easy_ruby_desktop_development/\",
+        \"name\": \"t3_sk4qq\", \"created\": 1334952179.0, \"url\": \"http://www.reddit.com/r/ruby/comments/sk4qq/freightrain_easy_ruby_desktop_development/\",
+        \"author_flair_text\": null, \"title\": \"Freightrain - easy Ruby desktop
+        development\", \"created_utc\": 1334948579.0, \"ups\": 175, \"num_comments\":
+        32, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}],
+        \"after\": \"t3_sk4qq\", \"before\": null}}"
+    http_version: 
+  recorded_at: Wed, 08 Jan 2014 06:49:52 GMT
+recorded_with: VCR 2.8.0
