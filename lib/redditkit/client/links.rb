@@ -5,13 +5,13 @@ module RedditKit
 
     # Methods for retrieving, submitting and interacting with links.
     module Links
-      
+
       # Gets the links currently on the front page.
       #
-      # @option options [hot, new, rising, controversial, top] :category The category from which to retrieve links.  
+      # @option options [hot, new, rising, controversial, top] :category The category from which to retrieve links.
       # @option options [hour, day, week, month, year, all] :time The time from which to retrieve links. Defaults to all time.
       # @option options [1..100] :limit The number of links to return.
-      # @option options [String] :before Only return links before this identifier. 
+      # @option options [String] :before Only return links before this identifier.
       # @option options [String] :after Only return links after this identifier.
       # @return [RedditKit::PaginatedResponse]
       def front_page(options = {})
@@ -21,10 +21,10 @@ module RedditKit
       # Gets an array of links from a specific subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] The display name of the subreddit, or a RedditKit::Subreddit.
-      # @option options [hot, new, rising, controversial, top] :category The category from which to retrieve links.  
+      # @option options [hot, new, rising, controversial, top] :category The category from which to retrieve links.
       # @option options [hour, day, week, month, year, all] :time The time from which to retrieve links. Defaults to all time.
       # @option options [1..100] :limit The number of links to return.
-      # @option options [String] :before Only return links before this identifier. 
+      # @option options [String] :before Only return links before this identifier.
       # @option options [String] :after Only return links after this identifier.
       # @return [RedditKit::PaginatedResponse]
       def links(subreddit, options = {})
@@ -50,12 +50,12 @@ module RedditKit
         links.first
       end
 
-      # Gets links with a specific domain. 
+      # Gets links with a specific domain.
       #
       # @param domain [String] The domain for which to get links.
       # @option options [hour, day, week, month, year] :time The time from which to retrieve links. Defaults to all time.
       # @option options [1..100] :limit The number of links to return.
-      # @option options [String] :before Only return links before this identifier. 
+      # @option options [String] :before Only return links before this identifier.
       # @option options [String] :after Only return links after this identifier.
       # @return [RedditKit::PaginatedResponse]
       # @example links = RedditKit.links_with_domain "github.com"
@@ -67,10 +67,10 @@ module RedditKit
         objects_from_response(:get, 'api/info.json', options)
       end
 
-      # Submits a link or self post to reddit. 
+      # Submits a link or self post to reddit.
       #
       # @param title [String] The title of the post.
-      # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit. 
+      # @param subreddit [String, RedditKit::Subreddit] A subreddit's display name, or a RedditKit::Subreddit.
       # @option options [String] :url The URL for the post. Note that if this value is present, :text will be ignored.
       # @option options [String] :text The text value for the post, as Markdown.
       # @option options [String] :captcha_identifier An identifier for a CAPTCHA, if the current user is required to fill one out.
@@ -85,7 +85,7 @@ module RedditKit
           :captcha => options[:captcha_value],
           :save => options[:save]
           }
-        
+
         if options[:url]
           parameters[:url] = options[:url]
           parameters[:kind] = 'link'
@@ -99,14 +99,14 @@ module RedditKit
 
       # Marks a link as not safe for work.
       #
-      # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link. 
+      # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def mark_nsfw(link)
         post('api/marknsfw', { :id => extract_full_name(link) })
       end
 
       # Marks a link as safe for work.
       #
-      # @param link [String, RedditKit::Subreddit] A link's full name, or a RedditKit::Link. 
+      # @param link [String, RedditKit::Subreddit] A link's full name, or a RedditKit::Link.
       def mark_sfw(link)
         post('api/unmarknsfw', { :id => extract_full_name(link) })
       end
@@ -114,14 +114,14 @@ module RedditKit
 
       # Hides a link.
       #
-      # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link. 
+      # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def hide(link)
         post('api/hide', { :id => extract_full_name(link) })
       end
 
       # Unhides a link.
       #
-      # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link. 
+      # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def unhide(link)
         post('api/unhide', { :id => extract_full_name(link) })
       end

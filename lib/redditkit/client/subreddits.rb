@@ -10,7 +10,7 @@ module RedditKit
       #
       # @option options [new, popular, banned] category The category of subreddits. Defaults to popular.
       # @option options [1..100] limit The number of subreddits to return.
-      # @option options [String] before Only return subreddits before this id. 
+      # @option options [String] before Only return subreddits before this id.
       # @option options [String] after Only return subreddits after this id.
       # @return [RedditKit::PaginatedResponse]
       def subreddits(options = {})
@@ -21,11 +21,11 @@ module RedditKit
         objects_from_response(:get, path, options)
       end
 
-      # Gets the current user's subscribed subreddits. 
+      # Gets the current user's subscribed subreddits.
       #
       # @option options [subscriber, contributor, moderator] category The category from which to return subreddits. Defaults to subscriber.
       # @option options [1..100] limit The number of subreddits to return.
-      # @option options [String] before Only return subreddits before this id. 
+      # @option options [String] before Only return subreddits before this id.
       # @option options [String] after Only return subreddits after this id.
       # @return [RedditKit::PaginatedResponse]
       def subscribed_subreddits(options = {})

@@ -59,7 +59,7 @@ module RedditKit
       @modhash = nil
 
       unless @username.nil? or @password.nil?
-        sign_in @username, @password 
+        sign_in @username, @password
       end
     end
 
@@ -113,7 +113,7 @@ module RedditKit
       else
         request_connection.send(method.to_sym, path, parameters).env
       end
-    rescue Faraday::Error::ClientError 
+    rescue Faraday::Error::ClientError
       raise RedditKit::RequestError
     end
 

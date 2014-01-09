@@ -74,7 +74,7 @@ module RedditKit
 
   # Raised when the user attempts to create a multireddit with an invalid name.
   class InvalidMultiredditName < Error; end
-  
+
   # Raised when reddit returns a 409 status code.
   class Conflict < Error; end
 

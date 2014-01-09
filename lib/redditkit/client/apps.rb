@@ -3,7 +3,7 @@ module RedditKit
 
     # Methods for operating on apps in the current user's account.
     module Apps
-      
+
       # Create or update an app.
       #
       # @param name [String] The app's name.
@@ -21,7 +21,7 @@ module RedditKit
         post('api/updateapp', parameters)
       end
       alias update_app create_app
-      
+
       # Delete an app.
       #
       # @param app_identifier [String] The identifier of the app.
@@ -37,7 +37,7 @@ module RedditKit
       end
 
       # Add a user as a developer of an app.
-      # 
+      #
       # @param user [String, RedditKit::User] The username of the user to add, or a RedditKit::User.
       # @param app_identifier [String] The identifier of the app.
       def add_developer(user, app_identifier)
@@ -48,7 +48,7 @@ module RedditKit
       end
 
       # Remove an app's developer.
-      # 
+      #
       # @param user [String, RedditKit::User] The username of the user to add, or a RedditKit::User.
       # @param app_identifier [String] The identifier of the app.
       def remove_developer(user, app_identifier)

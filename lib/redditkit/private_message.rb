@@ -21,7 +21,7 @@ module RedditKit
     attr_reader :subreddit
     attr_reader :was_comment
 
-    alias unread? new
-    alias recipient dest
+    alias_method :unread?, :new
+    alias_method :recipient, :dest
   end
 end

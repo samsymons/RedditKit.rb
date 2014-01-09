@@ -20,8 +20,14 @@ module RedditKit
 
       def on_complete(env)
         if respond_to?(:parse)
-          env[:body] = parse(env[:body]) unless [204, 301, 302, 304].include?(env[:status])
+          unless bad_status_codes.include? env[:status]
+            env[:body] = parse env[:body]
+          end
         end
+      end
+
+      def bad_status_codes
+        @status_codes ||= [204, 301, 302, 304]
       end
 
     end

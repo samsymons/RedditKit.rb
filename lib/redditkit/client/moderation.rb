@@ -77,7 +77,7 @@ module RedditKit
 
         post('api/set_contest_mode', { :id => full_name, :state => set_as_contest, :api_type => :json })
       end
-      
+
       # Sets a post as sticky within its parent subreddit. This will replace the existing sticky post, if there is one.
       #
       # @param link [String, RedditKit::Link] The full name of a link, or a RedditKit::Link.
@@ -90,7 +90,7 @@ module RedditKit
       end
 
       # Get the moderators of a subreddit.
-      # 
+      #
       # @param subreddit [String, RedditKit::Subreddit] The display name of a subreddit, or a RedditKit::Subreddit.
       # @return [Array<OpenStruct>]
       def moderators_of_subreddit(subreddit)
@@ -98,7 +98,7 @@ module RedditKit
       end
 
       # Get the contributors to a subreddit.
-      # 
+      #
       # @param subreddit [String, RedditKit::Subreddit] The display name of a subreddit, or a RedditKit::Subreddit.
       # @return [Array<OpenStruct>]
       def contributors_to_subreddit(subreddit)
@@ -120,7 +120,7 @@ module RedditKit
         full_name = extract_full_name subreddit
         post('api/leavecontributor', { :id => full_name })
       end
-      
+
       # Resign as a moderator of a subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's full name, or a RedditKit::Subreddit.

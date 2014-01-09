@@ -2,7 +2,7 @@ module RedditKit
 
   # Methods which determine the voting status of objects.
   module Votable
-    
+
     # The number of upvotes an item has.
     def upvotes
       @attributes[:ups]
@@ -30,7 +30,7 @@ module RedditKit
 
     # Whether the user has voted on this item (either upvoted or downvoted).
     def voted?
-      !@attributes[:likes].nil? 
+      !@attributes[:likes].nil?
     end
 
   end

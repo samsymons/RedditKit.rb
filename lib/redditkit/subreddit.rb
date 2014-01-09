@@ -72,15 +72,15 @@ module RedditKit
     # Whether the current user is a subscriber to the subreddit.
     attr_reader :user_is_subscriber
 
-    alias banned? user_is_banned
-    alias comment_spam_filter_strength spam_comments
-    alias contributor? user_is_contributor
-    alias link_spam_filter_strength spam_links
-    alias moderator? user_is_moderator
-    alias name display_name
-    alias nsfw? over18
-    alias self_post_spam_filter_strength spam_selfpost
-    alias subscriber? user_is_subscriber
+    alias_method :banned?, :user_is_banned
+    alias_method :comment_spam_filter_strength, :spam_comments
+    alias_method :contributor?, :user_is_contributor
+    alias_method :link_spam_filter_strength, :spam_links
+    alias_method :moderator?, :user_is_moderator
+    alias_method :name, :display_name
+    alias_method :nsfw?, :over18
+    alias_method :self_post_spam_filter_strength, :spam_selfpost
+    alias_method :subscriber?, :user_is_subscriber
 
   end
 end

@@ -11,7 +11,7 @@ module RedditKit
       # @param username [String] A reddit account's username. Gets the current user if this is nil.
       # @return [RedditKit::User]
       # @example current_user = client.user
-      # @example user = client.user 'amberlynns' 
+      # @example user = client.user 'amberlynns'
       def user(username = nil)
         if username
           object_from_response(:get, "user/#{username}/about.json", nil)
@@ -20,11 +20,11 @@ module RedditKit
         end
       end
 
-      # Gets links and comments for the current user. 
+      # Gets links and comments for the current user.
       #
       # @option options [overview, comments, submitted, liked, disliked] :category The category from which to return links and comments. Defaults to overview.
       # @option options [1..100] :limit The number of links and comments to return.
-      # @option options [String] :before Only return links and comments before this id. 
+      # @option options [String] :before Only return links and comments before this id.
       # @option options [String] :after Only return links and comments after this id.
       # @return [RedditKit::PaginatedResponse]
       def my_content(options = {})
@@ -35,11 +35,11 @@ module RedditKit
         objects_from_response(:get, path, options)
       end
 
-      # Gets links and comments for a user. 
+      # Gets links and comments for a user.
       #
       # @option options [overview, comments, submitted, liked, disliked] :category The category from which to return links and comments. Defaults to overview.
       # @option options [1..100] :limit The number of links and comments to return.
-      # @option options [String] :before Only return links and comments before this id. 
+      # @option options [String] :before Only return links and comments before this id.
       # @option options [String] :after Only return links and comments after this id.
       # @return [RedditKit::PaginatedResponse]
       # @note Public access to the liked and disliked categories is disabled by default, so this will return an empty array for most users.
@@ -71,25 +71,25 @@ module RedditKit
         friend_request 'friend', :container => current_user.full_name, :name => friend_name, :type => :friend
       end
 
-      # Removes a user from the current user's friend list. 
+      # Removes a user from the current user's friend list.
       #
-      # @param user [String, RedditKit::User] A user's ID, or a RedditKit::User. 
+      # @param user [String, RedditKit::User] A user's ID, or a RedditKit::User.
       def unfriend(user)
         friend_name = extract_string(user, :username)
         friend_request 'unfriend', :container => current_user.full_name, :name => friend_name, :type => :friend
       end
 
-      # Checks whether a specific username is available. 
+      # Checks whether a specific username is available.
       #
       # @param username [String] A username for which to check availability.
       # @return [Boolean]
-      # @example puts "Username is available" if client.username_available? 'some_username' 
+      # @example puts "Username is available" if client.username_available? 'some_username'
       def username_available?(username)
         response = get('api/username_available.json', :user => username)
-        available = response[:body]
+        response[:body]
       end
 
-      # Registers a new reddit account. 
+      # Registers a new reddit account.
       #
       # @option options [String] username The username to register.
       # @option options [String] password The password for the account.

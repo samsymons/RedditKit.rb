@@ -42,7 +42,7 @@ module RedditKit
       replies_array = replies_listing[:data][:children]
 
       @comment_objects ||= replies_array.map do |comment|
-        RedditKit::Comment.new(comment) 
+        RedditKit::Comment.new(comment)
       end
     end
 

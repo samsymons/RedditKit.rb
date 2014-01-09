@@ -18,13 +18,13 @@ module RedditKit
     attr_reader :is_mod
     attr_reader :over_18
 
-    alias friend? is_friend
-    alias gold? is_gold
-    alias mail? has_mail
-    alias mod? is_mod
-    alias mod_mail? has_mod_mail
-    alias over_18? over_18
-    alias username name
-    alias verified? has_verified_email
+    alias_method :friend?, :is_friend
+    alias_method :gold?, :is_gold
+    alias_method :mail?, :has_mail
+    alias_method :mod?, :is_mod
+    alias_method :mod_mail?, :has_mod_mail
+    alias_method :over_18?, :over_18
+    alias_method :username, :name
+    alias_method :verified?, :has_verified_email
   end
 end

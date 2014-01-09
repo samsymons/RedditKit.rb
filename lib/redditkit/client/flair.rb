@@ -6,11 +6,11 @@ module RedditKit
     # Methods for interacting with flair in subreddits.
     module Flair
 
-      # Lists users and their flair in a subreddit. 
+      # Lists users and their flair in a subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's name, or a RedditKit::Subreddit.
       # @option options [1..1000] :limit The number of items to return.
-      # @option options [String] :before Only return objects before this id. 
+      # @option options [String] :before Only return objects before this id.
       # @option options [String] :after Only return objects after this id.
       def flair_list(subreddit, options = {})
         subreddit_name = extract_string(subreddit, :display_name)
@@ -19,7 +19,7 @@ module RedditKit
 
         users.collect { |user| OpenStruct.new(user) }
       end
-      
+
       # Creates a flair template in a subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's name, or a RedditKit::Subreddit.
@@ -48,12 +48,12 @@ module RedditKit
         post('api/deleteflairtemplate', parameters)
       end
 
-      # Toggles flair for a subreddit. 
+      # Toggles flair for a subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's name, or a RedditKit::Subreddit.
-      # @param flair_enabled [Boolean] Whether to enable flair for the subreddit. 
+      # @param flair_enabled [Boolean] Whether to enable flair for the subreddit.
       def toggle_flair(subreddit, flair_enabled)
-        post('api/setflairenabled', { :r => subreddit, :flair_enabled => flair_enabled }) 
+        post('api/setflairenabled', { :r => subreddit, :flair_enabled => flair_enabled })
       end
 
       # Sets flair on a link or user.
@@ -132,7 +132,7 @@ module RedditKit
       #
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's name, or a RedditKit::Subreddit.
       # @option options [Boolean] flair_enabled Whether to enable flair for the subreddit.
-      # @option options [left, right] flair_position The position of user flair. 
+      # @option options [left, right] flair_position The position of user flair.
       # @option options [left, right] link_flair_position The position of link flair.
       # @option options [Boolean] flair_self_assign_enabled Whether users may assign their own flair.
       # @option options [Boolean] link_flair_self_assign_enabled Whether users may assign their own link flair.
@@ -140,7 +140,7 @@ module RedditKit
         subreddit_name = extract_string(subreddit, :display_name)
         options.merge!({ :r => subreddit_name, :uh => @modhash })
 
-        post('api/flairconfig', options) 
+        post('api/flairconfig', options)
       end
 
     end

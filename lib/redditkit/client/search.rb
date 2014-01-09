@@ -12,7 +12,7 @@ module RedditKit
       # @option options [1..100] limit The number of links to return.
       # @option options [String] count The number of results to return before or after. This is different from `limit`.
       # @option options [relevance, new, hot, top, comments] sort The sorting order for search results.
-      # @option options [String] before Only return links before this full name. 
+      # @option options [String] before Only return links before this full name.
       # @option options [String] after Only return links after this full name.
       # @option options [cloudsearch, lucene, plain] syntax Specify the syntax for the search. Learn more: http://www.reddit.com/r/redditdev/comments/1hpicu/whats_this_syntaxcloudsearch_do/cawm0fe
       # @option options [hour, day, week, month, year, all] time Show results with a specific time period.

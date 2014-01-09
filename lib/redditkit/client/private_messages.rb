@@ -2,7 +2,7 @@ require 'redditkit/private_message'
 
 module RedditKit
   class Client
-    
+
     # Methods for retrieving and sending private messages.
     module PrivateMessages
 
@@ -10,7 +10,7 @@ module RedditKit
       #
       # @option options [inbox, unread, sent, messages, mentions, moderator, comments, selfreply] :category The category from which to return messages.
       # @option options [1..100] :limit The number of messages to return.
-      # @option options [String] :before Only return subreddits before this id. 
+      # @option options [String] :before Only return subreddits before this id.
       # @option options [String] :after Only return subreddits after this id.
       # @option options [Boolean] :mark Whether to mark requested messages as read.
       # @return [RedditKit::PaginatedResponse]
@@ -55,7 +55,7 @@ module RedditKit
       # Blocks the author of a private message or comment.
       # Users cannot be blocked based on username as reddit only allows you to block those who have harassed you (thus leaving a message in your inbox).
       #
-      # @param message [String, RedditKit::PrivateMessage] A private message's full name, or a RedditKit::PrivateMessage. 
+      # @param message [String, RedditKit::PrivateMessage] A private message's full name, or a RedditKit::PrivateMessage.
       def block_author_of_message(message)
         parameters = { :id => extract_full_name(message) }
         post('api/block', parameters)
@@ -63,7 +63,7 @@ module RedditKit
 
       # Unblocks a user.
       #
-      # @param user [String, RedditKit::User] A user's username, or a RedditKit::User. 
+      # @param user [String, RedditKit::User] A user's username, or a RedditKit::User.
       def unblock(user)
         enemy_name = extract_string(user, :username)
         friend_request 'unfriend', :container => current_user.full_name, :name => enemy_name, :type => :enemy

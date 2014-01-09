@@ -198,7 +198,7 @@ module RedditKit
 
         model = { :visibility => visibility, :subreddits => subreddit_hashes }
         parameters = { :multipath => multireddit_path, :model => model.to_json }
-        
+
         request(method, path, parameters, connection)
       end
 

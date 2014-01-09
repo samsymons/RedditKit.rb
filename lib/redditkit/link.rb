@@ -93,7 +93,7 @@ module RedditKit
 
     # Whether the link has been visited by the current user. Requires that the current user have reddit gold.
     attr_reader :visited
-    
+
     alias approved? approved_by
     alias banned? banned_by
     alias nsfw? over_18
