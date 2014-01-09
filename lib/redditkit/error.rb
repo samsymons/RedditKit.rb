@@ -6,7 +6,7 @@ module RedditKit
 
       def from_status_code_and_body(status_code, body)
         error_value = extract_error_value body
-        return if status_code == 200 and error_value.nil?
+        return if status_code == 200 && error_value.nil?
 
         case status_code
         when 200
@@ -53,7 +53,7 @@ module RedditKit
       def extract_error_value(body)
         return nil unless body.instance_of? Hash
 
-        if body.key?(:json) and body[:json].key?(:errors)
+        if body.key?(:json) && body[:json].key?(:errors)
           body[:json][:errors].to_s
         elsif body.key?(:jquery)
           body[:jquery].to_s

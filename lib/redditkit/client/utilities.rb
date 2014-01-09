@@ -48,21 +48,21 @@ module RedditKit
       # @return [Class]
       def object_class_from_kind(kind)
         case kind
-        when "t1"
+        when 't1'
           RedditKit::Comment
-        when "t2"
+        when 't2'
           RedditKit::User
-        when "t3"
+        when 't3'
           RedditKit::Link
-        when "t4"
+        when 't4'
           RedditKit::PrivateMessage
-        when "t5"
+        when 't5'
           RedditKit::Subreddit
-        when "LabeledMulti"
+        when 'LabeledMulti'
           RedditKit::Multireddit
-        when "LabeledMultiDescription"
+        when 'LabeledMultiDescription'
           RedditKit::MultiredditDescription
-        when "modaction"
+        when 'modaction'
           RedditKit::ModeratorAction
         end
       end

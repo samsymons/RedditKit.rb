@@ -8,7 +8,7 @@ module RedditKit
     attr_reader :body_html
     attr_reader :body_md
 
-    alias text body_md
+    alias_method :text, :body_md
 
   end
 end

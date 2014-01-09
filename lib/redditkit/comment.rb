@@ -26,8 +26,8 @@ module RedditKit
     attr_reader :subreddit
     attr_reader :subreddit_id
 
-    alias text body
-    alias posted_at created_at
+    alias_method :text, :body
+    alias_method :posted_at, :created_at
 
     # Whether a comment has been deleted by its submitter or a moderator.
     def deleted?
@@ -37,7 +37,7 @@ module RedditKit
     # The replies to a comment.
     def replies
       replies_listing = @attributes[:replies]
-      return Array.new if replies_listing.empty?
+      return [] if replies_listing.empty?
 
       replies_array = replies_listing[:data][:children]
 

@@ -94,36 +94,36 @@ module RedditKit
           parameters[:kind] = 'self'
         end
 
-        post('api/submit', parameters)
+        post 'api/submit', parameters
       end
 
       # Marks a link as not safe for work.
       #
       # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def mark_nsfw(link)
-        post('api/marknsfw', { :id => extract_full_name(link) })
+        post 'api/marknsfw', :id => extract_full_name(link)
       end
 
       # Marks a link as safe for work.
       #
       # @param link [String, RedditKit::Subreddit] A link's full name, or a RedditKit::Link.
       def mark_sfw(link)
-        post('api/unmarknsfw', { :id => extract_full_name(link) })
+        post 'api/unmarknsfw', :id => extract_full_name(link)
       end
-      alias unmark_nsfw mark_sfw
+      alias_method :unmark_nsfw, :mark_sfw
 
       # Hides a link.
       #
       # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def hide(link)
-        post('api/hide', { :id => extract_full_name(link) })
+        post 'api/hide', :id => extract_full_name(link)
       end
 
       # Unhides a link.
       #
       # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def unhide(link)
-        post('api/unhide', { :id => extract_full_name(link) })
+        post 'api/unhide', :id => extract_full_name(link)
       end
 
       # Gets a random link.

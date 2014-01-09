@@ -24,7 +24,7 @@ module RedditKit
       #   @param multireddit_name [String] The multireddit's name.
       # @return [RedditKit::Multireddit]
       def multireddit(*args)
-        path = "api/multi"
+        path = 'api/multi'
 
         if args.length == 1
           path << args.first
@@ -93,7 +93,7 @@ module RedditKit
       # @param subreddits [Array] An array of subreddit names or RedditKit::Subreddit objects.
       # @param visibility [public, private] An array of subreddit names to be added to the multireddit.
       def update_multireddit(multireddit, subreddits = [], visibility = 'private')
-        create_or_update_multireddit(:put, multireddit, subreddits, visibility)
+        create_or_update_multireddit :put, multireddit, subreddits, visibility
       end
 
       # Copies a multireddit.
@@ -162,7 +162,7 @@ module RedditKit
         path = "api/multi#{multireddit_path}/r/#{subreddit_name}"
         model = { :name => subreddit_name }
 
-        put(path, { :model => model.to_json })
+        put path, :model => model.to_json
       end
 
       # Removes a subreddit from a multireddit owned by the current user.

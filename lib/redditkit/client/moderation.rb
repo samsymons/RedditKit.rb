@@ -28,7 +28,7 @@ module RedditKit
       # @param link [String, RedditKit::Link] A link's full name, or a RedditKit::Link.
       def approve(link)
         full_name = extract_full_name link
-        post('api/approve', { :id => full_name, :api_type => :json })
+        post 'api/approve', { :id => full_name, :api_type => :json }
       end
 
       # Removes a link or comment.
@@ -36,7 +36,7 @@ module RedditKit
       # @param object [String, RedditKit::Comment, RedditKit::Link] The full name of a link/comment, a RedditKit::Comment, or a RedditKit::Link.
       def remove(object)
         full_name = extract_full_name object
-        post('api/remove', { :id => full_name, :api_type => :json })
+        post 'api/remove', { :id => full_name, :api_type => :json }
       end
 
       # Ignores the reports on a link or comment.
@@ -44,7 +44,7 @@ module RedditKit
       # @param object [String, RedditKit::Comment, RedditKit::Link] The full name of a link/comment, a RedditKit::Comment, or a RedditKit::Link.
       def ignore_reports(object)
         full_name = extract_full_name object
-        post('api/ignore_reports', { :id => full_name, :api_type => :json })
+        post 'api/ignore_reports', { :id => full_name, :api_type => :json }
       end
 
       # Unignores the reports on a link or comment.
@@ -52,7 +52,7 @@ module RedditKit
       # @param object [String, RedditKit::Comment, RedditKit::Link] The full name of a link/comment, a RedditKit::Comment, or a RedditKit::Link.
       def unignore_reports(object)
         full_name = extract_full_name object
-        post('api/unignore_reports', { :id => full_name, :api_type => :json })
+        post 'api/unignore_reports', { :id => full_name, :api_type => :json }
       end
 
       # Distinguishes a comment as being posted by a moderator or admin.
@@ -64,7 +64,7 @@ module RedditKit
         full_name = extract_full_name comment
         parameters = { :id => full_name, :api_type => :json }
 
-        post("api/distinguish/#{how}", parameters)
+        post "api/distinguish/#{how}", parameters
       end
 
       # Sets a post as have its contest mode enabled or disabled.
@@ -75,7 +75,7 @@ module RedditKit
         full_name = extract_full_name link
         set_as_contest = contest_mode ? 'True' : 'False'
 
-        post('api/set_contest_mode', { :id => full_name, :state => set_as_contest, :api_type => :json })
+        post 'api/set_contest_mode', { :id => full_name, :state => set_as_contest, :api_type => :json }
       end
 
       # Sets a post as sticky within its parent subreddit. This will replace the existing sticky post, if there is one.
@@ -86,7 +86,7 @@ module RedditKit
         full_name = extract_full_name link
         set_as_sticky = sticky ? 'True' : 'False'
 
-        post('api/set_subreddit_sticky', { :id => full_name, :state => set_as_sticky, :api_type => :json })
+        post 'api/set_subreddit_sticky', { :id => full_name, :state => set_as_sticky, :api_type => :json }
       end
 
       # Get the moderators of a subreddit.
@@ -110,7 +110,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] The display name of the subreddit, or a RedditKit::Subreddit.
       def accept_moderator_invitation(subreddit)
         subreddit_name = extract_string(subreddit, :display_name)
-        post('api/accept_moderator_invite', { :r => subreddit_name })
+        post 'api/accept_moderator_invite', :r => subreddit_name
       end
 
       # Resign as a contributor to a subreddit.
@@ -118,7 +118,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's full name, or a RedditKit::Subreddit.
       def resign_as_contributor(subreddit)
         full_name = extract_full_name subreddit
-        post('api/leavecontributor', { :id => full_name })
+        post 'api/leavecontributor', :id => full_name
       end
 
       # Resign as a moderator of a subreddit.
@@ -126,7 +126,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] A subreddit's full name, or a RedditKit::Subreddit.
       def resign_as_moderator(subreddit)
         full_name = extract_full_name subreddit
-        post('api/leavemoderator', { :id => full_name })
+        post 'api/leavemoderator', :id => full_name
       end
 
       # Resets a subreddit's header image.
@@ -134,7 +134,7 @@ module RedditKit
       # @param subreddit [String, RedditKit::Subreddit] The display name of the subreddit, or a RedditKit::Subreddit.
       def reset_subreddit_header(subreddit)
         subreddit_name = extract_string(subreddit, :display_name)
-        post('api/delete_sr_header', { :r => subreddit_name })
+        post 'api/delete_sr_header', :r => subreddit_name
       end
 
       # Gets the moderation log for a subreddit.

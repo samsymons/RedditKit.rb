@@ -16,7 +16,7 @@ module RedditKit
         if username
           object_from_response(:get, "user/#{username}/about.json", nil)
         else
-          object_from_response(:get, "api/me.json", nil)
+          object_from_response(:get, 'api/me.json', nil)
         end
       end
 
@@ -60,7 +60,7 @@ module RedditKit
         body = response[:body]
         friends = body[0][:data][:children]
 
-        friends.collect { |friend| OpenStruct.new(friend) }
+        friends.map { |friend| OpenStruct.new(friend) }
       end
 
       # Adds a user to the current user's friend list.

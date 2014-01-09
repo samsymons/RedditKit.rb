@@ -12,13 +12,13 @@ module RedditKit
     attr_reader :visibility
     attr_reader :path
 
-    alias editable? can_edit
+    alias_method :editable?, :can_edit
 
     # An array of subreddit display names.
     #
     # @return [Array<String>]
     def subreddits
-      @subreddits ||= @attributes[:subreddits].collect { |subreddit| subreddit[:name] }
+      @subreddits ||= @attributes[:subreddits].map { |subreddit| subreddit[:name] }
     end
 
     # The username of the multireddit's owner.

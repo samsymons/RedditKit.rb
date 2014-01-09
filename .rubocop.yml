@@ -1,0 +1,9 @@
+AllCops:
+  Excludes:
+    - spec/**
+LineLength:
+  Enabled: false
+HashSyntax:
+  Enabled: false
+TrailingBlankLines:
+  Enabled: false

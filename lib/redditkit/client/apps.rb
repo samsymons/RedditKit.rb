@@ -20,20 +20,20 @@ module RedditKit
 
         post('api/updateapp', parameters)
       end
-      alias update_app create_app
+      alias_method :update_app, :create_app
 
       # Delete an app.
       #
       # @param app_identifier [String] The identifier of the app.
       def delete_app(app_identifier)
-        post('api/deleteapp', { :client_id => app_identifier })
+        post 'api/deleteapp', :client_id => app_identifier
       end
 
       # Revoke an app.
       #
       # @param app_identifier [String] The identifier of the app.
       def revoke_app(app_identifier)
-        post('api/revokeapp', { :client_id => app_identifier })
+        post 'api/revokeapp', :client_id => app_identifier
       end
 
       # Add a user as a developer of an app.
@@ -44,7 +44,7 @@ module RedditKit
         username = extract_string user, :username
         parameters = { :name => username, :client_id => app_identifier }
 
-        post('api/adddeveloper', parameters)
+        post 'api/adddeveloper', parameters
       end
 
       # Remove an app's developer.

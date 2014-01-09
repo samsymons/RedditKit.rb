@@ -8,7 +8,7 @@ module RedditKit
       #
       # @return [Boolean]
       def needs_captcha?
-        response = get('api/needs_captcha.json', nil)
+        response = get 'api/needs_captcha.json'
         needs_captcha = response[:body]
 
         needs_captcha.to_s == 'true'
@@ -18,7 +18,7 @@ module RedditKit
       #
       # @return [String] The CAPTCHA identifier.
       def new_captcha_identifier
-        response = post('api/new_captcha', { :api_type => :json })
+        response = post 'api/new_captcha', :api_type => :json
         data = response[:body][:json][:data]
 
         data[:iden]

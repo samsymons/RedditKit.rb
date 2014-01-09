@@ -94,17 +94,17 @@ module RedditKit
     # Whether the link has been visited by the current user. Requires that the current user have reddit gold.
     attr_reader :visited
 
-    alias approved? approved_by
-    alias banned? banned_by
-    alias nsfw? over_18
-    alias self_post? is_self
-    alias sticky? stickied
-    alias subreddit_full_name subreddit_id
-    alias text selftext
-    alias text_html selftext_html
-    alias thumbnail_url thumbnail
-    alias total_comments num_comments
-    alias total_reports num_reports
+    alias_method :approved?, :approved_by
+    alias_method :banned?, :banned_by
+    alias_method :nsfw?, :over_18
+    alias_method :self_post?, :is_self
+    alias_method :sticky?, :stickied
+    alias_method :subreddit_full_name, :subreddit_id
+    alias_method :text, :selftext
+    alias_method :text_html, :selftext_html
+    alias_method :thumbnail_url, :thumbnail
+    alias_method :total_comments, :num_comments
+    alias_method :total_reports, :num_reports
 
     def title
       @escaped_title ||= HTMLEntities.new.decode(@attributes[:title])
@@ -133,11 +133,11 @@ module RedditKit
     # @return [Boolean]
     def image_link?
       extensions = %w(.png .jpg .jpeg .gif)
-      extensions.any?{ |extension| url.end_with? extension }
+      extensions.any? { |extension| url.end_with? extension }
     end
 
     def permalink
-      @permalink ||= "http://reddit.com/" << @attributes[:permalink]
+      @permalink ||= 'http://reddit.com/' << @attributes[:permalink]
     end
 
     # Returns the short URL for a link.

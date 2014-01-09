@@ -10,10 +10,10 @@ module RedditKit
     attr_reader :subreddit
     attr_reader :sub_id36
 
-    alias moderator_username mod
-    alias moderator_identifier mod_id36
-    alias subreddit_name subreddit
-    alias subreddit_identifier sub_id36
+    alias_method :moderator_username, :mod
+    alias_method :moderator_identifier, :mod_id36
+    alias_method :subreddit_name, :subreddit
+    alias_method :subreddit_identifier, :sub_id36
 
   end
 end

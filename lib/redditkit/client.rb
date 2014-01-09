@@ -58,9 +58,7 @@ module RedditKit
       @cookie = nil
       @modhash = nil
 
-      unless @username.nil? or @password.nil?
-        sign_in @username, @password
-      end
+      sign_in(username, password) unless username.nil? || password.nil?
     end
 
     def api_endpoint
@@ -118,9 +116,9 @@ module RedditKit
     end
 
     def authenticated_request_configuration(method, path, parameters)
-      raise RedditKit::NotAuthenticated unless signed_in?
+      fail RedditKit::NotAuthenticated unless signed_in?
 
-      Proc.new do |request|
+      proc do |request|
         request.headers['Cookie'] = "reddit_session=#{@cookie}"
         request.headers['X-Modhash'] = @modhash
       end
@@ -135,7 +133,7 @@ module RedditKit
     end
 
     def connection_with_url(url)
-      Faraday.new(url, { :builder => middleware })
+      Faraday.new url, :builder => middleware
     end
 
   end

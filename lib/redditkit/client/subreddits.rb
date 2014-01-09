@@ -52,7 +52,7 @@ module RedditKit
         full_name = extract_full_name subreddit
         parameters = { :action => 'sub', :sr => full_name }
 
-        post("api/subscribe", parameters)
+        post('api/subscribe', parameters)
       end
 
       # Unsubscribes from a subreddit.
@@ -62,7 +62,7 @@ module RedditKit
         full_name = extract_full_name subreddit
         parameters = { :action => 'unsub', :sr => full_name }
 
-        post("api/subscribe", parameters)
+        post('api/subscribe', parameters)
       end
 
       # Gets a random subreddit.
@@ -97,7 +97,7 @@ module RedditKit
         response = get('api/subreddits_by_topic.json', parameters)
         body =  response[:body]
 
-        body.collect { |subreddit| subreddit[:name] }
+        body.map { |subreddit| subreddit[:name] }
       end
 
       # Gets an array of recommended subreddits.
@@ -112,7 +112,7 @@ module RedditKit
         response = get('api/subreddit_recommendations.json', parameters)
         body =  response[:body]
 
-        body.collect { |subreddit| subreddit[:sr_name] }
+        body.map { |subreddit| subreddit[:sr_name] }
       end
 
     end
