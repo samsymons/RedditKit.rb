@@ -72,10 +72,7 @@ module RedditKit
       # @param link [String, RedditKit::Link] The full name of a link, or a RedditKit::Link.
       # @param contest_mode [Boolean] Whether to enable contest mode for the link's comments. Defaults to true.
       def set_contest_mode(link, contest_mode = true)
-        full_name = extract_full_name link
-        set_as_contest = contest_mode ? 'True' : 'False'
-
-        post 'api/set_contest_mode', { :id => full_name, :state => set_as_contest, :api_type => :json }
+        set_boolean_on_link 'api/set_contest_mode', link, contest_mode
       end
 
       # Sets a post as sticky within its parent subreddit. This will replace the existing sticky post, if there is one.
@@ -83,10 +80,7 @@ module RedditKit
       # @param link [String, RedditKit::Link] The full name of a link, or a RedditKit::Link.
       # @param sticky [Boolean] Whether to mark the post as sticky or unsticky. Defaults to true.
       def set_sticky_post(link, sticky = true)
-        full_name = extract_full_name link
-        set_as_sticky = sticky ? 'True' : 'False'
-
-        post 'api/set_subreddit_sticky', { :id => full_name, :state => set_as_sticky, :api_type => :json }
+        set_boolean_on_link 'api/set_subreddit_sticky', link, sticky
       end
 
       # Get the moderators of a subreddit.
@@ -171,6 +165,14 @@ module RedditKit
 
         members = response[:body][:data][:children]
         members.collect { |member| OpenStruct.new(member) }
+      end
+
+
+      def set_boolean_on_link(path, link, boolean)
+        full_name = extract_full_name link
+        boolean_as_string = boolean ? 'True' : 'False'
+
+        post path, { :id => full_name, :state => boolean_as_string, :api_type => :json }
       end
 
     end
