@@ -258,4 +258,120 @@ http_interactions:
         \"after\": \"t3_sk4qq\", \"before\": null}}"
     http_version: 
   recorded_at: Wed, 08 Jan 2014 06:49:52 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/r/ruby/search.json?after=&before=&count=&limit=3&q=ruby&restrict_sr=true&sort=&syntax=&t=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      Date:
+      - Thu, 23 Jan 2014 23:30:54 GMT
+      Content-Length:
+      - '5849'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;Hello &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;
+        &lt;/p&gt;\\n\\n&lt;p&gt;I am new to Ruby, however I&amp;#39;ve programmed
+        in C, C++, Java, and C# along with VB.NET, HTML, and minimal Python. &lt;/p&gt;\\n\\n&lt;p&gt;I&amp;#39;ve
+        heard that Ruby is a bit different and has quite the steep learning curve.
+        So I ask you...&lt;/p&gt;\\n\\n&lt;p&gt;What is the one thing that you wish
+        you knew before starting to learn or really use Ruby?&lt;/p&gt;\\n\\n&lt;p&gt;I
+        also plan on using RoR if anyone has thoughts on that as well!&lt;/p&gt;\\n\\n&lt;p&gt;Any
+        comments are appreciated! Thanks Guys!&lt;/p&gt;\\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;\", \"selftext\": \"Hello /r/ruby \\n\\nI am new to Ruby, however I've
+        programmed in C, C++, Java, and C# along with VB.NET, HTML, and minimal Python.
+        \\n\\nI've heard that Ruby is a bit different and has quite the steep learning
+        curve. So I ask you...\\n\\nWhat is the one thing that you wish you knew before
+        starting to learn or really use Ruby?\\n\\nI also plan on using RoR if anyone
+        has thoughts on that as well!\\n\\nAny comments are appreciated! Thanks Guys!\",
+        \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"1j9wqw\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"ProductiveThings\", \"media\": null, \"score\": 56, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 10, \"saved\": false, \"is_self\": true, \"permalink\": \"/r/ruby/comments/1j9wqw/what_is_one_thing_you_wish_you_knew_when_starting/\",
+        \"name\": \"t3_1j9wqw\", \"created\": 1375108691.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1j9wqw/what_is_one_thing_you_wish_you_knew_when_starting/\",
+        \"author_flair_text\": null, \"title\": \"What is one thing you wish you knew
+        when starting Ruby?\", \"created_utc\": 1375105091.0, \"ups\": 66, \"num_comments\":
+        82, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;...and thanks to everyone
+        in &lt;a href=\\\"/r/ruby\\\"&gt;/r/ruby&lt;/a&gt;, &lt;a href=\\\"/r/rails\\\"&gt;/r/rails&lt;/a&gt;
+        and &lt;a href=\\\"/r/programming\\\"&gt;/r/programming&lt;/a&gt; who helped
+        me gain not only the skills but the confidence to make the switch.  I&amp;#39;ve
+        been a lifelong marketer who always felt unfulfilled and spent nights/weekends/free
+        time learning Ruby, Rails, MySQL, PostgreSQL, jQuery, and more, finally culminating
+        in my first full-time development job.  Wish me luck!&lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"...and thanks to everyone in /r/ruby, /r/rails
+        and /r/programming who helped me gain not only the skills but the confidence
+        to make the switch.  I've been a lifelong marketer who always felt unfulfilled
+        and spent nights/weekends/free time learning Ruby, Rails, MySQL, PostgreSQL,
+        jQuery, and more, finally culminating in my first full-time development job.
+        \ Wish me luck!\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1i72ww\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"caadbury\", \"media\": null, \"score\":
+        90, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 23, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/ruby/comments/1i72ww/on_monday_i_start_a_new_career_as_a_web_developer/\",
+        \"name\": \"t3_1i72ww\", \"created\": 1373686161.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1i72ww/on_monday_i_start_a_new_career_as_a_web_developer/\",
+        \"author_flair_text\": null, \"title\": \"On Monday, I start a new career
+        as a web developer in Ruby on Rails\", \"created_utc\": 1373682561.0, \"ups\":
+        113, \"num_comments\": 49, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"self.ruby\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"ruby\", \"selftext_html\": \"&lt;!--
+        SC_OFF --&gt;&lt;div class=\\\"md\\\"&gt;&lt;p&gt;I&amp;#39;m learning Ruby
+        on codecademy, and intending to learn rails after that. I was told by a dev
+        friend that both Ruby and Ruby on Rails are outdated and bloated. He reckons
+        that Javascript is better and more relevant. Is this true? I&amp;#39;ve been
+        really enjoying learning, is it worthwhile? &lt;/p&gt;\\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;\", \"selftext\": \"I'm learning Ruby on codecademy, and intending
+        to learn rails after that. I was told by a dev friend that both Ruby and Ruby
+        on Rails are outdated and bloated. He reckons that Javascript is better and
+        more relevant. Is this true? I've been really enjoying learning, is it worthwhile?
+        \", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null, \"id\":
+        \"1uivc3\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"KingPimpCommander\", \"media\": null, \"score\": 22,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh21\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 19, \"saved\": false, \"is_self\":
+        true, \"permalink\": \"/r/ruby/comments/1uivc3/is_ruby_outdated/\", \"name\":
+        \"t3_1uivc3\", \"created\": 1388992621.0, \"url\": \"http://www.reddit.com/r/ruby/comments/1uivc3/is_ruby_outdated/\",
+        \"author_flair_text\": null, \"title\": \"Is Ruby outdated?\", \"created_utc\":
+        1388992621.0, \"ups\": 41, \"num_comments\": 90, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}], \"after\": \"t3_1uivc3\", \"before\": null}}"
+    http_version: 
+  recorded_at: Thu, 23 Jan 2014 23:30:59 GMT
 recorded_with: VCR 2.8.0
