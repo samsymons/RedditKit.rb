@@ -74,7 +74,7 @@ module RedditKit
     end
 
     def middleware
-      @middleware ||= Faraday::Builder.new do |builder|
+      @middleware ||= Faraday::RackBuilder.new do |builder|
         builder.use Faraday::Request::UrlEncoded
         builder.use RedditKit::Response::RaiseError
         builder.use RedditKit::Response::ParseJSON
