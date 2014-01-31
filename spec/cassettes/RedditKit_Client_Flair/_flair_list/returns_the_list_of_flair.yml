@@ -16,7 +16,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - '*/*'
   response:
     status:
       code: 200
@@ -31,14 +31,61 @@ http_interactions:
       Pragma:
       - no-cache
       Server:
-      - "'; DROP TABLE servertypes; --"
+      - '''; DROP TABLE servertypes; --'
       Date:
       - Sun, 10 Nov 2013 19:56:32 GMT
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: "{\"users\": []}"
+      string: '{"users": []}'
     http_version: 
   recorded_at: Sun, 10 Nov 2013 19:56:31 GMT
-recorded_with: VCR 2.6.0
+- request:
+    method: get
+    uri: http://www.reddit.com/r/<REDDIT_USERNAME>_testsub/api/flairlist.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Cookie:
+      - reddit_session=20332937,2013-11-10T11:35:59,2077074c26ccd8ec123c996b77eeb7afb6090af9
+      X-Modhash:
+      - 36zuxndsdf695692a68e32384990478663dadfc30f0a1dd959
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - '''; DROP TABLE servertypes; --'
+      Date:
+      - Wed, 29 Jan 2014 23:31:47 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": 403}'
+    http_version: 
+  recorded_at: Wed, 29 Jan 2014 23:30:32 GMT
+recorded_with: VCR 2.8.0

@@ -15,4 +15,12 @@ describe RedditKit::Thing do
     expect(@thing == second_thing).to be true
   end
 
+  it "is not equal to nil" do
+  	expect(@thing == nil).to be false
+  end
+  
+  it "is not equal to other types of objects" do
+  	obj = Object.new
+  	expect(@thing == obj).to be false
+  end
 end

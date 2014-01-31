@@ -9,6 +9,7 @@ module RedditKit
     attr_reader :kind
 
     def ==(other)
+      return false unless other.is_a?(Thing)
       full_name == other.full_name
     end
 
