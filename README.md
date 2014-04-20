@@ -16,7 +16,7 @@ RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written i
 
 Add this to your Gemfile:
 
-    gem 'redditkit', '~> 1.0'
+    gem 'redditkit', '~> 1.0.1'
 
 Or install it directly:
 
