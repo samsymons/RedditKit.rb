@@ -18,19 +18,26 @@ module RedditKit
       # @option options [hour, day, week, month, year, all] time Show results with a specific time period.
       # @return [RedditKit::PaginatedResponse]
       def search(query, options = {})
-        path = "%s/search.json" % ('r/' + options[:subreddit] if options[:subreddit])
-        parameters = { :q => query,
-                       :restrict_sr => options[:restrict_to_subreddit],
-                       :limit       => options[:limit],
-                       :count       => options[:count],
-                       :sort        => options[:sort],
-                       :before      => options[:before],
-                       :after       => options[:after],
-                       :syntax      => options[:syntax],
-                       :t           => options[:time]
-        }
 
-        objects_from_response(:get, path, parameters)
+        if query =~ URI::regexp
+          path = "/submit.json"
+          parameters = { :url => URI.escape(query) }
+          objects_from_response(:get, path, parameters)
+        else
+          path = "%s/search.json" % ('r/' + options[:subreddit] if options[:subreddit])
+          parameters = { :q => query,
+                         :restrict_sr => options[:restrict_to_subreddit],
+                         :limit       => options[:limit],
+                         :count       => options[:count],
+                         :sort        => options[:sort],
+                         :before      => options[:before],
+                         :after       => options[:after],
+                         :syntax      => options[:syntax],
+                         :t           => options[:time]
+          }
+
+          objects_from_response(:get, path, parameters)
+        end
       end
 
     end
