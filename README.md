@@ -12,6 +12,10 @@ RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written i
 [codeclimate]: https://codeclimate.com/github/samsymons/RedditKit.rb
 [coveralls]: https://coveralls.io/r/samsymons/RedditKit.rb
 
+## Documentation
+
+[http://rdoc.info/gems/redditkit/](http://rdoc.info/gems/redditkit/)
+
 ## Installation
 
 Add this to your Gemfile:
