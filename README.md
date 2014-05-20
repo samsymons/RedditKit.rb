@@ -98,8 +98,6 @@ paginated_response.each do |link|
 end
 ```
 
-## Multiple Accounts
-
 ## Configuration
 
 You can configure various aspects of RedditKit.rb's operation, including its default API endpoint and user agent, by setting attributes on `RedditKit::Client`.
