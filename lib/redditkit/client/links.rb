@@ -59,12 +59,12 @@ module RedditKit
       # @option options [String] :after Only return links after this identifier.
       # @return [RedditKit::PaginatedResponse]
       # @example links = RedditKit.links_with_domain "github.com"
-      def links_with_domain(domain, options = {})
+      def links_with_domain(domain, sort = "new", options = {})
         parameters = { :url => domain, :t => options[:time] }
         options.merge! parameters
         options.delete :t
 
-        objects_from_response(:get, "domain/#{domain}/#{options[:sort]}.json", options)
+        objects_from_response(:get, "domain/#{domain}/#{sort}.json", options)
       end
 
       # Submits a link or self post to reddit.
