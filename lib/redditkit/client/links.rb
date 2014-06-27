@@ -64,7 +64,7 @@ module RedditKit
         options.merge! parameters
         options.delete :t
 
-        objects_from_response(:get, 'api/info.json', options)
+        objects_from_response(:get, "domain/#{domain}.json", options)
       end
 
       # Submits a link or self post to reddit.
