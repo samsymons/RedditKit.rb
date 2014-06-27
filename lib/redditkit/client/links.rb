@@ -60,7 +60,7 @@ module RedditKit
       # @return [RedditKit::PaginatedResponse]
       # @example links = RedditKit.links_with_domain "github.com"
       def links_with_domain(domain, options = {})
-        parameters = { :url => domain, :t => options[:time], :sort => "new" }
+        parameters = { :url => domain, :t => options[:time] }
         options.merge! parameters
         options.delete :t
 
