@@ -60,11 +60,11 @@ module RedditKit
       # @return [RedditKit::PaginatedResponse]
       # @example links = RedditKit.links_with_domain "github.com"
       def links_with_domain(domain, options = {})
-        parameters = { :url => domain, :t => options[:time] }
+        parameters = { :url => domain, :t => options[:time], :sort => "new" }
         options.merge! parameters
         options.delete :t
 
-        objects_from_response(:get, "domain/#{domain}.json", options)
+        objects_from_response(:get, "domain/#{domain}/#{options[:sort]}.json", options)
       end
 
       # Submits a link or self post to reddit.
