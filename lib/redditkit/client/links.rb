@@ -62,7 +62,7 @@ module RedditKit
       def links_with_domain(domain, sort = "new", options = {})
         parameters = { :url => domain, :t => options[:time] }
         options.merge! parameters
-        options.delete :t
+        # options.delete :t
 
         objects_from_response(:get, "domain/#{domain}/#{sort}.json", options)
       end
