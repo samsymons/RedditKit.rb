@@ -46,8 +46,6 @@ subreddits = client.subscribed_subreddits
 
 Using RedditKit.rb at the module level allows you to use a single account without having to keep track of RedditKit::Client instances. Working at the instance method level makes it possible to use multiple accounts at once, with one client object per account.
 
-> RedditKit.rb doesn't have any built-in rate limiting. reddit's API rules require that you make no more than 30 requests per minute and try to avoid requesting the same page more than once every 30 seconds. You can read up on the API rules [on their wiki page](https://github.com/reddit/reddit/wiki/API).
-
 ### Authentication
 
 ```ruby
