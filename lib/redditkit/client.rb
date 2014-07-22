@@ -59,7 +59,6 @@ module RedditKit
 
       @cookie = nil
       @modhash = nil
-      @rate_limit = RedditKit::RateLimit.new
 
       sign_in(username, password) unless username.nil? || password.nil?
     end
@@ -85,6 +84,10 @@ module RedditKit
       end
     end
 
+    def rate_limit
+      @rate_limit ||= RedditKit::RateLimit.new
+    end
+
     private
 
     def get(path, params = nil)
@@ -108,7 +111,7 @@ module RedditKit
     end
 
     def request(method, path, parameters = {}, request_connection)
-      @rate_limit.wait
+      rate_limit.wait
 
       if signed_in?
         request = authenticated_request_configuration(method, path, parameters)
