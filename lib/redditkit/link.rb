@@ -137,7 +137,7 @@ module RedditKit
     end
 
     def permalink
-      @permalink ||= 'http://reddit.com/' << @attributes[:permalink]
+      @permalink ||= 'http://reddit.com' << @attributes[:permalink]
     end
 
     # Returns the short URL for a link.
