@@ -26,5 +26,9 @@ module RedditKit
     alias_method :over_18?, :over_18
     alias_method :username, :name
     alias_method :verified?, :has_verified_email
+
+    def uri
+      @uri ||= URI.join "http://www.reddit.com/user/", username
+    end
   end
 end

@@ -1,4 +1,5 @@
 require 'redditkit/client'
+require 'uri'
 
 # The main RedditKit module.
 module RedditKit
