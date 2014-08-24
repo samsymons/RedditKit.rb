@@ -16,6 +16,12 @@ RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written i
 
 [http://rdoc.info/gems/redditkit/](http://rdoc.info/gems/redditkit/)
 
+## Deploy to Heroku
+
+You can try an example Rails app using RedditKit.rb on Heroku.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/samsymons/redditkit.rb-example/tree/master)
+
 ## Installation
 
 Add this to your Gemfile:
