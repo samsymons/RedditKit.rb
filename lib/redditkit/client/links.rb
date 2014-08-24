@@ -8,7 +8,7 @@ module RedditKit
 
       # Gets the links currently on the front page.
       #
-      # @option options [hot, new, rising, controversial, top] :category The category from which to retrieve links.
+      # @option options [hot, new, rising, controversial, top, ads] :category The category from which to retrieve links.
       # @option options [hour, day, week, month, year, all] :time The time from which to retrieve links. Defaults to all time.
       # @option options [1..100] :limit The number of links to return.
       # @option options [String] :before Only return links before this identifier.
@@ -21,7 +21,7 @@ module RedditKit
       # Gets an array of links from a specific subreddit.
       #
       # @param subreddit [String, RedditKit::Subreddit] The display name of the subreddit, or a RedditKit::Subreddit.
-      # @option options [hot, new, rising, controversial, top] :category The category from which to retrieve links.
+      # @option options [hot, new, rising, controversial, top, ads] :category The category from which to retrieve links.
       # @option options [hour, day, week, month, year, all] :time The time from which to retrieve links. Defaults to all time.
       # @option options [1..100] :limit The number of links to return.
       # @option options [String] :before Only return links before this identifier.
