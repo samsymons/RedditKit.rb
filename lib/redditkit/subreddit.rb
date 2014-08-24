@@ -82,5 +82,8 @@ module RedditKit
     alias_method :self_post_spam_filter_strength, :spam_selfpost
     alias_method :subscriber?, :user_is_subscriber
 
+    def uri
+      @uri ||= URI.join "http://www.reddit.com/r/", name
+    end
   end
 end
