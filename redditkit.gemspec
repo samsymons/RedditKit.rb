@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'htmlentities', "~> 4.3"
   spec.add_dependency 'multi_json', '~> 1.8'
 
-  spec.add_development_dependency 'dotenv', '~> 0.9', '>= 0.9.0'
+  spec.add_development_dependency 'dotenv', '~> 0.11'
 end
