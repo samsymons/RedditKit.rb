@@ -14,7 +14,7 @@ group :test do
   gem 'rspec'
   gem 'simplecov', :require => false
   gem 'vcr', '~> 2.9.0'
-  gem 'webmock', '>= 1.12.0'
+  gem 'webmock', '>= 1.18.0'
 end
 
 platforms :rbx do
