@@ -11,6 +11,9 @@ describe RedditKit::Link do
 
     parameter_link_attributes = { :data => { :id => '12345', :url => 'http://example.com/test?param=something&amp;whatever=test', :created_utc => Time.new(2000, 1, 1).to_i } }
     @link_with_parameters = RedditKit::Link.new parameter_link_attributes
+
+    unicode_link_attributes = { :data => { :id => '12345', :permalink => '이것은_웹_페이지입니', :created_utc => Time.new(2000,1,1).to_i } }
+    @link_with_unicode = RedditKit::Link.new unicode_link_attributes
   end
 
   it "decodes HTML entities in link titles" do
@@ -41,4 +44,7 @@ describe RedditKit::Link do
     expect(@link.short_link).to eq 'http://redd.it/12345'
   end
 
+  it "returns the link's encoded permalink" do
+    expect(@link_with_unicode.permalink).to eq 'http://reddit.com/%EC%9D%B4%EA%B2%83%EC%9D%80_%EC%9B%B9_%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9E%85%EB%8B%88'
+  end
 end
