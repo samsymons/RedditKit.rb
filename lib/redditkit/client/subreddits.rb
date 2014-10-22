@@ -31,6 +31,8 @@ module RedditKit
       # @option options [String] after Only return subreddits after this id.
       # @return [RedditKit::PaginatedResponse]
       def subscribed_subreddits(options = {})
+        options = options.clone
+
         category = options[:category] or 'subscriber'
         path = "subreddits/mine/#{category}.json"
         options.delete :category
