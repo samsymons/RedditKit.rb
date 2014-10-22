@@ -28,6 +28,8 @@ module RedditKit
       # @option options [String] :after Only return links after this identifier.
       # @return [RedditKit::PaginatedResponse]
       def links(subreddit, options = {})
+        options = options.clone
+
         subreddit_name = extract_string(subreddit, :display_name) if subreddit
         category = options[:category] || :hot
 
