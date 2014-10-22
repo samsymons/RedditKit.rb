@@ -15,6 +15,8 @@ module RedditKit
       # @option options [Boolean] :mark Whether to mark requested messages as read.
       # @return [RedditKit::PaginatedResponse]
       def messages(options = {})
+        options = options.clone
+
         category = options[:category] || 'inbox'
         path = "message/#{category}.json"
         options.delete :category
