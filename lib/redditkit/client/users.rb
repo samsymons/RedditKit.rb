@@ -28,6 +28,8 @@ module RedditKit
       # @option options [String] :after Only return links and comments after this id.
       # @return [RedditKit::PaginatedResponse]
       def my_content(options = {})
+        options = options.clone
+
         category = options[:category] || :overview
         path = "user/#{@username}/#{category}.json"
         options.delete :category
