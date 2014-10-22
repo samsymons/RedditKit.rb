@@ -58,6 +58,8 @@ module RedditKit
       # @option options [String] page The name of an existing wiki page.
       # @option options [String] revision The revision to revert to.
       def revert_to_revision(options)
+        options = options.clone
+
         subreddit_name = extract_string(options[:subreddit], :display_name)
         options.delete :subreddit
 
