@@ -43,6 +43,8 @@ module RedditKit
       # @option options [String] revision The revision to hide.
       # @return [Boolean] True if the revision is now hidden, false if it is not hidden.
       def hide_wiki_revision(options)
+        options = options.clone
+
         subreddit_name = extract_string(options[:subreddit], :display_name)
         options.delete :subreddit
 
