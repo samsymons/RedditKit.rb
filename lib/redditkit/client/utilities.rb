@@ -124,6 +124,8 @@ module RedditKit
       # @param type [friend, unfriend] The type of request.
       # @param options Any parameters to send with the request.
       def friend_request(type, options)
+        options = options.clone
+
         if options[:subreddit]
           options[:r] = options[:subreddit]
           options.delete :subreddit
