@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/submit.json?url=http://i.imgur.com/ypLqggl.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 22 Apr 2014 21:43:48 GMT
+      Server:
+      - "'; DROP TABLE servertypes; --"
+      Vary:
+      - accept-encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1063'
+    body:
+      encoding: UTF-8
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"gaming\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1x1sn0\", \"gilded\": 0, \"secure_media_embed\": {}, \"clicked\":
+        false, \"stickied\": false, \"author\": \"360scrubs\", \"media\": null, \"score\":
+        1, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"default\", \"subreddit_id\": \"t5_2qh03\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 2, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/gaming/comments/1x1sn0/black_man_gamer_problems/\",
+        \"name\": \"t3_1x1sn0\", \"created\": 1391571208.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": null, \"title\": \"Black Man Gamer Problems\", \"created_utc\":
+        1391571208.0, \"ups\": 3, \"num_comments\": 0, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"Haumana\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1oeimz\", \"gilded\":
+        0, \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"malamadakeiki\", \"media\": null, \"score\": 1, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2ys4v\",
+        \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 0, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/Haumana/comments/1oeimz/black_man_gamer_problems/\",
+        \"name\": \"t3_1oeimz\", \"created\": 1381726701.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": null, \"title\": \"Black Man Gamer Problems\", \"created_utc\":
+        1381723101.0, \"ups\": 1, \"num_comments\": 0, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"gaming\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null,
+        \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1n0fe9\", \"gilded\":
+        0, \"secure_media_embed\": {}, \"clicked\": false, \"stickied\": false, \"author\":
+        \"chrisp3d\", \"media\": null, \"score\": 11418, \"approved_by\": null, \"over_18\":
+        false, \"hidden\": false, \"thumbnail\": \"http://b.thumbs.redditmedia.com/3KteX4eF76-fFb1y.jpg\",
+        \"subreddit_id\": \"t5_2qh03\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 38741, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/gaming/comments/1n0fe9/black_man_gamer_problems/\",
+        \"name\": \"t3_1n0fe9\", \"created\": 1380001485.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": null, \"title\": \"Black Man Gamer Problems\", \"created_utc\":
+        1379997885.0, \"ups\": 50159, \"num_comments\": 840, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"funny\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1n0fbp\", \"gilded\": 0, \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"chrisp3d\", \"media\":
+        null, \"score\": 40, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"http://b.thumbs.redditmedia.com/3KteX4eF76-fFb1y.jpg\",
+        \"subreddit_id\": \"t5_2qh33\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 32, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/funny/comments/1n0fbp/first_world_black_man_problems/\",
+        \"name\": \"t3_1n0fbp\", \"created\": 1380001421.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": null, \"title\": \"First World Black Man Problems\",
+        \"created_utc\": 1379997821.0, \"ups\": 72, \"num_comments\": 5, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"i.imgur.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"DakotaValleyHS\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1n176s\", \"gilded\": 0, \"secure_media_embed\": {}, \"clicked\":
+        false, \"stickied\": false, \"author\": \"theone565\", \"media\": null, \"score\":
+        0, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"http://b.thumbs.redditmedia.com/3KteX4eF76-fFb1y.jpg\", \"subreddit_id\":
+        \"t5_2yive\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        \"\", \"downs\": 1, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/DakotaValleyHS/comments/1n176s/african_problems/\",
+        \"name\": \"t3_1n176s\", \"created\": 1380039107.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": \"woop\", \"title\": \"African Problems\", \"created_utc\":
+        1380035507.0, \"ups\": 1, \"num_comments\": 1, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"ImGoingToHellForThis\", \"selftext_html\": null, \"selftext\": \"\", \"likes\":
+        null, \"secure_media\": null, \"link_flair_text\": null, \"id\": \"1n0tfj\",
+        \"gilded\": 0, \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"Kellermann\", \"media\": null, \"score\": 0, \"approved_by\":
+        null, \"over_18\": true, \"hidden\": false, \"thumbnail\": \"nsfw\", \"subreddit_id\":
+        \"t5_2s7yq\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 15, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/ImGoingToHellForThis/comments/1n0tfj/black_man_gamer_problems/\", \"name\":
+        \"t3_1n0tfj\", \"created\": 1380023898.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": null, \"title\": \"Black Man Gamer Problems\", \"created_utc\":
+        1380020298.0, \"ups\": 11, \"num_comments\": 0, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"i.imgur.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\":
+        \"funny\", \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1n16hq\", \"gilded\": 0, \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"fitzmodj\", \"media\":
+        null, \"score\": 0, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"http://b.thumbs.redditmedia.com/3KteX4eF76-fFb1y.jpg\",
+        \"subreddit_id\": \"t5_2qh33\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 14, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/funny/comments/1n16hq/black_man_gamer_problems_xpost_from_rgaming/\",
+        \"name\": \"t3_1n16hq\", \"created\": 1380038550.0, \"url\": \"http://i.imgur.com/ypLqggl.png\",
+        \"author_flair_text\": null, \"title\": \"Black Man Gamer Problems (X-post
+        from r/gaming)\", \"created_utc\": 1380034950.0, \"ups\": 7, \"num_comments\":
+        0, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}],
+        \"after\": null, \"before\": null}}"
+    http_version: 
+  recorded_at: Tue, 22 Apr 2014 21:43:50 GMT
+recorded_with: VCR 2.9.0
