@@ -28,6 +28,8 @@ module RedditKit
       # @option options [String] :after Only return links and comments after this id.
       # @return [RedditKit::PaginatedResponse]
       def my_content(options = {})
+        options = options.clone
+
         category = options[:category] || :overview
         path = "user/#{@username}/#{category}.json"
         options.delete :category
@@ -44,6 +46,7 @@ module RedditKit
       # @return [RedditKit::PaginatedResponse]
       # @note Public access to the liked and disliked categories is disabled by default, so this will return an empty array for most users.
       def user_content(user, options = {})
+        options = options.clone
         username = user
 
         path = "user/#{username}/%s.json" % (options[:category] if options[:category])

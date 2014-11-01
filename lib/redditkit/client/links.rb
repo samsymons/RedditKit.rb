@@ -28,6 +28,8 @@ module RedditKit
       # @option options [String] :after Only return links after this identifier.
       # @return [RedditKit::PaginatedResponse]
       def links(subreddit, options = {})
+        options = options.clone
+
         subreddit_name = extract_string(subreddit, :display_name) if subreddit
         category = options[:category] || :hot
 
@@ -60,6 +62,8 @@ module RedditKit
       # @return [RedditKit::PaginatedResponse]
       # @example links = RedditKit.links_with_domain "github.com"
       def links_with_domain(domain, options = {})
+        options = options.clone
+
         parameters = { :url => domain, :t => options[:time] }
         options.merge! parameters
         options.delete :t

@@ -137,6 +137,8 @@ module RedditKit
       # @option options [Boolean] flair_self_assign_enabled Whether users may assign their own flair.
       # @option options [Boolean] link_flair_self_assign_enabled Whether users may assign their own link flair.
       def set_flair_options(subreddit, options = {})
+        options = options.clone
+
         subreddit_name = extract_string(subreddit, :display_name)
         options.merge!({ :r => subreddit_name, :uh => @modhash })
 
