@@ -12,7 +12,7 @@ describe RedditKit::Link do
     parameter_link_attributes = { :data => { :id => '12345', :url => 'http://example.com/test?param=something&amp;whatever=test', :created_utc => Time.new(2000, 1, 1).to_i } }
     @link_with_parameters = RedditKit::Link.new parameter_link_attributes
 
-    unicode_link_attributes = { :data => { :id => '12345', :permalink => '이것은_웹_페이지입니', :created_utc => Time.new(2000,1,1).to_i } }
+    unicode_link_attributes = { :data => { :id => '12345', :permalink => '이것은_웹_페이지입니', :created_utc => Time.new(2000, 1, 1).to_i } }
     @link_with_unicode = RedditKit::Link.new unicode_link_attributes
   end
 
