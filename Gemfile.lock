@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    redditkit (1.0.1)
+    redditkit (1.0.2)
       faraday (~> 0.8)
       htmlentities (~> 4.3)
       multi_json (~> 1.8)
