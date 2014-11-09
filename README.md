@@ -74,7 +74,7 @@ authenticated_client.subscribe 'ruby'
 **Upvote the top post in a subreddit:**
 
 ```ruby
-posts = authenticated_client.posts 'programming', :category => :top, :time => :all
+posts = authenticated_client.links 'programming', :category => :top, :time => :all
 authenticated_client.upvote posts.first
 ```
 
