@@ -108,7 +108,7 @@ You can configure various aspects of RedditKit.rb's operation, including its def
 
 ### Debugging
 
-Because RedditKit.rb is built atop Faraday, you can modify its middleware stack to add new behaviour. This is particularly handy for debugging as you can turn on Faraday's response logger.
+Because RedditKit.rb is built atop [Faraday](https://github.com/lostisland/faraday), you can modify its middleware stack to add new behaviour. This is particularly handy for debugging as you can turn on Faraday's response logger.
 
 ```ruby
 RedditKit.middleware = Faraday::Builder.new do |builder|
