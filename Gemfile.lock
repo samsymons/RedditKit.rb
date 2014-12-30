@@ -23,9 +23,7 @@ GEM
       safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    dotenv (0.11.1)
-      dotenv-deployment (~> 0.0.2)
-    dotenv-deployment (0.0.2)
+    dotenv (1.0.2)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
@@ -304,7 +302,7 @@ PLATFORMS
 
 DEPENDENCIES
   coveralls
-  dotenv (~> 0.11)
+  dotenv (~> 1.0)
   guard-rspec
   guard-yard
   pry
