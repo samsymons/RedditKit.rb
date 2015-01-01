@@ -1,4 +1,4 @@
-Copyright (c) 2013 Sam Symons
+Copyright (c) 2015 Sam Symons
 
 MIT License
 
