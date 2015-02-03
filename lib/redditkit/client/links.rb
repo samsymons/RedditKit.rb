@@ -52,6 +52,14 @@ module RedditKit
         links.first
       end
 
+      # Gets an array of links from an array of full names.
+      #       
+      # @param links_full_name [Array<String>] An array of full names of links.
+      # @return [RedditKit::PaginatedResponse]
+      def multiple_links(links_full_name = [])
+        objects_from_response(:get, 'api/info.json', { :id => links_full_name.join(",") })
+      end
+
       # Gets links with a specific domain.
       #
       # @param domain [String] The domain for which to get links.
