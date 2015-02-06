@@ -3,12 +3,12 @@
 RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written in Ruby.
 
 [![Gem Version](https://badge.fury.io/rb/redditkit.png)][rubygem]
-[![Build Status](https://travis-ci.org/samsymons/RedditKit.rb.png?branch=master)][travis]
+[![Build Status](https://circleci.com/gh/samsymons/RedditKit.rb/tree/master.svg?style=svg)][circleci]
 [![Code Climate](https://codeclimate.com/github/samsymons/RedditKit.rb.png)][codeclimate]
 [![Coverage Status](https://coveralls.io/repos/samsymons/RedditKit.rb/badge.png?branch=master)][coveralls]
 
 [rubygem]: https://rubygems.org/gems/redditkit
-[travis]: https://travis-ci.org/samsymons/RedditKit.rb
+[circleci]: https://circleci.com/gh/samsymons/RedditKit.rb/tree/master
 [codeclimate]: https://codeclimate.com/github/samsymons/RedditKit.rb
 [coveralls]: https://coveralls.io/r/samsymons/RedditKit.rb
 
@@ -115,7 +115,7 @@ RedditKit.middleware = Faraday::Builder.new do |builder|
   builder.use Faraday::Request::UrlEncoded
   builder.use RedditKit::Response::RaiseError
   builder.use RedditKit::Response::ParseJSON
-  builder.use Faraday::Response::Logger  
+  builder.use Faraday::Response::Logger
   builder.adapter Faraday.default_adapter
 end
 ```
