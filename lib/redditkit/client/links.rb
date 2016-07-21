@@ -80,6 +80,7 @@ module RedditKit
       # @option options [String] :captcha_identifier An identifier for a CAPTCHA, if the current user is required to fill one out.
       # @option options [String] :captcha_value The value for the CAPTCHA with the given identifier, as filled out by the user.
       # @option options [Boolean] :save If true, the link will be implicitly saved after submission.
+      # @option options [Boolean] :send_replies If true, replies to the post will be sent to the current user's reddit inbox.
       def submit(title, subreddit, options = {})
         subreddit_name = extract_string subreddit, :display_name
         parameters = {
@@ -87,7 +88,8 @@ module RedditKit
           :sr => subreddit_name,
           :iden => options[:captcha_identifier],
           :captcha => options[:captcha_value],
-          :save => options[:save]
+          :save => options[:save],
+          :sendreplies => options[:send_replies]
           }
 
         if options[:url]
