@@ -62,7 +62,7 @@ module RedditKit
     end
 
     def api_endpoint
-      @api_endpoint ||= 'http://www.reddit.com/'
+      @api_endpoint ||= 'https://www.reddit.com/'
     end
 
     def authentication_endpoint
