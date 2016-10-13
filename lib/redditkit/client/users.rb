@@ -94,14 +94,16 @@ module RedditKit
 
       # Registers a new reddit account.
       #
-      # @option options [String] username The username to register.
-      # @option options [String] password The password for the account.
-      # @option options [String] email The optional email address for the account.
-      # @option options [String] captcha_identifier The identifier for the CAPTCHA challenge solved by the user.
-      # @option options [String] captcha The user's response to the CAPTCHA challenge.
+      # @param username [String] The username to register.
+      # @param password [String] The password for the account.
+      # @param captcha_identifier [String] The identifier for the CAPTCHA challenge solved by the user.
+      # @param captcha [String] The user's response to the CAPTCHA challenge.
       # @option options [Boolean] remember Whether to keep the user's session cookie beyond the current session.
-      def register(username, password, options = {})
-        parameters = { :user => username, :passwd => password, :passwd2 => password, :email => options[:email], :captcha => options[:captcha], :iden => options[:captcha_identifier] }
+      # @param options [String] email The optional email address for the account.
+      def register(username, password, captcha_identifier, captcha, options = {})
+        parameters = { :user => username, :passwd => password, :passwd2 => password, 
+                       :iden => captcha_identifier, :captcha => captcha, 
+                       :email => options[:email], :rem => options[:remember] }
         post('api/register', parameters)
       end
 
