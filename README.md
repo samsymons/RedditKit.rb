@@ -35,12 +35,13 @@ RedditKit.rb is used through either the `RedditKit` module, or `RedditKit::Clien
 **Module usage:**
 ```ruby
 RedditKit.sign_in 'username', 'password'
+RedditKit.user_agent = 'MyRedditBot/1.2 (+http://www.reddit.com/user/username)'
 subreddits = RedditKit.subscribed_subreddits
 ```
 
 **Instance method usage:**
 ```ruby
-client = RedditKit::Client.new 'username', 'password'
+client = RedditKit::Client.new 'username', 'password','MyRedditBot','1.2'
 subreddits = client.subscribed_subreddits
 ```
 
@@ -102,7 +103,30 @@ end
 
 You can configure various aspects of RedditKit.rb's operation, including its default API endpoint and user agent, by setting attributes on `RedditKit::Client`.
 
-**You should set your user agent to the name and version of your app, along with your reddit username. That way, if you ever have a buggy version of your app abusing the API, the reddit admins will know who to contact.**
+**You should set your user agent to the name and version of your app, along with your reddit username. That way, if you ever have a buggy version of your app abusing the API, the reddit admins will know who to contact.
+```ruby
+#Option 1
+MY_BOT_VERSION = 1.7
+client = RedditKit::Client.new 'myRedditUserName','password','myBotName',MY_BOT_VERSION
+puts client.user_agent
+# yields "myRedditUserName/1.7 (+http://www.reddit.com/user/myRedditUserName)"
+
+#Option 2
+client = RedditKit::Client.new 'myRedditUserName','password'
+client.user_agent_name = 'myBotName'
+client.user_agent_version = MY_BOT_VERSION
+#This also works with the module usage pattern
+RedditKit.sign_in 'myRedditUserName','password'
+RedditKit.user_agent_name = 'myBotName'
+RedditKit.user_agent_version = MY_BOT_VERSION
+
+#Option 3
+client = RedditKit::Client.new 'myRedditUserName','password'
+client.user_agent='myCustomAgentString/0.4 (+http://example.com/contact/info.html)'
+#This also works with the module usage pattern
+RedditKit.sign_in 'myRedditUserName','password'
+RedditKit.user_agent='myCustomAgentString/0.4 (+http://example.com/contact/info.html)'
+```
 
 ## Contributing
 
