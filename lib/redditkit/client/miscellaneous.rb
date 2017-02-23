@@ -7,10 +7,15 @@ module RedditKit
       # Edit the text or a self post or comment.
       #
       # @param object [String, RedditKit::Comment, RedditKit::Link] A link or comment's full name, a RedditKit::Link, or a RedditKit::Subreddit.
-      # @option options [String] text The new text for the link or comment.
+      # @option options [String] :text The text to update with
       def edit(object, options)
-        parameters = { :text => options[:text], :thing_id => extract_full_name(object) }
-        post('/api/editusertext', parameters)
+        raise ArgumentError, "second paramater must be a hash." unless options.is_a?(Hash)
+        parameters = {
+          :text => options.fetch(:text),
+          :thing_id => extract_full_name(object),
+          :api_type => "json",
+        }
+        post '/api/editusertext', parameters
       end
 
       # Deletes a link or comment.
