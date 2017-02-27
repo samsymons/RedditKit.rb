@@ -6,6 +6,7 @@ RedditKit.rb is a [reddit API](http://www.reddit.com/dev/api) wrapper, written i
 [![Build Status](https://circleci.com/gh/samsymons/RedditKit.rb/tree/master.svg?style=svg)][circleci]
 [![Code Climate](https://codeclimate.com/github/samsymons/RedditKit.rb.png)][codeclimate]
 [![Coverage Status](https://coveralls.io/repos/samsymons/RedditKit.rb/badge.png?branch=master)][coveralls]
+[![API Testing](https://img.shields.io/badge/API%20Test-RapidAPI-blue.svg)](https://rapidapi.com/package/Reddit/functions?utm_source=RedditGithub&utm_medium=button&utm_content=Vender_GitHub)
 
 [rubygem]: https://rubygems.org/gems/redditkit
 [circleci]: https://circleci.com/gh/samsymons/RedditKit.rb/tree/master
